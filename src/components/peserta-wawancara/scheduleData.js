@@ -61,6 +61,7 @@ const scheduleData = {
                 {name: "Cherish Dominick", nim: "00000096231"},
                 {name: "Rachel Natallie", nim: "00000054096"},
                 {name: "Ferdinand Julius", nim: "00000056186"},
+                {name: "Stefani Margaretha", nim: "00000053487"},
             ]
         },
         {
@@ -78,7 +79,6 @@ const scheduleData = {
             date: "Sabtu, 24 Februari 2024",
             participants: [
                 {name: "Beatrice Ellena", nim: "00000082564"},
-                {name: "Stefani Margaretha", nim: "00000053487"},
                 {name: "Lawrencia", nim: "00000076947"},
                 {name: "Radian Putra", nim: "00000077191"},
             ]

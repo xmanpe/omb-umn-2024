@@ -1,0 +1,648 @@
+.youtube_section {
+    background: url('../../images/waves/Blurry.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+
+    .wave_two {
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .wave_three {
+        z-index: 99;
+        margin-bottom: -2px;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .youtube_content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: 0px 160px 0px 160px;
+        align-items: center;
+        z-index: 100;
+
+        .the_title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h1 {
+                text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 108%;
+                text-align: center;
+                color: #4404aaa5;
+            }
+
+            img {
+                width: 100px;
+                height: auto;
+                filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.29));
+            }
+        }
+    
+        .video_player {
+            aspect-ratio: 16 / 9;
+            width: 90%;
+            border-radius: 12px;
+            overflow: hidden;
+            /* border: 4px solid #4504AA;; */
+            box-shadow: 0px 6px 11.8px 0px rgba(0, 0, 0, 0.34);
+    
+            iframe {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 16 / 9;
+            }
+        }
+    
+        .cta_button {
+            display: flex;
+            padding: 3px;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 100px;
+            border: 3px solid #9879D4;
+    
+            button {
+                display: flex;
+                padding: 20px 32px;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                width: max-content;
+                border-radius: 100px;
+                border: none;
+                height: 68px;
+                background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+                box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                transition: box-shadow 0.1s ease-in-out;
+    
+                /* font */
+                color: #FFF;
+                text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+    
+            button:hover {
+                cursor: pointer;
+            }
+    
+            button:active {
+                min-height: 68px;
+                padding: 20px 32px 18px 32px;
+                border-radius: 100px;
+                background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+            }
+        }
+    }
+
+    .bottom_air {
+        z-index: 0;
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+        opacity: 0.1;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .youtube_section {
+        // background: url('../../images/waves/Blurry.png');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 100px;
+        // position: relative;
+    
+        .wave_two {
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .wave_three {
+            // z-index: 99;
+            // margin-bottom: -2px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .youtube_content {
+            // display: flex;
+            // flex-direction: column;
+            gap: 40px;
+            padding: 0px 100px 0px 100px;
+            // align-items: center;
+            // z-index: 100;
+    
+            .the_title {
+                // display: flex;
+                // align-items: center;
+                // gap: 20px;
+    
+                h1 {
+                    // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                    font-size: 36px;
+                    // font-style: normal;
+                    // font-weight: 600;
+                    // line-height: 108%;
+                    // text-align: center;
+                    // background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+                    // background-clip: text;
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                }
+    
+                img {
+                    width: 80px;
+                    // height: auto;
+                    // filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.29));
+                }
+            }
+        
+            .video_player {
+                // aspect-ratio: 16 / 9;
+                // width: 70%;
+                // border-radius: 12px;
+                // overflow: hidden;
+                /* border: 4px solid #4504AA;; */
+                // box-shadow: 0px 6px 11.8px 0px rgba(0, 0, 0, 0.34);
+        
+                iframe {
+                    // width: 100%;
+                    // height: 100%;
+                }
+            }
+        
+            .cta_button {
+                // display: flex;
+                padding: 2px;
+                // flex-direction: column;
+                // align-items: center;
+                // border-radius: 100px;
+                // border: 3px solid #9879D4;
+        
+                button {
+                    // display: flex;
+                    padding: 16px 24px;
+                    // justify-content: center;
+                    // align-items: center;
+                    // gap: 8px;
+                    // border-radius: 100px;
+                    // border: none;
+                    height: fit-content;
+                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                    // transition: box-shadow 0.1s ease-in-out;
+    
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
+        
+                    /* font */
+                    // color: #FFF;
+                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                    font-size: 20px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                }
+        
+                button:hover {
+                    // cursor: pointer;
+                }
+        
+                button:active {
+                    min-height: 54.5px;
+                    padding: 16px 24px 14px 24px;
+                    // border-radius: 100px;
+                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                    // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                }
+        
+            }
+        }
+    
+        .bottom_air {
+            // z-index: 0;
+            // position: absolute;
+            // bottom: 240px;
+            // width: 120%;
+            // opacity: 0.1;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .youtube_section {
+        // background: url('../../images/waves/Blurry.png');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 100px;
+        // position: relative;
+    
+        .wave_two {
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .wave_three {
+            // z-index: 99;
+            // margin-bottom: -2px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .youtube_content {
+            // display: flex;
+            // flex-direction: column;
+            gap: 40px;
+            padding: 0px 80px 0px 80px;
+            // align-items: center;
+            // z-index: 100;
+    
+            .the_title {
+                // display: flex;
+                // align-items: center;
+                // gap: 20px;
+    
+                h1 {
+                    // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                    // font-size: 36px;
+                    // font-style: normal;
+                    // font-weight: 600;
+                    // line-height: 108%;
+                    // text-align: center;
+                    // background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+                    // background-clip: text;
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                }
+    
+                img {
+                    // width: 80px;
+                    // height: auto;
+                    // filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.29));
+                }
+            }
+        
+            .video_player {
+                // aspect-ratio: 16 / 9;
+                // width: 70%;
+                // border-radius: 12px;
+                // overflow: hidden;
+                /* border: 4px solid #4504AA;; */
+                // box-shadow: 0px 6px 11.8px 0px rgba(0, 0, 0, 0.34);
+        
+                iframe {
+                    // width: 100%;
+                    // height: 100%;
+                }
+            }
+        
+            .cta_button {
+                // display: flex;
+                // padding: 2px;
+                // flex-direction: column;
+                // align-items: center;
+                // border-radius: 100px;
+                // border: 3px solid #9879D4;
+        
+                button {
+                    // display: flex;
+                    // padding: 16px 24px;
+                    // justify-content: center;
+                    // align-items: center;
+                    // gap: 8px;
+                    // border-radius: 100px;
+                    // border: none;
+                    // height: fit-content;
+                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                    // transition: box-shadow 0.1s ease-in-out;
+    
+                    img {
+                        // width: 22px;
+                        // height: 22px;
+                    }
+        
+                    /* font */
+                    // color: #FFF;
+                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                    // font-size: 20px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                }
+        
+                button:hover {
+                    // cursor: pointer;
+                }
+        
+                button:active {
+                    // min-height: 54.5px;
+                    // padding: 16px 24px 14px 24px;
+                    // border-radius: 100px;
+                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                    // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                }
+        
+            }
+        }
+    
+        .bottom_air {
+            // z-index: 0;
+            // position: absolute;
+            // bottom: 240px;
+            // width: 120%;
+            // opacity: 0.1;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .youtube_section {
+        // background: url('../../images/waves/Blurry.png');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 100px;
+        // position: relative;
+    
+        .wave_two {
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .wave_three {
+            // z-index: 99;
+            // margin-bottom: -2px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .youtube_content {
+            // display: flex;
+            // flex-direction: column;
+            // gap: 40px;
+            padding: 0px 40px 0px 40px;
+            // align-items: center;
+            // z-index: 100;
+    
+            .the_title {
+                // display: flex;
+                // align-items: center;
+                // gap: 20px;
+    
+                h1 {
+                    // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                    font-size: 32px;
+                    // font-style: normal;
+                    // font-weight: 600;
+                    // line-height: 108%;
+                    // text-align: center;
+                    // background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+                    // background-clip: text;
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                }
+    
+                img {
+                    display: none;
+                    // width: 80px;
+                    // height: auto;
+                    // filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.29));
+                }
+            }
+        
+            .video_player {
+                // aspect-ratio: 16 / 9;
+                width: 80%;
+                // border-radius: 12px;
+                // overflow: hidden;
+                /* border: 4px solid #4504AA;; */
+                // box-shadow: 0px 6px 11.8px 0px rgba(0, 0, 0, 0.34);
+        
+                iframe {
+                    // width: 100%;
+                    // height: 100%;
+                }
+            }
+        
+            .cta_button {
+                // display: flex;
+                // padding: 2px;
+                // flex-direction: column;
+                // align-items: center;
+                // border-radius: 100px;
+                // border: 3px solid #9879D4;
+        
+                button {
+                    // display: flex;
+                    // padding: 16px 24px;
+                    // justify-content: center;
+                    // align-items: center;
+                    // gap: 8px;
+                    // border-radius: 100px;
+                    // border: none;
+                    // height: fit-content;
+                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                    // transition: box-shadow 0.1s ease-in-out;
+    
+                    img {
+                        // width: 22px;
+                        // height: 22px;
+                    }
+        
+                    /* font */
+                    // color: #FFF;
+                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                    // font-size: 20px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                }
+        
+                button:hover {
+                    // cursor: pointer;
+                }
+        
+                button:active {
+                    // min-height: 54.5px;
+                    // padding: 16px 24px 14px 24px;
+                    // border-radius: 100px;
+                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                    // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                }
+        
+            }
+        }
+    
+        .bottom_air {
+            // z-index: 0;
+            // position: absolute;
+            // bottom: 240px;
+            // width: 120%;
+            // opacity: 0.1;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .youtube_section {
+        // background: url('../../images/waves/Blurry.png');
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: 100px;
+        // position: relative;
+    
+        .wave_two {
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .wave_three {
+            // z-index: 99;
+            // margin-bottom: -2px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .youtube_content {
+            // display: flex;
+            // flex-direction: column;
+            // gap: 40px;
+            padding: 0px 16px 0px 16px;
+            // align-items: center;
+            // z-index: 100;
+    
+            .the_title {
+                // display: flex;
+                // align-items: center;
+                // gap: 20px;
+    
+                h1 {
+                    // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                    font-size: 26px;
+                    // font-style: normal;
+                    // font-weight: 600;
+                    // line-height: 108%;
+                    // text-align: center;
+                    // background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+                    // background-clip: text;
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                }
+    
+                img {
+                    display: none;
+                    // width: 80px;
+                    // height: auto;
+                    // filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.29));
+                }
+            }
+        
+            .video_player {
+                // aspect-ratio: 16 / 9;
+                width: 100%;
+                // border-radius: 12px;
+                // overflow: hidden;
+                /* border: 4px solid #4504AA;; */
+                // box-shadow: 0px 6px 11.8px 0px rgba(0, 0, 0, 0.34);
+        
+                iframe {
+                    // width: 100%;
+                    // height: 100%;
+                }
+            }
+        
+            .cta_button {
+                // display: flex;
+                // padding: 2px;
+                // flex-direction: column;
+                // align-items: center;
+                // border-radius: 100px;
+                border: 2px solid #9879D4;
+        
+                button {
+                    // display: flex;
+                    padding: 12px 20px;
+                    // justify-content: center;
+                    // align-items: center;
+                    gap: 6px;
+                    // border-radius: 100px;
+                    // border: none;
+                    // height: fit-content;
+                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                    // transition: box-shadow 0.1s ease-in-out;
+    
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+        
+                    /* font */
+                    // color: #FFF;
+                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                    font-size: 16px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                }
+        
+                button:hover {
+                    // cursor: pointer;
+                }
+        
+                button:active {
+                    min-height: 44px;
+                    padding: 12px 20px 10px 20px;
+                    // border-radius: 100px;
+                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                    // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                }
+        
+            }
+        }
+    
+        .bottom_air {
+            // z-index: 0;
+            // position: absolute;
+            // bottom: 240px;
+            // width: 120%;
+            // opacity: 0.1;
+        }
+    }
+}

@@ -1,0 +1,351 @@
+.hero_section {
+    background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: relative;
+
+    .wave {
+        margin-bottom: -1px;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .hero_supergrafis {
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        mix-blend-mode: soft-light;
+    }
+
+    .the_hero_content {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 72px;
+        padding: 100px 160px 200px 160px;
+
+        .logo_section {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-self: stretch;
+            gap: 12px;
+    
+            .logo_omb {
+                width: 24%;
+                height: auto;
+            }
+    
+            .tagline_omb {
+                width: 50%;
+            }
+        }
+    
+        .announcement_section {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .hero_section {
+        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // width: auto;
+        // position: relative;
+    
+        .wave {
+            // margin-bottom: -1px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .hero_supergrafis {
+            // position: absolute;
+            // top: 0px;
+            // mix-blend-mode: soft-light;
+        }
+    
+        .the_hero_content {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            // gap: 72px;
+            padding: 100px 100px 200px 100px;
+    
+            .logo_section {
+                // width: 100%;
+                // display: flex;
+                // justify-content: space-around;
+                // align-items: center;
+                // align-self: stretch;
+                // gap: 12px;
+        
+                .logo_omb {
+                    // width: 24%;
+                    // height: auto;
+                }
+        
+                .tagline_omb {
+                    // width: 50%;
+                }
+            }
+        
+            .announcement_section {
+                // width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .hero_section {
+        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // width: auto;
+        // position: relative;
+    
+        .wave {
+            // margin-bottom: -1px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .hero_supergrafis {
+            // position: absolute;
+            // top: 0px;
+            // mix-blend-mode: soft-light;
+        }
+    
+        .the_hero_content {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            // gap: 72px;
+            padding: 100px 80px 200px 80px;
+    
+            .logo_section {
+                // width: 100%;
+                // display: flex;
+                // justify-content: space-around;
+                // align-items: center;
+                // align-self: stretch;
+                // gap: 12px;
+        
+                .logo_omb {
+                    // width: 24%;
+                    // height: auto;
+                }
+        
+                .tagline_omb {
+                    // width: 50%;
+                }
+            }
+        
+            .announcement_section {
+                // width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .hero_section {
+        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // width: auto;
+        // position: relative;
+    
+        .wave {
+            // margin-bottom: -1px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .hero_supergrafis {
+            // display: none;
+            // position: absolute;
+            // top: 0px;
+            // mix-blend-mode: soft-light;
+        }
+    
+        .the_hero_content {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            gap: 40px;
+            padding: 40px 40px 100px 40px;
+    
+            .logo_section {
+                // width: 100%;
+                // display: flex;
+                flex-direction: column;
+                // justify-content: space-around;
+                // align-items: center;
+                // align-self: stretch;
+                gap: 32px;
+        
+                .logo_omb {
+                    width: 32%;
+                    // height: auto;
+                }
+        
+                .tagline_omb {
+                    width: 60%;
+                }
+            }
+        
+            .announcement_section {
+                // width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .hero_section {
+        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // width: auto;
+        // position: relative;
+    
+        .wave {
+            // margin-bottom: -1px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .hero_supergrafis {
+            // position: absolute;
+            top: 40px;
+            // mix-blend-mode: soft-light;
+        }
+    
+        .the_hero_content {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            gap: 40px;
+            padding: 100px 16px 40px 16px;
+    
+            .logo_section {
+                // width: 100%;
+                // display: flex;
+                flex-direction: column;
+                // justify-content: space-around;
+                // align-items: center;
+                // align-self: stretch;
+                gap: 32px;
+        
+                .logo_omb {
+                    width: 40%;
+                    // height: auto;
+                }
+        
+                .tagline_omb {
+                    width: 80%;
+                }
+            }
+        
+            .announcement_section {
+                // width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .hero_section {
+        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        // width: auto;
+        // position: relative;
+    
+        .wave {
+            // margin-bottom: -1px;
+            // width: 100%;
+            // pointer-events: none;
+        }
+    
+        .hero_supergrafis {
+            // position: absolute;
+            // top: 0px;
+            // mix-blend-mode: soft-light;
+        }
+    
+        .the_hero_content {
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // align-items: flex-start;
+            gap: 20px;
+            padding: 16px 16px 32px 16px;
+    
+            .logo_section {
+                // width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: space-around;
+                // align-items: center;
+                // align-self: stretch;
+                gap: 20px;
+        
+                .logo_omb {
+                    // width: 32%;
+                    // height: auto;
+                }
+        
+                .tagline_omb {
+                    // width: 60%;
+                }
+            }
+        
+            .announcement_section {
+                // width: 100%;
+            }
+        }
+    }
+}

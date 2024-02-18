@@ -1,0 +1,296 @@
+.small_modal {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 800px;
+    padding: 6px 6px 6px 32px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    /* background: linear-gradient(97deg, rgba(84, 0, 184, 0.70) 0%, rgba(176, 110, 209, 0.70) 56.97%, rgba(255, 207, 229, 0.70) 100%); */
+    background: #ffffffec;
+    box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
+    gap: 60px;
+    opacity: 0; /* Initially hidden */
+    transition: width 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    z-index: 999;
+}
+
+.left_side_modal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.small_modal .supergrafis {
+    width: 28px;
+    height: 28px;
+}
+
+.small_modal.visible {
+    opacity: 1; /* Show the modal when visible */
+}
+
+.small_modal p {
+    color: #4504AA;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.small_modal .cta_button {
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100px;
+    border: 3px solid #9879D4;
+}
+
+.small_modal .cta_button button {
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: max-content;
+    height: 46px;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+    color: #FFF;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.small_modal .cta_button button img {
+    width: 20px;
+    height: 20px;
+}
+
+.small_modal .cta_button button:hover {
+    cursor: pointer;
+}
+
+.small_modal .cta_button button:active {
+    min-height: 46px;
+    padding: 12px 20px 10px 20px;
+    border-radius: 100px;
+    background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+}
+
+.small_modal:hover {
+    width: 820px;
+}
+
+@media screen and (max-width: 810px){
+    .small_modal {
+        // position: fixed;
+        // top: 20px;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // display: flex;
+        width: 70%;
+        padding: 6px 6px 6px 20px;
+        // justify-content: space-between;
+        // align-items: center;
+        // border-radius: 100px;
+        /* background: linear-gradient(97deg, rgba(84, 0, 184, 0.70) 0%, rgba(176, 110, 209, 0.70) 56.97%, rgba(255, 207, 229, 0.70) 100%); */
+        // background: #ffffffec;
+        // box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
+        // gap: 60px;
+        // opacity: 0; /* Initially hidden */
+        // transition: width 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+        // z-index: 999;
+    }
+    
+    .left_side_modal {
+        // display: flex;
+        // align-items: center;
+        // gap: 20px;
+
+        img {
+            display: none;
+        }
+    }
+    
+    .small_modal .supergrafis {
+        // width: 20px;
+        // height: 20px;
+    }
+    
+    .small_modal.visible {
+        opacity: 1; /* Show the modal when visible */
+    }
+    
+    .small_modal p {
+        // color: #4504AA;
+        // text-align: left;
+        font-size: 18px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+    }
+    
+    .small_modal .cta_button {
+        // display: flex;
+        // padding: 2px;
+        // flex-direction: column;
+        // align-items: center;
+        // border-radius: 100px;
+        border: 2px solid #9879D4;
+    }
+    
+    .small_modal .cta_button button {
+        // display: flex;
+        // padding: 12px 20px;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 8px;
+        // height: 46px;
+        // border-radius: 100px;
+        // border: none;
+        // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+        // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+        // color: #FFF;
+        // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+        font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+        // transition: box-shadow 0.1s ease-in-out;
+    }
+    
+    .small_modal .cta_button button img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .small_modal .cta_button button:hover {
+        // cursor: pointer;
+    }
+    
+    .small_modal .cta_button button:active {
+        min-height: 44px;
+        // padding: 12px 20px 10px 20px;
+        // border-radius: 100px;
+        // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+        // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+    }
+    
+    .small_modal:hover {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .small_modal {
+        // position: fixed;
+        // top: 20px;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // display: flex;
+        width: fit-content;
+        padding: 12px;
+        // justify-content: space-between;
+        // align-items: center;
+        // border-radius: 100px;
+        /* background: linear-gradient(97deg, rgba(84, 0, 184, 0.70) 0%, rgba(176, 110, 209, 0.70) 56.97%, rgba(255, 207, 229, 0.70) 100%); */
+        // background: #ffffffec;
+        // box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
+        // gap: 60px;
+        // opacity: 0; /* Initially hidden */
+        // transition: width 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+        // z-index: 999;
+    }
+    
+    .left_side_modal {
+        display: none;
+        // display: flex;
+        // align-items: center;
+        // gap: 20px;
+
+        img {
+            display: none;
+        }
+    }
+    
+    .small_modal .supergrafis {
+        // width: 20px;
+        // height: 20px;
+    }
+    
+    .small_modal.visible {
+        opacity: 1; /* Show the modal when visible */
+    }
+    
+    .small_modal p {
+        display: none;
+        // color: #4504AA;
+        // text-align: left;
+        font-size: 18px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+    }
+    
+    .small_modal .cta_button {
+        // display: flex;
+        // padding: 2px;
+        // flex-direction: column;
+        // align-items: center;
+        // border-radius: 100px;
+        border: 2px solid #9879D4;
+    }
+    
+    .small_modal .cta_button button {
+        // display: flex;
+        // padding: 12px 20px;
+        // justify-content: center;
+        // align-items: center;
+        // gap: 8px;
+        // height: 46px;
+        // border-radius: 100px;
+        // border: none;
+        // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+        // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+        // color: #FFF;
+        // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+        font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+        // transition: box-shadow 0.1s ease-in-out;
+    }
+    
+    .small_modal .cta_button button img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .small_modal .cta_button button:hover {
+        // cursor: pointer;
+    }
+    
+    .small_modal .cta_button button:active {
+        min-height: 44px;
+        // padding: 12px 20px 10px 20px;
+        // border-radius: 100px;
+        // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+        // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+    }
+    
+    .small_modal:hover {
+        width: fit-content;
+    }
+}

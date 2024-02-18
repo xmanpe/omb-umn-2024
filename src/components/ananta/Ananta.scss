@@ -1,0 +1,757 @@
+.ananta_section {
+    background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    // overflow: hidden;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    border-top: 4px solid white;
+
+    .wave_ananta_top {
+        margin-top: -4px;
+        width: 100%;
+        pointer-events: none;
+        transform: scaleY(-1) scaleX(-1);
+    }
+
+    .wave_ananta_bottom {
+        width: 100%;
+        pointer-events: none;
+        transform: scaleX(-1);
+    }
+
+    .ananta_content {
+        display: flex;
+        gap: 120px;
+        flex-shrink: 0;
+        align-items: center;
+        padding: 0px 160px 200px 160px;
+
+        .kupu_top {
+            z-index: 0;
+            position: absolute;
+            width: 40%;
+            height: auto;
+            left: -80px;
+            top: 100px;
+            transform: rotate(40deg);
+            opacity: 0.15;
+        }
+    
+        .the_content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            z-index: 96;
+    
+            .left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+        
+                img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+                    max-width: 120%; /* Ensure the image does not exceed its container's width */
+                    max-height: 120%; /* Ensure the image does not exceed its container's height */
+                    object-fit: cover;
+                }
+            }
+        
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 60px;
+                width: 50%;
+        
+                .the_title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+        
+                    h1 {
+                        text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(255, 255, 255, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                        font-size: 60px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        background: linear-gradient(92deg, #FFF5C1 -0.06%, #FFF 101.3%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+        
+                    p {
+                        color: rgba(255, 255, 255, 0.80);
+                        font-size: 30px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+        
+                .cta_button {
+                    display: flex;
+                    padding: 3px;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 100px;
+                    border: 3px solid #fff;
+            
+                    button {
+                        display: flex;
+                        padding: 20px 32px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        width: max-content;
+                        border-radius: 100px;
+                        border: none;
+                        height: 68px;
+                        background: linear-gradient(169deg, #FFF 8.25%, #FFF 8.26%, #E7DDAA 91.75%);
+                        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                        transition: box-shadow 0.1s ease-in-out;
+            
+                        /* font */
+                        color: #B75946;
+                        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+    
+                    button:hover {
+                        cursor: pointer;
+                    }
+            
+                    button:active {
+                        min-height: 68px;
+                        padding: 20px 32px 18px 32px;
+                        border-radius: 100px;
+                        background: linear-gradient(169deg, #F4F4F4 8.25%, #E7DDAA 91.75%);
+                        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .ananta_section {
+        // background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        /* overflow: hidden; */
+        // flex-direction: column;
+        // gap: 100px;
+        // position: relative;
+        // border-top: 4px solid white;
+    
+        .wave_ananta_top {
+            // margin-top: -4px;
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleY(-1);
+        }
+    
+        .wave_ananta_bottom {
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleX(-1);
+        }
+    
+        .ananta_content {
+            // display: flex;
+            gap: 0;
+            // flex-shrink: 0;
+            // align-items: center;
+            padding: 0px 100px 100px 100px;
+    
+            .kupu_top {
+                // z-index: 0;
+                // position: absolute;
+                // width: 800px;
+                // height: auto;
+                // left: -80px;
+                // top: 100px;
+                // transform: rotate(40deg);
+                // opacity: 0.15;
+            }
+        
+            .the_content {
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                gap: 20px;
+                // z-index: 96;
+        
+                .left {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // width: fit-content;
+            
+                    img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+                        max-width: 80%; /* Ensure the image does not exceed its container's width */
+                        max-height: 80%; /* Ensure the image does not exceed its container's height */
+                        // object-fit: cover;
+                    }
+                }
+            
+                .right {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: flex-start;
+                    gap: 48px;
+                    width: 56%;
+            
+                    .the_title {
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: flex-start;
+                        gap: 8px;
+            
+                        h1 {
+                            // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(255, 255, 255, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                            font-size: 48px;
+                            // font-style: normal;
+                            // font-weight: 600;
+                            // line-height: normal;
+                            // background: linear-gradient(92deg, #FFF5C1 -0.06%, #FFF 101.3%);
+                            // background-clip: text;
+                            // -webkit-background-clip: text;
+                            // -webkit-text-fill-color: transparent;
+                        }
+            
+                        p {
+                            // color: rgba(255, 255, 255, 0.80);
+                            font-size: 28px;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+                        }
+                    }
+            
+                    .cta_button {
+                        // display: flex;
+                        padding: 2px;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // border-radius: 100px;
+                        // border: 3px solid #fff;
+                
+                        button {
+                            // display: flex;
+                            padding: 16px 24px;
+                            // justify-content: center;
+                            // align-items: center;
+                            // gap: 8px;
+                            // border-radius: 100px;
+                            // border: none;
+                            height: fit-content;
+                            // background: linear-gradient(169deg, #FFF 8.25%, #FFF 8.26%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                            // transition: box-shadow 0.1s ease-in-out;
+                
+                            /* font */
+                            // color: #B75946;
+                            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                            font-size: 20px;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+
+                            img {
+                                width: 22px;
+                                height: 22px;
+                            }
+                        }
+        
+                        button:hover {
+                            // cursor: pointer;
+                        }
+                
+                        button:active {
+                            min-height: 54.5px;
+                            padding: 16px 24px 14px 24px;
+                            // border-radius: 100px;
+                            // background: linear-gradient(169deg, #F4F4F4 8.25%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ananta_section {
+        // background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        /* overflow: hidden; */
+        // flex-direction: column;
+        // gap: 100px;
+        // position: relative;
+        // border-top: 4px solid white;
+    
+        .wave_ananta_top {
+            // margin-top: -4px;
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleY(-1);
+        }
+    
+        .wave_ananta_bottom {
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleX(-1);
+        }
+    
+        .ananta_content {
+            // display: flex;
+            // gap: 0;
+            // flex-shrink: 0;
+            // align-items: center;
+            padding: 0px 80px 100px 80px;
+    
+            .kupu_top {
+                // z-index: 0;
+                // position: absolute;
+                // width: 800px;
+                // height: auto;
+                // left: -80px;
+                // top: 100px;
+                // transform: rotate(40deg);
+                // opacity: 0.15;
+            }
+        
+            .the_content {
+                // display: flex;
+                flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+                gap: 20px;
+                // z-index: 96;
+        
+                .left {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // width: fit-content;
+            
+                    img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+                        // max-width: 80%; /* Ensure the image does not exceed its container's width */
+                        // max-height: 80%; /* Ensure the image does not exceed its container's height */
+                        // object-fit: cover;
+                    }
+                }
+            
+                .right {
+                    // display: flex;
+                    // flex-direction: column;
+                    align-items: center;
+                    gap: 40px;
+                    width: 100%;
+            
+                    .the_title {
+                        // display: flex;
+                        // flex-direction: column;
+                        align-items: center;
+                        // gap: 8px;
+            
+                        h1 {
+                            // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(255, 255, 255, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                            font-size: 40px;
+                            text-align: center;
+                            // font-style: normal;
+                            // font-weight: 600;
+                            // line-height: normal;
+                            // background: linear-gradient(92deg, #FFF5C1 -0.06%, #FFF 101.3%);
+                            // background-clip: text;
+                            // -webkit-background-clip: text;
+                            // -webkit-text-fill-color: transparent;
+                        }
+            
+                        p {
+                            // color: rgba(255, 255, 255, 0.80);
+                            font-size: 24px;
+                            text-align: center;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+                        }
+                    }
+            
+                    .cta_button {
+                        // display: flex;
+                        // padding: 2px;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // border-radius: 100px;
+                        // border: 3px solid #fff;
+                
+                        button {
+                            // display: flex;
+                            // padding: 16px 24px;
+                            // justify-content: center;
+                            // align-items: center;
+                            // gap: 8px;
+                            // border-radius: 100px;
+                            // border: none;
+                            // height: fit-content;
+                            // background: linear-gradient(169deg, #FFF 8.25%, #FFF 8.26%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                            // transition: box-shadow 0.1s ease-in-out;
+                
+                            /* font */
+                            // color: #B75946;
+                            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                            // font-size: 20px;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+
+                            img {
+                                // width: 22px;
+                                // height: 22px;
+                            }
+                        }
+        
+                        button:hover {
+                            // cursor: pointer;
+                        }
+                
+                        button:active {
+                            // min-height: 54.5px;
+                            // padding: 16px 24px 14px 24px;
+                            // border-radius: 100px;
+                            // background: linear-gradient(169deg, #F4F4F4 8.25%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .ananta_section {
+        // background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        /* overflow: hidden; */
+        // flex-direction: column;
+        // gap: 100px;
+        // position: relative;
+        // border-top: 4px solid white;
+    
+        .wave_ananta_top {
+            // margin-top: -4px;
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleY(-1);
+        }
+    
+        .wave_ananta_bottom {
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleX(-1);
+        }
+    
+        .ananta_content {
+            // display: flex;
+            // gap: 0;
+            // flex-shrink: 0;
+            // align-items: center;
+            padding: 0px 40px 100px 40px;
+    
+            .kupu_top {
+                // z-index: 0;
+                // position: absolute;
+                width: 80%;
+                // height: auto;
+                // left: -80px;
+                // top: 100px;
+                // transform: rotate(40deg);
+                // opacity: 0.15;
+            }
+        
+            .the_content {
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+                // gap: 20px;
+                // z-index: 96;
+        
+                .left {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // width: fit-content;
+            
+                    img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+                        max-width: 72%; /* Ensure the image does not exceed its container's width */
+                        max-height: 72%; /* Ensure the image does not exceed its container's height */
+                        // object-fit: cover;
+                    }
+                }
+            
+                .right {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // gap: 40px;
+                    // width: 100%;
+            
+                    .the_title {
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // gap: 8px;
+            
+                        h1 {
+                            // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(255, 255, 255, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                            font-size: 40px;
+                            // text-align: center;
+                            // font-style: normal;
+                            // font-weight: 600;
+                            // line-height: normal;
+                            // background: linear-gradient(92deg, #FFF5C1 -0.06%, #FFF 101.3%);
+                            // background-clip: text;
+                            // -webkit-background-clip: text;
+                            // -webkit-text-fill-color: transparent;
+                        }
+            
+                        p {
+                            // color: rgba(255, 255, 255, 0.80);
+                            font-size: 24px;
+                            // text-align: center;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+                        }
+                    }
+            
+                    .cta_button {
+                        // display: flex;
+                        // padding: 2px;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // border-radius: 100px;
+                        // border: 3px solid #fff;
+                
+                        button {
+                            // display: flex;
+                            // padding: 16px 24px;
+                            // justify-content: center;
+                            // align-items: center;
+                            // gap: 8px;
+                            // border-radius: 100px;
+                            // border: none;
+                            // height: fit-content;
+                            // background: linear-gradient(169deg, #FFF 8.25%, #FFF 8.26%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                            // transition: box-shadow 0.1s ease-in-out;
+                
+                            /* font */
+                            // color: #B75946;
+                            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                            // font-size: 20px;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+
+                            img {
+                                // width: 22px;
+                                // height: 22px;
+                            }
+                        }
+        
+                        button:hover {
+                            // cursor: pointer;
+                        }
+                
+                        button:active {
+                            // min-height: 54.5px;
+                            // padding: 16px 24px 14px 24px;
+                            // border-radius: 100px;
+                            // background: linear-gradient(169deg, #F4F4F4 8.25%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .ananta_section {
+        // background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        // display: flex;
+        /* overflow: hidden; */
+        // flex-direction: column;
+        // gap: 100px;
+        // position: relative;
+        // border-top: 4px solid white;
+    
+        .wave_ananta_top {
+            // margin-top: -4px;
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleY(-1);
+        }
+    
+        .wave_ananta_bottom {
+            // width: 100%;
+            // pointer-events: none;
+            // transform: scaleX(-1);
+        }
+    
+        .ananta_content {
+            // display: flex;
+            // gap: 0;
+            // flex-shrink: 0;
+            // align-items: center;
+            padding: 0px 16px 100px 16px;
+    
+            .kupu_top {
+                // z-index: 0;
+                // position: absolute;
+                // width: 800px;
+                // height: auto;
+                // left: -80px;
+                // top: 100px;
+                // transform: rotate(40deg);
+                // opacity: 0.15;
+            }
+        
+            .the_content {
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+                // gap: 20px;
+                // z-index: 96;
+        
+                .left {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    // width: fit-content;
+            
+                    img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+                        max-width: 64%; /* Ensure the image does not exceed its container's width */
+                        max-height: 64%; /* Ensure the image does not exceed its container's height */
+                        // object-fit: cover;
+                    }
+                }
+            
+                .right {
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    // gap: 40px;
+                    // width: 100%;
+            
+                    .the_title {
+                        // display: flex;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // gap: 8px;
+            
+                        h1 {
+                            // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(255, 255, 255, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                            font-size: 32px;
+                            // text-align: center;
+                            // font-style: normal;
+                            // font-weight: 600;
+                            // line-height: normal;
+                            // background: linear-gradient(92deg, #FFF5C1 -0.06%, #FFF 101.3%);
+                            // background-clip: text;
+                            // -webkit-background-clip: text;
+                            // -webkit-text-fill-color: transparent;
+                        }
+            
+                        p {
+                            // color: rgba(255, 255, 255, 0.80);
+                            font-size: 20px;
+                            // text-align: center;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+                        }
+                    }
+            
+                    .cta_button {
+                        // display: flex;
+                        // padding: 2px;
+                        // flex-direction: column;
+                        // align-items: center;
+                        // border-radius: 100px;
+                        border: 2px solid #fff;
+                
+                        button {
+                            // display: flex;
+                            padding: 12px 20px;
+                            // justify-content: center;
+                            // align-items: center;
+                            gap: 6px;
+                            // border-radius: 100px;
+                            // border: none;
+                            // height: fit-content;
+                            // background: linear-gradient(169deg, #FFF 8.25%, #FFF 8.26%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+                            // transition: box-shadow 0.1s ease-in-out;
+                
+                            /* font */
+                            // color: #B75946;
+                            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                            font-size: 16px;
+                            // font-style: normal;
+                            // font-weight: 500;
+                            // line-height: normal;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+        
+                        button:hover {
+                            // cursor: pointer;
+                        }
+                
+                        button:active {
+                            min-height: 44px;
+                            padding: 12px 20px 10px 20px;
+                            // border-radius: 100px;
+                            // background: linear-gradient(169deg, #F4F4F4 8.25%, #E7DDAA 91.75%);
+                            // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

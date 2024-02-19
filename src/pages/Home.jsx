@@ -8,6 +8,7 @@ import YouTube from '../components/youtube/YouTube';
 import Divisi from '../components/divisi/Divisi';
 import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
+import BottomNav from '../components/bottomnav/BottonNav';
 
 import Experience from '../components/experience/Experience';
 
@@ -41,7 +42,7 @@ const Home = () => {
 
     return (
         <>
-            {/* <SmallModal /> */}
+            <BottomNav />
             {showExperience && <SmallModal />}
             {/* {showExperience && <Experience />} */}
             <Hero />

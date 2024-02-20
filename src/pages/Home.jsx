@@ -42,7 +42,7 @@ const Home = () => {
 
     return (
         <>
-            <BottomNav />
+            {/* <BottomNav /> */}
             {showExperience && <SmallModal />}
             {/* {showExperience && <Experience />} */}
             <Hero />

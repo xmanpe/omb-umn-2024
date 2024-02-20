@@ -257,6 +257,7 @@ body {
       height: 100vh; /* Set the height to 100% of viewport height */
 
       img {
+        display: none;
         width: clamp(80px, 10vw, 120px);
         height: auto;
       }
@@ -269,6 +270,8 @@ body {
         align-items: center;
 
         h1 {
+          margin-top: -100px;
+          margin-bottom: -40px;
           color: #FFF;
           text-shadow: 0px 4px 24.9px #FFF;
           font-family: "GSN";

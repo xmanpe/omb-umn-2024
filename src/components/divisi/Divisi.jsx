@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Divisi.scss';
 
@@ -175,19 +175,11 @@ const divisiInfo = [
 const Divisi = () => {
     const [selectedDivisi, setSelectedDivisi] = useState(null);
 
-    // const handleModalOpen = () => {
-    //     document.body.style.overflow = 'hidden'; // Prevent scrolling on the background
-    // };
-
-    // const handleModalClose = () => {
-    //     document.body.style.overflow = ''; // Allow scrolling on the background
-    // };
-
     const handleDivisiClick = (index) => {
         const selectedData = divisiInfo[index];
         setSelectedDivisi(selectedData);
-        localStorage.setItem('selectedDivisi', JSON.stringify(selectedData)); // Store selected division data in local storage
-        // handleModalOpen();
+        localStorage.setItem('selectedDivisi', JSON.stringify(selectedData));
+
         const audio = document.getElementById(`audio_${index}`);
         if (audio) {
             audio.volume = 0.1; // Set initial volume
@@ -197,12 +189,10 @@ const Divisi = () => {
 
     const handleCloseModal = () => {
         setSelectedDivisi(null);
-        // handleModalClose(); // Call handleModalClose when the modal is closed
     };
 
     const handleLinkClick = () => {
-        // Scroll to the top of the page
-        // window.scrollTo(0, 0);
+
     };
 
     return (
@@ -243,20 +233,6 @@ const Divisi = () => {
                         ( 
                             <div className='button_section'>
                                 <div className='cta_button'>
-                                    {/* <Link
-                                    to={{
-                                        pathname: "/jadwal-wawancara",
-                                        state: { selectedDivisi: selectedDivisi }
-                                    }}
-                                    onClick={handleLinkClick}
-                                    style={{textDecoration: "none"}}>
-                                        <button>{selectedDivisi.name === "BALWANA" ? "Jadwal Seleksi" : "Jadwal Wawancara"} {selectedDivisi.name}
-                                            <img src={ArrowRight} alt="Arrow Icon" />
-                                        </button>
-                                    </Link> */}
-                                    {/* <button onClick={() => window.open(selectedDivisi.link, "_blank")}>Jadwal Wawancara {selectedDivisi.name}
-                                        <img src={ArrowRight} alt="Arrow Icon" />
-                                    </button> */}
                                     <a
                                         href="/jadwal-wawancara"
                                         onClick={handleLinkClick}

@@ -1,5 +1,4 @@
 import React from "react";
-// import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from "./pages/Home";
@@ -8,26 +7,7 @@ import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottonNav";
 
 function App() {
-  // const router = createBrowserRouter(
-  //   [
-  //     {
-  //       path: "/",
-  //       element: <Home />,
-  //       errorElement: <Error />,
-  //     },
-  //     {
-  //       path: "/jadwal-wawancara",
-  //       element: <JadwalWawancara />,
-  //       errorElement: <Error />,
-  //     },
-  //   ]
-  // );
-
   return (
-    // <div className="omb">
-    //   <RouterProvider router={router} />
-    //   <BottomNav />
-    // </div>
     <div className="omb">
       <Router>
         <Routes>

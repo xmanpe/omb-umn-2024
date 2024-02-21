@@ -72,12 +72,11 @@ const BottomNav = () => {
             setActiveTab(tabPath); // Set active tab
         }
     };
-    
 
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
-        { path: '/jadwal-wawancara', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Jadwal Wawancara ${selectedDivisiName}` },
-        { path: '/koor', icon: KoorNotActive, activeIcon: KoorActive, text: 'Timeline' },
+        { path: '/jadwal-wawancara', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Jadwal ${selectedDivisiName}` },
+        // { path: '/koor', icon: KoorNotActive, activeIcon: KoorActive, text: 'Linimasa' },
     ];
 
     return (
@@ -96,7 +95,6 @@ const BottomNav = () => {
             {showKoorSubMenu && (
                 <nav className='extended-navbar'>
                     <p className='title-nav'>Linimasa OMB UMN 2024</p>
-                    {/* Add your submenu options here */}
                 </nav>
             )}
             <nav className="navigation-bar">

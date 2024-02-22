@@ -7,36 +7,9 @@ import YouTube from '../components/youtube/YouTube';
 import Divisi from '../components/divisi/Divisi';
 import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
-import BottomNav from '../components/bottomnav/BottonNav';
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
   const [showExperience, setShowExperience] = useState(false);
-
-  useEffect(() => {
-    // Function to check if all components are loaded
-    const checkAllComponentsLoaded = () => {
-      const components = document.querySelectorAll('.component');
-      for (let i = 0; i < components.length; i++) {
-        if (components[i].complete === false) {
-          return false;
-        }
-      }
-      return true;
-    };
-
-    // Check if all components are loaded when window loads
-    window.onload = () => {
-      if (checkAllComponentsLoaded()) {
-        setLoading(false);
-      }
-    };
-
-    // Cleanup function
-    return () => {
-      window.onload = null; // Remove event listener on component unmount
-    };
-  }, []);
 
   useEffect(() => {
     localStorage.setItem('scrollPosition', window.pageYOffset);
@@ -63,33 +36,15 @@ const Home = () => {
 
   return (
     <>
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
-          {/* <BottomNav /> */}
-          {showExperience && <SmallModal />}
-          {/* {showExperience && <Experience />} */}
-          <div className="component">
-            <Hero />
-          </div>
-          <div className="component">
-            <ApaItuOMB />
-          </div>
-          <div className="component">
-            <YouTube />
-          </div>
-          <div className="component">
-            <Divisi />
-          </div>
-          <div className="component">
-            <Ananta />
-          </div>
-          <div className="component">
-            <Footer />
-          </div>
-        </>
-      )}
+        {/* <BottomNav /> */}
+        {showExperience && <SmallModal />}
+        {/* {showExperience && <Experience />} */}
+        <Hero />
+        <ApaItuOMB />
+        <YouTube />
+        <Divisi />
+        <Ananta />
+        <Footer />
     </>
   );
 };

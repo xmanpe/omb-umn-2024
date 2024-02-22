@@ -60,7 +60,6 @@ const BottomNav = () => {
         if (tabPath === "/") {
             window.location.href = "/";
         } else {
-            // Rest of your code to handle other tab clicks
             if (tabPath === '/jadwal-wawancara') {
                 toggleOptions(); // Toggle extended navbar for divisi names
                 setShowKoorSubMenu(false); // Close extended navbar for koor submenu

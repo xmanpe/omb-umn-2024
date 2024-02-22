@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-// import components
+import Loading from '../components/loading/Loading';
 import Hero from '../components/hero/Hero';
 import SmallModal from '../components/small modal/SmallModal';
 import ApaItuOMB from '../components/apa itu omb/ApaItuOMB';
@@ -10,49 +9,88 @@ import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
 import BottomNav from '../components/bottomnav/BottonNav';
 
-import Experience from '../components/experience/Experience';
-
-
 const Home = () => {
-    const [showExperience, setShowExperience] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [showExperience, setShowExperience] = useState(false);
 
-    useEffect(() => {
-        localStorage.setItem('scrollPosition', window.pageYOffset);
-        // Retrieve scroll position from local storage
-        const scrollPosition = localStorage.getItem('scrollPosition');
-
-        // Scroll to the previous position
-        if (scrollPosition) {
-            window.scrollTo(0, parseInt(scrollPosition));
+  useEffect(() => {
+    // Function to check if all components are loaded
+    const checkAllComponentsLoaded = () => {
+      const components = document.querySelectorAll('.component');
+      for (let i = 0; i < components.length; i++) {
+        if (components[i].complete === false) {
+          return false;
         }
-        // Check screen size on component mount and resize
-        const handleResize = () => {
-            const screenWidth = window.innerWidth;
-            setShowExperience(screenWidth >= 1200);
-        };
+      }
+      return true;
+    };
 
-        handleResize(); // Initial check
-        window.addEventListener('resize', handleResize);
-        
-        // Cleanup on component unmount
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    // Check if all components are loaded every 500ms
+    const checkLoading = setInterval(() => {
+      if (checkAllComponentsLoaded()) {
+        setLoading(false);
+        clearInterval(checkLoading); // Stop checking once all components are loaded
+      }
+    }, 500);
 
-    return (
+    // Cleanup interval on component unmount
+    return () => clearInterval(checkLoading);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('scrollPosition', window.pageYOffset);
+
+    const scrollPosition = localStorage.getItem('scrollPosition');
+
+    if (scrollPosition) {
+      window.scrollTo(0, parseInt(scrollPosition));
+    }
+
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      setShowExperience(screenWidth >= 1200);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  return (
+    <>
+      {loading ? (
+        <Loading />
+      ) : (
         <>
-            {/* <BottomNav /> */}
-            {showExperience && <SmallModal />}
-            {/* {showExperience && <Experience />} */}
+          {/* <BottomNav /> */}
+          {showExperience && <SmallModal />}
+          {/* {showExperience && <Experience />} */}
+          <div className="component">
             <Hero />
+          </div>
+          <div className="component">
             <ApaItuOMB />
+          </div>
+          <div className="component">
             <YouTube />
+          </div>
+          <div className="component">
             <Divisi />
+          </div>
+          <div className="component">
             <Ananta />
+          </div>
+          <div className="component">
             <Footer />
+          </div>
         </>
-    );
-}
- 
+      )}
+    </>
+  );
+};
+
 export default Home;

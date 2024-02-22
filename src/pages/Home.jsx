@@ -25,16 +25,17 @@ const Home = () => {
       return true;
     };
 
-    // Check if all components are loaded every 500ms
-    const checkLoading = setInterval(() => {
+    // Check if all components are loaded when window loads
+    window.onload = () => {
       if (checkAllComponentsLoaded()) {
         setLoading(false);
-        clearInterval(checkLoading); // Stop checking once all components are loaded
       }
-    }, 500);
+    };
 
-    // Cleanup interval on component unmount
-    return () => clearInterval(checkLoading);
+    // Cleanup function
+    return () => {
+      window.onload = null; // Remove event listener on component unmount
+    };
   }, []);
 
   useEffect(() => {

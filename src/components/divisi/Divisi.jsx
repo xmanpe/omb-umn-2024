@@ -263,12 +263,12 @@ const Divisi = () => {
                                 {/* Button Daftar Batch #2 */}
                                 <div className='cta_button'>
                                     <a
-                                        href={selectedDivisi.link}
-                                        onClick={handleLinkClick}
+                                        // href={selectedDivisi.link}
                                         style={{ textDecoration: "none" }}
                                     >
-                                        <button onClick={() => window.open(selectedDivisi.link, "_blank")}>Daftar {selectedDivisi.name}
-                                            <img src={ArrowRight} alt="Arrow Icon" />
+                                        <button onClick={() => window.open(selectedDivisi.link, '_blank')}>
+                                        Daftar {selectedDivisi.name}
+                                        <img src={ArrowRight} alt="Arrow Icon" />
                                         </button>
                                     </a>
                                 </div>

@@ -88,6 +88,7 @@ const divisiInfo = [
         photo3: Konsum3,
         link: "https://forms.gle/azqSnv4cVXBFD6fdA",
         sound: KonsumSound,
+        oprec2: 0
     },
     {   logo: Desain,
         name: "LAVANYA",
@@ -97,7 +98,8 @@ const divisiInfo = [
         photo2: Desain2,
         photo3: Desain3,
         link: "https://forms.gle/FhqJnGLrPnLGLE777",
-        sound: DesainSound
+        sound: DesainSound,
+        oprec2: 0
     },
     {   logo: Web,
         name: "NAYANIKA",
@@ -107,7 +109,8 @@ const divisiInfo = [
         photo2: Web2,
         photo3: Web3,
         link: "https://forms.gle/nttxPLQZNsDtLZrv9",
-        sound: WebSound
+        sound: WebSound,
+        oprec2: 0,
     },
     {   logo: Pr,
         name: "CAKSANA",
@@ -117,7 +120,8 @@ const divisiInfo = [
         photo2: Pr2,
         photo3: Pr3,
         link: "https://forms.gle/Zpf7xte6dfFNBUgg8",
-        sound: PrSound
+        sound: PrSound,
+        oprec2: 1
     },
     {   logo: Pic,
         name: "SAKHA",
@@ -127,7 +131,8 @@ const divisiInfo = [
         photo2: Pic2,
         photo3: Pic3,
         link: "https://forms.gle/uR4t7BRDwQXog4tj6",
-        sound: PicSound
+        sound: PicSound,
+        oprec2: 1
     },
     {   logo: Dokum,
         name: "BASKARA",
@@ -137,7 +142,8 @@ const divisiInfo = [
         photo2: Dokum2,
         photo3: Dokum3,
         link: "https://forms.gle/zXQhNw18whKMiqUX8",
-        sound: DokumSound
+        sound: DokumSound,
+        oprec2: 0
     },
     {   logo: Perkap,
         name: "GAJENDRA",
@@ -147,7 +153,8 @@ const divisiInfo = [
         photo2: Perkap2,
         photo3: Perkap3,
         link: "https://forms.gle/kJFxaWLMrzV9YfgCA",
-        sound: PerkapSound
+        sound: PerkapSound,
+        oprec2: 1
     },
     { 
         logo: Acara, 
@@ -158,7 +165,8 @@ const divisiInfo = [
         photo2: Acara2,
         photo3: Acara3, 
         link: "https://forms.gle/uLprvDjuDMPv4rox5",
-        sound: AcaraSound
+        sound: AcaraSound,
+        oprec2: 1
     },
     {   logo: Keamanan,
         name: "BIMASENA",
@@ -168,7 +176,8 @@ const divisiInfo = [
         photo2: Keamanan2,
         photo3: Keamanan3,
         link: "https://forms.gle/F5QWbumyWKryA3qJ9",
-        sound: KeamananSound
+        sound: KeamananSound,
+        oprec2: 1
     },
 ];
 
@@ -229,9 +238,41 @@ const Divisi = () => {
                                 </div>
                             </div>
                         </div>
-                        {selectedDivisi.name !== "GANDARA" && 
+                        {/* Menampilkan Button untuk Jadwal Wawancara */}
+                        {selectedDivisi.oprec2 == 0 &&
                         ( 
                             <div className='button_section'>
+                                <div className='cta_button'>
+                                    <a
+                                        href="/jadwal-wawancara"
+                                        onClick={handleLinkClick}
+                                        style={{ textDecoration: "none" }}
+                                    >
+                                        <button>
+                                            {selectedDivisi.name === "BALWANA" ? "Jadwal Seleksi" : "Jadwal Wawancara"} {selectedDivisi.name}
+                                            <img src={ArrowRight} alt="Arrow Icon" />
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+                        {/* Menampilkan 2 Button Untuk Divisi OPREC BATCH 2*/}
+                        {selectedDivisi.oprec2 == 1 &&
+                        ( 
+                            <div className='button_section'>
+                                {/* Button Daftar Batch #2 */}
+                                <div className='cta_button'>
+                                    <a
+                                        href={selectedDivisi.link}
+                                        onClick={handleLinkClick}
+                                        style={{ textDecoration: "none" }}
+                                    >
+                                        <button onClick={() => window.open(selectedDivisi.link, "_blank")}>Daftar {selectedDivisi.name}
+                                            <img src={ArrowRight} alt="Arrow Icon" />
+                                        </button>
+                                    </a>
+                                </div>
+                                {/* Button Lihat Jadwal */}
                                 <div className='cta_button'>
                                     <a
                                         href="/jadwal-wawancara"

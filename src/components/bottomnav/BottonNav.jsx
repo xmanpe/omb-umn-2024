@@ -10,6 +10,14 @@ import WawancaraNotActive from '../../images/icons/Calendar.svg'
 import WawancaraActive from '../../images/icons/Calendar_Active.svg'
 import KoorNotActive from '../../images/icons/Timeline.svg'
 import KoorActive from '../../images/icons/Timeline_Active.svg'
+import TentangNotActive from '../../images/icons/Tentang.svg'
+import TentangActive from '../../images/icons/Tentang_Active.svg'
+import InformasiNotActive from '../../images/icons/Informasi.svg'
+import InformasiActive from '../../images/icons/Informasi_Active.svg'
+import FaqNotActive from '../../images/icons/Faq.svg'
+import FaqActive from '../../images/icons/Faq_Active.svg'
+import BingkaiNotActive from '../../images/icons/Bingkai.svg'
+import BingkaiActive from '../../images/icons/Bingkai_Active.svg'
 
 const divisiName = [
     { name: 'BALWANA' },
@@ -27,8 +35,11 @@ const BottomNav = () => {
     const location = useLocation();
     const [selectedDivisiName, setSelectedDivisiName] = useState('');
     const [activeTab, setActiveTab] = useState(null); // State to manage active tab
-    const [showOptions, setShowOptions] = useState(false); // State to manage extended navbar for divisi names
-    const [showKoorSubMenu, setShowKoorSubMenu] = useState(false); // State to manage extended navbar for koor submenu
+
+    const [showOptions, setShowOptions] = useState(false);
+    const [showKoorSubMenu, setShowKoorSubMenu] = useState(false);
+    const [showTentangSubMenu, setShowTentangSubMenu] = useState(false);
+    const [showInformasiSubMenu, setShowInformasiSubMenu] = useState(false);
 
     useEffect(() => {
         const selectedDivisi = localStorage.getItem('selectedDivisi');

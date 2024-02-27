@@ -166,7 +166,7 @@ const divisiInfo = [
         photo3: Acara3, 
         link: "https://forms.gle/uLprvDjuDMPv4rox5",
         sound: AcaraSound,
-        oprec2: 1
+        oprec2: 3 // Ini cuma nampilin daftar
     },
     {   logo: Keamanan,
         name: "BIMASENA",
@@ -287,6 +287,26 @@ const Divisi = () => {
                                 </div>
                             </div>
                         )}
+
+                        {/* Menampilkan 2 Button Untuk Divisi BALWANA*/}
+                        {selectedDivisi.oprec2 === 3 && 
+                        ( 
+                            <div className='button_section'>
+                                {/* Button Daftar Batch #2 */}
+                                <div className='cta_button'>
+                                    <a
+                                        // href={selectedDivisi.link}
+                                        style={{ textDecoration: "none" }}
+                                    >
+                                        <button onClick={() => window.open(selectedDivisi.link, '_blank')}>
+                                        Daftar {selectedDivisi.name}
+                                        <img src={ArrowRight} alt="Arrow Icon" />
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        )}
+
                     </div>
                 </div>
             )}

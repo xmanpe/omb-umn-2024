@@ -82,8 +82,16 @@ const scheduleData = {
                 {name: "Lawrencia", nim: "00000076947"},
                 {name: "Radian Putra", nim: "00000077191"},
             ]
+        },
+        {
+            room: "RUANG C902 • 18:30 WIB",
+            date: "Jum'at, 01 Maret 2024",
+            participants: [
+                {name: "Gabriela Salim", nim: "00000068051"},
+                {name: "Calista Daniela", nim: "00000076924"},
+            ]
         }
-    ],
+    ],  
     "LAVANYA": [
         {
             room: "RUANG C903 • 17:30 WIB",
@@ -229,6 +237,34 @@ const scheduleData = {
                 {name: "Jacyntha Octavania", nim: "00000091131"},
             ]
         },
+        {
+            room: "RUANG C904 • 17:30 WIB",
+            date: "Jum'at, 01 Maret 2024",
+            participants: [
+                {name: "Meldean Jonathan", nim: "00000079469"},
+                {name: "Muhammad Sulthan", nim: "00000108768"},
+                {name: "Kheisha Twyla", nim: "00000078386"},
+                {name: "Mohamad Vidie", nim: "00000099848"},
+                {name: "Raffael Valentino", nim: "00000091170"},
+                {name: "Gina Rohma", nim: "00000082243"},
+                {name: "Patrick Thengono", nim: "00000075165"},
+            ]
+        },
+        {
+            room: "RUANG C905 • 17:30 WIB",
+            date: "Jum'at, 01 Maret 2024",
+            participants: [
+                {name: "Ryane Kalyana", nim: "00000112449"},
+                {name: "Glend Yesaya", nim: "00000105712"},
+                {name: "Karolin Sherli", nim: "00000073392"},
+                {name: "Kayfa Razqila", nim: "00000104933"},
+                {name: "Adriano Bimo", nim: "00000083472"},
+                {name: "Beneisha Bat", nim: "00000092821"},
+                {name: "Wilson Hermawan", nim: "00000077021"},
+                {name: "Leo Agung", nim: "00000101162"},
+
+            ]
+        }
     ],
     "BASKARA": [
         {

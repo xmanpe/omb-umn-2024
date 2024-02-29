@@ -88,7 +88,7 @@ const divisiInfo = [
         photo3: Konsum3,
         link: "https://forms.gle/azqSnv4cVXBFD6fdA",
         sound: KonsumSound,
-        oprec2: 0
+        oprec2: 0 // 0 : nampilin jadwal doang , 1 : nampilin tombol daftar juga, -1 : ga nampilin apa-apa
     },
     {   logo: Desain,
         name: "LAVANYA",
@@ -121,7 +121,7 @@ const divisiInfo = [
         photo3: Pr3,
         link: "https://forms.gle/Zpf7xte6dfFNBUgg8",
         sound: PrSound,
-        oprec2: 1
+        oprec2: 0
     },
     {   logo: Pic,
         name: "SAKHA",
@@ -132,7 +132,7 @@ const divisiInfo = [
         photo3: Pic3,
         link: "https://forms.gle/uR4t7BRDwQXog4tj6",
         sound: PicSound,
-        oprec2: 1
+        oprec2: 0
     },
     {   logo: Dokum,
         name: "BASKARA",
@@ -154,7 +154,7 @@ const divisiInfo = [
         photo3: Perkap3,
         link: "https://forms.gle/kJFxaWLMrzV9YfgCA",
         sound: PerkapSound,
-        oprec2: 1
+        oprec2: 0 
     },
     { 
         logo: Acara, 
@@ -166,7 +166,7 @@ const divisiInfo = [
         photo3: Acara3, 
         link: "https://forms.gle/uLprvDjuDMPv4rox5",
         sound: AcaraSound,
-        oprec2: 3 // Ini cuma nampilin daftar
+        oprec2: -1 // Gak nampilin apa2
     },
     {   logo: Keamanan,
         name: "BIMASENA",
@@ -177,7 +177,7 @@ const divisiInfo = [
         photo3: Keamanan3,
         link: "https://forms.gle/F5QWbumyWKryA3qJ9",
         sound: KeamananSound,
-        oprec2: 1
+        oprec2: 0
     },
 ];
 
@@ -319,10 +319,10 @@ const Divisi = () => {
                         <h1>Informasi Divisi</h1>
                     </div>
                     <p>Klik divisi pilihan kalian untuk melihat jadwal wawancaranya!</p>
-                    <div className='notes'>
+                    {/* <div className='notes'>
                         <img src={Warning} alt="Circle Warning" />
                         <p>Pendaftaran kepanitiaan OMB UMN 2024 <i>batch</i> 2 telah dibuka untuk beberapa divisi. Kami mengimbau kepada calon panitia OMB UMN 2024 untuk memakai <i>email</i> pribadi saat mengisi Formulir Pendaftaran!</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="divisi_wrapper">
                     {divisiInfo.map((divisi, index) => (

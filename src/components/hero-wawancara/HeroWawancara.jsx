@@ -92,7 +92,7 @@ const HeroWawancara = () => {
             text: "<ul><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 18:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>"
         },
         CAKSANA: {
-            text: "<ul><li>Terdapat perubahan jadwal wawancara. Mohon diperhatikan dengan saksama waktunya.</li><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 17:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>"
+            text: "<ul><li>Terdapat perubahan jadwal wawancara. Mohon diperhatikan dengan saksama waktunya.</li><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 18:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>"
         },
     };
     

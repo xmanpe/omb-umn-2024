@@ -660,6 +660,35 @@ const scheduleData = {
                 { name: "Michelle Angelina (93742)", nim: "20:50 WIB" }                
             ]
         },
+        {
+            room: "RUANG C908",
+            date: "Jumat, 01 Maret 2024",
+            participants: [
+                {name: "Jeanever Vellycia (93288)", nim: "17:30 WIB"},
+                {name: "Dennis Aaron (79897)", nim: "17:55 WIB"},
+                {name: "Dicky Rusandana (80879)", nim: "18:20 WIB"},
+                {name: "Aisyah Ayu (98252)", nim: "18:45 WIB"},
+                {name: "Naura Sita (99865)", nim: "19:10 WIB"},
+                {name: "Alya Geraldine (89178)", nim: "19:35 WIB"},
+                {name: "Livia Hadi (89038)", nim: "20:00 WIB"},
+                {name: "Anastasia Br (83222)", nim: "20:25 WIB"},
+
+            ]
+        },
+        {
+            room: "RUANG C911",
+            date: "Jum'at, 01 Maret 2024",
+            participants: [
+                {name: "Putri Aurelia (107626)", nim: "17:30 WIB"},
+                {name: "Angelina Alexander (79321)", nim: "17:55 WIB"},
+                {name: "Lovenia Kirana (69643)", nim: "18:20 WIB"},
+                {name: "Evelyn Valencia (92683)", nim: "18:45 WIB"},
+                {name: "Celine Grace (93278)", nim: "19:10 WIB"},
+                {name: "Fakhira Putri (113010)", nim: "19:35 WIB"},
+                {name: "Rahadina Adisty (106427)", nim: "20:00 WIB"},
+                {name: "Nicholas Kesuma (101382)", nim: "20:25 WIB"},
+            ]
+        }
     ],
     "NAYANIKA": [
         {

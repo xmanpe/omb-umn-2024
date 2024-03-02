@@ -307,6 +307,14 @@ const Divisi = () => {
                             </div>
                         )}
 
+                        {/* Menampilkan Text menyuruh user membuka email*/}
+                        {selectedDivisi.oprec2 === -1 && 
+                        ( 
+                            <div className='button_section'>
+                                <a className='extra_info_balwana'>Silakan periksa email studentmu untuk pengumuman lolos ke tahap wawancara Batch 2 divisi Balwana</a>
+                            </div>
+                        )}
+
                     </div>
                 </div>
             )}

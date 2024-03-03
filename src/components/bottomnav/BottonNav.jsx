@@ -79,6 +79,7 @@ const BottomNav = () => {
             if (tabPath === '/hasil-seleksi') {
                 toggleOptions(); // Toggle extended navbar for divisi names
                 // setShowKoorSubMenu(false); // Close extended navbar for koor submenu
+                setShowTentangSubMenu(false);
             } 
             // else if (tabPath === '/koor') {
             //     toggleKoorSubMenu(); 

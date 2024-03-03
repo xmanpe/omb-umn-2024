@@ -115,7 +115,7 @@ const HeroWawancara = () => {
                     <div className='left_thing'>
                         <img src={theLogo} alt="" />
                         <div className='literally_title'>
-                            <p>{divisionName === "BALWANA" ? "Jadwal Seleksi" : "Jadwal Wawancara"}</p>
+                            <p>{divisionName === "BALWANA" ? "Hasil Seleksi" : "Hasil Seleksi"}</p>
                             <h1>Divisi {divisionName}</h1>
                         </div>
                     </div>

@@ -244,7 +244,7 @@ const Divisi = () => {
                             <div className='button_section'>
                                 <div className='cta_button'>
                                     <a
-                                        href="/jadwal-wawancara"
+                                        href="/hasil-seleksi"
                                         onClick={handleLinkClick}
                                         style={{ textDecoration: "none" }}
                                     >
@@ -276,7 +276,7 @@ const Divisi = () => {
                                 <p style={{opacity: '0.3'}}>Atau</p>
                                 <div className='cta_button_secondary'>
                                     <a
-                                        href="/jadwal-wawancara"
+                                        href="/hasil-seleksi"
                                         onClick={handleLinkClick}
                                         style={{ textDecoration: "none" }}
                                     >
@@ -326,7 +326,7 @@ const Divisi = () => {
                         <img src={Supergrafis} alt="Supergrafis" />
                         <h1>Informasi Divisi</h1>
                     </div>
-                    <p>Klik divisi pilihan kalian untuk melihat jadwal wawancaranya!</p>
+                    <p>Klik divisi pilihan kalian untuk melihat hasil seleksi!</p>
                     {/* <div className='notes'>
                         <img src={Warning} alt="Circle Warning" />
                         <p>Pendaftaran kepanitiaan OMB UMN 2024 <i>batch</i> 2 telah dibuka untuk beberapa divisi. Kami mengimbau kepada calon panitia OMB UMN 2024 untuk memakai <i>email</i> pribadi saat mengisi Formulir Pendaftaran!</p>

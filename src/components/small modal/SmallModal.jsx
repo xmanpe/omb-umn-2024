@@ -43,10 +43,10 @@ const SmallModal = () => {
         <div className={`small_modal ${isVisible ? 'visible' : ''}`}>
             <div className='left_side_modal'>
                 <img className='supergrafis' src={Supergrafis} alt="Supergrafis" />
-                <p className='left_side'>Klik divisi untuk melihat jadwal wawancaranya!</p>
+                <p className='left_side'>Klik divisi untuk melihat hasil seleksi!</p>
             </div>
             <div className='cta_button'>
-                <button onClick={handleScrollToDivisi}>Cek Jadwal
+                <button onClick={handleScrollToDivisi}>Lihat Hasil
                     <img src={ArrowRight} alt="Arrow Icon" />
                 </button>
             </div>

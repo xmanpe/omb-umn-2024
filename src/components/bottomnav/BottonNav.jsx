@@ -52,7 +52,7 @@ const BottomNav = () => {
     const handleOptionClick = (divisi) => {
         localStorage.setItem('selectedDivisi', JSON.stringify(divisi));
         setSelectedDivisiName(divisi.name);
-        window.location.href = '/jadwal-wawancara';
+        window.location.href = '/hasil-seleksi';
         toggleOptions(); // Close the extended navbar after clicking a divisi
     };
 
@@ -71,7 +71,7 @@ const BottomNav = () => {
         if (tabPath === "/") {
             window.location.href = "/";
         } else {
-            if (tabPath === '/jadwal-wawancara') {
+            if (tabPath === '/hasil-seleksi') {
                 toggleOptions(); // Toggle extended navbar for divisi names
                 setShowKoorSubMenu(false); // Close extended navbar for koor submenu
             } else if (tabPath === '/koor') {
@@ -85,7 +85,7 @@ const BottomNav = () => {
 
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
-        { path: '/jadwal-wawancara', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Jadwal ${selectedDivisiName}` },
+        { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
         // { path: '/koor', icon: KoorNotActive, activeIcon: KoorActive, text: 'Linimasa' },
     ];
 
@@ -93,7 +93,7 @@ const BottomNav = () => {
         <div className='the-whole-navbar'>
             {showOptions && (
                 <nav className='extended-navbar'>
-                    <p className='title-nav'>Jadwal Wawancara</p>
+                    <p className='title-nav'>Hasil Seleksi</p>
                     {divisiName.map((divisi, index) => (
                         <div className='each-extended' key={index} onClick={() => handleOptionClick(divisi)}>
                             <p>Divisi {divisi.name}</p>

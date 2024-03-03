@@ -61,7 +61,7 @@ const AnnCard = () => {
                 </div> */}
             </div>
             <div className='cta_button'>
-                <button onClick={handleScrollToDivisi}>Cek Jadwal
+                <button onClick={handleScrollToDivisi}>Hasil Seleksi
                     <img src={ArrowRight} alt="Arrow Icon" />
                 </button>
             </div>

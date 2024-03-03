@@ -4,6 +4,7 @@ import './BottomNav.scss';
 
 // Import icons
 import Arrow from '../../images/Arrow/Arrow_Right_MD_purple.svg';
+import StopSign  from '../../images/icons/Stop_Sign.svg';
 import HomeNotActive from '../../images/icons/Home.svg';
 import HomeActive from '../../images/icons/Home_Active.svg';
 import WawancaraNotActive from '../../images/icons/Calendar.svg'
@@ -60,9 +61,13 @@ const BottomNav = () => {
         setShowOptions(!showOptions);
     };
 
-    const toggleKoorSubMenu = () => {
-        setShowKoorSubMenu(!showKoorSubMenu);
-    };
+    const toggleTentangSubMenu = () => {
+        setShowTentangSubMenu(!showTentangSubMenu);
+    }
+
+    // const toggleKoorSubMenu = () => {
+    //     setShowKoorSubMenu(!showKoorSubMenu);
+    // };
 
     const handleTabClick = (tabPath) => (e) => {
         e.preventDefault(); // Prevent default behavior of anchor element
@@ -73,11 +78,17 @@ const BottomNav = () => {
         } else {
             if (tabPath === '/hasil-seleksi') {
                 toggleOptions(); // Toggle extended navbar for divisi names
-                setShowKoorSubMenu(false); // Close extended navbar for koor submenu
-            } else if (tabPath === '/koor') {
-                toggleKoorSubMenu(); // Toggle extended navbar for koor submenu
-                setShowOptions(false); // Close extended navbar for divisi names
+                // setShowKoorSubMenu(false); // Close extended navbar for koor submenu
             } 
+            // else if (tabPath === '/koor') {
+            //     toggleKoorSubMenu(); 
+            //     setShowOptions(false);
+            // }
+            else if (tabPath === '/tentang') {
+                toggleTentangSubMenu();
+                setShowOptions(false);
+            }
+
             
             setActiveTab(tabPath); // Set active tab
         }
@@ -86,6 +97,10 @@ const BottomNav = () => {
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
         { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
+        { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
+        // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
+        // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
+        // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },
         // { path: '/koor', icon: KoorNotActive, activeIcon: KoorActive, text: 'Linimasa' },
     ];
 
@@ -102,9 +117,25 @@ const BottomNav = () => {
                     ))}
                 </nav>
             )}
-            {showKoorSubMenu && (
+            {showTentangSubMenu && (
                 <nav className='extended-navbar'>
-                    <p className='title-nav'>Linimasa OMB UMN 2024</p>
+                    <p className='title-nav'>Tentang</p>
+                    <div className='each-extended'>
+                        <p>Mengenal OMB UMN 2024</p>
+                        <img src={StopSign} alt="" />
+                    </div>
+                    <div className='each-extended'>
+                        <p>Pelaksanaan</p>
+                        <img src={StopSign} alt="" />
+                    </div>
+                    <div className='each-extended'>
+                        <p>Divisi</p>
+                        <img src={StopSign} alt="" />
+                    </div>
+                    <div className='each-extended'>
+                        <p>Mars</p>
+                        <img src={StopSign} alt="" />
+                    </div>
                 </nav>
             )}
             <nav className="navigation-bar">

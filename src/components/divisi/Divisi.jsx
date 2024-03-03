@@ -223,10 +223,21 @@ const Divisi = () => {
                                         <h3>{selectedDivisi.name}</h3>
                                         <p dangerouslySetInnerHTML={{ __html: selectedDivisi.sub }} />
                                     </div>
+                                    <div className='photos_wrapper'>
+                                        <div className='each_photo'>
+                                            <img src={selectedDivisi.photo1} alt="Tets" />
+                                        </div>
+                                        <div className='each_photo'>
+                                            <img src={selectedDivisi.photo2} alt="Tets" />
+                                        </div>
+                                        <div className='each_photo'>
+                                            <img src={selectedDivisi.photo3} alt="Tets" />
+                                        </div>
+                                    </div>
                                     <p dangerouslySetInnerHTML={{ __html: selectedDivisi.description }} />
                                 </div>
                             </div>
-                            <div className='photos_wrapper'>
+                            {/* <div className='photos_wrapper'>
                                 <div className='each_photo'>
                                     <img src={selectedDivisi.photo1} alt="Tets" />
                                 </div>
@@ -236,7 +247,7 @@ const Divisi = () => {
                                 <div className='each_photo'>
                                     <img src={selectedDivisi.photo3} alt="Tets" />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         {/* Menampilkan Button untuk Jadwal Wawancara */}
                         {selectedDivisi.oprec2 === 0 &&

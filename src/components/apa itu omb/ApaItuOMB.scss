@@ -329,6 +329,7 @@
                 // border-radius: 12px;
                 // overflow: hidden;
                 // transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                filter: grayscale(0%); /* Remove grayscale filter on hover */
     
                 img {
                     // width: 100%;
@@ -337,13 +338,13 @@
                 }
     
                 &:hover {
-                    // transform: translateY(-5px); /* Float up */
-                    // box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.204);/* Add shadow */
-                    // filter: grayscale(0%); /* Remove grayscale filter on hover */
+                    transform: initial;
+                    box-shadow: initial;
+                    filter: initial;
                 }
     
                 &:not(:hover) {
-                    // filter: grayscale(100%);
+                    filter: initial;
                     
                 }
     

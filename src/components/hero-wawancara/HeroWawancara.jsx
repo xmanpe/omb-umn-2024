@@ -96,7 +96,7 @@ const HeroWawancara = () => {
         },
     };
     
-    const defaultText = "<ul><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 17:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>";
+    const defaultText = "<ul><li>Silakan bergabung ke dalam grup LINE divisi yang dikirimkan melalui <i>email</i> kalian.</li><li>Sebelum bergabung, pastikan <i>display name</i> kalian merupakan nama asli dan menggunakan <i>profile picture</i> dengan foto diri yang terkini dan wajah terlihat dengan jelas. </li></ul>";
 
     return (
         <section className="hero-wawancara_section"
@@ -119,10 +119,11 @@ const HeroWawancara = () => {
                             <h1>Divisi {divisionName}</h1>
                         </div>
                     </div>
-                    {/* <div className='right_thing'>
-                        //<img src={Warning} alt="" />
-                        <p dangerouslySetInnerHTML={{ __html: divisionNotes[divisionName]?.text || defaultText }}></p>
-                    </div> */}
+                    <div className='right_thing'>
+                        {/* <img src={Warning} alt="" /> */}
+                        {/* <p dangerouslySetInnerHTML={{ __html: divisionNotes[divisionName]?.text || defaultText }}></p> */}
+                        <p dangerouslySetInnerHTML={{ __html: defaultText }}></p>
+                    </div>
                 </div>
             </div>
             <img className='wave' src={Wave} alt="The Wave" />

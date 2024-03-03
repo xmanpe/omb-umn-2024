@@ -166,7 +166,7 @@ const divisiInfo = [
         photo3: Acara3, 
         link: "https://forms.gle/uLprvDjuDMPv4rox5",
         sound: AcaraSound,
-        oprec2: -1 // Gak nampilin apa2
+        oprec2: 0 
     },
     {   logo: Keamanan,
         name: "BIMASENA",
@@ -249,7 +249,7 @@ const Divisi = () => {
                                         style={{ textDecoration: "none" }}
                                     >
                                         <button>
-                                            {selectedDivisi.name === "BALWANA" ? "Jadwal Seleksi" : "Jadwal Wawancara"} {selectedDivisi.name}
+                                            {"Lihat Hasil Seleksi"}
                                             <img src={ArrowRight} alt="Arrow Icon" />
                                         </button>
                                     </a>

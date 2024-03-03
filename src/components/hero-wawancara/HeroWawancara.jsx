@@ -119,10 +119,10 @@ const HeroWawancara = () => {
                             <h1>Divisi {divisionName}</h1>
                         </div>
                     </div>
-                    <div className='right_thing'>
-                        {/* <img src={Warning} alt="" /> */}
+                    {/* <div className='right_thing'>
+                        //<img src={Warning} alt="" />
                         <p dangerouslySetInnerHTML={{ __html: divisionNotes[divisionName]?.text || defaultText }}></p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <img className='wave' src={Wave} alt="The Wave" />

@@ -11,7 +11,6 @@ const scheduleData = {
                 { name: "Jethro Jotham", nim: "00000069178" },
                 { name: "Brychitta Natalie", nim: "00000093033" },
                 { name: "Joselino Frederick", nim: "00000082565" },
-                { name: "Shahnaz Haliza", nim: "00000116520" },
                 { name: "Louissa Sofia", nim: "00000092122" },
                 { name: "Fransisca Lee Christiany", nim: "00000106737"},
                 { name: "Vallencia Natalie", nim: "00000069660"},

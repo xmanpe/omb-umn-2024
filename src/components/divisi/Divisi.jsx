@@ -148,7 +148,7 @@ const divisiInfo = [
     {   logo: Perkap,
         name: "GAJENDRA",
         sub: 'Perlengkapan',
-        description: "GAJENDRA: Perkasa<br>Logo: Bonang<br><br>Bonang merupakan alat musik tradisional asal Jawa Tengah yang biasanya digunakan dengan cara dipukul. Alat musik tersebut dipilih karena terbuat dari bahan logam seperti kuningan, perunggu, atau besi. Hai ini mencerminkan Gajendra yang kuat dan perkasa dalam menunjukkan kemampuannya dalam menyukseskan segala keperluan logistik selama rangkaian OMB UMN 2024 berlangsung.<br><br><hr><br>Gajendra bertugas untuk menyiapkan segala kebutuhan logistik pada seluruh rangkaian OMB UMN 2024.",
+        description: "GAJENDRA: Perkasa<br>Logo: Bonang<br><br>Bonang merupakan alat musik tradisional asal Jawa Tengah yang biasanya digunakan dengan cara dipukul. Alat musik tersebut dipilih karena terbuat dari bahan logam seperti kuningan, perunggu, atau besi. Hal ini mencerminkan Gajendra yang kuat dan perkasa dalam menunjukkan kemampuannya dalam menyukseskan segala keperluan logistik selama rangkaian OMB UMN 2024 berlangsung.<br><br><hr><br>Gajendra bertugas untuk menyiapkan segala kebutuhan logistik pada seluruh rangkaian OMB UMN 2024.",
         photo1: Perkap1,
         photo2: Perkap2,
         photo3: Perkap3,

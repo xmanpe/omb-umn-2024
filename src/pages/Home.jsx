@@ -41,7 +41,7 @@ const Home = () => {
         {/* {showExperience && <Experience />} */}
         <Hero />
         <ApaItuOMB />
-        <YouTube />
+        {/* <YouTube /> */}
         <Divisi />
         <Ananta />
         <Footer />

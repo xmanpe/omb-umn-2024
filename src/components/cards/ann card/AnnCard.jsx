@@ -59,8 +59,8 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Pendaftaran Peserta OMB UMN 2024</h3>
-                        <p>Silakan klik tombol di samping untuk menuju ke laman pendaftaran.</p>
+                        <h3>PENDAFTARAN PESERTA OMB UMN 2024</h3>
+                        <p>Silakan klik tombol berikut untuk menuju ke laman pendaftaran.</p>
                     </div>
                     <div className='schedule'>
                         <div className='date'>

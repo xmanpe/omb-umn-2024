@@ -32,7 +32,10 @@
 }
   
 .divisi_section {
-    border-bottom: 4px solid white;
+    border-bottom: 0px solid white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     padding: 100px 160px 100px 160px;
     flex-direction: column;
@@ -45,6 +48,15 @@
         width: 100%;
         top: 400px;
         opacity: 0.2;
+    }
+
+    .wave_two {
+        pointer-events: none;
+    }
+
+    .wave_three {
+        margin-bottom: -2px;
+        pointer-events: none;
     }
 
     .title_and_description {
@@ -70,7 +82,7 @@
 
             h1 {
                 text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
-                font-size: 60px;
+                font-size: 48px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: normal;
@@ -83,9 +95,9 @@
         }
     
         p {
-            color: rgba(0, 0, 0, 0.80);
+            color: rgba(0, 0, 0, 0.60);
             text-align: center;
-            font-size: 28px;
+            font-size: 22px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -192,7 +204,7 @@
     max-width: 1000px;
     flex-direction: column;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 20px;
     max-height: 80vh;
     background: #ffffffeb;
     box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
@@ -200,15 +212,19 @@
 
     .close_button {
         display: flex;
-        padding: 40px 40px 0px 40px;
+        padding-top: 20px;
+        padding-right: 20px;
         flex-direction: column;
         align-items: flex-end;
         gap: 10px;
         align-self: stretch;
-    }
 
-    .close_button img:hover {
-        cursor: pointer;
+        img {
+            width: 30px;
+            height: 30px;
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
 
     .button_section {
@@ -331,12 +347,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 8px;
             /* align-self: stretch; */
 
             .divisi_logo {
-                width: 200px;
-                height: 200px;
+                width: 160px;
+                height: 160px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -363,7 +379,7 @@
 
                     h3{
                         text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
-                        font-size: 48px;
+                        font-size: 32px;
                         text-align: center;
                         font-style: normal;
                         font-weight: 700;
@@ -376,7 +392,7 @@
 
                     p {
                         color: #4504AA;
-                        font-size: 28px;
+                        font-size: 24px;
                         font-style: normal;
                         font-weight: 600;
                         line-height: normal;
@@ -386,7 +402,7 @@
                 p {
                     color: rgba(0, 0, 0, 0.80);
                     text-align: center;
-                    font-size: 28px;
+                    font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
@@ -438,7 +454,7 @@
     
                 h1 {
                     // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
-                    font-size: 48px;
+                    // font-size: 48px;
                     // font-style: normal;
                     // font-weight: 600;
                     // line-height: normal;
@@ -453,7 +469,7 @@
             p {
                 // color: rgba(0, 0, 0, 0.80);
                 // text-align: center;
-                font-size: 20px;
+                // font-size: 20px;
                 // font-style: normal;
                 // font-weight: 500;
                 // line-height: normal;

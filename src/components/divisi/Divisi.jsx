@@ -12,6 +12,8 @@ import Warning from '../../images/Warning/Circle_Warning.svg'
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/SUPERGRAFIS METALLIC VIOLET/Fill - Bunga Lotus Biru 3.svg'
 import Supergrafis2 from '../../images/supergrafis/Apaituomb Supergrafis.png'
+import Wave from '../../images/waves/Wave Two.png'
+import SecondWave from '../../images/waves/Wave Three.png'
 
 // Import images
 import Acara from '../../images/Logo Divisi OMB 2024/Balwana Large.png';
@@ -237,35 +239,12 @@ const Divisi = () => {
                                     <p dangerouslySetInnerHTML={{ __html: selectedDivisi.description }} />
                                 </div>
                             </div>
-                            {/* <div className='photos_wrapper'>
-                                <div className='each_photo'>
-                                    <img src={selectedDivisi.photo1} alt="Tets" />
-                                </div>
-                                <div className='each_photo'>
-                                    <img src={selectedDivisi.photo2} alt="Tets" />
-                                </div>
-                                <div className='each_photo'>
-                                    <img src={selectedDivisi.photo3} alt="Tets" />
-                                </div>
-                            </div> */}
                         </div>
                         {/* Menampilkan Button untuk Jadwal Wawancara */}
                         {selectedDivisi.oprec2 === 0 &&
                         ( 
-                            <div className='button_section'>
-                                <div className='cta_button'>
-                                    <a
-                                        href="/hasil-seleksi"
-                                        onClick={handleLinkClick}
-                                        style={{ textDecoration: "none" }}
-                                    >
-                                        <button>
-                                            {"Lihat Hasil Seleksi"}
-                                            <img src={ArrowRight} alt="Arrow Icon" />
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
+                            <>
+                            </>
                         )}
                         {/* Menampilkan 2 Button Untuk Divisi OPREC BATCH 2*/}
                         {selectedDivisi.oprec2 === 1 &&
@@ -298,7 +277,6 @@ const Divisi = () => {
                                 </div>
                             </div>
                         )}
-
                         {/* Menampilkan 2 Button Untuk Divisi BALWANA*/}
                         {selectedDivisi.oprec2 === 3 && 
                         ( 
@@ -317,7 +295,6 @@ const Divisi = () => {
                                 </div>
                             </div>
                         )}
-
                         {/* Menampilkan Text menyuruh user membuka email*/}
                         {selectedDivisi.oprec2 === -1 && 
                         ( 
@@ -325,19 +302,19 @@ const Divisi = () => {
                                 <a className='extra_info_balwana'>Silakan periksa email studentmu untuk pengumuman lolos ke tahap wawancara Batch 2 divisi Balwana</a>
                             </div>
                         )}
-
                     </div>
                 </div>
             )}
 
             <section className="divisi_section" id='divisi_section'>
+                {/* <img className='wave_two' src={Wave} alt="Wave" /> */}
                 <img className='divisi_supergrafis' src={Supergrafis2} alt="Supergrafis" />
                 <div className="title_and_description">
                     <div className='divisi_title'>
                         <img src={Supergrafis} alt="Supergrafis" />
-                        <h1>Informasi Divisi</h1>
+                        <h1>Divisi OMB UMN 2024</h1>
                     </div>
-                    <p>Klik divisi pilihan kalian untuk melihat hasil seleksi!</p>
+                    <p>Klik divisi untuk melihat informasi lebih lanjut.</p>
                     {/* <div className='notes'>
                         <img src={Warning} alt="Circle Warning" />
                         <p>Pendaftaran kepanitiaan OMB UMN 2024 <i>batch</i> 2 telah dibuka untuk beberapa divisi. Kami mengimbau kepada calon panitia OMB UMN 2024 untuk memakai <i>email</i> pribadi saat mengisi Formulir Pendaftaran!</p>
@@ -351,6 +328,7 @@ const Divisi = () => {
                         </div>
                     ))}
                 </div>
+                {/* <img className='wave_three' src={SecondWave} alt="Wave" /> */}
             </section>
         </>
     );

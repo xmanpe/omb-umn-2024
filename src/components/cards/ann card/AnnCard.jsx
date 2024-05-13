@@ -5,8 +5,12 @@ import './AnnCard.scss';
 import ArrowRight from '../../../images/Arrow/Arrow_Right_MD.svg';
 import Calendar from '../../../images/Calendar/Calendar.svg';
 
+// import component
+import InformationModal from './information modal/InformationModal';
+
 const AnnCard = () => {
     const [countdown, setCountdown] = useState('');
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         // Set the target date for the countdown
@@ -45,27 +49,37 @@ const AnnCard = () => {
         }
     };
 
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    };
+
     return (
-        <div className="ann_card">
-            <div className='text_section'>
-                <div className='title_and_desc'>
-                    <h3>SELAMAT UNTUK PEJUANG YANG LULUS SELEKSI!</h3>
-                    {/* <p>Klik tombol ini untuk mengetahui informasi lebih lanjut.</p> */}
-                </div>
-                {/* <div className='schedule'>
-                    <div className='date'>
-                        <img src={Calendar} alt="Calendar Icon" />
-                        <p>7 - 17 Februari 2024</p>
+        <>
+        {showModal && <InformationModal onClose={toggleModal} />}
+            <div className="ann_card">
+                <div className='text_section'>
+                    <div className='title_and_desc'>
+                        <h3>Pendaftaran Peserta OMB UMN 2024</h3>
+                        <p>Silakan klik tombol di samping untuk menuju ke laman pendaftaran.</p>
                     </div>
-                    <p className='countdown'>{countdown}</p>
-                </div> */}
+                    <div className='schedule'>
+                        <div className='date'>
+                            <img src={Calendar} alt="Calendar Icon" />
+                            <p>14 - 17 Mei 2024</p>
+                        </div>
+                        <p className='countdown'>{countdown}</p>
+                    </div>
+                </div>
+                <div className='cta_button'>
+                    {/* <button onClick={handleScrollToDivisi}>Daftar
+                        <img src={ArrowRight} alt="Arrow Icon" />
+                    </button> */}
+                    <button onClick={toggleModal}>Daftar
+                        <img src={ArrowRight} alt="Arrow Icon" />
+                    </button>
+                </div>
             </div>
-            <div className='cta_button'>
-                <button onClick={handleScrollToDivisi}>Hasil Seleksi
-                    <img src={ArrowRight} alt="Arrow Icon" />
-                </button>
-            </div>
-        </div>
+        </>
     );
 }
 

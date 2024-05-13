@@ -690,7 +690,7 @@
                 /* font */
                 // color: #FFF;
                 // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                font-size: 18px;
+                font-size: 16px;
                 // font-style: normal;
                 // font-weight: 500;
                 // line-height: normal;
@@ -814,11 +814,11 @@
             // flex-direction: column;
             // align-items: center;
             // border-radius: 100px;
-            border: 1px solid #9879D4;
+            // border: 1px solid #9879D4;
     
             button {
                 // display: flex;
-                padding: 8px 16px;
+                // padding: 8px 16px;
                 // justify-content: center;
                 // align-items: center;
                 // gap: 6px;
@@ -848,8 +848,8 @@
             }
     
             button:active {
-                min-height: 34px;
-                padding: 8px 16px 6px 16px;
+                // min-height: 34px;
+                // padding: 8px 16px 6px 16px;
                 // border-radius: 100px;
                 // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
                 // box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;

@@ -29,7 +29,7 @@ const ApaItuOMB = () => {
                         </div>
                     ))}
                 </div>
-                <p>Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di Universitas Multimedia Nusantara (UMN). Melalui serangkaian kegiatan, yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan, dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.</p>
+                <p>Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di <a href="https://www.umn.ac.id/en/home/" target='_blank' style={{color: '#4504AA'}}>Universitas Multimedia Nusantara</a> (UMN). Melalui serangkaian kegiatan, yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan, dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.</p>
             </section>
         </>
     );

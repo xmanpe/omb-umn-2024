@@ -1,3 +1,4 @@
+import { useCallback } from 'react';
 import './InformationModal.scss';
 
 // import icons
@@ -5,6 +6,11 @@ import X from '../../../../images/Menu/Close_MD.svg'
 import ArrowRight from '../../../../images/Arrow/Arrow_Right_MD.svg';
 
 const InformationModal = ({ onClose }) => {
+
+    const openFormLink= useCallback(() => {
+        window.open("https://forms.gle/BZcqVsdynirwQFva6", "_blank");
+    }, []);
+
     return (
         <div className="information-modal-overlay">
             <div className="information-modal">
@@ -21,7 +27,7 @@ const InformationModal = ({ onClose }) => {
                     </ol> 
                 </div>
                 <div className='cta_button'>
-                    <button onClick={onClose}>Daftar 
+                    <button onClick={openFormLink}>Daftar 
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

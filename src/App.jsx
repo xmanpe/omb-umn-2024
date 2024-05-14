@@ -15,7 +15,7 @@ function App() {
           <Route path="/hasil-seleksi" element={<JadwalWawancara />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <BottomNav />
+        {/* <BottomNav /> */}
       </Router>
     </div>
   );

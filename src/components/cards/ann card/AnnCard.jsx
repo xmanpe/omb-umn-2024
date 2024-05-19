@@ -60,25 +60,22 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>PENDAFTARAN PESERTA OMB UMN 2024!</h3>
-                        <p>Silakan klik tombol berikut untuk menuju ke laman pendaftaran.</p>
+                        <h3>PENDAFTARAN PESERTA OMB UMN 2024 TELAH DITUTUP!</h3>
+                        <p>Terima kasih telah mendaftarkan diri menjadi bagian dari Pejuang Lotus Biru. Nantikan informasi selanjutnya bagi calon peserta yang berhasil terdaftar di OMB UMN 2024.</p>
                     </div>
-                    <div className='schedule'>
+                    {/* <div className='schedule'>
                         <div className='date'>
                             <img src={Calendar} alt="Calendar Icon" />
                             <p>14–18 Mei 2024</p>
                         </div>
                         <p className='countdown'>{countdown}</p>
-                    </div>
+                    </div> */}
                 </div>
-                <div className='cta_button'>
-                    {/* <button onClick={handleScrollToDivisi}>Daftar
-                        <img src={ArrowRight} alt="Arrow Icon" />
-                    </button> */}
+                {/* <div className='cta_button'>
                     <button onClick={toggleModal}>Daftar
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
-                </div>
+                </div> */}
             </div>
         </>
     );

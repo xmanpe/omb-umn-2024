@@ -97,8 +97,8 @@ const BottomNav = () => {
 
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
-        // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
-        { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
+        { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
+        // { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
         // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
         // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },
@@ -107,7 +107,7 @@ const BottomNav = () => {
 
     return (
         <div className='the-whole-navbar'>
-            {/* {showOptions && (
+            {showOptions && (
                 <nav className='extended-navbar'>
                     <p className='title-nav'>Hasil Seleksi</p>
                     {divisiName.map((divisi, index) => (
@@ -117,7 +117,7 @@ const BottomNav = () => {
                         </div>
                     ))}
                 </nav>
-            )} */}
+            )}
             {showTentangSubMenu && (
                 <nav className='extended-navbar'>
                     <p className='title-nav'>Tentang</p>

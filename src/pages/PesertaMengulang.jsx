@@ -19,14 +19,27 @@ import Warning from '../images/Warning/Circle_Warning_White.svg';
 const PesertaMengulang = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const divisionMengulang = mengulangData["daftar-peserta"] || [];
+    const [selectedYear, setSelectedYear] = useState('');
 
-    const filteredSchedule = divisionMengulang.map(schedule => ({
+    const handleYearClick = (year) => {
+        if (selectedYear === year) {
+            setSelectedYear('');
+        } else {
+            setSelectedYear(year);
+        }
+    };
+
+    const filteredSchedule = divisionMengulang.filter(schedule => 
+        selectedYear === '' || schedule.room === selectedYear
+    ).map(schedule => ({
         ...schedule,
         participants: schedule.participants.filter(participant =>
             participant.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
             participant.nim.toLowerCase().includes(searchQuery.toLowerCase())
         )
     })).filter(schedule => schedule.participants.length > 0);
+
+    const years = ["2023", "2022", "2021", "2020"];
 
     const defaultText = "<ul><li>Silakan bergabung ke dalam grup LINE divisi yang dikirimkan melalui <i>email</i> kalian.</li><li>Sebelum bergabung, pastikan <i>display name</i> kalian merupakan nama asli dan menggunakan <i>profile picture</i> dengan foto diri yang terkini dan wajah terlihat dengan jelas. </li></ul>";
     return (
@@ -63,6 +76,17 @@ const PesertaMengulang = () => {
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />
+                        <div className='right-input'>
+                            {years.map((year, index) => (
+                                <button 
+                                    key={year}
+                                    className={`year-button ${selectedYear === year ? 'active' : ''} ${index === 0 ? 'far-left' : ''} ${index === years.length - 1 ? 'far-right' : ''}`}
+                                    onClick={() => handleYearClick(year)}
+                                >
+                                    {year}
+                                </button>
+                            ))}
+                        </div>
                     </div>
                     {filteredSchedule.map((schedule, index) => (
                         <div className='daftar-peserta_content' key={index}>

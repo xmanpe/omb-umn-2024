@@ -9,7 +9,7 @@
     .note-search {
         position: sticky;
         top: 12px;
-        z-index: 101;
+        // z-index: 100;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -46,7 +46,12 @@
         .search_wrapper {
             display: flex;
             width: 100%;
-    
+            justify-content: space-between;
+            // align-items: center;
+            gap: 20px;
+            // position: sticky;
+            // top: 12px;
+
             input {
                 display: flex;
                 padding: 16px 40px;
@@ -54,7 +59,7 @@
                 border: 2px solid rgb(230, 230, 230);
                 background: #ffffffe7;
                 backdrop-filter: blur(4px);
-                width: 100%;
+                width: 30%;
                 font-family: "GSN";
                 font-size: 18px;
                 font-style: normal;
@@ -69,6 +74,44 @@
 
             input:focus {
                 outline-color: #4504AA;
+            }
+
+            .right-input {
+                display: flex;
+                justify-content: center;
+                gap: 4px;
+
+                .year-button {
+                    display: flex;
+                    padding: 16px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 100px;
+                    border: 2px solid rgb(230, 230, 230);
+                    background: #ffffffe7;
+                    color: black;
+                    font-family: "GSN";
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    // box-shadow: 0px 4px 12px 0px rgba(97, 97, 97, 0.15);
+                    cursor: pointer;
+                }
+
+                // .far-left {
+                //     border-radius: 100px 0px 0px 100px;
+                // }
+
+                // .far-right {
+                //     border-radius: 0px 100px 100px 0px;
+                // }
+
+                .active {
+                    background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                    color: white;
+                }
             }
         }
     }
@@ -206,6 +249,45 @@
                     // font-weight: 500;
                     // line-height: normal;
                 }
+
+                .right-input {
+                    display: flex;
+                    justify-content: center;
+                    gap: 4px;
+    
+                    .year-button {
+                        // display: flex;
+                        // padding: 16px 24px;
+                        // justify-content: center;
+                        // align-items: center;
+                        // gap: 8px;
+                        // border-radius: 100px;
+                        // border: 2px solid rgb(230, 230, 230);
+                        // background: #ffffffe7;
+                        // color: black;
+                        // font-family: "GSN";
+                        // font-size: 18px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                        // box-shadow: 0px 4px 12px 0px rgba(97, 97, 97, 0.15);
+                        // cursor: pointer;
+                    
+                    }
+    
+                    // .far-left {
+                    //     border-radius: 100px 0px 0px 100px;
+                    // }
+    
+                    // .far-right {
+                    //     border-radius: 0px 100px 100px 0px;
+                    // }
+    
+                    .active {
+                        // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                        // color: white;
+                    }
+                }
             }
         }
     
@@ -327,6 +409,7 @@
         
             .search_wrapper {
                 // display: flex;
+                flex-direction: column;
                 // width: 100%;
         
                 input {
@@ -336,12 +419,52 @@
                     // border: none;
                     // border-left: 4px solid #4504AA;
                     // background: #F1E9FF;
-                    // width: 100%;
+                    width: initial;
                     // font-family: "Gill Sans Nova";
                     // font-size: 20px;
                     // font-style: normal;
                     // font-weight: 500;
                     // line-height: normal;
+                }
+
+                .right-input {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 4px;
+    
+                    .year-button {
+                        // display: flex;
+                        // padding: 16px 24px;
+                        // justify-content: center;
+                        // align-items: center;
+                        // gap: 8px;
+                        // border-radius: 100px;
+                        // border: 2px solid rgb(230, 230, 230);
+                        // background: #ffffffe7;
+                        // color: black;
+                        width: 100%;
+                        // font-family: "GSN";
+                        // font-size: 18px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                        // box-shadow: 0px 4px 12px 0px rgba(97, 97, 97, 0.15);
+                        // cursor: pointer;
+                    
+                    }
+    
+                    // .far-left {
+                    //     border-radius: 100px 0px 0px 100px;
+                    // }
+    
+                    // .far-right {
+                    //     border-radius: 0px 100px 100px 0px;
+                    // }
+    
+                    .active {
+                        // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                        // color: white;
+                    }
                 }
             }
         }
@@ -466,6 +589,7 @@
             .search_wrapper {
                 // display: flex;
                 // width: 100%;
+                gap: 12px;
         
                 input {
                     // display: flex;
@@ -480,6 +604,46 @@
                     // font-style: normal;
                     // font-weight: 500;
                     // line-height: normal;
+                }
+
+                .right-input {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 4px;
+    
+                    .year-button {
+                        // display: flex;
+                        padding: 8px 24px;
+                        // justify-content: center;
+                        // align-items: center;
+                        // gap: 8px;
+                        // border-radius: 100px;
+                        // border: 2px solid rgb(230, 230, 230);
+                        // background: #ffffffe7;
+                        // color: black;
+                        width: 100%;
+                        // font-family: "GSN";
+                        font-size: 16px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                        // box-shadow: 0px 4px 12px 0px rgba(97, 97, 97, 0.15);
+                        // cursor: pointer;
+                    
+                    }
+    
+                    // .far-left {
+                    //     border-radius: 100px 0px 0px 100px;
+                    // }
+    
+                    // .far-right {
+                    //     border-radius: 0px 100px 100px 0px;
+                    // }
+    
+                    .active {
+                        // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                        // color: white;
+                    }
                 }
             }
         }

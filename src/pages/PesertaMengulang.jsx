@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import mengulangData from './daftar-peserta-mengulang/mengulangData';
+import './temporary-styles/PesertaMengulangHero.scss';
+import './temporary-styles/PesertaMengulangContent.scss';
 
 // import components
 import Footer from "../components/footer/Footer";
@@ -13,10 +16,19 @@ import BungaLotus from '../images/Outline - Bunga Lotus Biru di Atas Air 1 1.png
 import ArrowRight from '../images/Arrow/Arrow_Right_MD.png';
 import Warning from '../images/Warning/Circle_Warning_White.svg';
 
-const defaultText = "<ul><li>Silakan bergabung ke dalam grup LINE divisi yang dikirimkan melalui <i>email</i> kalian.</li><li>Sebelum bergabung, pastikan <i>display name</i> kalian merupakan nama asli dan menggunakan <i>profile picture</i> dengan foto diri yang terkini dan wajah terlihat dengan jelas. </li></ul>";
-
 const PesertaMengulang = () => {
     const [searchQuery, setSearchQuery] = useState('');
+    const divisionMengulang = mengulangData["peserta-mengulang"] || [];
+
+    const filteredSchedule = divisionMengulang.map(schedule => ({
+        ...schedule,
+        participants: schedule.participants.filter(participant =>
+            participant.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            participant.nim.toLowerCase().includes(searchQuery.toLowerCase())
+        )
+    })).filter(schedule => schedule.participants.length > 0);
+
+    const defaultText = "<ul><li>Silakan bergabung ke dalam grup LINE divisi yang dikirimkan melalui <i>email</i> kalian.</li><li>Sebelum bergabung, pastikan <i>display name</i> kalian merupakan nama asli dan menggunakan <i>profile picture</i> dengan foto diri yang terkini dan wajah terlihat dengan jelas. </li></ul>";
     return (
         <>
             <section className="hero-peserta_section">
@@ -30,15 +42,14 @@ const PesertaMengulang = () => {
                     </Link>
                     <div className='title_divisi'>
                         <div className='left_thing'>
-                            <img src={BungaLotus} alt="" />
                             <div className='literally_title'>
-                                <p>Daftar Nama-Nama</p>
-                                <h1>Peserta Mengulang</h1>
+                                <p>Selamat datang, Pejuang Lotus Biru!</p>
+                                <h1>Berikut daftar mahasiswa aktif yang telah berhasil terdaftar ke dalam OMB UMN 2024.</h1>
                             </div>
                         </div>
-                        <div className='right_thing'>
+                        {/* <div className='right_thing'>
                             <p dangerouslySetInnerHTML={{ __html: defaultText }}></p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <img className='wave' src={Wave} alt="The Wave" />
@@ -48,12 +59,12 @@ const PesertaMengulang = () => {
                     <div className='search_wrapper'>
                         <input 
                             type="text" 
-                            placeholder='Klik untuk mencari nama atau NIM...'
+                            placeholder='🔍  Klik untuk mencari nama atau NIM...'
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </div>
-                    {/* {filteredSchedule.map((schedule, index) => (
+                    {filteredSchedule.map((schedule, index) => (
                         <div className='peserta-mengulang_content' key={index}>
                             <div className='top_thing'>
                                 <p>{schedule.room}</p>
@@ -68,7 +79,7 @@ const PesertaMengulang = () => {
                                 ))}
                             </div>
                         </div>
-                    ))} */}
+                    ))}
                 </div>
             </section>
             <Footer />                      

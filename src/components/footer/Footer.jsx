@@ -17,10 +17,11 @@ import Wave from '../../images/waves/Wave Two.png'
 const Footer = () => {
     const location = useLocation();
     const isJadwalWawancaraPage = location.pathname === '/hasil-seleksi';
+    const isPesertaMengulangPage = location.pathname === '/peserta-mengulang';
 
     return (
         <footer className='footer_section'>
-            {isJadwalWawancaraPage && <img className='wave' src={Wave} alt="Wave" />}
+            {isPesertaMengulangPage && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>

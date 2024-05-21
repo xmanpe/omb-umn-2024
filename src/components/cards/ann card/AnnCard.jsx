@@ -54,14 +54,18 @@ const AnnCard = () => {
         setShowModal(!showModal);
     };
 
+    const openPage = () => {
+        window.location.href = '/peserta-mengulang';
+    };
+
     return (
         <>
         {showModal && <InformationModal onClose={toggleModal} />}
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>PENDAFTARAN PESERTA OMB UMN 2024 TELAH DITUTUP!</h3>
-                        <p>Terima kasih telah mendaftarkan diri menjadi bagian dari Pejuang Lotus Biru. Nantikan informasi selanjutnya bagi calon peserta yang berhasil terdaftar di OMB UMN 2024.</p>
+                        <h3>DAFTAR PESERTA MAHASISWA AKTIF OMB UMN 2024</h3>
+                        <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p>
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>
@@ -71,11 +75,11 @@ const AnnCard = () => {
                         <p className='countdown'>{countdown}</p>
                     </div> */}
                 </div>
-                {/* <div className='cta_button'>
-                    <button onClick={toggleModal}>Daftar
+                <div className='cta_button'>
+                    <button onClick={openPage}>Melihat
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
-                </div> */}
+                </div>
             </div>
         </>
     );

@@ -90,14 +90,18 @@ const BottomNav = () => {
                 setShowOptions(false);
             }
 
-            
+            else if (tabPath === '/peserta-mengulang') {
+                window.location.href = '/peserta-mengulang';
+            }
+
             setActiveTab(tabPath); // Set active tab
         }
     };
 
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
-        { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
+        // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
+        { path: '/peserta-mengulang', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta Mengulang' },
         // { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
         // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },

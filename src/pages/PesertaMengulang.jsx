@@ -18,7 +18,7 @@ import Warning from '../images/Warning/Circle_Warning_White.svg';
 
 const PesertaMengulang = () => {
     const [searchQuery, setSearchQuery] = useState('');
-    const divisionMengulang = mengulangData["peserta-mengulang"] || [];
+    const divisionMengulang = mengulangData["daftar-peserta"] || [];
 
     const filteredSchedule = divisionMengulang.map(schedule => ({
         ...schedule,
@@ -54,7 +54,7 @@ const PesertaMengulang = () => {
                 </div>
                 <img className='wave' src={Wave} alt="The Wave" />
             </section>
-            <section className='peserta-mengulang_section'>
+            <section className='daftar-peserta_section'>
                 <div className='note-search'>
                     <div className='search_wrapper'>
                         <input 
@@ -65,7 +65,7 @@ const PesertaMengulang = () => {
                         />
                     </div>
                     {filteredSchedule.map((schedule, index) => (
-                        <div className='peserta-mengulang_content' key={index}>
+                        <div className='daftar-peserta_content' key={index}>
                             <div className='top_thing'>
                                 <p>{schedule.room}</p>
                                 <h1>{schedule.date}</h1>

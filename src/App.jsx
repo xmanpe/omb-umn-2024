@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hasil-seleksi" element={<JadwalWawancara />} />
-          <Route path="/peserta-mengulang" element={<PesertaMengulang />} />
+          <Route path="/daftar-peserta" element={<PesertaMengulang />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

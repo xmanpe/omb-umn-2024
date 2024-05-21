@@ -1,5 +1,5 @@
 const mengulangData = {
-    "peserta-mengulang": 
+    "daftar-peserta": 
     [
         {
             room: "2023",

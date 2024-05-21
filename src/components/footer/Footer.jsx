@@ -17,7 +17,7 @@ import Wave from '../../images/waves/Wave Two.png'
 const Footer = () => {
     const location = useLocation();
     const isJadwalWawancaraPage = location.pathname === '/hasil-seleksi';
-    const isPesertaMengulangPage = location.pathname === '/peserta-mengulang';
+    const isPesertaMengulangPage = location.pathname === '/daftar-peserta';
 
     return (
         <footer className='footer_section'>

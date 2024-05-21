@@ -55,7 +55,7 @@ const AnnCard = () => {
     };
 
     const openPage = () => {
-        window.location.href = '/peserta-mengulang';
+        window.location.href = '/daftar-peserta';
     };
 
     return (

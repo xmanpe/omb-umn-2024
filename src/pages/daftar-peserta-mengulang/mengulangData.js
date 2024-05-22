@@ -264,7 +264,6 @@ const mengulangData = {
                 { name: "Carolus Boromeus", nim: "00000042768" },
                 { name: "Chrealvin", nim: "00000045606" },
                 { name: "Dian Putra Agus", nim: "00000053980" },
-                { name: "Dian Putra Agus", nim: "00000053980" },
                 { name: "Dirsya Arrosyid", nim: "00000053741" },
                 { name: "Natasya Tiara", nim: "00000042768" },
                 { name: "Nathacia Shania", nim: "00000052952" },

@@ -14,7 +14,7 @@ const AnnCard = () => {
 
     useEffect(() => {
         // Set the target date for the countdown
-        const targetDate = new Date('2024-05-19T00:00:00'); // Adjusted to midnight on May 19, 2024, local time
+        const targetDate = new Date('2024-06-15T00:00:00'); // Adjusted to midnight on May 19, 2024, local time
     
         // Update the countdown every second
         const interval = setInterval(() => {
@@ -33,7 +33,7 @@ const AnnCard = () => {
                 const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
     
                 // Format the countdown string
-                const countdownString = `${days} Hari ${hours} Jam ${minutes} Menit`;
+                const countdownString = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
                 setCountdown(countdownString);
             }
         }, 1000);
@@ -64,19 +64,19 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>DAFTAR PESERTA MAHASISWA AKTIF OMB UMN 2024</h3>
-                        <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p>
+                        <h3>PENDAFTARAN PETUGAS UPACARA OMB UMN 2024 TELAH DIBUKA!</h3>
+                        <p>Silahkan klik tombol berikut untuk menuju ke laman pendaftaran.</p>
                     </div>
-                    {/* <div className='schedule'>
+                    <div className='schedule'>
                         <div className='date'>
                             <img src={Calendar} alt="Calendar Icon" />
-                            <p>14–18 Mei 2024</p>
+                            <p>10–15 Juni 2024</p>
                         </div>
                         <p className='countdown'>{countdown}</p>
-                    </div> */}
+                    </div>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={openPage}>Melihat
+                    <button onClick={openPage}>DAFTAR
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

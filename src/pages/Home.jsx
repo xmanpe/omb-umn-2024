@@ -7,6 +7,7 @@ import YouTube from '../components/youtube/YouTube';
 import Divisi from '../components/divisi/Divisi';
 import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
+import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
@@ -42,6 +43,7 @@ const Home = () => {
         <Hero />
         <ApaItuOMB />
         <YouTube />
+        <PetugasUpacara />
         {/* <Divisi /> */}
         <Ananta />
         <Footer />

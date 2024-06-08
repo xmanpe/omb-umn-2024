@@ -14,7 +14,7 @@ const AnnCard = () => {
 
     useEffect(() => {
         // Set the target date for the countdown
-        const targetDate = new Date('2024-06-15T00:00:00'); // Adjusted to midnight on May 19, 2024, local time
+        const targetDate = new Date('2024-06-15T23:59:00'); // Adjusted to midnight on May 19, 2024, local time
     
         // Update the countdown every second
         const interval = setInterval(() => {
@@ -50,6 +50,13 @@ const AnnCard = () => {
         }
     };
 
+    const handleScrollToUpacara = () => {
+        const upacaraSection = document.getElementById('petugas_upacara_section');
+        if (upacaraSection) {
+            upacaraSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const toggleModal = () => {
         setShowModal(!showModal);
     };
@@ -76,7 +83,7 @@ const AnnCard = () => {
                     </div>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={openPage}>DAFTAR
+                    <button onClick={handleScrollToUpacara}>DAFTAR
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

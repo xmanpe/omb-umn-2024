@@ -7,6 +7,13 @@ import Wave from '../../images/waves/Wave Two.png'
 import SecondWave from '../../images/waves/Wave Three.png'
 import Stacks from '../../images/stack-upacara.png'
 import Kupu from '../../images/ananta/kupu.png'
+import PemimpinUpacara from '../../images/posisiPetugas/Pemimpin Upacara.jpg'
+import ProtokolUpacara from '../../images/posisiPetugas/Protokol Upacara.jpg'
+import PemimpinBarisan from '../../images/posisiPetugas/Pemimpin Barisan.jpg'
+import PembawaNaskah from '../../images/posisiPetugas/Pembawa Naskah.jpg'
+import PembawaPemukul from '../../images/posisiPetugas/Pembawa Pemukul.jpg'
+import UndangUndang from '../../images/posisiPetugas/Undang Undang.jpg'
+import PengibarBendera from '../../images/posisiPetugas/Pengibar Bendera.jpg'
 
 // import icons
 import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg'
@@ -24,6 +31,30 @@ const PetugasUpacara = () => {
     setShowModal(!showModal);
   };
 
+  const posisiPetugas = [
+    {   photo: PemimpinUpacara,
+        position:"Pemimpin Upacara",
+    },
+    {   photo: ProtokolUpacara,
+        position:"Protokol Upacara",
+    },
+    {   photo: PemimpinBarisan,
+        position:"Pemimpin Barisan",
+    },
+    {   photo: PembawaNaskah,
+        position:"Pembawa Naskah Pancasila",
+    },
+    {   photo: PembawaPemukul,
+        position:"Pembawa Pemukul Gong",
+    },
+    {   photo: UndangUndang,
+        position:"Undang-Undang Dasar 1945 dan Pembaca Doa",
+    },
+    {   photo: PengibarBendera,
+        position:"Pengibar Bendera Merah Putih",
+    },
+    
+  ]
   return (
     <>
       <section className="petugas_upacara_section" id='petugas_upacara_section'>
@@ -64,8 +95,30 @@ const PetugasUpacara = () => {
       </section>
       {showModal && 
         <Modal handleClose={toggleModal}>
-          <div>
-            ISI KONTEN SINI
+          <div className='modal_posisi'>
+            <h1>Posisi Petugas Upacara</h1>
+            <div className='posisi_wrapper'>
+              {posisiPetugas.map((posisiPetugas)=>{
+                return(
+                <div className='posisi_card'>
+                  <div className='each_photo'>
+                    <img src={posisiPetugas.photo} alt="Posisi"/>
+                  </div>
+                  <p>{posisiPetugas.position}</p>
+                </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className='button_section'>
+            <div className='cta_button'>
+                  <button 
+                    onClick={toggleModal}
+                  >
+                    Selanjutnya
+                      <img src={ArrowRight} alt="Arrow Icon" />
+                  </button>
+            </div>
           </div>
         </Modal>
       }

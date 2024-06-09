@@ -57,28 +57,18 @@ const PetugasUpacara = () => {
     setPageSyarat(false);
   };
 
+  const handleNextPage = () => {
+    setPageSyarat(true);
+  };
+
   const posisiPetugas = [
-    {   photo: PemimpinUpacara,
-        position:"Pemimpin Upacara",
-    },
-    {   photo: ProtokolUpacara,
-        position:"Protokol Upacara",
-    },
-    {   photo: PemimpinBarisan,
-        position:"Pemimpin Barisan",
-    },
-    {   photo: PembawaNaskah,
-        position:"Pembawa Naskah Pancasila",
-    },
-    {   photo: PembawaPemukul,
-        position:"Pembawa Pemukul Gong",
-    },
-    {   photo: UndangUndang,
-        position:"Undang-Undang Dasar 1945 dan Pembaca Doa",
-    },
-    {   photo: PengibarBendera,
-        position:"Pengibar Bendera Merah Putih",
-    },
+    { photo: PemimpinUpacara, position:"Pemimpin Upacara" },
+    { photo: ProtokolUpacara, position:"Protokol Upacara" },
+    { photo: PemimpinBarisan, position:"Pemimpin Barisan" },
+    { photo: PembawaNaskah, position:"Pembawa Naskah Pancasila" },
+    { photo: PembawaPemukul, position:"Pembawa Pemukul Gong" },
+    { photo: UndangUndang, position:"Undang-Undang Dasar 1945 dan Pembaca Doa" },
+    { photo: PengibarBendera, position:"Pengibar Bendera Merah Putih" },
   ]
 
   useEffect(() => {
@@ -135,28 +125,25 @@ const PetugasUpacara = () => {
       </section>
       {showModal && 
         <Modal handleClose={toggleModal}>
-
           {!pageSyarat ?
             <>
               <div className='modal_posisi'>
                 <h1>Posisi Petugas Upacara</h1>
                 <div className='posisi_wrapper'>
-                  {posisiPetugas.map((posisiPetugas)=>{
-                    return(
-                    <div className='posisi_card'>
+                  {posisiPetugas.map((posisiPetugas, index) => (
+                    <div className='posisi_card' key={index}>
                       <div className='each_photo'>
                         <img src={posisiPetugas.photo} alt="Posisi"/>
                       </div>
                       <p>{posisiPetugas.position}</p>
                     </div>
-                    );
-                  })}
+                  ))}
                 </div>
               </div>
               <div className='button_section'>
                 <div className='cta_button'>
                     <button 
-                      onClick={setPageSyarat(true)}
+                      onClick={handleNextPage}
                     >
                       Selanjutnya
                         <img src={ArrowRight} alt="Arrow Icon" />
@@ -175,7 +162,7 @@ const PetugasUpacara = () => {
                 <div className="konten-lingkaran">
                   <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
                   {dataSyarat.map((x, index) => (
-                    <div className="card">
+                    <div className="card" key={index}>
                       {x.no > 6 ?
                         <div className={`card card-${x.no}`}>
                           <div className="number-box">
@@ -215,7 +202,7 @@ const PetugasUpacara = () => {
                 <h2>Syarat Pendaftaran Petugas Upacara OMB UMN 2024</h2>
                 <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
                 {dataSyarat.map((x, index) => (
-                  <div className="card-mobile">
+                  <div className="card-mobile" key={index}>
                     <div className="number-box">
                       <p>{x.no}</p>
                     </div>
@@ -234,5 +221,5 @@ const PetugasUpacara = () => {
     </>
   );
 }
- 
+
 export default PetugasUpacara;

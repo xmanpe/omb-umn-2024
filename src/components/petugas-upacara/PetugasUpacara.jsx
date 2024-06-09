@@ -7,12 +7,20 @@ import Wave from '../../images/waves/Wave Two.png'
 import SecondWave from '../../images/waves/Wave Three.png'
 import Stacks from '../../images/stack-upacara.png'
 import Kupu from '../../images/ananta/kupu.png'
+import PemimpinUpacara from '../../images/posisiPetugas/pemimpinUpacara.jpg'
+import ProtokolUpacara from '../../images/posisiPetugas/protokolUpacara.jpg'
+import PemimpinBarisan from '../../images/posisiPetugas/pemimpinBarisan.jpg'
+import PembawaNaskah from '../../images/posisiPetugas/pembawaNaskahPancasila.jpg'
+import PembawaPemukul from '../../images/posisiPetugas/pembawaPemukulGong.jpg'
+import UndangUndang from '../../images/posisiPetugas/undangUndang.jpg'
+import PengibarBendera from '../../images/posisiPetugas/pengibarBendera.jpg'
 
 // import icons
 import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg'
 
 // import supergraphics
 import BottomAir from '../../images/supergrafis/Bottom Air.svg'
+import Ombak from '../../images/supergrafis/Ombak.png'
 
 // import components
 import Modal from '../modal/Modal';
@@ -24,6 +32,30 @@ const PetugasUpacara = () => {
     setShowModal(!showModal);
   };
 
+  const posisiPetugas = [
+    {   photo: PemimpinUpacara,
+        position:"Pemimpin Upacara",
+    },
+    {   photo: ProtokolUpacara,
+        position:"Protokol Upacara",
+    },
+    {   photo: PemimpinBarisan,
+        position:"Pemimpin Barisan",
+    },
+    {   photo: PembawaNaskah,
+        position:"Pembawa Naskah Pancasila",
+    },
+    {   photo: PembawaPemukul,
+        position:"Pembawa Pemukul Gong",
+    },
+    {   photo: UndangUndang,
+        position:"Undang-Undang Dasar 1945 dan Pembaca Doa",
+    },
+    {   photo: PengibarBendera,
+        position:"Pengibar Bendera Merah Putih",
+    },
+    
+  ]
   return (
     <>
       <section className="petugas_upacara_section" id='petugas_upacara_section'>
@@ -64,8 +96,30 @@ const PetugasUpacara = () => {
       </section>
       {showModal && 
         <Modal handleClose={toggleModal}>
-          <div>
-            ISI KONTEN SINI
+          <div className='modal_posisi'>
+            <h1>Posisi Petugas Upacara</h1>
+            <div className='posisi_wrapper'>
+              {posisiPetugas.map((posisiPetugas)=>{
+                return(
+                <div className='posisi_card'>
+                  <div className='each_photo'>
+                    <img src={posisiPetugas.photo} alt="Posisi"/>
+                  </div>
+                  <p>{posisiPetugas.position}</p>
+                </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className='button_section'>
+            <div className='cta_button'>
+                  <button 
+                    onClick={toggleModal}
+                  >
+                    Selanjutnya
+                      <img src={ArrowRight} alt="Arrow Icon" />
+                  </button>
+            </div>
           </div>
         </Modal>
       }

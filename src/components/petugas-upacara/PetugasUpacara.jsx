@@ -20,6 +20,7 @@ import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg'
 
 // import supergraphics
 import BottomAir from '../../images/supergrafis/Bottom Air.svg'
+import Ombak from '../../images/supergrafis/Ombak.png'
 
 // import components
 import Modal from '../modal/Modal';
@@ -111,6 +112,7 @@ const PetugasUpacara = () => {
             </div>
           </div>
           <div className='button_section'>
+          <img className='air_kiri' src={Ombak} alt="Air" />
             <div className='cta_button'>
                   <button 
                     onClick={toggleModal}
@@ -119,6 +121,7 @@ const PetugasUpacara = () => {
                       <img src={ArrowRight} alt="Arrow Icon" />
                   </button>
             </div>
+            <img className='air_kanan' src={Ombak} alt="Air" />
           </div>
         </Modal>
       }

@@ -236,7 +236,8 @@
     .card-6 {
       position: absolute; 
       bottom: 5px; 
-      left: 470px; 
+      left: 50%;
+      transform: translate(-50%);
     
       .number-box {
         display: flex;

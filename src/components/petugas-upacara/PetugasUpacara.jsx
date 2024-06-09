@@ -164,11 +164,11 @@ const PetugasUpacara = () => {
               </div>
             ))}
             <div className='cta_button'>
-              {/* <img className='air-button-1' src={Air2} alt="Supergrafis - air" /> */}
+              <img className='air-button-1' src={Air2} alt="Supergrafis - air" />
               <button className='modal-button'>
                 Daftarkan Dirimu
               </button>
-              {/* <img className='air-button-2' src={Air1} alt="Supergrafis - air" /> */}
+              <img className='air-button-2' src={Air1} alt="Supergrafis - air" />
             </div>
           </div>
           :

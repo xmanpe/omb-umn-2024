@@ -47,4 +47,42 @@
         rotate: 0deg;
         opacity: 0.4;
       }
+
+      @media screen and (max-width: 1440px) {
+        .kembang-judul {
+            display: none;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        .kembang-judul {
+            display: none;
+        }
+      }
+
+      @media screen and (max-width: 810px) {
+        .kembang-judul {
+            display: none;
+        }
+      }
+
+      @media screen and (max-width: 560px) {
+        .kembang-judul {
+            display: none;
+        }
+      }
+
+      @media screen and (max-width: 432px) {
+        .kembang-judul {
+            // position:absolute;
+            // border-radius: 48px;
+            // width: 15%;
+            // top: 0;
+            // height: auto;
+            // left: 0;
+            // rotate: 0deg;
+            // opacity: 0.4;
+            display: none;
+
+          }
+      }
 }

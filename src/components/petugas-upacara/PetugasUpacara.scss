@@ -168,15 +168,6 @@
   align-items: center; //untuk button
   height: 100%;
 
-  .logo_omb {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    width: 10%;
-    height: auto;
-  }
-
   .lebah-judul {
     position:absolute;
     width: 5%;
@@ -214,6 +205,15 @@
     width: 100%;
     height: 73%;
 
+    .logo_omb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      width: 10%;
+      height: auto;
+    }
+
     .card {
       display: flex;
 
@@ -235,9 +235,9 @@
     
     .card-6 {
       position: absolute; 
-      bottom: 5px; 
+      top: 50%; 
       left: 50%;
-      transform: translate(-50%);
+      transform: translate(-50%, 80%);
     
       .number-box {
         display: flex;
@@ -543,6 +543,15 @@
       position: relative;
       width: 100%;
       height: 73%;
+
+      .logo_omb {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        width: 10%;
+        height: auto;
+      }
   
       .card {
         display: flex;
@@ -565,9 +574,9 @@
       
       .card-6 {
         position: absolute; 
-        bottom: 5px; 
+        top: 50%; 
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, 100%);
       
         .number-box {
           display: flex;

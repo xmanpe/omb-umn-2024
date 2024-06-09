@@ -28,60 +28,8 @@ const PetugasUpacara = () => {
     height: window.innerHeight
   });
   const [showModal, setShowModal] = useState(false);
-  
+
   const dataSyarat = [
-    [
-      { no: "1", konten: "Mengisi form registrasi.", marginRight: "1.5vw" },
-      { no: "11", konten: "Sehat jasmani dan rohani." },
-    ],
-    [
-      { no: "2", konten: "Mahasiswa aktif Universitas Multimedia Nusantara angkatan 2021-2023.", marginRight: "14.5vw" },
-      { no: "10", konten: "Bersedia mengikuti jadwal pelatihan yang sudah disepakati dengan panitia OMB UMN 2024." },
-    ],
-    [
-      { no: "3", konten: "Minimal IPK 3.0.", marginLeft: "13vw" },
-      { no: "9", konten: "Telah dinyatakan lulus dari rangkaian OMB UMN.", marginLeft: "20vw" },
-    ],
-    [
-      { no: "4", konten: "Tinggi minimal wanita 160 cm dan laki-laki 165 cm.", marginRight: "8.5vw" },
-      { no: "8", konten: "Mendapatkan perizinan orang tua untuk menjadi petugas upacara OMB UMN 2024.", marginLeft: "8.5vw" },
-    ],
-    [
-      { no: "5", konten: "Postur tubuh tegak dan kaki tidak membentuk O atau X.", marginRight: "8vw" },
-      { no: "7", konten: "Memahami Peraturan Baris Berbaris (PBB) dasar.", marginRight: "3vw" },
-    ],
-    [
-      { no: "6", konten: "Telah melakukan vaksin ketiga/booster." },
-    ]
-  ];
-
-  // const dataSyarat = [
-  //   [
-  //     { no: "1", konten: "Mengisi form registrasi.", marginRight: "30px" },
-  //     { no: "11", konten: "Sehat jasmani dan rohani." },
-  //   ],
-  //   [
-  //     { no: "2", konten: "Mahasiswa aktif Universitas Multimedia Nusantara angkatan 2021-2023.", marginRight: "220px" },
-  //     { no: "10", konten: "Bersedia mengikuti jadwal pelatihan yang sudah disepakati dengan panitia OMB UMN 2024." },
-  //   ],
-  //   [
-  //     { no: "3", konten: "Minimal IPK 3.0.", marginLeft: "200px" },
-  //     { no: "9", konten: "Telah dinyatakan lulus dari rangkaian OMB UMN.", marginLeft: "300px" },
-  //   ],
-  //   [
-  //     { no: "4", konten: "Tinggi minimal wanita 160 cm dan laki-laki 165 cm.", marginRight: "130px" },
-  //     { no: "8", konten: "Mendapatkan perizinan orang tua untuk menjadi petugas upacara OMB UMN 2024.", marginLeft: "130px" },
-  //   ],
-  //   [
-  //     { no: "5", konten: "Postur tubuh tegak dan kaki tidak membentuk O atau X.", marginRight: "120px" },
-  //     { no: "7", konten: "Memahami Peraturan Baris Berbaris (PBB) dasar.", marginRight: "50px" },
-  //   ],
-  //   [
-  //     { no: "6", konten: "Telah melakukan vaksin ketiga/booster." },
-  //   ]
-  // ];
-
-  const dataSyaratMobile = [
     {no: "1", konten: "Mengisi form registrasi."},
     {no: "2", konten: "Mahasiswa aktif Universitas Multimedia Nusantara angkatan 2021-2023."},
     {no: "3", konten: "Minimal IPK 3.0."},
@@ -156,13 +104,13 @@ const PetugasUpacara = () => {
 
           {screenSize.width > 1200 ? 
           <div className="modal-syarat">
-            <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
             {/* <div className="background-modal-syarat">
             </div> */}
             {/* <img className='lebah-judul' src={Lebah} alt="Supergrafis - lebah" /> */}
             <h2>Syarat Pendaftaran Petugas Upacara OMB UMN 2024</h2>
             <div className="konten-lingkaran">
-              {dataSyaratMobile.map((x, index) => (
+              <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
+              {dataSyarat.map((x, index) => (
                 <div className="card">
                   {x.no > 6 ?
                     <div className={`card card-${x.no}`}>
@@ -230,7 +178,7 @@ const PetugasUpacara = () => {
           <div className="modal-syarat-mobile">
             <h2>Syarat Pendaftaran Petugas Upacara OMB UMN 2024</h2>
             <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
-            {dataSyaratMobile.map((x, index) => (
+            {dataSyarat.map((x, index) => (
               <div className="card-mobile">
                 <div className="number-box">
                   <p>{x.no}</p>

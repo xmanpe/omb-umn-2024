@@ -160,6 +160,7 @@
     opacity: 0.1;
   }
 }
+
 .modal_posisi {
   display: flex;
   flex-direction: column;
@@ -267,6 +268,166 @@
         border-radius: 100px;
         background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
         box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+    }
+  }
+}
+
+.modal-syarat {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center; //untuk button
+  height: 100%;
+
+  .lebah-judul {
+    position:absolute;
+    width: 5%;
+    height: auto;
+    right: 15%;
+    rotate: 0deg;
+    opacity: 0.4;
+  }
+
+  .kembang-judul {
+    position:absolute;
+    width: 15%;
+    padding: 0;
+    height: auto;
+    left: 0;
+    rotate: 0deg;
+    opacity: 0.4;
+  }
+
+  h2 {
+    margin: 0 auto;
+    text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .konten-lingkaran {
+    position: relative;
+    width: 100%;
+    height: 73%;
+
+    .logo_omb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -80%);
+      width: 10%;
+      height: auto;
+    }
+
+    .card {
+      display: flex;
+
+      .number-box {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+        color: white;
+        border-radius: 50%;
+        margin: auto 16px;
+
+        p {
+          font-size: 22px;
+          margin: auto;
+        }
+      }
+    }
+    
+    .card-6 {
+      position: absolute; 
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, 80%);
+    
+      .number-box {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+        color: white;
+        border-radius: 50%;
+        margin: 8px auto;
+
+        p {
+          font-size: 22px;
+          margin: auto;
+        }
+      }
+    }
+
+    .card-1 {position: absolute; top: 0px; left: 300px; }
+    .card-2 {position: absolute; top: 55px; left: 50px; }
+    .card-3 {position: absolute; top: 140px; left: 260px; }
+    .card-4 {position: absolute; top: 210px; left: 70px; }
+    .card-5 {position: absolute; top: 280px; left: 100px; }
+
+    .card-7 {position: absolute; top: 0px; right: 150px; }
+    .card-8 {position: absolute; top: 55px; right: 70px; }
+    .card-9 {position: absolute; top: 140px; right: 70px; }
+    .card-10 {position: absolute; top: 200px; right: 70px; }
+    .card-11 {position: absolute; top: 290px; right: 290px; }
+  }
+
+  .cta_button {
+    display: flex;
+
+    .modal-button {
+      display: flex;
+      padding: 16px 24px;
+      margin-top: 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 100px;
+      border: none;
+      background: linear-gradient(169deg, #9879d4 8.3%, #4504aa 91.79%);
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2),
+        0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset,
+        0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+      transition: box-shadow 0.1s ease-in-out;
+
+      color: #fff;
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      cursor: pointer;
+    }
+
+    .modal-button:active {
+      padding: 16px 24px 14px 24px;
+      background: linear-gradient(169deg, #7753be 8.25%, #3d0595 91.75%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+        0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+    }
+
+
+    .air-button-1 {
+      position: absolute;
+      left: 20%;
+      opacity: 0.4;
+      width: 20%;
+    }
+
+    .air-button-2 {
+      position: absolute;
+      right: 20%;
+      opacity: 0.4;
+      width: 20%;
     }
   }
 }
@@ -542,6 +703,175 @@
       //     border-radius: 100px;
       //     background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
       //     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+      }
+    }
+  }
+  
+  .modal-syarat {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center; //untuk button
+    height: 100%;
+  
+    .logo_omb {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+      width: 13%;
+      height: auto;
+    }
+  
+    .lebah-judul {
+      position:absolute;
+      width: 5%;
+      height: auto;
+      right: 15%;
+      rotate: 0deg;
+      opacity: 0.4;
+    }
+  
+    .kembang-judul {
+      position:absolute;
+      width: 15%;
+      padding: 0;
+      height: auto;
+      left: 0;
+      rotate: 0deg;
+      opacity: 0.4;
+    }
+  
+    h2 {
+      margin: 0 auto;
+      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    .konten-lingkaran {
+      position: relative;
+      width: 100%;
+      height: 73%;
+
+      .logo_omb {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        width: 10%;
+        height: auto;
+      }
+  
+      .card {
+        display: flex;
+  
+        .number-box {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+          color: white;
+          border-radius: 50%;
+          margin: auto 16px;
+  
+          p {
+            font-size: 22px;
+            margin: auto;
+          }
+        }
+      }
+      
+      .card-6 {
+        position: absolute; 
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, 100%);
+      
+        .number-box {
+          display: flex;
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+          color: white;
+          border-radius: 50%;
+          margin: 8px auto;
+  
+          p {
+            font-size: 22px;
+            margin: auto;
+          }
+        }
+      }
+  
+      .card-1 {position: absolute; top: 0px; left: 200px; }
+      .card-2 {position: absolute; top: 55px; left: 0px; }
+      .card-3 {position: absolute; top: 140px; left: 180px; }
+      .card-4 {position: absolute; top: 210px; left: 15px; }
+      .card-5 {position: absolute; top: 280px; left: 30px; }
+  
+      .card-7 {position: absolute; top: 0px; right: 70px; }
+      .card-8 {position: absolute; top: 55px; right: 0px; }
+      .card-9 {position: absolute; top: 140px; right: 0px; }
+      .card-10 {position: absolute; top: 200px; right: 0px; }
+      .card-11 {position: absolute; top: 290px; right: 200px; }
+    }
+  
+    .cta_button {
+      display: flex;
+  
+      .modal-button {
+        display: flex;
+        padding: 16px 24px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 100px;
+        border: none;
+        background: linear-gradient(169deg, #9879d4 8.3%, #4504aa 91.79%);
+        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2),
+          0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset,
+          0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+        transition: box-shadow 0.1s ease-in-out;
+  
+        color: #fff;
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+  
+        cursor: pointer;
+      }
+  
+      .modal-button:active {
+        padding: 16px 24px 14px 24px;
+        background: linear-gradient(169deg, #7753be 8.25%, #3d0595 91.75%);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+          0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset,
+          0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+      }
+  
+  
+      .air-button-1 {
+        position: absolute;
+        left: 18%;
+        opacity: 0.4;
+        width: 20%;
+      }
+  
+      .air-button-2 {
+        position: absolute;
+        right: 18%;
+        opacity: 0.4;
+        width: 20%;
       }
     }
   }
@@ -825,6 +1155,66 @@
         //     background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
         //     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
         }
+      }
+    }
+  }
+
+  .modal-syarat-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    padding-bottom: 16px;
+    overflow-y: scroll;
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 8px;
+
+      background: linear-gradient(0deg, #4504AA 0%, #4504AA 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo_omb {
+      width: 20%;
+      height: auto;
+      margin: 16px auto;
+    }
+
+    .card-mobile {
+      display: flex;
+      margin-bottom: 2px;
+
+      .number-box {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+        color: white;
+        border-radius: 50%;
+        margin: auto 4px auto 0;
+
+        p {
+          font-size: 18px;
+          margin: auto;
+        }
+      }
+    }
+
+    .button-mobile {
+      width: 200px;
+      height: 60px;
+      border-radius: 100px;
+      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
+      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
+
+      margin: 16px auto;
+      padding: 8px 24px;
+      p {
+        font-size: 18px;
+        color: white
       }
     }
   }
@@ -1121,6 +1511,65 @@
       }
     }
   }
+
+  .modal-syarat-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    padding-bottom: 16px;
+    overflow-y: scroll;
+
+    h2 {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 8px;
+
+      background: linear-gradient(0deg, #4504AA 0%, #4504AA 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo_omb {
+      width: 30%;
+      height: auto;
+      margin: 16px auto;
+    }
+
+    .card-mobile {
+      display: flex;
+      margin-bottom: 2px;
+
+      .number-box {
+        display: flex;
+        width: 35px;
+        height: 35px;
+        background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+        color: white;
+        border-radius: 50%;
+        margin: auto 4px auto 0;
+
+        p {
+          font-size: 12px;
+          margin: auto;
+        }
+      }
+    }
+
+    .button-mobile {
+      width: 150px;
+      height: 40px;
+      border-radius: 100px;
+      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
+      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
+
+      margin: 16px auto;
+      padding: 8px 16px;
+      p {
+        color: white
+      }
+    }
+  }
 }
 @media screen and (max-width: 560px) {
   .petugas_upacara_section {
@@ -1310,6 +1759,123 @@
       //     border-radius: 100px;
       //     background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
       //     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.40), 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.32) inset;
+      }
+    }
+  }
+
+  .modal-syarat-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    padding-bottom: 16px;
+    overflow-y: scroll;
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 8px;
+
+      background: linear-gradient(0deg, #4504AA 0%, #4504AA 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo_omb {
+      width: 30%;
+      height: auto;
+      margin: 16px auto;
+    }
+
+    .card-mobile {
+      display: flex;
+      margin-bottom: 2px;
+
+      .number-box {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+        color: white;
+        border-radius: 50%;
+        margin: auto 4px auto 0;
+
+        p {
+          font-size: 12px;
+          margin: auto;
+        }
+      }
+    }
+
+    .button-mobile {
+      width: 150px;
+      height: 40px;
+      border-radius: 100px;
+      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
+      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
+
+      margin: 16px auto;
+      padding: 8px 16px;
+      p {
+        color: white
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 432px) {
+  .modal-syarat-mobile {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 8px;
+
+      background: linear-gradient(0deg, #4504AA 0%, #4504AA 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo_omb {
+      width: 40%;
+      height: auto;
+      margin: 16px auto;
+    }
+
+    .card-mobile {
+      display: flex;
+      margin-bottom: 2px;
+
+      .number-box {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-image: linear-gradient(90deg, #CABFF9 0%, #4504AA 85.4%);
+        color: white;
+        border-radius: 50%;
+        margin: auto 4px auto 0;
+
+        p {
+          font-size: 12px;
+          margin: auto;
+        }
+      }
+    }
+
+    .button-mobile {
+      width: 150px;
+      height: 40px;
+      border-radius: 100px;
+      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
+      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
+
+      margin: 16px auto;
+      padding: 8px 16px;
+      p {
+        color: white
       }
     }
   }

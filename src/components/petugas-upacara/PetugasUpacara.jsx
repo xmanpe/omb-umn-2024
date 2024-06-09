@@ -112,7 +112,6 @@ const PetugasUpacara = () => {
             </div>
           </div>
           <div className='button_section'>
-          <img className='air_kiri' src={Ombak} alt="Air" />
             <div className='cta_button'>
                   <button 
                     onClick={toggleModal}
@@ -121,7 +120,6 @@ const PetugasUpacara = () => {
                       <img src={ArrowRight} alt="Arrow Icon" />
                   </button>
             </div>
-            <img className='air_kanan' src={Ombak} alt="Air" />
           </div>
         </Modal>
       }

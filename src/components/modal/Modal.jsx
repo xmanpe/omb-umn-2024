@@ -7,7 +7,7 @@ const Modal = (props) => {
     return(
         <div className="modal-component">
             <div className="modal-component-content">
-            <img className='kembang-judul' src={Kembang} alt="Supergrafis - kembang" />
+                {/* <img className='kembang-judul' src={Kembang} alt="Supergrafis - kembang" /> */}
                 <div className='modal-button-close'>
                     <img src={X} alt="Close button" onClick={props.handleClose} />
                 </div>

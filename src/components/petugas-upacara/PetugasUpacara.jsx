@@ -159,7 +159,7 @@ const PetugasUpacara = () => {
             <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
             {/* <div className="background-modal-syarat">
             </div> */}
-            <img className='lebah-judul' src={Lebah} alt="Supergrafis - lebah" />
+            {/* <img className='lebah-judul' src={Lebah} alt="Supergrafis - lebah" /> */}
             <h2>Syarat Pendaftaran Petugas Upacara OMB UMN 2024</h2>
             <div className="konten-lingkaran">
               {dataSyaratMobile.map((x, index) => (

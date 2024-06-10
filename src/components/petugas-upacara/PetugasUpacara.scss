@@ -1557,17 +1557,37 @@
     }
 
     .button-mobile {
-      width: 150px;
-      height: 40px;
-      border-radius: 100px;
-      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
-      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
-
-      margin: 16px auto;
+      display: flex;
+      width: 200px;
       padding: 8px 16px;
-      p {
-        color: white
-      }
+      margin: 16px auto;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 100px;
+      border: none;
+      background: linear-gradient(169deg, #9879d4 8.3%, #4504aa 91.79%);
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2),
+        0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset,
+        0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+      transition: box-shadow 0.1s ease-in-out;
+
+      color: #fff;
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      cursor: pointer;
+    }
+
+    .button-mobile:active {
+      padding: 8px 16px;
+      background: linear-gradient(169deg, #7753be 8.25%, #3d0595 91.75%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+        0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
     }
   }
 }
@@ -1808,17 +1828,37 @@
     }
 
     .button-mobile {
-      width: 150px;
-      height: 40px;
-      border-radius: 100px;
-      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
-      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
-
-      margin: 16px auto;
+      display: flex;
+      width: 200px;
       padding: 8px 16px;
-      p {
-        color: white
-      }
+      margin: 16px auto;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 100px;
+      border: none;
+      background: linear-gradient(169deg, #9879d4 8.3%, #4504aa 91.79%);
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2),
+        0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset,
+        0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+      transition: box-shadow 0.1s ease-in-out;
+
+      color: #fff;
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      cursor: pointer;
+    }
+
+    .button-mobile:active {
+      padding: 8px 16px;
+      background: linear-gradient(169deg, #7753be 8.25%, #3d0595 91.75%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+        0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
     }
   }
 }
@@ -1866,17 +1906,37 @@
     }
 
     .button-mobile {
-      width: 150px;
-      height: 40px;
-      border-radius: 100px;
-      background: linear-gradient(169deg, #9879D4 8.25%, #4504AA 91.75%);
-      box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.60) inset, 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.40);
-
-      margin: 16px auto;
+      display: flex;
+      width: 200px;
       padding: 8px 16px;
-      p {
-        color: white
-      }
+      margin: 16px auto;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 100px;
+      border: none;
+      background: linear-gradient(169deg, #9879d4 8.3%, #4504aa 91.79%);
+      box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2),
+        0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset,
+        0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+      transition: box-shadow 0.1s ease-in-out;
+
+      color: #fff;
+      text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      cursor: pointer;
+    }
+
+    .button-mobile:active {
+      padding: 8px 16px;
+      background: linear-gradient(169deg, #7753be 8.25%, #3d0595 91.75%);
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),
+        0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset,
+        0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
     }
   }
 }

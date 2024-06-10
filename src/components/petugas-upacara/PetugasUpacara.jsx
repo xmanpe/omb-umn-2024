@@ -189,7 +189,6 @@ const PetugasUpacara = () => {
                           <BoxText text={x.konten} />
                         </div>
                       }
-
                     </div>
                   ))}
                 </div>

@@ -104,7 +104,7 @@ const PetugasUpacara = () => {
                       <p><b>Siapkah kamu menjadi bagian dalam mencetak sejarah baru?</b>  
                         <br /> <br />
                         Pendaftaran terbuka bagi mahasiswa/i aktif seluruh program studi dari angkatan 2021, 2022, dan 2023 yang telah lulus 
-                        mengikuti rangkaian kegiatan OMB UMN sebagai peserta serta tidak tergabung dalam kepanitiaan OMB UMN 2024  
+                        mengikuti rangkaian kegiatan OMB UMN sebagai peserta serta tidak tergabung dalam kepanitiaan OMB UMN 2024. 
                         <br /> <br />
                         Pendaftaran petugas upacara OMB UMN 2024 akan dibuka mulai 
                         <b> Senin, 10 Juni 2024 pukul 10.00 WIB hingga Sabtu, 15 Juni 2024 pukul 23.59 WIB.</b>

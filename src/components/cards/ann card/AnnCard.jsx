@@ -33,7 +33,7 @@ const AnnCard = () => {
                 const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
     
                 // Format the countdown string
-                const countdownString = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+                const countdownString = `${days} Hari ${hours} Jam ${minutes} Menit`;
                 setCountdown(countdownString);
             }
         }, 1000);
@@ -83,7 +83,7 @@ const AnnCard = () => {
                     </div>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={handleScrollToUpacara}>DAFTAR
+                    <button onClick={handleScrollToUpacara}>Daftar
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

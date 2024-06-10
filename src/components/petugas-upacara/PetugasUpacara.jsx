@@ -85,6 +85,10 @@ const PetugasUpacara = () => {
     };
   }, []);
 
+  const openYouTubeLink = useCallback(() => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSfE3ZyJSBneUQZKo3gZX2RTC6Oy5wLm3Ss3AhDzZ9sDhwbZAg/viewform?usp=sf_link", "_blank");
+}, []);
+
   return (
     <>
       <section className="petugas_upacara_section" id='petugas_upacara_section'>
@@ -191,7 +195,7 @@ const PetugasUpacara = () => {
                 </div>
                 <div className='cta_button'>
                   <img className='air-button-1' src={Air2} alt="Supergrafis - air" />
-                  <button className='modal-button'>
+                  <button className='modal-button' onClick={openYouTubeLink}>
                     Daftarkan Dirimu
                   </button>
                   <img className='air-button-2' src={Air1} alt="Supergrafis - air" />
@@ -209,7 +213,7 @@ const PetugasUpacara = () => {
                     <BoxText text={x.konten} />
                   </div>
                 ))}
-                <button className="button-mobile">
+                <button className="button-mobile" onClick={openYouTubeLink}>
                   <p>Daftarkan Dirimu</p>
                 </button>
               </div>

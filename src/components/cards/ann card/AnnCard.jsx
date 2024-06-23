@@ -68,7 +68,7 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Lotus Biru pandai dalam menghias <br />Kenali setiap divisi yang bertugas!</h3>
+                        <h3>Lotus Biru pandai dalam menghias, <br />Kenali setiap divisi yang bertugas!</h3>
                         {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
                     </div>
                     {/* <div className='schedule'>

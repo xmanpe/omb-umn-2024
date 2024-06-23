@@ -315,27 +315,46 @@
             text-align: center;
         }
     }
+
+    .photos_wrapper {
+        display: flex;
+        min-height: 400px;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        .each_photo {
+            border-radius: 12px;
+            flex: 1 0 0;
+            align-self: stretch;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     
     .content_section {
         border: 1px solid rgb(199, 199, 199);
         background-color: #ffffff;
         border-radius: 20px 20px 12px 12px;
         display: flex;
-        padding: 32px;
+        padding: 20px 100px 40px 100px;
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 40px;
         align-self: stretch;
         max-height: calc(80vh - 100px); /* Adjust the max height of the content section */
         overflow-y: auto; /* Enable vertical scrolling */
 
         .logo_and_text {
-            // border: 1px solid black;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
-            gap: 20px;
-            width: 100%;
+            gap: 8px;
             /* align-self: stretch; */
 
             .divisi_logo {
@@ -358,11 +377,12 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 32px;
+                align-self: stretch;
 
                 .logo_text {
                     display: flex;
                     flex-direction: column;
-                    align-items: start;
+                    align-items: center;
 
                     h3{
                         text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
@@ -385,92 +405,18 @@
                         line-height: normal;
                     }
                 }
-            }          
-        }
 
-        .divisi-explain {
-            // border: 1px solid black;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            width: 100%;
-
-            .core-desc {
-                border: 1px solid rgb(199, 199, 199);
-                border-radius: 12px;
-                display: flex;
-                flex-direction: column;
-                gap: 4px;
-                padding: 8px 12px;
-
-                .each-core {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 0;
-
-                    .placeholder {
-                        font-size: 16px;
-                        font-weight: 500;
-                        color: #a7a7a7;
-                        line-height: normal;
-                    }
-
-                    .info {
-                        font-size: 18px;
-                        font-weight: 600;
-                        color: #4504AA;
-                        line-height: normal;
-                    
-                    }
-
-                    .the-flex {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                }
-            }
-
-            .bottom-core {
-                border-top: 1px solid rgb(240, 240, 240);
-            }
-
-            .long-desc {
-                border: 2px solid #4504AA;
-                background-color: #efe9fe;
-                border-radius: 12px;
-                display: flex;
-                flex-direction: column;
-                padding: 8px 12px;
-
-                .long-p {
+                p {
+                    color: rgba(0, 0, 0, 0.80);
+                    text-align: center;
                     font-size: 20px;
-                    font-weight: 500;
-                    color: #000000;
+                    font-style: normal;
+                    font-weight: 400;
                     line-height: normal;
+                    align-self: stretch;
                 }
             }
-        }
-
-        .photos_wrapper {
-            display: flex;
-            min-height: 400px;
-            align-items: flex-start;
-            gap: 12px;
-            align-self: stretch;
-    
-            .each_photo {
-                border-radius: 12px;
-                flex: 1 0 0;
-                align-self: stretch;
-                overflow: hidden;
-    
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+            
         }
     }
 }

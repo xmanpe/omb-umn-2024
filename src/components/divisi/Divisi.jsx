@@ -8,6 +8,7 @@ import PesertaWawancara from '../peserta-wawancara/PesertaWawancara';
 import X from '../../images/Menu/Close_MD.svg'
 import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg'
 import Warning from '../../images/Warning/Circle_Warning.svg'
+import External from '../../images/icons/External.svg'
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/SUPERGRAFIS METALLIC VIOLET/Fill - Bunga Lotus Biru 3.svg'
@@ -85,7 +86,10 @@ const divisiInfo = [
         logo: Acara, 
         name: "BALWANA",
         sub: 'Acara', 
-        description: "BALWANA: Akar<br>Logo: Kendang<br><br>Kendang terbuat dari batang pohon, sedangkan arti dari divisi acara adalah akar. Tanpa adanya akar, pohon tidak akan tumbuh. Kendang sendiri dalam bahasa Sanskerta memiliki arti memukul atau menabuh, sehingga serupa dengan divisi balwana yang akan menabuh konsep OMB UMN 2024.<br><br><hr><br>Balwana bertugas membuat dan mengembangkan konsep kegiatan OMB UMN 2024, untuk mengesekusi program acara yang sejalan dengan nilai dan tujuan konsep OMB UMN 2024. Fokus pada pengembangan pribadi, termasuk peningkatan keterampilan, kepercayaan diri, dan semangat juang panitia serta peserta OMB UMN 2024.",
+        description: "Kendang terbuat dari batang pohon, sedangkan arti dari divisi acara adalah akar. Tanpa adanya akar, pohon tidak akan tumbuh. Kendang sendiri dalam bahasa Sanskerta memiliki arti memukul atau menabuh, sehingga serupa dengan divisi balwana yang akan menabuh konsep OMB UMN 2024.<br><br>Balwana bertugas membuat dan mengembangkan konsep kegiatan OMB UMN 2024, untuk mengeksekusi program acara yang sejalan dengan nilai dan tujuan konsep OMB UMN 2024. Fokus pada pengembangan pribadi, termasuk peningkatan keterampilan, kepercayaan diri, dan semangat juang panitia serta peserta OMB UMN 2024.",
+        arti: 'Akar',
+        senjata: 'Kendang',
+        wikipedia: 'https://id.wikipedia.org/wiki/Kendang',
         photo1: Acara1,
         photo2: Acara2,
         photo3: Acara3, 
@@ -96,7 +100,10 @@ const divisiInfo = [
     {   logo: Bph,
         name: "GANDARA",
         sub: 'Badan Pengurus Harian',
-        description: "GANDARA: Keindahan dan Kecantikan<br>Logo: Kelompok Nada Suara<br><br>Angklung sendiri melambangkan dan menggambarkan kesempurnaan yang dapat tercapai ketika bisa saling melengkapi satu sama lain. Sama halnya dengan Angklung, Gandara merupakan rangkaian suara yang senantiasa melengkapi sesama dalam OMB UMN 2024 dan menyempurnakan seluruh rangkaian yang ada.<br><br><hr><br>Tugas Divisi Gandara adalah untuk mengoordinasikan semua divisi pada OMB UMN 2024 agar dapat menciptakan keselarasan yang sempurna dalam seluruh rangkaian OMB UMN 2024.",
+        description: "Angklung sendiri melambangkan dan menggambarkan kesempurnaan yang dapat tercapai ketika bisa saling melengkapi satu sama lain. Sama halnya dengan Angklung, Gandara merupakan rangkaian suara yang senantiasa melengkapi sesama dalam OMB UMN 2024 dan menyempurnakan seluruh rangkaian yang ada.<br><br>Tugas Gandara adalah untuk mengoordinasikan semua divisi pada OMB UMN 2024 agar dapat menciptakan keselarasan yang sempurna dalam seluruh rangkaian OMB UMN 2024.",
+        arti: 'Kelompok Nada Suara',
+        senjata: 'Angklung',
+        wikipedia: 'https://id.wikipedia.org/wiki/Angklung',
         photo1: Bph1,
         photo2: Bph2,
         photo3: Bph3,
@@ -107,7 +114,10 @@ const divisiInfo = [
     {   logo: Pic,
         name: "SAKHA",
         sub: '<i>Person In Charge</i>',
-        description: "SAKHA: Teman, Sahabat, dan Kawan<br>Logo: Kecapi<br><br>Kecapi adalah alat musik tradisional Sulawesi Barat yang mengiringi dan menghasilkan melodi merdu jika kedua senarnya dipetik dengan selaras. Sama halnya dengan Sakha yang dapat mencapai potensi terbaiknya dengan bimbingan yang baik dan benar, serta menjadi pengiring bagi peserta OMB UMN 2024.<br><br><hr><br>Sakha bertugas untuk mengiring dan membimbing peserta OMB UMN 2024 agar siap menghadapi dunia perkuliahan.",
+        description: "Kecapi adalah alat musik tradisional Sulawesi Barat yang mengiringi dan menghasilkan melodi merdu jika kedua senarnya dipetik dengan selaras. Sama halnya dengan Sakha yang dapat mencapai potensi terbaiknya dengan bimbingan yang baik dan benar, serta menjadi pengiring bagi peserta OMB UMN 2024.<br><br>Sakha bertugas untuk mengiring dan membimbing peserta OMB UMN 2024 agar siap menghadapi dunia perkuliahan.",
+        arti: 'Teman, Sahabat, dan Kawan',
+        senjata: 'Kecapi',
+        wikipedia: 'https://id.wikipedia.org/wiki/Kecapi',
         photo1: Pic1,
         photo2: Pic2,
         photo3: Pic3,
@@ -118,7 +128,10 @@ const divisiInfo = [
     {   logo: Pr,
         name: "CAKSANA",
         sub: '<i>Public Relations</i>',
-        description: "CAKSANA: Bijak Bestari<br>Logo: Talindo<br><br>Merupakan alat musik dari Sulawesi Selatan yang memiliki bentuk seperti busur dan terdapat tempurung kelapa sebagai tonggak utama agar Talindo bisa berdiri. Hal tersebut sesuai dengan peran Caksana, yang menjadi tonggak utama dalam penyampaian informasi dengan jelas dan penuh dedikasi kepada para peserta, untuk menjaga reputasi baik OMB UMN 2024.<br><br><hr><br>Caksana bertanggung jawab dalam membuat dan menyebarkan informasi yang akurat serta detail kepada peserta OMB UMN 2024.",
+        description: "Talindo merupakan alat musik dari Sulawesi Selatan yang memiliki bentuk seperti busur dan terdapat tempurung kelapa sebagai tonggak utama agar Talindo bisa berdiri. Hal tersebut sesuai dengan peran Caksana, yang menjadi tonggak utama dalam penyampaian informasi dengan jelas dan penuh dedikasi kepada para peserta, untuk menjaga reputasi baik OMB UMN 2024.<br><br>Caksana bertanggung jawab dalam membuat dan menyebarkan informasi yang akurat serta detail kepada peserta OMB UMN 2024.",
+        arti: 'Bijak Bestari',
+        senjata: 'Talindo',
+        wikipedia: 'https://id.wikipedia.org/wiki/Talindo',
         photo1: Pr1,
         photo2: Pr2,
         photo3: Pr3,
@@ -129,7 +142,10 @@ const divisiInfo = [
     {   logo: Desain,
         name: "LAVANYA",
         sub: 'Desain',
-        description: "LAVANYA: Keindahan dan Kecantikan<br>Logo: Seruling<br><br>Divisi Lavanya berlandaskan 5 nilai Seruling, yaitu: Niti Harti (tahap mengerti atau mengetahui <i>brief</i> desain), Niti Surti (tahap memahami dan menguasai <i>brief</i> desain), Niti Bukti (tahap membuktikkan dan mengerjakan desain dengan kemampuan dan kreativitas diri), Niti Bakti (tahap membaktikkan dan membaktikkan diri untuk menyempurnakan desain OMB UMN 2024), dan Niti Jati (kesejatian dan sebagaimana desain mencerminkan nilai OMB UMN 2024).<br><br><hr><br>Tugas Divisi Lavanya adalah merancang segala kebutuhan desain grafis melalui berbagai media kreatif untuk membangun identitas visual OMB UMN 2024 yang berkualitas secara kreatif dan inovatif.",
+        description: "Divisi Lavanya berlandaskan 5 nilai Seruling, yaitu: Niti Harti (tahap mengerti atau mengetahui <i>brief</i> desain), Niti Surti (tahap memahami dan menguasai <i>brief</i> desain), Niti Bukti (tahap membuktikkan dan mengerjakan desain dengan kemampuan dan kreativitas diri), Niti Bakti (tahap membaktikkan dan membaktikkan diri untuk menyempurnakan desain OMB UMN 2024), dan Niti Jati (kesejatian dan sebagaimana desain mencerminkan nilai OMB UMN 2024).<br><br>Tugas Lavanya adalah merancang segala kebutuhan desain grafis melalui berbagai media kreatif untuk membangun identitas visual OMB UMN 2024 yang berkualitas secara kreatif dan inovatif.",
+        arti: 'Keindahan dan Kecantikan',
+        senjata: 'Seruling',
+        wikipedia: 'https://id.wikipedia.org/wiki/Seruling',
         photo1: Desain1,
         photo2: Desain2,
         photo3: Desain3,
@@ -140,7 +156,10 @@ const divisiInfo = [
     {   logo: Web,
         name: "NAYANIKA",
         sub: '<i>Website</i>',
-        description: "NAYANIKA: Mata Yang Indah<br>Logo: Rumba<br><br>Rumba merupakan alat musik tradisional asal Kuba yang dibawa ke Ambon yang biasanya dimainkan dengan musik hawaiian. Rumba juga digunakan untuk menyatukan tarian dengan alat musik yang sedang bermain. Seperti Nayanika yang menyatukan peserta OMB UMN 2024 dengan memberikan wadah informasi.<br><br><hr><br>Nayanika bertugas dalam merancang <i>website</i> resmi OMB UMN 2024.",
+        description: "Rumba merupakan alat musik tradisional asal Kuba yang dibawa ke Ambon yang biasanya dimainkan dengan musik hawaiian. Rumba juga digunakan untuk menyatukan tarian dengan alat musik yang sedang bermain. Seperti Nayanika yang menyatukan peserta OMB UMN 2024 dengan memberikan wadah informasi.<br><br>Nayanika bertugas dalam merancang <i>website</i> resmi OMB UMN 2024.",
+        arti: 'Mata Yang Indah',
+        senjata: 'Rumba',
+        wikipedia: 'https://id.wikipedia.org/wiki/Rumba',
         photo1: Web1,
         photo2: Web2,
         photo3: Web3,
@@ -151,7 +170,10 @@ const divisiInfo = [
     {   logo: Dokum,
         name: "BASKARA",
         sub: 'Dokumentasi',
-        description: "BASKARA: Matahari dan Surya<br>Logo: Rebab<br><br>Rebab merupakan alat musik asal Jawa Barat yang dimainkan dengan cara digesekan. Rebab memiliki 3 bagian (watangan, bathokan, dan sikilan) serta 1 bagian (senggreng) yang membuat Rebab dapat menghasilkan suaranya. Hal tersebut melambangkan kesatuan dari Baskara subdivisi foto dan video yang membutuhkan keselarasan supaya dapat menghasilkan karya yang indah. Rebab juga dikenal sebagai salah satu instrumen pembuka dalam sebuah pertunjukan kesenian. Hal ini melambangkan Baskara yang berperan sebagai pembuka pintu kenangan untuk setiap momen yang dihasilkan dari OMB UMN 2024.<br><br><hr><br>Baskara bertugas untuk mendokumentasikan seluruh rangkaian kegiatan OMB UMN 2024 agar menjadi sebuah kenangan indah tak terlupakan yang dibungkus dalam bentuk foto dan video.",
+        description: "Rebab merupakan alat musik asal Jawa Barat yang dimainkan dengan cara digesekan. Rebab memiliki 3 bagian (watangan, bathokan, dan sikilan) serta 1 bagian (senggreng) yang membuat Rebab dapat menghasilkan suaranya. Rebab juga dikenal sebagai salah satu instrumen pembuka dalam sebuah pertunjukan kesenian. Hal ini melambangkan Baskara yang berperan sebagai pembuka pintu kenangan untuk setiap momen yang dihasilkan dari OMB UMN 2024.<br><br>Baskara bertugas untuk mendokumentasikan seluruh rangkaian kegiatan OMB UMN 2024 agar menjadi sebuah kenangan indah tak terlupakan yang dibungkus dalam bentuk foto dan video.",
+        arti: 'Matahari dan Surya',
+        senjata: 'Rebab',
+        wikipedia: 'https://id.wikipedia.org/wiki/Rebab',
         photo1: Dokum1,
         photo2: Dokum2,
         photo3: Dokum3,
@@ -162,7 +184,10 @@ const divisiInfo = [
     {   logo: Keamanan,
         name: "BIMASENA",
         sub: 'Keamanan',
-        description: "BIMASENA: Panglima Gagah Berani<br>Logo: Genggong<br><br>Genggong merupakan alat musik tradisional yang berasal dari Bali. Penggunaan alat musik ini memiliki keunikan di mana alat musik ini membutuhkan keahlian khusus dengan sikap posisi tubuh yang baik agar dapat menghasilkan nada yang indah. Hal ini selaras dengan Bimasena yang memerlukan keahlian dan sikap yang baik agar dapat menjalankan peran serta tugasnya dengan maksimal pada OMB UMN 2024.<br><br><hr><br>Bimasena bertugas untuk menjaga kedisiplinan, keamanan, kekondusifan, serta kelancaran rangkaian kegiatan OMB UMN 2024.",
+        description: "Genggong merupakan alat musik tradisional yang berasal dari Bali. Penggunaan alat musik ini memiliki keunikan di mana alat musik ini membutuhkan keahlian khusus dengan sikap posisi tubuh yang baik agar dapat menghasilkan nada yang indah. Hal ini selaras dengan Bimasena yang memerlukan keahlian dan sikap yang baik agar dapat menjalankan peran serta tugasnya dengan maksimal pada OMB UMN 2024.<br><br>Bimasena bertugas untuk menjaga kedisiplinan, keamanan, kekondusifan, serta kelancaran rangkaian kegiatan OMB UMN 2024.",
+        arti: 'Panglima Gagah Berani',
+        senjata: 'Genggong',
+        wikipedia : 'https://id.wikipedia.org/wiki/Genggong',
         photo1: Keamanan1,
         photo2: Keamanan2,
         photo3: Keamanan3,
@@ -173,7 +198,10 @@ const divisiInfo = [
     {   logo: Perkap,
         name: "GAJENDRA",
         sub: 'Perlengkapan',
-        description: "GAJENDRA: Perkasa<br>Logo: Bonang<br><br>Bonang merupakan alat musik tradisional asal Jawa Tengah yang biasanya digunakan dengan cara dipukul. Alat musik tersebut dipilih karena terbuat dari bahan logam seperti kuningan, perunggu, atau besi. Hal ini mencerminkan Gajendra yang kuat dan perkasa dalam menunjukkan kemampuannya dalam menyukseskan segala keperluan logistik selama rangkaian OMB UMN 2024 berlangsung.<br><br><hr><br>Gajendra bertugas untuk menyiapkan segala kebutuhan logistik pada seluruh rangkaian OMB UMN 2024.",
+        description: "Bonang merupakan alat musik tradisional asal Jawa Tengah yang biasanya digunakan dengan cara dipukul. Alat musik tersebut dipilih karena terbuat dari bahan logam seperti kuningan, perunggu, atau besi. Hal ini mencerminkan Gajendra yang kuat dan perkasa dalam menunjukkan kemampuannya dalam menyukseskan segala keperluan logistik selama rangkaian OMB UMN 2024 berlangsung.<br><br>Gajendra bertugas untuk menyiapkan segala kebutuhan logistik pada seluruh rangkaian OMB UMN 2024.",
+        arti: 'Perkasa',
+        senjata: 'Bonang',
+        wikipedia: 'https://id.wikipedia.org/wiki/Bonang',
         photo1: Perkap1,
         photo2: Perkap2,
         photo3: Perkap3,
@@ -184,7 +212,10 @@ const divisiInfo = [
     {   logo: Konsum,
         name: "SARKARA",
         sub: 'Konsumsi',
-        description: "SARKARA: Gula dan Madu<br>Logo: Rindik<br><br>Rindik adalah alat tradisional berasal dari Bali. Pembuatan alat musik ini terbuat dari potongan bambu pilihan yang telah diproses. Hal ini menggambarkan Sarkara yang dapat menyediakan keberagaman makanan yang sehat dan bermanfaat bagi panitia OMB UMN 2024 dimana pun dan kapan pun.<br><br><hr><br>Sarkara bertugas untuk bertanggung jawab terkait makanan dan minuman yang bergizi serta dapat menyehatkan bagi seluruh panitia selama rangkaian kegiatan OMB UMN 2024.",
+        description: "Rindik adalah alat tradisional berasal dari Bali. Pembuatan alat musik ini terbuat dari potongan bambu pilihan yang telah diproses. Hal ini menggambarkan Sarkara yang dapat menyediakan keberagaman makanan yang sehat dan bermanfaat bagi panitia OMB UMN 2024 dimana pun dan kapan pun.<br><br>Sarkara bertugas untuk bertanggung jawab terkait makanan dan minuman yang bergizi serta dapat menyehatkan bagi seluruh panitia selama rangkaian kegiatan OMB UMN 2024.",
+        arti: 'Gula dan Madu',
+        senjata: 'Rindik',
+        wikipedia: 'https://id.wikipedia.org/wiki/Rindik',
         photo1: Konsum1,
         photo2: Konsum2,
         photo3: Konsum3,
@@ -195,7 +226,10 @@ const divisiInfo = [
     {   logo: Medis,
         name: "SARAYA",
         sub: 'Medis',
-        description: "SARAYA: Bantuan dan Penolong<br>Logo: Karinding<br><br>Karinding berasal dari Jawa Barat, memiliki filosofi yang berasal dari 3 kata, yaitu Yakin, Sadar, dan Sabar. Tiga kata tersebut menciptakan dasar divisi Saraya yang kuat dalam memberikan pertolongan pertama terhadap kondisi sekitar.<br><br><hr><br>Saraya bertugas untuk memberikan pertolongan pertama kepada seluruh panitia dan peserta OMB UMN 2024.",
+        description: "Karinding berasal dari Jawa Barat, memiliki filosofi yang berasal dari 3 kata, yaitu Yakin, Sadar, dan Sabar. Tiga kata tersebut menciptakan dasar divisi Saraya yang kuat dalam memberikan pertolongan pertama terhadap kondisi sekitar.<br><br>Saraya bertugas untuk memberikan pertolongan pertama kepada seluruh panitia dan peserta OMB UMN 2024.",
+        arti: 'Bantuan dan Penolong',
+        senjata: 'Karinding',
+        wikipedia: 'https://id.wikipedia.org/wiki/Karinding',
         photo1: Medis1,
         photo2: Medis2,
         photo3: Medis3,
@@ -247,83 +281,48 @@ const Divisi = () => {
                                         <h3>{selectedDivisi.name}</h3>
                                         <p dangerouslySetInnerHTML={{ __html: selectedDivisi.sub }} />
                                     </div>
-                                    <div className='photos_wrapper'>
-                                        <div className='each_photo'>
-                                            <img src={selectedDivisi.photo1} alt="Tets" />
-                                        </div>
-                                        <div className='each_photo'>
-                                            <img src={selectedDivisi.photo2} alt="Tets" />
-                                        </div>
-                                        <div className='each_photo'>
-                                            <img src={selectedDivisi.photo3} alt="Tets" />
+                                </div>
+                            </div>
+                            <div className='divisi-explain'>
+                                <div className='core-desc'>
+                                    <div className='each-core'>
+                                        <p className='placeholder'>Logo</p>
+                                        <div className='the-flex'>
+                                            <p className='info'>{selectedDivisi.senjata}</p>
+                                            <a href={selectedDivisi.wikipedia} target='_blank'>
+                                                <img src={External} alt="external" />
+                                            </a>
                                         </div>
                                     </div>
-                                    <p dangerouslySetInnerHTML={{ __html: selectedDivisi.description }} />
+                                    <div className='each-core bottom-core'>
+                                        <p className='placeholder'>Arti</p>
+                                        <p className='info'>{selectedDivisi.arti}</p>
+                                    </div>
+                                </div>
+                                <div className='long-desc'>
+                                    <p className='long-p' dangerouslySetInnerHTML={{ __html: selectedDivisi.description }} />
+                                </div>
+                            </div>
+                            <div className='photos_wrapper'>
+                                <div className='each_photo'>
+                                    <img src={selectedDivisi.photo1} alt="Tets" />
+                                </div>
+                                <div className='each_photo'>
+                                    <img src={selectedDivisi.photo2} alt="Tets" />
+                                </div>
+                                <div className='each_photo'>
+                                    <img src={selectedDivisi.photo3} alt="Tets" />
                                 </div>
                             </div>
                         </div>
-                        {/* Menampilkan Button untuk Jadwal Wawancara */}
-                        {selectedDivisi.oprec2 === 0 &&
-                        ( 
-                            <>
-                            </>
-                        )}
-                        {/* Menampilkan 2 Button Untuk Divisi OPREC BATCH 2*/}
-                        {selectedDivisi.oprec2 === 1 &&
-                        ( 
-                            <div className='button_section'>
-                                {/* Button Daftar Batch #2 */}
-                                <div className='cta_button'>
-                                    <a
-                                        // href={selectedDivisi.link}
-                                        style={{ textDecoration: "none" }}
-                                    >
-                                        <button onClick={() => window.open(selectedDivisi.link, '_blank')}>
-                                        Daftar {selectedDivisi.name}
-                                        <img src={ArrowRight} alt="Arrow Icon" />
-                                        </button>
-                                    </a>
-                                </div>
-                                {/* Button Lihat Jadwal */}
-                                <p style={{opacity: '0.3'}}>Atau</p>
-                                <div className='cta_button_secondary'>
-                                    <a
-                                        href="/hasil-seleksi"
-                                        onClick={handleLinkClick}
-                                        style={{ textDecoration: "none" }}
-                                    >
-                                        <button>
-                                            {selectedDivisi.name === "BALWANA" ? "Jadwal Seleksi" : "Jadwal Wawancara"} {selectedDivisi.name}
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        )}
-                        {/* Menampilkan 2 Button Untuk Divisi BALWANA*/}
-                        {selectedDivisi.oprec2 === 3 && 
-                        ( 
-                            <div className='button_section'>
-                                {/* Button Daftar Batch #2 */}
-                                <div className='cta_button'>
-                                    <a
-                                        // href={selectedDivisi.link}
-                                        style={{ textDecoration: "none" }}
-                                    >
-                                        <button onClick={() => window.open(selectedDivisi.link, '_blank')}>
-                                        Daftar {selectedDivisi.name}
-                                        <img src={ArrowRight} alt="Arrow Icon" />
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                        )}
-                        {/* Menampilkan Text menyuruh user membuka email*/}
-                        {selectedDivisi.oprec2 === -1 && 
-                        ( 
-                            <div className='button_section'>
-                                <a className='extra_info_balwana'>Silakan periksa email studentmu untuk pengumuman lolos ke tahap wawancara Batch 2 divisi Balwana</a>
-                            </div>
-                        )}
+                        {/* <div className='button_section'>
+                            <p>This is the left text of the button</p>
+                            <a href="">
+                                <button onClick={handleLinkClick}>Daftar Sekarang
+                                    <img src={ArrowRight} alt="Arrow Right" />
+                                </button>
+                            </a>
+                        </div> */}
                     </div>
                 </div>
             )}

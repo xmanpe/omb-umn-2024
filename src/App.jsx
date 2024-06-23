@@ -17,7 +17,7 @@ function App() {
           <Route path="/daftar-peserta" element={<PesertaMengulang />} />
           <Route path="*" element={<Error />} />
         </Routes>
-        <BottomNav />
+        {/* <BottomNav /> */}
       </Router>
     </div>
   );

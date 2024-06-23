@@ -54,8 +54,12 @@ const AnnCard = () => {
         setShowModal(!showModal);
     };
 
+    // const openPage = () => {
+    //     window.location.href = '/daftar-peserta';
+    // };
+
     const openPage = () => {
-        window.location.href = '/daftar-peserta';
+        document.getElementById('divisi_section').scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -64,8 +68,8 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>DAFTAR PESERTA MAHASISWA AKTIF OMB UMN 2024</h3>
-                        <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p>
+                        <h3>Lotus Biru pandai dalam menghias <br />Kenali setiap divisi yang bertugas!</h3>
+                        {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>

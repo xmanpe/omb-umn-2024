@@ -37,12 +37,12 @@ const Home = () => {
   return (
     <>
         {/* <BottomNav /> */}
-        {/* {showExperience && <SmallModal />} */}
+        {showExperience && <SmallModal />}
         {/* {showExperience && <Experience />} */}
         <Hero />
         <ApaItuOMB />
         <YouTube />
-        {/* <Divisi /> */}
+        <Divisi />
         <Ananta />
         <Footer />
     </>

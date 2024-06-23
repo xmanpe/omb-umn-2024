@@ -5,6 +5,7 @@ import SmallModal from '../components/small modal/SmallModal';
 import ApaItuOMB from '../components/apa itu omb/ApaItuOMB';
 import YouTube from '../components/youtube/YouTube';
 import Divisi from '../components/divisi/Divisi';
+import Temp from '../components/temp/Temp';
 import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
 import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
@@ -43,8 +44,9 @@ const Home = () => {
         <Hero />
         <ApaItuOMB />
         <YouTube />
-        <PetugasUpacara />
+        {/* <PetugasUpacara /> */}
         {/* <Divisi /> */}
+        <Temp/>
         <Ananta />
         <Footer />
     </>

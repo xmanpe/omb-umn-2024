@@ -39,7 +39,7 @@ const Ananta = () => {
                     </div>
                 </div>
             </div>
-            {/* <img className='wave_ananta_bottom' src={SecondWave} alt="Wave" /> */}
+            <img className='wave_ananta_bottom' src={SecondWave} alt="Wave" />
         </section>
     );
 }

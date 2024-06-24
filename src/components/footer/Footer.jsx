@@ -21,10 +21,11 @@ const Footer = () => {
     const location = useLocation();
     const isJadwalWawancaraPage = location.pathname === '/hasil-seleksi';
     const isPesertaMengulangPage = location.pathname === '/daftar-peserta';
+    const isHomePage = location.pathname === '/';
 
     return (
         <footer className='footer_section'>
-            {isPesertaMengulangPage && <img className='wave' src={Wave} alt="Wave" />}
+            {isHomePage && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>

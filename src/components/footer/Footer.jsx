@@ -87,7 +87,9 @@ const Footer = () => {
                 <div className='footer_bottom'>
                     <div className='top_info'>
                         <p className='copyright'>© OMB UMN 2024</p>
-                        <p className='slebew'>Dikelola oleh Divisi NAYANIKA</p>
+                        <p className='slebew'>Dikelola oleh <span className="nayanika">Divisi NAYANIKA<span className="popover">Bagus ga websitenya? - Koor Nayanika</span></span></p>
+                        <br />
+                        <p className='update'>Konten diperbarui per tanggal 25 Juni 2024</p>
                     </div>
                 </div>
             </div>

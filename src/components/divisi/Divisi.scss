@@ -173,7 +173,7 @@
 
         .each_divisi:hover {
             cursor: pointer;
-            transform: translateY(-5px); /* Float up */
+            transform: translateY(-5px) scale(1.05); /* Float up */
             z-index: 1; /* Bring the hovered divisi to the front */
         }
 
@@ -331,18 +331,18 @@
                         line-height: normal;
                     }
 
+                    .the-flex {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
                     .info {
                         font-size: 18px;
                         font-weight: 600;
                         color: #4504AA;
                         line-height: normal;
                     
-                    }
-
-                    .the-flex {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
                     }
                 }
             }

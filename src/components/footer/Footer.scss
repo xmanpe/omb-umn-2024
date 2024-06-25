@@ -192,24 +192,13 @@
                         padding: 10px;
                         position: absolute;
                         z-index: 1;
-                        bottom: 125%;
+                        bottom: 100%;
                         left: 50%;
                         margin-left: -100px;
                         transition: opacity 0.3s;
                         font-size: 14px;
                         font-weight: normal;
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            top: 100%;
-                            left: 50%;
-                            margin-left: -5px;
-                            border-width: 5px;
-                            border-style: solid;
-                            border-color: #ffffff95 transparent transparent transparent;
-                            backdrop-filter: blur(4px);
-                        }
+                        box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
                     }
                 }
             }

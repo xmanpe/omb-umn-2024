@@ -6,7 +6,7 @@
     bottom: 12px;
     left: 0;
     right: 0;
-    width: max-content;
+    width: 1fr;
     margin: 0 auto;
     gap: 8px;
 
@@ -56,7 +56,7 @@
         }
 
         .each-extended:hover {
-            cursor: pointer;
+            cursor: url('../../images/cursor-pointer.svg'), auto;
             background: #f5eeffc4;
         }
     }
@@ -173,7 +173,7 @@
             }
     
             .each-extended:hover {
-                cursor: pointer;
+                cursor: url('../../images/cursor-pointer.svg'), auto;
                 background: initial;
             }
         }

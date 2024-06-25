@@ -188,7 +188,7 @@
                         backdrop-filter: blur(4px);
                         color: #000;
                         text-align: center;
-                        border-radius: 100px;
+                        border-radius: 12px;
                         padding: 10px;
                         position: absolute;
                         z-index: 1;
@@ -196,7 +196,7 @@
                         left: 50%;
                         margin-left: -100px;
                         transition: opacity 0.3s;
-                        font-size: 12px;
+                        font-size: 14px;
                         font-weight: normal;
 
                         &::after {

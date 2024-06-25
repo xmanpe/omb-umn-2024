@@ -717,10 +717,12 @@
             }
     
             .photos_wrapper {
-                flex-direction: column;
-                min-height: 180px;
+                display: grid;
+                grid-template-columns: auto;
 
                 .each_photo {
+                    height: 240px;
+
                     img {
                     }
                 }

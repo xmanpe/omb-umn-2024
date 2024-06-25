@@ -3,7 +3,7 @@
     flex-direction: column;
     z-index: 999;
     position: fixed;
-    bottom: 0;
+    bottom: 12px;
     left: 0;
     right: 0;
     width: max-content;
@@ -13,10 +13,10 @@
     .extended-navbar {   
         display: flex;
         flex-direction: column;
-        background: #ffffffe5;
+        background: #ffffff;
         gap: 4px;
         padding: 4px;
-        border-radius: 12px 12px 12px 12px;
+        border-radius: 20px;
         border: 1px solid rgb(228, 228, 228);
         box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.17);
 
@@ -33,16 +33,16 @@
         .each-extended {
             display: flex;
             border-radius: 100px;
-            border: 1px solid rgb(228, 228, 228);
+            border: 1px solid rgb(237, 237, 237);
             padding: 8px 16px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 20px;
             justify-content: space-between;
 
             img {
-                width: 20px;
-                height: 20px;
+                width: 22px;
+                height: 22px;
                 transform: scaleX(-1);
             }
 
@@ -57,14 +57,14 @@
 
         .each-extended:hover {
             cursor: pointer;
-            background: #e7d9fec4;
+            background: #f5eeffc4;
         }
     }
 
     .navigation-bar {
         display: flex;
         padding: 4px;
-        border-radius: 26px 26px 0px 0px;
+        border-radius: 100px;
         background: #ffffff;
         width: fit-content;
         margin: auto;
@@ -83,7 +83,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        border-radius: 22px 22px 4px 4px;
+        border-radius: 100px;
         padding: 8px 20px;
         background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
         // box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.20) inset, 0px 2px 2px 0px rgba(0, 0, 0, 0.32) inset;
@@ -97,14 +97,14 @@
         }
       
         img {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
         }
       
         p {
             color: #FFF;
             font-family: "GSN", sans-serif;
-            font-size: 20px;
+            font-size: 18px;
             line-height: normal;
         }
     }
@@ -118,6 +118,7 @@
         // flex-direction: column;
         // z-index: 999;
         // position: fixed;
+        bottom: 0;
         // left: 0;
         // right: 0;
         // width: max-content;
@@ -182,10 +183,10 @@
             justify-content: center;
             // display: flex;
             padding: 12px;
-            border-radius: 12px 12px 0px 0px;
+            border-radius: 0px;
             // background: #ffffffd5;
             // align-items: center;
-            // border: 1px solid rgb(228, 228, 228);
+            border: none;
             // box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.17);
             // transition: width 0.3s ease, background-color 0.3s ease;
             gap: 4px;

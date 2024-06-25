@@ -346,7 +346,7 @@ const Divisi = () => {
                 <div className="title_and_description">
                     <div className='divisi_title'>
                         <img src={Supergrafis} alt="Supergrafis" />
-                        <h1>Divisi OMB UMN 2024</h1>
+                        <h1>Divisi-Divisi OMB UMN</h1>
                     </div>
                     <p>Klik divisi untuk melihat informasi lebih lanjut.</p>
                     {/* <div className='notes'>

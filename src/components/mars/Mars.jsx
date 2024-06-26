@@ -3,7 +3,6 @@ import './mars.scss'
 
 //images
 import Wave3 from '../../images/waves/Wave One 3.png'
-import SuperMars from '../../images/supergrafis/supergrafis-mars.png'
 //audio
 import AudioOMB from '../../audio/Nayanika.mp3'
 function Mars() {

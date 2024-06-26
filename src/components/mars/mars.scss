@@ -16,11 +16,6 @@
             rgba(202, 191, 249, 0.50) 47.21%,
             rgba(69, 4, 170, 0.50) 92.55%),
         #7047BF;
-    background-image: url('../../images/supergrafis/supergrafis-mars.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
 }
 
 .wave-container {
@@ -132,12 +127,7 @@
 
 @media screen and (max-width: 1200px) {
     .mars-container {
-        padding: 0 80px;
-        background-image: url('../../images/supergrafis/supergrafis-mars-m.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        
+        padding: 0 80px;  
     }
 
     .wave-one-3 {

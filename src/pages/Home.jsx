@@ -8,6 +8,7 @@ import Divisi from '../components/divisi/Divisi';
 import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
 import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
+import VisiMisi from '../components/visi-misi/VisiMisi';
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
@@ -43,6 +44,7 @@ const Home = () => {
         <Hero />
         <ApaItuOMB />
         <YouTube />
+        <VisiMisi />
         <Divisi />
         <Ananta />
         <Footer />

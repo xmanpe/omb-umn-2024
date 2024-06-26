@@ -4,6 +4,9 @@ import './TentangOMB.scss';
 // import components
 import Header from '../../components/header/Header';
 
+// import pages
+import NilaiNilai from '../../components/nilai-nilai/NilaiNilai';
+
 const TentangOMB = () => {
     return (
         <>
@@ -11,9 +14,7 @@ const TentangOMB = () => {
                 top="Lotus Biru merajut mimpi masa depan,"
                 bottom={<>Selamat datang di <i>page</i> tentang OMB!</>}
             />
-            <section className='content-tentang_omb'>
-                
-            </section>
+            <NilaiNilai />
         </>
     );
 }

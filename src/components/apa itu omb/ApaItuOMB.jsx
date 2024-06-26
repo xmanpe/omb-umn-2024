@@ -24,7 +24,7 @@ const ApaItuOMB = () => {
                 </div>
                 <div className='images_section'>
                     {images.map((image, index) => (
-                        <div className='eachimage' key={index}>
+                        <div className={`eachimage ${index % 2 === 0 ? 'left-rotate' : 'right-rotate'}`} key={index}>
                             <img src={image} alt={`Image ${index}`} />
                         </div>
                     ))}

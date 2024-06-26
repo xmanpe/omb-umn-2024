@@ -38,13 +38,12 @@ const Home = () => {
   return (
     <>
         {/* <BottomNav /> */}
-        {/* {showExperience && <SmallModal />} */}
+        {showExperience && <SmallModal />}
         {/* {showExperience && <Experience />} */}
         <Hero />
         <ApaItuOMB />
         <YouTube />
-        <PetugasUpacara />
-        {/* <Divisi /> */}
+        <Divisi />
         <Ananta />
         <Footer />
     </>

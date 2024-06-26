@@ -47,16 +47,20 @@ const SmallModal = () => {
         setShowModal(!showModal);
     };
 
+    const openPage = () => {
+        document.getElementById('divisi_section').scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
         <>
         {showModal && <InformationModal onClose={toggleModal} />}
             <div className={`small_modal ${isVisible ? 'visible' : ''}`}>
                 <div className='left_side_modal'>
                     <img className='supergrafis' src={Supergrafis} alt="Supergrafis" />
-                    <p className='left_side'>Pendaftaran Peserta OMB UMN 2024 telah dibuka!</p>
+                    <p className='left_side'>Kenali setiap divisi yang bertugas!</p>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={toggleModal}>Daftar
+                    <button onClick={openPage}>Melihat
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

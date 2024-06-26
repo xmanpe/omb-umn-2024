@@ -102,7 +102,7 @@ const BottomNav = () => {
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
         // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
         { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
-        // { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
+        { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
         // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
         // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },

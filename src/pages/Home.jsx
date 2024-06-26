@@ -8,6 +8,7 @@ import Divisi from '../components/divisi/Divisi';
 import Ananta from '../components/ananta/Ananta';
 import Footer from '../components/footer/Footer';
 import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
+import Mars from '../components/mars/Mars'
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
@@ -45,6 +46,7 @@ const Home = () => {
         <YouTube />
         <PetugasUpacara />
         {/* <Divisi /> */}
+        <Mars />
         <Ananta />
         <Footer />
     </>

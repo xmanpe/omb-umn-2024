@@ -77,16 +77,16 @@ const AnnCard = () => {
                     <div className='title_and_desc'>
                         <h3>Lotus Biru pandai dalam menghias, <br />Kenali setiap divisi yang bertugas!</h3>
                         {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
-//                         <h3>PENDAFTARAN PETUGAS UPACARA OMB UMN 2024 TELAH DIBUKA!</h3>
-//                         <p>Silakan klik tombol berikut untuk menuju ke laman pendaftaran.</p>
+                            {/* <h3>PENDAFTARAN PETUGAS UPACARA OMB UMN 2024 TELAH DIBUKA!</h3>
+                            <p>Silakan klik tombol berikut untuk menuju ke laman pendaftaran.</p> */}
                     </div>
-                    <div className='schedule'>
+                    {/* <div className='schedule'>
                         <div className='date'>
                             <img src={Calendar} alt="Calendar Icon" />
                             <p>10–15 Juni 2024</p>
                         </div>
                         <p className='countdown'>{countdown}</p>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='cta_button'>
                     <button onClick={handleScrollToUpacara}>Daftar

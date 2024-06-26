@@ -11,7 +11,7 @@ const ModalNilai = ({ show, onClose, title, subtitle, content }) => {
 
   return (
     <div className="modal-overlay">
-      <div className="modal">
+      <div className="modal-nilai">
         <div className="close_button">
           <img src={X} alt="Close button" onClick={onClose} />
         </div>

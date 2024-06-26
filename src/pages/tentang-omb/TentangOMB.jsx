@@ -11,6 +11,9 @@ const TentangOMB = () => {
                 top="Lotus Biru merajut mimpi masa depan,"
                 bottom={<>Selamat datang di <i>page</i> tentang OMB!</>}
             />
+            <section className='content-tentang_omb'>
+                
+            </section>
         </>
     );
 }

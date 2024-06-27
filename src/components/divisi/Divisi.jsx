@@ -28,7 +28,7 @@ import Bph from '../../images/Logo Divisi OMB 2024/Gandara Large.png';
 import Bph1 from '../../images/divisi/bph/bph 1.jpeg'
 import Bph2 from '../../images/divisi/bph/bph 2.jpeg'
 import Bph3 from '../../images/divisi/bph/bph 3.jpeg'
-import BphSound from '../../audio/Gandara.mp3'
+import BphSound from '../../audio/gandara.mp3'
 
 import Desain from '../../images/Logo Divisi OMB 2024/Lavanya Large.png';
 import Desain1 from '../../images/divisi/desain/desain 1.jpeg'
@@ -58,7 +58,7 @@ import Medis from '../../images/Logo Divisi OMB 2024/Saraya Large.png';
 import Medis1 from '../../images/divisi/medis/medis 1.jpeg'
 import Medis2 from '../../images/divisi/medis/medis 2.jpeg'
 import Medis3 from '../../images/divisi/medis/medis 3.jpeg'
-import MedisSound from '../../audio/Saraya.mp3'
+import MedisSound from '../../audio/saraya.mp3'
 
 import Perkap from '../../images/Logo Divisi OMB 2024/Gajendra Large.png';
 import Perkap1 from '../../images/divisi/perkap/perkap 1.jpeg'

@@ -6,6 +6,7 @@ import Header from '../../components/header/Header';
 
 // import pages
 import NilaiNilai from '../../components/nilai-nilai/NilaiNilai';
+import Mars from '../../components/mars/Mars'
 
 const TentangOMB = () => {
     return (
@@ -15,6 +16,7 @@ const TentangOMB = () => {
                 bottom={<>Selamat datang di <i>page</i> tentang OMB!</>}
             />
             <NilaiNilai />
+            <Mars/>
         </>
     );
 }

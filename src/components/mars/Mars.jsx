@@ -26,9 +26,9 @@ function Mars() {
                 <img src={Wave3} alt="Wave one 3" className='wave-one-3'/>
             </div>
             <div className="mars-title">
-                <img src={Superputihkiri} alt="" className='supergrafis'/>
+                <img src={Superputihkiri} alt="" className='supergrafis-mars'/>
                 <h1>MARS</h1>
-                <img src={Superputihkanan} alt="" className='supergrafis' />
+                <img src={Superputihkanan} alt="" className='supergrafis-mars'/>
             </div>
             <div className="mars-content">
                 <div className="mars-omb">

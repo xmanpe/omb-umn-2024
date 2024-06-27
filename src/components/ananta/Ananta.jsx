@@ -23,7 +23,7 @@ const Ananta = () => {
             <div className='ananta_content'>
                 <img className='kupu_top' src={Kupu} alt="Kupu ananta" />
                 <div className='the_content'>
-                    <div className='left'>
+                    <div className='left vibrate-effect-infinite'>
                         <img src={Stacks} alt="Stack images" />
                     </div>
                     <div className='right'>
@@ -38,8 +38,11 @@ const Ananta = () => {
                     </div>
                     </div>
                 </div>
+                {/* <div className='meliora-card'>
+                    <p>Tentunya OMB UMN 2024 akan membawakan konsep baru untuk pameran <i>online</i> dan <i>offline</i> nya. Ditunggu, ya!</p>
+                </div> */}
             </div>
-            {/* <img className='wave_ananta_bottom' src={SecondWave} alt="Wave" /> */}
+            <img className='wave_ananta_bottom' src={SecondWave} alt="Wave" />
         </section>
     );
 }

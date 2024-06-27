@@ -1,10 +1,13 @@
-import React, { useState,useEffect,useRef } from 'react';
-import ReactDOM from 'react-dom';
-import { Link, useHistory } from 'react-router-dom';
-import './Temp.scss';
+import React, { useState } from 'react';
+
+import './Pelaksanaan.scss';
+
 import listPelaksanaan from './listPelaksanaan';
-import Supergrafis from '../../images/supergrafis/SupergrafisPelaksanaan.png'
+import Supergrafis1 from '../../images/supergrafis/SupergrafisPelaksanaan.png'
+import Supergrafis2 from '../../images/supergrafis/SupergrafisPelaksanaan2.png'
+import Supergrafis3 from '../../images/supergrafis/SupergrafisPelaksanaan3.svg'
 import ArrowDropdown from '../../images/Arrow/ArrowDropdown.svg'
+
 
 const Temp = () => {
     const [sliderState,setSliderState] = useState(0);
@@ -20,7 +23,9 @@ const Temp = () => {
     return (
             <>
             <section className='wrapper-content'>
-            <img className='background' src={Supergrafis} alt='Bg'/>
+            <img className='background-upper' src={Supergrafis1} alt='Bg'/>
+            <img className='background-lower' src={Supergrafis2} alt='Bg'/>
+            <img className='background-extra' src={Supergrafis3} alt='Bg'/>
                 <div className='slider-wrapper'>
                     <div className='slider'>
                         {slides.map((slides,index)=>(
@@ -44,7 +49,7 @@ const Temp = () => {
                         {showMobileDropdown && 
                             <div className='dropdown-wrapper'>
                                 {slides.map((slides,index)=>(
-                                    sliderState != index &&
+                                    sliderState !== index &&
                                         <button key={index}
                                                 className={`slider-button-mobile`}
                                                 onClick={() => handleUserClick(index)}>

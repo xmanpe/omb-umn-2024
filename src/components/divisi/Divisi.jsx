@@ -22,7 +22,7 @@ import Acara from '../../images/Logo Divisi OMB 2024/Balwana Large.png';
 import Acara1 from '../../images/divisi/acara/acara 1.jpeg'
 import Acara2 from '../../images/divisi/acara/acara 2.jpeg'
 import Acara3 from '../../images/divisi/acara/acara 3.jpeg'
-import AcaraSound from '../../audio/Balwana.mp3'
+import AcaraSound from '../../audio/balwana.mp3'
 
 import Bph from '../../images/Logo Divisi OMB 2024/Gandara Large.png';
 import Bph1 from '../../images/divisi/bph/bph 1.jpeg'
@@ -34,25 +34,25 @@ import Desain from '../../images/Logo Divisi OMB 2024/Lavanya Large.png';
 import Desain1 from '../../images/divisi/desain/desain 1.jpeg'
 import Desain2 from '../../images/divisi/desain/desain 2.jpeg'
 import Desain3 from '../../images/divisi/desain/desain 3.jpeg'
-import DesainSound from '../../audio/Lavanya.mp3'
+import DesainSound from '../../audio/lavanya.mp3'
 
 import Dokum from '../../images/Logo Divisi OMB 2024/Baskara Large.png';
 import Dokum1 from '../../images/divisi/dokum/dokum 1.jpeg'
 import Dokum2 from '../../images/divisi/dokum/dokum 2.jpeg'
 import Dokum3 from '../../images/divisi/dokum/dokum 3.jpeg'
-import DokumSound from '../../audio/Baskara.mp3'
+import DokumSound from '../../audio/baskara.mp3'
 
 import Keamanan from '../../images/Logo Divisi OMB 2024/Bimasena Large.png';
 import Keamanan1 from '../../images/divisi/keamanan/keamanan 1.jpeg'
 import Keamanan2 from '../../images/divisi/keamanan/keamanan 2.jpeg'
 import Keamanan3 from '../../images/divisi/keamanan/keamanan 3.jpeg'
-import KeamananSound from '../../audio/Bimasena.mp3'
+import KeamananSound from '../../audio/bimasena.mp3'
 
 import Konsum from '../../images/Logo Divisi OMB 2024/Sarkara Large.png';
 import Konsum1 from '../../images/divisi/konsum/konsum 1.jpeg'
 import Konsum2 from '../../images/divisi/konsum/konsum 2.jpeg'
 import Konsum3 from '../../images/divisi/konsum/konsum 3.jpeg'
-import KonsumSound from '../../audio/Sarkara.mp3'
+import KonsumSound from '../../audio/sarkara.mp3'
 
 import Medis from '../../images/Logo Divisi OMB 2024/Saraya Large.png';
 import Medis1 from '../../images/divisi/medis/medis 1.jpeg'
@@ -64,25 +64,25 @@ import Perkap from '../../images/Logo Divisi OMB 2024/Gajendra Large.png';
 import Perkap1 from '../../images/divisi/perkap/perkap 1.jpeg'
 import Perkap2 from '../../images/divisi/perkap/perkap 2.jpeg'
 import Perkap3 from '../../images/divisi/perkap/perkap 3.jpeg'
-import PerkapSound from '../../audio/Gajendra.mp3'
+import PerkapSound from '../../audio/gajendra.mp3'
 
 import Pic from '../../images/Logo Divisi OMB 2024/Sakha Large.png';
 import Pic1 from '../../images/divisi/pic/pic 1.jpeg'
 import Pic2 from '../../images/divisi/pic/pic 2.jpeg'
 import Pic3 from '../../images/divisi/pic/pic 3.jpeg'
-import PicSound from '../../audio/Sakha.mp3'
+import PicSound from '../../audio/sakha.mp3'
 
 import Pr from '../../images/Logo Divisi OMB 2024/Caksana Large.png';
 import Pr1 from '../../images/divisi/pr/pr 1.jpeg'
 import Pr2 from '../../images/divisi/pr/pr 2.jpeg'
 import Pr3 from '../../images/divisi/pr/pr 3.jpeg'
-import PrSound from '../../audio/Caksana.mp3'   
+import PrSound from '../../audio/caksana.mp3'   
 
 import Web from '../../images/Logo Divisi OMB 2024/Nayanika Large.png';
 import Web1 from '../../images/divisi/web/web 1.jpeg'
 import Web2 from '../../images/divisi/web/web 2.jpeg'
 import Web3 from '../../images/divisi/web/web 3.jpeg'
-import WebSound from '../../audio/Nayanika.mp3'
+import WebSound from '../../audio/nayanika.mp3'
 
 const divisiInfo = [
     { 

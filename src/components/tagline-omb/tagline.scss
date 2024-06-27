@@ -1,5 +1,6 @@
 .tagline-container {
   display: flex;
+  position: relative;
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
@@ -27,6 +28,13 @@
     width: 100%;
     position: relative;
     bottom: -2px;
+  }
+
+  .supergrafis-kembang-banyak {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .tagline-omb {

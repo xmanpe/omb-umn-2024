@@ -4,11 +4,17 @@ import "./tagline.scss";
 import TaglineOMB from "../../images/Tagline OMB 2024.png";
 import Wave13 from "../../images/waves/Wave One 3.png";
 import Wave14 from "../../images/waves/Wave One 4.png";
+import KembangBanyak from "../../images/supergrafis/tagline supergrafis/Supergrafis Putih - kembangbanyak.svg";
 
 function Tagline() {
   return (
     <div className="tagline-container">
       <img src={Wave14} alt="wave" className="wave-atas"></img>
+      <img
+        src={KembangBanyak}
+        alt="Kembang"
+        className="supergrafis-kembang-banyak"
+      ></img>
       <div className="tagline-omb">
         <div className="box-tagline">
           <div className="tagline">

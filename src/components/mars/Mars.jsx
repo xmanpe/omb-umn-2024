@@ -12,7 +12,7 @@ import SupergrafisLebah from '../../images/supergrafis/Mars supergrafis/Supergra
 import SupergrafisTangkai from '../../images/supergrafis/Mars supergrafis/Supergrafis Putih - 2 tangkai.svg'
 
 //audio
-import AudioOMB from '../../audio/Nayanika.mp3'
+import AudioOMB from '../../audio/nayanika.mp3'
 function Mars() {
     return (
         <div className="mars-container">

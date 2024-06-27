@@ -1,0 +1,165 @@
+.visi_misi_section {
+    position: relative;
+    display: flex;
+    padding: 100px 150px;
+
+    overflow-x: hidden;
+
+    .bunga_tangkai_fill {
+        position: absolute;
+        transform: rotate(12deg);
+        opacity: 30%;
+        width: 250px;
+        bottom: 0;
+        left: -2%;
+    }
+
+    .bunga_fill {
+        position: absolute;
+        opacity: 30%;
+        width: 300px;
+        bottom: 10%;
+        right: -5%;
+    }
+
+    .content {
+        display: flex;
+        
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(to right, #CABFF9, #4504AA) border-box;
+        border: 1px solid transparent;
+        border-radius: 48px;
+        filter: drop-shadow(0px 10px 11.4px rgba(0, 0, 0, 0.07));
+        backdrop-filter: blur(36px);
+        -webkit-backdrop-filter: blur(36px);
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            padding: 48px 100px;
+
+            .header {
+                width: 280px;
+                border-radius: 24px;
+                margin: 0 auto 24px;
+                
+                color: #4504AA;
+                text-align: center;
+                background: linear-gradient(white, white) padding-box,
+                            linear-gradient(to right, #CABFF9, #4504AA) border-box;
+                border: 3px solid transparent;
+
+                h4 {
+                    margin: 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .visi_misi_section {
+        padding: 100px 75px;
+
+    .bunga_tangkai_fill {
+        position: absolute;
+        transform: rotate(12deg);
+        opacity: 30%;
+        width: 200px;
+        bottom: 10%;
+        left: -2%;
+    }
+
+    .bunga_fill {
+        position: absolute;
+        opacity: 30%;
+        width: 250px;
+        bottom: 15%;
+        right: -5%;
+    }
+
+        .content {
+            .box {
+                padding: 24px 48px;
+                .header {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .visi_misi_section {
+        padding: 100px 48px;
+        .content {
+            .box {
+                padding: 24px 36px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .visi_misi_section {
+        padding: 80px 48px;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            .box {
+                padding: 24px 36px;
+                .header {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .visi_misi_section {
+        padding: 48px 24px;
+
+        .bunga_tangkai_fill {
+            position: absolute;
+            width: 150px;
+            bottom: 10%;
+        }
+    
+        .bunga_fill {
+            position: absolute;
+            width: 200px;
+            bottom: 10%;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            .box {
+                padding: 12px 14px;
+                .header {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .visi_misi_section {
+        padding: 48px 24px;
+        .content {
+            display: flex;
+            flex-direction: column;
+            .box {
+                padding: 12px 14px;
+                .header {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

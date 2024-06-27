@@ -9,7 +9,7 @@ import Supergrafis3 from '../../images/supergrafis/SupergrafisPelaksanaan3.svg'
 import ArrowDropdown from '../../images/Arrow/ArrowDropdown.svg'
 
 
-const Temp = () => {
+const Pelaksanaan = () => {
     const [sliderState,setSliderState] = useState(0);
     const [showMobileDropdown, setShowMobileDropdown] =useState(false);
     const handleDropdownClick = () => {
@@ -80,4 +80,4 @@ const Temp = () => {
             </>
     )
 }
-export default Temp;
+export default Pelaksanaan;

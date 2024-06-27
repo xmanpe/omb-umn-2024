@@ -23,20 +23,6 @@ function Tagline() {
         </div>
       </div>
       <div className="content-container">
-        <div className="content-tumbuh-berpotensi">
-          <div className="content-title">
-            <h2>“Tumbuh Berpotensi”</h2>
-          </div>
-          <div className="content-text">
-            <p>
-              Setelah memiliki ambisi yang tangguh, diperlukan kebijakkan dalam
-              memproses ambisi tersebut. Perlunya pengetahuan baru, pengalaman,
-              hingga bertumbuhlah potensi yang terpendam di dalam diri. Pada OMB
-              UMN 2024 ada pendukung-pendukung lainnya agar potensi semakin
-              berkembang.
-            </p>
-          </div>
-        </div>
         <div className="content-tangguh-berambisi">
           <div className="content-title">
             <h2>“Tangguh Berambisi”</h2>
@@ -49,6 +35,20 @@ function Tagline() {
               percaya diri dengan kemampuan yang dimiliki. Maka dari itu, hal
               pertama yang ingin ditanamkan dalam rangkaian OMB UMN 2024 adalah
               penanaman ambisi yang tangguh.
+            </p>
+          </div>
+        </div>
+        <div className="content-tumbuh-berpotensi">
+          <div className="content-title">
+            <h2>“Tumbuh Berpotensi”</h2>
+          </div>
+          <div className="content-text">
+            <p>
+              Setelah memiliki ambisi yang tangguh, diperlukan kebijakkan dalam
+              memproses ambisi tersebut. Perlunya pengetahuan baru, pengalaman,
+              hingga bertumbuhlah potensi yang terpendam di dalam diri. Pada OMB
+              UMN 2024 ada pendukung-pendukung lainnya agar potensi semakin
+              berkembang.
             </p>
           </div>
         </div>

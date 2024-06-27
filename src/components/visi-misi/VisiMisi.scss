@@ -5,16 +5,19 @@
 
     .bunga_tangkai_fill {
         position: absolute;
-        width: 200px;
+        transform: rotate(12deg);
+        opacity: 30%;
+        width: 250px;
         bottom: 0;
-        left: 0;
+        left: -2%;
     }
 
     .bunga_fill {
         position: absolute;
-        width: 200px;
-        bottom: 0;
-        right: 0;
+        opacity: 30%;
+        width: 300px;
+        bottom: 10%;
+        right: -5%;
     }
 
     .content {
@@ -58,19 +61,22 @@
     .visi_misi_section {
         padding: 100px 75px;
 
-        .bunga_tangkai_fill {
-            position: absolute;
-            width: 150px;
-            bottom: 10%;
-            left: 0;
-        }
-    
-        .bunga_fill {
-            position: absolute;
-            width: 150px;
-            bottom: 10%;
-            right: 0;
-        }
+    .bunga_tangkai_fill {
+        position: absolute;
+        transform: rotate(12deg);
+        opacity: 30%;
+        width: 200px;
+        bottom: 10%;
+        left: -2%;
+    }
+
+    .bunga_fill {
+        position: absolute;
+        opacity: 30%;
+        width: 250px;
+        bottom: 15%;
+        right: -5%;
+    }
 
         .content {
             .box {
@@ -117,16 +123,14 @@
 
         .bunga_tangkai_fill {
             position: absolute;
-            width: 100px;
+            width: 150px;
             bottom: 10%;
-            left: 0;
         }
     
         .bunga_fill {
             position: absolute;
-            width: 100px;
+            width: 200px;
             bottom: 10%;
-            right: 0;
         }
 
         .content {

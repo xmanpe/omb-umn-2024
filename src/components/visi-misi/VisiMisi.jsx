@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './VisiMisi.scss';
 
 // import supergrafis
-import BungaFill from '../../images/supergrafis/bunga_fill.svg'
+import BungaFill from '../../images/supergrafis/bunga_atas_air_2_fill.svg'
 import BungaTangkaiFill from '../../images/supergrafis/bunga_tangkai_fill.svg'
 
 const VisiMisi = () => {

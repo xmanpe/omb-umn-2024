@@ -7,6 +7,7 @@ import Header from '../../components/header/Header';
 // import pages
 import NilaiNilai from '../../components/nilai-nilai/NilaiNilai';
 import Mars from '../../components/mars/Mars'
+import Footer from '../../components/footer/Footer';
 
 const TentangOMB = () => {
     return (
@@ -17,6 +18,7 @@ const TentangOMB = () => {
             />
             <NilaiNilai />
             <Mars/>
+            <Footer/>
         </>
     );
 }

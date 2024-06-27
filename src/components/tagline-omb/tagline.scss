@@ -1,0 +1,143 @@
+.tagline-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  background: linear-gradient(
+      144deg,
+      rgba(255, 208, 228, 0.2) -14.93%,
+      rgba(202, 191, 249, 0.2) 2.56%,
+      rgba(69, 4, 170, 0.2) 25.07%
+    ),
+    linear-gradient(
+      248deg,
+      rgba(255, 208, 228, 0.5) 11.97%,
+      rgba(202, 191, 249, 0.5) 47.21%,
+      rgba(69, 4, 170, 0.5) 92.55%
+    ),
+    #7047bf;
+
+  .wave-atas {
+    width: 100%;
+    position: relative;
+    top: -2px;
+  }
+  .wave-bawah {
+    width: 100%;
+    position: relative;
+    bottom: -2px;
+  }
+
+  .tagline-omb {
+    display: flex;
+    width: 812px;
+    height: 243px;
+    padding: 59px 109px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .box-tagline {
+      display: flex;
+      padding: 4px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-radius: 100px;
+
+      .tagline {
+        display: flex;
+        width: 771px;
+        height: 229px;
+        padding: 20px 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 64px;
+        background: linear-gradient(
+          349deg,
+          rgba(69, 4, 170, 0.5) 8.25%,
+          #9879d4 74.21%
+        );
+        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset,
+          0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset,
+          0px 6px 6px 0px rgba(0, 0, 0, 0.4);
+
+        img {
+          width: 572px;
+          height: 157px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    color: #fff;
+    padding: 0 160px;
+
+    .content-tumbuh-berpotensi {
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      .content-title {
+        h2 {
+          text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5),
+            0px 4px 12px rgba(0, 0, 0, 0.25);
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+
+      .content-text {
+        text-align: justify;
+        text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5),
+          0px 4px 12px rgba(0, 0, 0, 0.25);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    .content-tangguh-berambisi {
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+
+      .content-title {
+        text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5),
+          0px 4px 12px rgba(0, 0, 0, 0.25);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      .content-text {
+        text-align: justify;
+        text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5),
+          0px 4px 12px rgba(0, 0, 0, 0.25);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+}

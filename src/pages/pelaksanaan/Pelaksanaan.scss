@@ -1,6 +1,7 @@
 .wrapper-content{
-    margin: auto;
     padding: 100px 160px 100px 160px;
+    position: relative;
+    overflow: hidden;
     .slider-wrapper{
         padding: 32px 10px;
         border-bottom: 2px solid transparent;
@@ -188,7 +189,7 @@
         position:absolute;
         z-index: -1;
         background-size: cover;
-        width: 24%;
+        width: 16%;
         opacity: 50%;
     }
 }

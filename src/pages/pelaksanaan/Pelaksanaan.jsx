@@ -4,6 +4,7 @@ import './Pelaksanaan.scss';
 
 //import components
 import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 
 //import images
 import listPelaksanaan from './listPelaksanaan';
@@ -84,6 +85,7 @@ const Pelaksanaan = () => {
                     ))}
                 </div>
             </section>
+            <Footer />
         </>
     );
 }

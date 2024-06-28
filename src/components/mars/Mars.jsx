@@ -11,7 +11,8 @@ import SupergrafisLebah from '../../images/supergrafis/Mars supergrafis/Supergra
 import SupergrafisTangkai from '../../images/supergrafis/Mars supergrafis/Supergrafis Putih - 2 tangkai.svg'
 
 //audio
-import AudioOMB from '../../audio/nayanika.mp3'
+import AudioOMB from '../../audio/MarsOMB.mp3'
+import AudioUMN from '../../audio/MarsUMN.mp3'
 function Mars() {
     return (
         <div className="mars-container">
@@ -73,7 +74,7 @@ function Mars() {
                         </p>
                     </div>
                     <div className="mars-umn-audio">
-                        <audio controls src={AudioOMB}></audio>
+                        <audio controls src={AudioUMN}></audio>
                     </div>
                 </div>
             </div>

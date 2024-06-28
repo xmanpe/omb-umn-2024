@@ -19,12 +19,14 @@
     width: 100%;
     position: relative;
     top: -2px;
+    pointer-events: none;
   }
 
   .wave-bawah {
     width: 100%;
     position: relative;
     bottom: -2px;
+    pointer-events: none;
   }
 
   .supergrafis-kembang-banyak {
@@ -33,6 +35,7 @@
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.4;
+    pointer-events: none;
   }
 
   .tagline-omb {

@@ -20,20 +20,12 @@
     pointer-events: none;
   }
 
-  .wave {
-    // z-index: 99;
-    width: 150%;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-  }
-
-  .wave_two {
+  .wave_bawah_nilai {
+    margin-top: 120px;
     width: 150%;
     pointer-events: none;
     // z-index: 99;
-    position: absolute;
-    bottom: 0;
+    margin-bottom: -110px;
   }
 
   .nilai-nilai_title {
@@ -193,6 +185,14 @@
     // overflow: hidden;
     // position: relative;
 
+    .wave_bawah_nilai {
+      // margin-top: 120px;
+      // width: 150%;
+      // pointer-events: none;
+      // // z-index: 99;
+      // margin-bottom: -110px;
+    }
+
     .nilai-nilai_title {
       // display: flex;
       // flex-direction: column;
@@ -340,6 +340,14 @@
     // gap: 40px;
     // overflow: hidden;
     // position: relative;
+
+    .wave_bawah_nilai {
+      margin-top: 80px;
+      // width: 150%;
+      // pointer-events: none;
+      // z-index: 99;
+      margin-bottom: -80px;
+    }
 
     .nilai-nilai_title {
       // display: flex;
@@ -489,6 +497,14 @@
     // overflow: hidden;
     // position: relative;
 
+    .wave_bawah_nilai {
+      margin-top: 60px;
+      // width: 150%;
+      // pointer-events: none;
+      // z-index: 99;
+      margin-bottom: -60px;
+    }
+
     .nilai-nilai_title {
       // display: flex;
       // flex-direction: column;
@@ -635,6 +651,15 @@
     gap: 20px;
     // overflow: hidden;
     // position: relative;
+
+    .wave_bawah_nilai {
+      margin-top: 40px;
+      // width: 150%;
+      // pointer-events: none;
+      // z-index: 99;
+      margin-bottom: -60px;
+    }
+
 
     .nilai-nilai_title {
       // display: flex;

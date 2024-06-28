@@ -5,6 +5,14 @@
 
     overflow-x: hidden;
 
+    .wave_two {
+        width: 150%;
+        pointer-events: none;
+        // z-index: 99;
+        position: absolute;
+        bottom: 0;
+    }
+    
     .bunga_tangkai_fill {
         position: absolute;
         transform: rotate(12deg);

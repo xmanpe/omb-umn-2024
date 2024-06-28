@@ -22,7 +22,7 @@ const NilaiNilai = () => {
   return (
     <>
       <section className="nilai-nilai_section">
-        <img className='wave_two' src={WaveTwo} alt="Wave" />
+        {/* <img className='wave' src={WaveTwo} alt="Wave" /> */}
         <img className='nilai_omb_supergrafis' src={Supergrafis} alt="Supergrafis" />
         <div className="title">
           <div className="nilai-nilai_title">
@@ -150,7 +150,7 @@ const NilaiNilai = () => {
             </div>
           </div>
         </div>
-        <img className='wave' src={Wave} alt="Wave" />
+        {/* <img className='wave_two' src={Wave} alt="Wave" /> */}
       </section>
       <ModalNilai 
         show={modalInfo.show} 

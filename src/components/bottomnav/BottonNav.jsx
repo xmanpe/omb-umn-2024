@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import './BottomNav.scss';
 
 // Import icons
@@ -127,19 +127,19 @@ const BottomNav = () => {
                     <p className='title-nav'>Tentang</p>
                     <div className='each-extended'>
                         <p>Mengenal OMB UMN 2024</p>
-                        <img src={StopSign} alt="" />
+                        {/* <img src={StopSign} alt="" /> */}
                     </div>
                     <div className='each-extended'>
                         <p>Pelaksanaan</p>
-                        <img src={StopSign} alt="" />
+                        {/* <img src={StopSign} alt="" /> */}
                     </div>
                     <div className='each-extended'>
                         <p>Divisi</p>
-                        <img src={StopSign} alt="" />
+                        {/* <img src={StopSign} alt="" /> */}
                     </div>
                     <div className='each-extended'>
                         <p>Mars</p>
-                        <img src={StopSign} alt="" />
+                        {/* <img src={StopSign} alt="" /> */}
                     </div>
                 </nav>
             )}

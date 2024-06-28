@@ -4,14 +4,10 @@ import './VisiMisi.scss';
 // import supergrafis
 import BungaFill from '../../images/supergrafis/bunga_atas_air_2_fill.svg'
 import BungaTangkaiFill from '../../images/supergrafis/bunga_tangkai_fill.svg'
-import WaveTwo from '../../images/waves/Wave Two.png'
-import Wave from '../../images/waves/Wave One 3.png'
 
 const VisiMisi = () => {
-
     return (
         <section className="visi_misi_section" id="visi_misi_section">
-            {/* <img className='wave_two' src={Wave} alt="Wave" /> */}
             <img src={BungaFill} className="bunga_fill" />
             <img src={BungaTangkaiFill} className="bunga_tangkai_fill" />
             <div className="content">

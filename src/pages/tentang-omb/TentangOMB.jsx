@@ -11,6 +11,7 @@ import VisiMisi from '../../components/visi-misi/VisiMisi';
 import Footer from '../../components/footer/Footer';
 import FilosofiLogo from '../../components/filosofi-logo/FilosofiLogo';
 import Tagline from '../../components/tagline-omb/Tagline';
+import ApaItuOMB from '../../components/apa itu omb/ApaItuOMB';
 
 const TentangOMB = () => {
     return (
@@ -19,6 +20,7 @@ const TentangOMB = () => {
                 top="Lotus Biru merajut mimpi masa depan,"
                 bottom={<>Selamat datang di <i>page</i> tentang OMB!</>}
             />
+            <ApaItuOMB />
             <FilosofiLogo />
             <Tagline/>
             <NilaiNilai />

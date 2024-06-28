@@ -16,7 +16,7 @@ const FilosofiLogo = () => {
     const textFilosofi = [
         {
             "judul": "",
-            "text": "<h3><b>Klik salah satu bagian</b></h3><h3><b>Logo OMB UMN 2024</b></h3>",
+            "text": "<h3>Klik salah satu bagian</h3><h3>logo OMB UMN 2024</h3>",
         },
         {
             "judul": "4 Warna Fakultas",
@@ -88,7 +88,7 @@ const FilosofiLogo = () => {
                     <div className="hitbox_tulisan" onClick={() => changeLogo(LogoTulisan, 4)}></div>
                 </div>
                 <div className="box_text">
-                    <h2>{textFilosofi[currentText].judul}</h2>
+                    { textFilosofi[currentText].judul && <h2>{textFilosofi[currentText].judul}</h2> }
                     <div className="text" dangerouslySetInnerHTML={{__html: textFilosofi[currentText].text}}></div>
                 </div>
             </div>

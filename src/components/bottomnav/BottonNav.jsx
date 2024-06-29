@@ -19,6 +19,8 @@ import FaqNotActive from '../../images/icons/Faq.svg'
 import FaqActive from '../../images/icons/Faq_Active.svg'
 import BingkaiNotActive from '../../images/icons/Bingkai.svg'
 import BingkaiActive from '../../images/icons/Bingkai_Active.svg'
+import PelaksanaanNotActive from '../../images/icons/Pelaksanaan.svg'
+import PelaksanaanActive from '../../images/icons/Pelaksanaan_Active.svg'
 
 const divisiName = [
     { name: 'BALWANA' },
@@ -85,9 +87,14 @@ const BottomNav = () => {
             //     toggleKoorSubMenu(); 
             //     setShowOptions(false);
             // }
-            else if (tabPath === '/tentang') {
-                toggleTentangSubMenu();
-                setShowOptions(false);
+            else if (tabPath === '/tentang-omb') {
+                window.location.href = '/tentang-omb';
+                // toggleTentangSubMenu();
+                // setShowOptions(false);
+            }
+
+            else if (tabPath === '/pelaksanaan') {
+                window.location.href = '/pelaksanaan';
             }
 
             else if (tabPath === '/daftar-peserta') {
@@ -101,8 +108,9 @@ const BottomNav = () => {
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
         // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
-        { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
-        { path: '/tentang', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
+        // { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
+        { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
+        { path: '/pelaksanaan', icon: PelaksanaanNotActive, activeIcon: PelaksanaanActive, text: 'Pelaksanaan'}
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
         // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
         // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },

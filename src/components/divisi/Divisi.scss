@@ -172,7 +172,7 @@
         }
 
         .each_divisi:hover {
-            cursor: url('../../images/cursor-pointer.svg') auto;
+            cursor: pointer;
             transform: translateY(-5px) scale(1.05); /* Float up */
             z-index: 1; /* Bring the hovered divisi to the front */
         }
@@ -231,7 +231,7 @@
             width: 24px;
             height: 24px;
             opacity: 0.8;
-            cursor: url('../../images/cursor-pointer.svg') auto;
+            cursor: pointer;
         }
     }
     
@@ -777,7 +777,7 @@
             }
     
             .each_divisi:hover {
-                cursor: url('../../images/cursor-pointer.svg') auto;
+                cursor: pointer;
                 transform: none;
                 filter: none
             }

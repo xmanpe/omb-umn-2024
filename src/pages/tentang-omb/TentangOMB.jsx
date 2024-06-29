@@ -17,8 +17,8 @@ const TentangOMB = () => {
     return (
         <>
             <Header 
-                top="Lotus Biru merajut mimpi masa depan,"
-                bottom={<>Selamat datang di <i>page</i> tentang OMB!</>}
+                top="Lotus Biru menyapa dengan hangat,"
+                bottom={<>Yuk, kenalan dengan OMB UMN 2024!</>}
             />
             <ApaItuOMB />
             <FilosofiLogo />

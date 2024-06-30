@@ -49,9 +49,9 @@ const NilaiNilai = () => {
                     untuk beranjak dari seorang siswa menjadi mahasiswa. Melalui nilai ini, OMB UMN 2024 diharapkan dapat 
                     memberikan motivasi kepada para Peserta OMB UMN 2024 untuk mengeksplorasi potensi serta meraih prestasi 
                     melalui pencapaian pendidikan yang berkualitas dan inklusif. Target 4.7 pada tahun 2030 ingin memastikan 
-                    bahwa semua peserta didik memperoleh pengetahuan dan keterampilan yang dibutuhkan. Melalui nilai ini, 
+                    bahwa semua peserta didik memperoleh pengetahuan dan keterampilan yang dibutuhkan. <b>Melalui nilai ini, 
                     OMB UMN 2024 juga ingin menunjukkan pentingnya hak setiap individu untuk mendapatkan edukasi yang setara 
-                    tanpa adanya diskriminasi. 
+                    tanpa adanya diskriminasi.</b>
                   </>
                 )}>
                   Selengkapnya
@@ -62,7 +62,7 @@ const NilaiNilai = () => {
               <h2 className="nilai_title">SDGs No. 13</h2>
               <p className="sub_nilai">Climate Action</p>
               <p>
-                Nilai SDGs No. 13 Climate Action ini merupakan salah satu fokus masalah yang akan ditekuni oleh Peserta OMB UMN 2024. 
+                Nilai SDGs No. 13 <i>Climate Action</i> ini merupakan salah satu fokus masalah yang akan ditekuni oleh Peserta OMB UMN 2024. 
                 Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
                 menunjukkan sikap kepedulian terhadap lingkungan.
               </p>
@@ -95,10 +95,10 @@ const NilaiNilai = () => {
                   "5C UMN",
                   "Caring, Credible, Competent, Competitive, & Customer Delight",
                   <>
-                     Bertransisi menjadi bagian dari keluarga besar UMN, OMB UMN 2024 juga akan menanamkan nilai-nilai keutamaan 5C UMN 
+                    Bertransisi menjadi bagian dari keluarga besar UMN, OMB UMN 2024 juga akan menanamkan nilai-nilai keutamaan 5C UMN 
                     untuk mewujudkan karakter mahasiswa yang sesuai dengan visi UMN. Melalui penanaman nilai ini, mahasiswa diharapkan 
                     dapat menerapkan nilai <i>Caring, Credible, Competent, Competitive,</i> dan <i>Customer Delight</i> dalam kehidupan sehari-harinya, 
-                    bahkan dalam menjalankan perannya sebagai masyarakat Indonesia.  
+                    bahkan dalam menjalankan perannya sebagai masyarakat Indonesia. 
                   </>
                 )}>
                   Selengkapnya
@@ -109,16 +109,14 @@ const NilaiNilai = () => {
               <h2 className="nilai_title">Kepercayaan Diri</h2>
               <p>
                 Dalam menunjukkan potensi dari diri Peserta OMB UMN 2024, nilai kepercayaan diri menjadi hal yang krusial bagi mereka. 
-                Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri.
+                <b> Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri</b>.
               </p>
               <div className="show-more-button">
                 <button onClick={() => openModal(
                   "Kepercayaan Diri",
                   "",
                   <>
-                    Dalam menunjukkan potensi dari diri Peserta OMB UMN 2024, nilai kepercayaan diri menjadi hal yang krusial bagi mereka. 
-                    Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri. Harapannya, 
-                    Peserta OMB UMN 2024 memiliki kepercayaan diri untuk bertindak, berinovasi, dan berkarya ke depannya. 
+                    Dalam menunjukkan potensi dari diri Peserta OMB UMN 2024, nilai kepercayaan diri menjadi hal yang krusial bagi mereka. <b> Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri</b>. Harapannya, Peserta OMB UMN 2024 memiliki kepercayaan diri untuk bertindak, berinovasi, dan berkarya ke depannya. 
                   </>
                 )}>
                   Selengkapnya
@@ -130,15 +128,14 @@ const NilaiNilai = () => {
             <div className="center card">
               <h2 className="nilai_title">Kebijaksanaan</h2>
               <p>
-                Setelah membangun kepercayaan diri, Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi. 
-                Kompetensi ini diharapkan dapat mengarahkan peserta untuk berpikiran dengan kritis dan bijaksana dalam mengelola segala informasi dan persoalan. 
+                Setelah membangun kepercayaan diri, <b>Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi</b>. Kompetensi ini diharapkan dapat mengarahkan peserta untuk berpikiran dengan kritis dan bijaksana dalam mengelola segala informasi dan persoalan. 
               </p>
               <div className="show-more-button">
                 <button onClick={() => openModal(
                   "Kebijaksanaan",
                   "",
                   <>
-                    Setelah membangun kepercayaan diri, Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi. 
+                    Setelah membangun kepercayaan diri, <b>Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi</b>. 
                     Kompetensi ini diharapkan dapat mengarahkan peserta untuk berpikiran dengan kritis dan bijaksana dalam mengelola segala informasi dan persoalan. 
                     Pikiran kritis yang didampingi oleh kebijaksanaan diharapkan dapat mendorong peserta untuk menunjukkan potensi unik yang ada di dalam diri. 
                   </>

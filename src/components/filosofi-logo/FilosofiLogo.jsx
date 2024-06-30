@@ -20,19 +20,19 @@ const FilosofiLogo = () => {
         },
         {
             "judul": "4 Warna Fakultas",
-            "text": "<p>Warna pada benang sari melambangkan keempat fakultas di Universitas Multimedia Nusantara, yaitu:</p><ul><li><span class='color_ilkom'><b>Fakultas Ilmu Komunikasi</b></span>: Komunikasi Strategis, Jurnalistik</li><li><span class='color_bisnis'><b>Fakultas Bisnis</b></span>: Akuntansi, Manajemen, D3 Perhotelan</li><li><span class='color_seni'><b>Fakultas Seni dan Desain</b></span>: Desain Komunikasi Visual, Film dan Animasi, Arsitektur</li><li><span class='color_teknik'><b>Fakultas Teknik dan Informatika</b></span>: Teknik Komputer, Teknik Elektro, Teknik Fisika, Informatika, Sistem Informasi</li></ul>"
+            "text": "<p>Warna pada benang sari melambangkan keempat fakultas di Universitas Multimedia Nusantara, yaitu:</p><ul><li><span class='color_ilkom'><b>Fakultas Ilmu Komunikasi</b></span>: Komunikasi Strategis, Jurnalistik</li><li><span class='color_bisnis'><b>Fakultas Bisnis</b></span>: Akuntansi, Manajemen, dan D3 Perhotelan</li><li><span class='color_seni'><b>Fakultas Seni dan Desain</b></span>: Desain Komunikasi Visual, Film dan Animasi, Arsitektur</li><li><span class='color_teknik'><b>Fakultas Teknik dan Informatika</b></span>: Teknik Komputer, Teknik Elektro, Teknik Fisika, Informatika, Sistem Informasi</li></ul>"
         },
         {
             "judul": "Bunga Lotus Biru",
-            "text": "<p>Logo OMB UMN 2024 mengusung Lotus Biru.</p><p>Lotus Biru merupakan simbol keindahan, kebijaksanaan, kepercayaan diri, dan pengetahuan yang menggambarkan pengelolaan potensi diri serta memiliki makna yang selaras dengan nilai-nilai dan tujuan dari OMB UMN 2024. Logo Lotus Biru sendiri menggambarkan orientasi mahasiswa yang bersifat internasional, menjadi wadah pengembangan potensi dengan bijak dan berdampak positif bagi sesama. Proses mekarnya melambangkan seseorang akan terus belajar (long life learner) sesuai dengan visi UMN.</p>",
+            "text": "<p>Logo OMB UMN 2024 mengusung Lotus Biru.</p><p>Lotus Biru merupakan simbol keindahan, kebijaksanaan, kepercayaan diri, dan pengetahuan yang menggambarkan pengelolaan potensi diri serta memiliki makna yang selaras dengan nilai-nilai dan tujuan dari OMB UMN 2024. Logo Lotus Biru sendiri menggambarkan orientasi mahasiswa yang bersifat internasional, menjadi wadah pengembangan potensi dengan bijak dan berdampak positif bagi sesama. Proses mekarnya melambangkan seseorang akan terus belajar (<i>long life learner</i>) sesuai dengan visi UMN.</p>",
         },
         {
             "judul": "Warna UMN",
-            "text": "<p>Warna biru pada kelopak bunga Lotus Biru dan daun yang sesuai dengan warna Universitas Multimedia Nusantara (UMN) sebagai wadah bagi para mahasiswa baru melalui pembelajarannya yang terakreditasi untuk menghasilkan lulusan yang berkualitas dan terpelajar.</p>",
+            "text": "<p>Warna biru yang digunakan sebagai warna bunga Lotus Biru mulai dari kelopak bunga, daun, dan bunga itu sendiri disimbolisasikan sebagai UMN. Hal tersebut memiliki arti bahwa UMN telah menjadi <b>tempat utama untuk menopang mahasiswanya sehingga bisa menghasilkan lulusan yang berkualitas dan terpelajar melalui proses belajar yang terakreditasi.</b></p>",
         },
         {
             "judul": "OMB UMN 2024",
-            "text": "<p><b>Huruf “M”</b> mempresentasikan “mahasiswa” terhubung ke <b>huruf “O” dan “B”</b> menunjukkan akar yang kuat serta ambisi untuk terus tumbuh dan mengembangkan potensi melalui OMB.</p><p><b>Bentuk yang menyambung</b> sesuai dengan konsep OMB UMN 2024, yaitu “Tidak Ada Tentang Kita, Tanpa Kita” dan melambangkan kerja sama dan kolaborasi untuk menciptakan sejarah baru bersama.</p>"
+            "text": '<p>Logo OMB UMN 2024 menggunakan elemen dari habitat Lotus Biru dengan bentuk huruf yang menyambung, sesuai dengan konsep "<b>Tidak Ada Tentang Kita, Tanpa Kita.</b>" Bentuk ini melambangkan kerja sama dan kolaborasi untuk menciptakan sejarah baru.</p><p>Huruf "<b>M</b>" yang terhubung ke "<b>O</b>" dan "<b>B</b>" melambangkan “mahasiswa” yang berakar kuat dan berambisi. Huruf-huruf ini saling berkesinambungan dan menggambarkan air sebagai habitat Lotus Biru. Filosofinya, prinsip dasar yang kuat memungkinkan perkembangan signifikan seperti mekarnya Lotus Biru, yang memperkuat identitas OMB UMN 2024.</p>'
         }
     ];
 

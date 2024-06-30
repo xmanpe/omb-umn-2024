@@ -46,8 +46,8 @@ function Mars() {
                             Sampai di akhir<br />
                             Sampai di akhir waktu<br />
                             <br/>
-                            (<i>Dinyanyikan 1x dengan berdiri tegap,
-                            bertepuk tangan dengan tempo ¾</i>)
+                            <b>(Dinyanyikan 1x dengan berdiri tegap,
+                            bertepuk tangan dengan tempo ¾)</b>
                         </p>
                     </div>
                     <div className="mars-omb-audio">
@@ -69,8 +69,8 @@ function Mars() {
                             Universitas Multimedia Nusantara<br />
                             Demi kejayaan bangsa Indonesia<br />
                             <br/>                           
-                            (<i>Dinyanyikan 2x dengan posisi berdiri tegap dan tangan kanan
-                            diletakkan di dada sebelah kiri dengan telapak tangan dikepal</i>)
+                            <b>(Dinyanyikan 2x dengan posisi berdiri tegap dan tangan kanan
+                            diletakkan di dada sebelah kiri dengan telapak tangan dikepal)</b>
                         </p>
                     </div>
                     <div className="mars-umn-audio">

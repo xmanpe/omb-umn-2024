@@ -20,9 +20,9 @@ const Hero = () => {
                     <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
                     <img className='tagline_omb' src={TaglineOMB2024} alt="Tagline OMB 2023" />
                 </div>
-                {/* <div className='announcement_section'>
+                <div className='announcement_section'>
                     <AnnCard />
-                </div>  */}
+                </div> 
             </div>
             <img className='wave' src={Wave} alt="Wave" />
         </section>

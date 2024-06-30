@@ -12,11 +12,11 @@ const listPelaksanaan = {
                 {nomor: "4", isi: "Mahasiswa menerima pengembangan karakter agar memiliki sikap sebagai intelektuan, antikekerasan seksual, antiperundungan, antinarkoba, antikorupsi, dan kampus sehat."},
                 {nomor: "5", isi: "Mahasiswa mendapatkan pemahaman yang mendalam tentang kehidupan berbangsa, bernegara, dan pembinaan kesadaran bela negara."},
                 {nomor: "6", isi: `Nilai 5C Universitas Multimedia Nusantara. <br /><br />
-                    <b>Caring</b>: Mahasiswa memiliki sifat untuk peduli terhadap diri sendiri, sesama, hingga lingkungan sekitarnya. <br /><br />
-                    <b>Credible</b>: Mahasiswa memiliki integritas yang tinggi, kesadaran berorganisasi, dan dapat diandalkan. <br /><br />
-                    <b>Competent</b>: Mahasiswa memiliki penguasaan terhadap bidang yang dipelajari secara profesional dan mampu bekerja cerdas untuk hasil yang terbaik. <br /><br />
-                    <b>Competitive</b>: Mahasiswa memiliki sikap untuk berkompetisi mencapai prestasi yang terbaik. <br /><br />
-                    <b>Customer Delight</b>: Mahasiswa memiliki sifat untuk memberikan pelayanan terbaik bagi sesamanya, bahkan bisa lebih dari yang diharapkan.<br /><br />`
+                    <b><i>Caring</i></b>: Mahasiswa memiliki sifat untuk peduli terhadap diri sendiri, sesama, hingga lingkungan sekitarnya. <br /><br />
+                    <b><i>Credible</i></b>: Mahasiswa memiliki integritas yang tinggi, kesadaran berorganisasi, dan dapat diandalkan. <br /><br />
+                    <b><i>Competent</i></b>: Mahasiswa memiliki penguasaan terhadap bidang yang dipelajari secara profesional dan mampu bekerja cerdas untuk hasil yang terbaik. <br /><br />
+                    <b><i>Competitive</i></b>: Mahasiswa memiliki sikap untuk berkompetisi mencapai prestasi yang terbaik. <br /><br />
+                    <b><i>Customer Delight</i></b>: Mahasiswa memiliki sifat untuk memberikan pelayanan terbaik bagi sesamanya, bahkan bisa lebih dari yang diharapkan.<br /><br />`
                 },
             ]
         },

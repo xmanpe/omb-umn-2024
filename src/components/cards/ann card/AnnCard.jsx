@@ -14,7 +14,9 @@ const AnnCard = () => {
 
     useEffect(() => {
         // Set the target date for the countdown
-        const targetDate = new Date('2024-06-15T23:59:00'); // Adjusted to midnight on May 19, 2024, local time
+        const targetDate = new Date('2024-08-18T00:00:00+07:00'); // August 18, 2024, at midnight WIB (UTC+7)
+        console.log(targetDate.toString());
+
     
         // Update the countdown every second
         const interval = setInterval(() => {
@@ -75,21 +77,21 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Lotus Biru pandai dalam menghias, <br />Kenali setiap divisi yang bertugas!</h3>
+                        <h3>Informasi Penting & Wajib</h3>
                         {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
-                            {/* <h3>PENDAFTARAN PETUGAS UPACARA OMB UMN 2024 TELAH DIBUKA!</h3>
-                            <p>Silakan klik tombol berikut untuk menuju ke laman pendaftaran.</p> */}
+                            {/* <h3>Formulir Keikutsertaan OMB UMN 2024</h3> */}
+                            <p><b>Formulir Keikutsertaan OMB UMN 2024</b> merupakan salah satu syarat untuk mengikuti OMB UMN 2024. Seluruh calon Peserta OMB UMN 2024 <b>wajib</b> mengisi Formulir Keikutsertaan OMB UMN 2024 yang mencakup <b>persetujuan orang tua, data diri, dan riwayat kesehatan</b>.</p>
                     </div>
-                    {/* <div className='schedule'>
+                    <div className='schedule'>
                         <div className='date'>
                             <img src={Calendar} alt="Calendar Icon" />
-                            <p>10–15 Juni 2024</p>
+                            <p>30 Juni - 18 Agustus 2024</p>
                         </div>
                         <p className='countdown'>{countdown}</p>
-                    </div> */}
+                    </div>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={handleScrollToUpacara}>Daftar
+                    <button onClick={toggleModal}>Lihat
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

@@ -8,6 +8,7 @@ import BungaLotus from '../../images/Outline - Bunga Lotus Biru di Atas Air 1 1.
 //import icons
 import ArrowRight from '../../images/Arrow/Arrow_Right_MD.png';
 import Wave from '../../images/waves/Wave One.png';
+import Home from '../../images/icons/Home_Active.svg';
 
 const Header = ({ top, bottom }) => {
     return (
@@ -15,7 +16,7 @@ const Header = ({ top, bottom }) => {
             <img className='bunga-lotus' src={BungaLotus} alt="" />
             <div className='hero-peserta_content'>
                 <Link to={{ pathname: '/' }} style={{textDecoration: "none"}}>
-                    <div className='back_button' onClick={() => window.history.back()}>
+                    <div className='back_button'>
                         <img src={ArrowRight} alt="Left Arrow" />
                         <p>Beranda</p>
                     </div>

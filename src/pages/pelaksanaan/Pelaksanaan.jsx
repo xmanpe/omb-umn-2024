@@ -28,7 +28,7 @@ const Pelaksanaan = () => {
         <>
             <Header 
                 top="Lotus Biru merajut mimpi masa depan,"
-                bottom={<>Selamat datang di <i>page</i> pelaksanaan!</>}
+                bottom={<>Selamat datang di laman pelaksanaan!</>}
             />
             <section className='wrapper-content'>
             <img className='background-upper' src={Supergrafis1} alt='Bg'/>

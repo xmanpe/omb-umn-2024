@@ -77,10 +77,10 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Informasi Penting & Wajib</h3>
+                        <h3><b>INFORMASI PENTING & WAJIB!</b></h3>
                         {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
                             {/* <h3>Formulir Keikutsertaan OMB UMN 2024</h3> */}
-                            <p><b>Formulir Keikutsertaan OMB UMN 2024</b> merupakan salah satu syarat untuk mengikuti OMB UMN 2024. Seluruh calon Peserta OMB UMN 2024 <b>wajib</b> mengisi Formulir Keikutsertaan OMB UMN 2024 yang mencakup <b>persetujuan orang tua, data diri, dan riwayat kesehatan</b>.</p>
+                            <p>Formulir Keikutsertaan OMB UMN 2024 <b>wajib</b> diisi oleh seluruh calon peserta sebagai salah satu syarat mengikuti OMB UMN 2024.</p>
                     </div>
                     <div className='schedule'>
                         <div className='date'>

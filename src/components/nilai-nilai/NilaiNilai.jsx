@@ -63,8 +63,8 @@ const NilaiNilai = () => {
               <p className="sub_nilai">Climate Action</p>
               <p>
                 Nilai SDGs No. 13 <i>Climate Action</i> ini merupakan salah satu fokus masalah yang akan ditekuni oleh Peserta OMB UMN 2024. 
-                Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
-                menunjukkan sikap kepedulian terhadap lingkungan.
+                <b> Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
+                menunjukkan sikap kepedulian terhadap lingkungan.</b>
               </p>
               <div className="show-more-button">
                 <button onClick={() => openModal(
@@ -72,7 +72,7 @@ const NilaiNilai = () => {
                   "Climate Action",
                   <>
                     Nilai SDGs No. 13 <i>Climate Action</i> ini merupakan salah satu fokus masalah yang akan ditekuni oleh Peserta OMB UMN 2024. 
-                    <b>Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
+                    <b> Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
                     menunjukkan sikap kepedulian terhadap lingkungan.</b> Melalui dinamika dalam rangkaian kegiatan OMB UMN 2024, peserta akan 
                     menjalankan aksi nyata dalam menunjukkan keaktifan dan kepeduliannya terhadap lingkungan.  
                   </>

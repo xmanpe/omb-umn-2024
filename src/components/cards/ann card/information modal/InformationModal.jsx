@@ -18,13 +18,13 @@ const InformationModal = ({ onClose }) => {
                     <img src={X} alt="Close button"onClick={onClose} />
                 </div>
                 <div className='information-content_section'>
-                    <h1><b>Formulir Keikutsertaan OMB UMN 2024</b></h1>
+                    <h1>Formulir Keikutsertaan OMB UMN 2024</h1>
                     <p>
-                        <b>Formulir Keikutsertaan OMB UMN 2024</b> merupakan salah satu syarat untuk mengikuti OMB UMN 2024. Seluruh calon Peserta OMB UMN 2024 <b>wajib</b> mengisi Formulir Keikutsertaan OMB UMN 2024 yang mencakup <b>persetujuan orang tua, data diri, dan riwayat kesehatan</b>. 
+                        Formulir Keikutsertaan OMB UMN 2024 merupakan salah satu syarat untuk mengikuti OMB UMN 2024. Seluruh calon Peserta OMB UMN 2024 <b>wajib</b> mengisi Formulir Keikutsertaan OMB UMN 2024 yang mencakup <b>persetujuan orang tua, data diri, dan riwayat kesehatan</b>. 
                         <br></br> <br></br>
-                        <b>Formulir Keikutsertaan OMB UMN 2024</b> telah dibuka pada <b>Minggu, 30 Juni 2024 pukul 08.00 WIB</b> hingga <b>Minggu, 18 Agustus 2024 pukul 23.59 WIB</b>. 
+                        Formulir Keikutsertaan OMB UMN 2024 telah dibuka pada <b>Minggu, 30 Juni 2024 pukul 08.00 WIB</b> hingga <b>Minggu, 18 Agustus 2024 pukul 23.59 WIB</b>. 
                         <br></br> <br></br>
-                        Isi <b>Formulir Keikutsertaan OMB UMN 2024</b> sekarang juga! 
+                        Isi Formulir Keikutsertaan OMB UMN 2024 sekarang juga! 
                     </p>
                 </div>
                 <div className='cta_button'>

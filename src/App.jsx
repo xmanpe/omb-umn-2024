@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/hasil-seleksi" element={<JadwalWawancara />} />
           <Route path="/daftar-peserta" element={<PesertaMengulang />} />
-          <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
+          <Route path="/pelaksanaan" element={<Pelaksanaan />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
           <Route path="*" element={<Error />} />
         </Routes>

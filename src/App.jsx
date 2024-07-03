@@ -9,6 +9,8 @@ import TentangOMB from "./pages/tentang-omb/TentangOMB";
 import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottonNav";
 
+import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
+
 function App() {
   return (
     <div className="omb">
@@ -17,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/hasil-seleksi" element={<JadwalWawancara />} />
           <Route path="/daftar-peserta" element={<PesertaMengulang />} />
-          <Route path="/pelaksanaan" element={<Pelaksanaan />} />
+          <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
           <Route path="*" element={<Error />} />
         </Routes>

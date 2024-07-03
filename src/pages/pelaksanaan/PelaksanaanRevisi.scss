@@ -1,0 +1,115 @@
+.pelaksanaan_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 160px;
+
+    .slider {
+        display: flex;
+        gap: 8px;
+        border: 1.5px solid rgba(0, 0, 0, 0.056);
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+        padding: 4px;
+        border-radius: 100px;
+
+        .slider-button {
+            border: none;
+            border-radius: 100px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-family: 'GSN';
+            background-color: rgba(0, 0, 0, 0.021);
+            cursor: pointer;
+        }
+
+        .active {
+            border: 2px solid #4504AA;
+            border-radius: 100px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-family: 'GSN';
+            background-color: #4404aa21;
+            color: #4504AA;
+        }
+    }
+
+    .slider-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+        padding: 4px;
+        border-radius: 100px;
+
+        .slider-button-mobile-active {
+            border: none;
+            border-radius: 100px;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            font-family: 'GSN';
+            background-color: #4404aa10;
+
+            color: #4504AA;
+            border: 1.5px solid #4504AA;
+            
+        }
+
+        .dropdown-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            border: 1.5px solid #4504AA;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 4px;
+            border-radius: 12px;
+        }
+    }
+
+    .list-wrapper {
+        background: rgb(255, 255, 255);
+        border: 1.5px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .each-list {
+                display: flex;
+                gap: 12px;
+                background-color: #4404aa0a;
+                padding: 8px 16px;
+                border-radius: 8px;
+
+                .number {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #4504AA;
+                }
+
+                .text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+}

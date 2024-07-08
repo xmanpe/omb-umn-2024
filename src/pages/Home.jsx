@@ -47,7 +47,7 @@ const Home = () => {
         <YouTube />
         <Divisi />
         <SwaraBestari />
-        <Ananta />
+        {/* <Ananta /> */}
         <Footer />
     </>
   );

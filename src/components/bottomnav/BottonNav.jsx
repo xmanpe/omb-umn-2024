@@ -105,6 +105,10 @@ const BottomNav = () => {
         }
     };
 
+    const anantaButton = () => {
+        window.location.href = 'https://documntation.umn.ac.id';
+    };
+
     const tabs = [
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
         // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
@@ -166,7 +170,7 @@ const BottomNav = () => {
                     </div>
                 ))}
                 <div className='the-border'>
-                    <div className='ananta-button'>
+                    <div className='ananta-button' onClick={anantaButton}>
                         <p>Ananta</p>
                     </div>
                 </div>

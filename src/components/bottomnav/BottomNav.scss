@@ -69,7 +69,7 @@
         width: fit-content;
         margin: auto;
         align-items: center;
-        border: 1px solid rgb(228, 228, 228);
+        border: 2px solid rgb(228, 228, 228);
         box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.17);
         transition: width 0.3s ease, background-color 0.3s ease; /* Added transition for width and background-color */
       
@@ -87,6 +87,7 @@
             padding-left: 12px;
 
             .ananta-button {
+                cursor: pointer;
                 display: flex;
                 align-items: center;
                 gap: 8px;
@@ -214,7 +215,7 @@
             border-radius: 100px;
             // background: #ffffffd5;
             // align-items: center;
-            border: none;
+            // border: none;
             // box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.17);
             // transition: width 0.3s ease, background-color 0.3s ease;
             gap: 12px;
@@ -222,6 +223,34 @@
             &.active {
                 // width: 100%;
                 // background: #ffffff;
+            }
+
+            .the-border {
+                display: flex;
+                width: fit-content;
+                gap: 8px;
+                border-left: 1.5px solid rgb(228, 228, 228);
+                margin-left: 40px;
+                padding-left: 12px;
+    
+                .ananta-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 100px;
+                    padding: 8px 20px;
+                    background: linear-gradient(283deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+        
+                    p {
+                        color: #FFF;
+                        font-family: "GSN", sans-serif;
+                        font-size: 16px;
+                        line-height: normal;
+                    }
+                }
             }
         }
           

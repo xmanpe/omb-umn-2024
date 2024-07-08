@@ -118,7 +118,7 @@
         // flex-direction: column;
         // z-index: 999;
         // position: fixed;
-        bottom: 0;
+        bottom: 12px;
         // left: 0;
         // right: 0;
         // width: max-content;
@@ -179,17 +179,17 @@
         }
     
         .navigation-bar {
-            width: 94%;
+            width: fit-content;
             justify-content: center;
             // display: flex;
-            padding: 12px;
-            border-radius: 0px;
+            padding: 6px;
+            border-radius: 100px;
             // background: #ffffffd5;
             // align-items: center;
             border: none;
             // box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.17);
             // transition: width 0.3s ease, background-color 0.3s ease;
-            gap: 4px;
+            gap: 12px;
           
             &.active {
                 // width: 100%;
@@ -217,11 +217,12 @@
             }
           
             img {
-                width: 20px;
-                height: 20px;
+                width: 28px;
+                height: 28px;
             }
           
             p {
+                display: none;
                 // color: #FFF;
                 // font-family: "GSN", sans-serif;
                 font-size: 16px;

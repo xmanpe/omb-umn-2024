@@ -2,6 +2,7 @@ import './Hero.scss';
 
 // import components
 import AnnCard from '../cards/ann card/AnnCard';
+import AnnCard2 from '../cards/ann card/AnnCard2';
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
@@ -22,6 +23,7 @@ const Hero = () => {
                 </div>
                 <div className='announcement_section'>
                     <AnnCard />
+                    <AnnCard2 />
                 </div> 
             </div>
             <img className='wave' src={Wave} alt="Wave" />

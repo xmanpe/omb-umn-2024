@@ -7,6 +7,7 @@ import YouTube from '../components/youtube/YouTube';
 import Divisi from '../components/divisi/Divisi';
 import Pelaksanaan from './pelaksanaan/Pelaksanaan';
 import Ananta from '../components/ananta/Ananta';
+import SwaraBestari from '../components/swara-bestari/SwaraBestari';
 import Footer from '../components/footer/Footer';
 import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
 
@@ -45,7 +46,8 @@ const Home = () => {
         <ApaItuOMB />
         <YouTube />
         <Divisi />
-        <Ananta />
+        {/* <Ananta /> */}
+        <SwaraBestari />
         <Footer />
     </>
   );

@@ -2,10 +2,12 @@
     from {
       opacity: 0;
       transform: translateY(50px); /* Move modal 50px down initially */
+      filter: blur(10px); /* Apply a blur effect */
     }
     to {
       opacity: 1;
       transform: translateY(0); /* Move modal to its original position */
+      filter: blur(0); /* No blur at the start */
     }
 }
 
@@ -13,10 +15,12 @@
     from {
       opacity: 1;
       transform: translateY(0); /* Start from its original position */
+      filter: blur(0); /* No blur at the start */
     }
     to {
       opacity: 0;
       transform: translateY(-50px); /* Move modal 50px up */
+      filter: blur(10px); /* Apply a blur effect */
     }
 }
 

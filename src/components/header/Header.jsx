@@ -15,12 +15,12 @@ const Header = ({ top, bottom }) => {
         <header className="hero-peserta_section">
             <img className='bunga-lotus' src={BungaLotus} alt="" />
             <div className='hero-peserta_content'>
-                <Link to={{ pathname: '/' }} style={{textDecoration: "none"}}>
+                {/* <Link to={{ pathname: '/' }} style={{textDecoration: "none"}}>
                     <div className='back_button'>
                         <img src={ArrowRight} alt="Left Arrow" />
                         <p>Beranda</p>
                     </div>
-                </Link>
+                </Link> */}
                 <div className='title_divisi'>
                     <div className='left_thing'>
                         <div className='literally_title'>

@@ -1,6 +1,9 @@
 import React from 'react';
 import './ApaItuOMB.scss';
 
+// import icons
+import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg'
+
 // import images
 import Penetasan from '../../images/background/Penetasan.jpeg'
 import PembentukanHari1 from '../../images/background/Pembentukan Hari 1.jpeg'
@@ -14,6 +17,11 @@ import Supergrafis from '../../images/supergrafis/Divisi_supergrafis.png'
 const images = [Penetasan, PembentukanHari1, PembentukanHari2, KuliahPerdana];
 
 const ApaItuOMB = () => {
+
+    const openPage = () => {
+        window.location.href = '/tentang-omb';
+    }
+
     return (
         <>
             <section className="apaituomb_section">
@@ -30,6 +38,11 @@ const ApaItuOMB = () => {
                     ))}
                 </div>
                 <p>Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di <a href="https://www.umn.ac.id/en/home/" target='_blank' style={{color: '#4504AA'}}>Universitas Multimedia Nusantara</a> (UMN). Melalui serangkaian kegiatan, yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan, dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.</p>
+                <div className='cta_button'>
+                    <button onClick={openPage}>Selengkapnya
+                        <img src={ArrowRight} alt="Arrow Icon" />
+                    </button>
+                </div>
             </section>
         </>
     );

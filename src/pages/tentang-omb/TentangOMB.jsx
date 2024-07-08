@@ -20,7 +20,7 @@ const TentangOMB = () => {
                 top="Lotus Biru menyapa dengan hangat,"
                 bottom={<>Yuk, kenalan dengan OMB UMN 2024!</>}
             />
-            <ApaItuOMB />
+            {/* <ApaItuOMB /> */}
             <FilosofiLogo />
             <Tagline/>
             <NilaiNilai />

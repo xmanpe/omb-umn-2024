@@ -166,6 +166,7 @@ const BottomNav = () => {
                         >
                             <img src={tab.path === location.pathname ? tab.activeIcon : tab.icon} alt={tab.text} />
                             {tab.path === location.pathname && <p>{tab.text}</p>}
+                            <div className='tooltip'>{tab.text}</div>
                         </Link>
                     </div>
                 ))}

@@ -165,6 +165,11 @@ const BottomNav = () => {
                         </Link>
                     </div>
                 ))}
+                <div className='the-border'>
+                    <div className='ananta-button'>
+                        <p>Ananta</p>
+                    </div>
+                </div>
             </nav>
         </div>
     );

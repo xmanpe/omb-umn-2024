@@ -68,7 +68,7 @@ const AnnCard = () => {
     // };
 
     const openPage = () => {
-        document.getElementById('divisi_section').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('swara-bestari').scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -89,7 +89,7 @@ const AnnCard = () => {
                     </div> */}
                 </div>
                 <div className='cta_button'>
-                    <button onClick={toggleModal}>Dengar
+                    <button onClick={openPage}>Dengar
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

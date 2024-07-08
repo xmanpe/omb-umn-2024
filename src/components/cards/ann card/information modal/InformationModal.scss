@@ -45,21 +45,33 @@
 
     .information-modal {
         background: #fff;
+        padding-top: 40px;
         border-radius: 20px;
+        border: 8px solid rgba(212, 212, 212, 0.8);
         box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
         width: 800px;
         animation: fadeInFromBottom 0.5s ease forwards;
 
         .close_button {
-            padding-top: 20px;
-            padding-right: 20px;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            border: 1px solid rgb(216, 216, 216);
+            background: #ffffff82;
+            backdrop-filter: blur(4px);
+            box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
+            border-radius: 100px;
             display: flex;
-            justify-content: end;
+            padding: 12px;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 10px;
+            align-self: stretch;
 
             img {
+                width: 24px;
+                height: 24px;
                 opacity: 0.8;
-                width: 30px;
-                height: 30px;
                 cursor: pointer;
             }
         }
@@ -67,7 +79,7 @@
         .information-content_section {
             display: flex;
             flex-direction: column;
-            padding: 0px 60px 0px 20px;
+            padding: 0px 20px 0px 20px;
 
             h1 {
                 text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
@@ -121,6 +133,7 @@
 
                 color: #FFF;
                 text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                font-family: 'GSN';
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 500;
@@ -157,23 +170,21 @@
         z-index: 1000;
     
         .information-modal {
-            background: #ffffffeb;
+            background: #ffffff;
+            border: 6px solid rgba(212, 212, 212, 0.8);
             border-radius: 20px;
             box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
             width: 96%;
             animation: fadeInFromBottom 0.5s ease forwards;
     
             .close_button {
-                padding-top: 16px;
-                padding-right: 16px;
-                display: flex;
-                justify-content: end;
+                top: 20px;
+                right: 20px;
+                padding: 8px;
     
                 img {
-                    opacity: 0.8;
-                    width: 30px;
-                    height: 30px;
-                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
                 }
             }
     
@@ -186,7 +197,7 @@
     
                 h1 {
                     text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
-                    font-size: 28px;
+                    font-size: 24px;
                     text-align: left;
                     font-style: normal;
                     font-weight: 600;
@@ -207,6 +218,13 @@
                         font-weight: 400;
                         color: rgba(0, 0, 0, 0.80);
                     }
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.80);
+                    padding: 20px 0px 20px 0px;
                 }
             }
     

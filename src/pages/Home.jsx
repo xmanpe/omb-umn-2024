@@ -46,8 +46,8 @@ const Home = () => {
         <ApaItuOMB />
         <YouTube />
         <Divisi />
-        {/* <Ananta /> */}
         <SwaraBestari />
+        <Ananta />
         <Footer />
     </>
   );

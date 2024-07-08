@@ -231,6 +231,7 @@
                 gap: 20px;
         
                 .left {
+                    margin-top: -120px;
                     border: none;
                     img {
                         width: 80%;
@@ -294,6 +295,8 @@
         
             .the_content {
                 .left {     
+                    margin-bottom: -60px;
+
                     img {
                         max-width: 72%;
                         max-height: 72%;
@@ -350,8 +353,8 @@
             .the_content {
                 .left {
                     img {
-                        max-width: 64%;
-                        max-height: 64%;
+                        // max-width: 64%;
+                        // max-height: 64%;
                     }
                 }
             

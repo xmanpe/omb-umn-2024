@@ -77,6 +77,34 @@
             width: 100%; /* Make the navbar full width when active */
             background: #ffffff; /* Change background color when active */
         }
+
+        .the-border {
+            display: flex;
+            width: fit-content;
+            gap: 8px;
+            border-left: 1.5px solid rgb(228, 228, 228);
+            margin-left: 80px;
+            padding-left: 12px;
+
+            .ananta-button {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border-radius: 100px;
+                padding: 8px 20px;
+                background: linear-gradient(283deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+    
+                p {
+                    color: #FFF;
+                    font-family: "GSN", sans-serif;
+                    font-size: 18px;
+                    line-height: normal;
+                }
+            }
+        }
     }
       
       .each-tab {

@@ -10,7 +10,8 @@
 }
 
 .ananta_section {
-    background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+    // background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(283deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/Ananta.jpeg'), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -55,6 +56,7 @@
     
         .the_content {
             display: flex;
+            flex-direction: row-reverse;
             align-items: center;
             justify-content: center;
             gap: 100px;

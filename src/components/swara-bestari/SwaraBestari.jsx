@@ -13,7 +13,7 @@ import SwaraBestariLogo from '../../images/swara bestari/Swara Bestari Logo.png'
 
 const SwaraBestari = () => {
     return (
-        <section className="swara-bestari_section">
+        <section id='swara-bestari' className="swara-bestari_section">
             <img className='wave_swara-bestari_top' src={SecondWave}alt="Wave" />
             <div className='swara-bestari_content'>
                 <div className='the_content'>

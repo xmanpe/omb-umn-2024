@@ -22,10 +22,11 @@ const Footer = () => {
     const isJadwalWawancaraPage = location.pathname === '/hasil-seleksi';
     const isPesertaMengulangPage = location.pathname === '/daftar-peserta';
     const isHomePage = location.pathname === '/';
+    const isPelaksanaanPage = location.pathname === '/pelaksanaan';
 
     return (
         <footer className='footer_section'>
-            {isHomePage && <img className='wave' src={Wave} alt="Wave" />}
+            {(isHomePage || isPelaksanaanPage) && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>

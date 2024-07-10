@@ -23,7 +23,7 @@ const PelaksanaanRevisi = () => {
         setShowMobileDropdown(!showMobileDropdown);
         setSliderState(index);
     }
-    const slides = ["Landasan Pelaksanaan","Maksud Pelaksanaan","Tujuan Pelaksanaan"];
+    const slides = ["Landasan","Maksud","Tujuan"];
     return (
         <>
             <Header 
@@ -68,7 +68,7 @@ const PelaksanaanRevisi = () => {
                             <div className='list'>
                                 {item.text.map((textItem, textIndex) => (
                                     <div className='each-list' key={textIndex}>
-                                        <p className='number'>{textItem.nomor}.</p>
+                                        <p className='number'>{textItem.nomor}</p>
                                         <p className='text' dangerouslySetInnerHTML={{ __html: textItem.isi }}></p>
                                     </div>
                                 ))}

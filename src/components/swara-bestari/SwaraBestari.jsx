@@ -10,10 +10,12 @@ import Wave from '../../images/waves/Wave Two.png'
 import SecondWave from '../../images/waves/Wave Three.png'
 import Kupu from '../../images/ananta/kupu.png'
 import SwaraBestariLogo from '../../images/swara bestari/Swara Bestari Logo.png'
+import Grain from '../../images/Grain Texture.png'
 
 const SwaraBestari = () => {
     return (
         <section id='swara-bestari' className="swara-bestari_section">
+            <img className='grain' src={Grain} alt="grain" />
             <img className='wave_swara-bestari_top' src={SecondWave}alt="Wave" />
             <div className='swara-bestari_content'>
                 <div className='the_content'>

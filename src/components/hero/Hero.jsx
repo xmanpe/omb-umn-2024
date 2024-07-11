@@ -11,6 +11,7 @@ import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
 import LogoOMB2024 from '../../images/Logo OMB 2024.png'
 import TaglineOMB2024 from '../../images/Tagline OMB 2024.png'
 import Wave from '../../images/waves/Wave One.png'
+import NewWave from '../../images/waves/Wave Baru.png'
 
 const Hero = () => {
     return (
@@ -25,8 +26,12 @@ const Hero = () => {
                     <AnnCard />
                     <AnnCard2 />
                 </div> 
+                <div className='bem_section'>
+                    <p>BAGIAN DARI BEM UMN</p>
+                </div>
             </div>
             <img className='wave' src={Wave} alt="Wave" />
+            <img className='new-wave' src={NewWave} alt="wave baru" />
         </section>
     );
 }

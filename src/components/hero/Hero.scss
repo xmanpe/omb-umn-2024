@@ -11,9 +11,18 @@
     position: relative;
 
     .wave {
+        z-index: 1;
         margin-bottom: -1px;
         width: 100%;
         pointer-events: none;
+        position: relative;
+    }
+
+    .new-wave {
+        position: absolute;
+        bottom: -10%;
+        width: 100%;
+        z-index: 1;
     }
 
     .hero_supergrafis {
@@ -31,6 +40,7 @@
         align-items: flex-start;
         gap: 72px;
         padding: 100px 160px 200px 160px;
+        position: relative;
 
         .logo_section {
             width: 100%;
@@ -58,6 +68,52 @@
             align-items: center;
             gap: 28px;
         }
+
+        .bem_section {
+            margin: 80px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative; /* Position relative to create a context for pseudo-elements */
+            padding: 20px 0; /* Add padding to make space for the borders */
+        
+            p {
+                color: #FFF;
+                text-align: center;
+                font-family: "GSN";
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 6px;
+                text-shadow: 0px 4px 24.9px #FFF;
+            }
+            
+            /* Add the top border */
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 1px; /* Height of the border */
+                background: linear-gradient(to right, transparent, #FFF 50%, transparent);
+            }
+            
+            /* Add the bottom border */
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px; /* Height of the border */
+                background: linear-gradient(to right, transparent, #FFF 50%, transparent);
+            }
+        } 
     }
 }
 
@@ -195,6 +251,13 @@
             // width: 100%;
             // pointer-events: none;
         }
+
+        .new-wave {
+            position: absolute;
+            bottom: -5%;
+            width: 100%;
+            z-index: 1;
+        }
     
         .hero_supergrafis {
             // display: none;
@@ -233,6 +296,30 @@
             .announcement_section {
                 grid-template-columns: 1fr;
                 // width: 100%;
+            }
+
+            .bem_section {
+                margin: 60px 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: relative; /* Position relative to create a context for pseudo-elements */
+                padding: 20px 0; /* Add padding to make space for the borders */
+            
+                p {
+                    color: #FFF;
+                    text-align: center;
+                    font-family: "GSN";
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 6px;
+                    text-shadow: 0px 4px 24.9px #FFF;
+                }
             }
         }
     }

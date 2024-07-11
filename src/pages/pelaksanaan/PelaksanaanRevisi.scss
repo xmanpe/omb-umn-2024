@@ -40,6 +40,10 @@
         }
     }
 
+    .slider:hover {
+        box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.2);
+    }
+
     .list-wrapper {
         display: flex;
         flex-direction: column;
@@ -81,6 +85,10 @@
                     border: 0.2px solid #00000017;
                     width: 100%;
                 }
+            }
+
+            .each-list:hover{
+                border: 2px solid #4404aa28;
             }
         }
     }
@@ -164,6 +172,10 @@
                 display: none;
             }
         }
+
+        .slider:hover {
+            box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+        }
     
         .list-wrapper { 
             .list {
@@ -177,6 +189,10 @@
     
                     hr {
                     }
+                }
+
+                .each-list:hover{
+                    border: initial;
                 }
             }
         }

@@ -40,46 +40,6 @@
         }
     }
 
-    .slider-mobile {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        padding: 4px;
-        border-radius: 100px;
-
-        .slider-button-mobile-active {
-            border: none;
-            border-radius: 100px;
-            padding: 12px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-            font-size: 16px;
-            font-family: 'GSN';
-            background-color: #4404aa10;
-
-            color: #4504AA;
-            border: 1.5px solid #4504AA;
-            
-        }
-
-        .dropdown-wrapper {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            border: 1.5px solid #4504AA;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            padding: 4px;
-            border-radius: 12px;
-        }
-    }
-
     .list-wrapper {
         display: flex;
         flex-direction: column;
@@ -139,46 +99,6 @@
             }
         }
     
-        .slider-mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .slider-button-mobile-active {
-                border: none;
-                border-radius: 100px;
-                padding: 12px 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-                font-size: 16px;
-                font-family: 'GSN';
-                background-color: #4404aa10;
-    
-                color: #4504AA;
-                border: 1.5px solid #4504AA;
-                
-            }
-    
-            .dropdown-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                border: 1.5px solid #4504AA;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
-                padding: 4px;
-                border-radius: 12px;
-            }
-        }
-    
         .list-wrapper { 
             .list {
                 .each-list {
@@ -211,46 +131,6 @@
             }
         }
     
-        .slider-mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .slider-button-mobile-active {
-                border: none;
-                border-radius: 100px;
-                padding: 12px 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-                font-size: 16px;
-                font-family: 'GSN';
-                background-color: #4404aa10;
-    
-                color: #4504AA;
-                border: 1.5px solid #4504AA;
-                
-            }
-    
-            .dropdown-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                border: 1.5px solid #4504AA;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
-                padding: 4px;
-                border-radius: 12px;
-            }
-        }
-    
         .list-wrapper { 
             .list {
                 .each-list {
@@ -279,45 +159,9 @@
     
             .active {
             }
-        }
-    
-        .slider-mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .slider-button-mobile-active {
-                border: none;
-                border-radius: 100px;
-                padding: 12px 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-                font-size: 16px;
-                font-family: 'GSN';
-                background-color: #4404aa10;
-    
-                color: #4504AA;
-                border: 1.5px solid #4504AA;
-                
-            }
-    
-            .dropdown-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                border: 1.5px solid #4504AA;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
-                padding: 4px;
-                border-radius: 12px;
+
+            .pelaksanaan-text {
+                display: none;
             }
         }
     
@@ -349,46 +193,6 @@
             }
     
             .active {
-            }
-        }
-    
-        .slider-mobile {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .slider-button-mobile-active {
-                border: none;
-                border-radius: 100px;
-                padding: 12px 20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-                font-size: 16px;
-                font-family: 'GSN';
-                background-color: #4404aa10;
-    
-                color: #4504AA;
-                border: 1.5px solid #4504AA;
-                
-            }
-    
-            .dropdown-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                border: 1.5px solid #4504AA;
-                justify-content: center;
-                align-items: center;
-                margin: auto;
-                padding: 4px;
-                border-radius: 12px;
             }
         }
     

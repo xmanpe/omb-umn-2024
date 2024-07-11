@@ -36,31 +36,10 @@ const PelaksanaanRevisi = () => {
                         <button key={index}
                                 className={`slider-button ${sliderState === index ? 'active' : ''}`}
                                 onClick={() => setSliderState(index)}>
-                            {slides}
+                            {slides} <span className='pelaksanaan-text'>Pelaksanaan</span>
                         </button>
                     ))}
                 </div>
-                {/* <div className='slider-mobile'>
-                        {slides.map((slides,index)=>(
-                            sliderState === index && 
-                            <button key={index} className='slider-button-mobile-active' onClick={handleDropdownClick}>
-                                {slides}
-                                <img className={`arrow ${!showMobileDropdown ? 'up':'down'}`} src={ArrowDropdown} alt='drop'/>
-                            </button>
-                        ))}
-                        {showMobileDropdown && 
-                            <div className='dropdown-wrapper'>
-                                {slides.map((slides,index)=>(
-                                    sliderState !== index &&
-                                        <button key={index}
-                                                className={`slider-button-mobile`}
-                                                onClick={() => handleUserClick(index)}>
-                                            {slides}
-                                        </button>
-                                ))}
-                            </div>
-                        }
-                </div> */}
                 <div className='list-wrapper'>
                     {listPelaksanaan["list-pelaksanaan"].map((item, index) => (
                         <div key={index}>

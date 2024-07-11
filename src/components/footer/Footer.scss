@@ -11,9 +11,19 @@
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
+    position: relative;
 
     .wave {
         width: 100%;
+    }
+
+    .wave-water {
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        bottom: 0;
+        opacity: 0.5;
+        pointer-events: none;
     }
 
     .footer_content {
@@ -164,7 +174,7 @@
                 }
 
                 .update {
-                    color: #ffffff54;
+                    color: #ffffff9d;
                     text-align: center;
                     font-size: 12px;
                     font-style: normal;

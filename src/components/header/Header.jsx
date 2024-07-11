@@ -9,6 +9,7 @@ import BungaLotus from '../../images/Outline - Bunga Lotus Biru di Atas Air 1 1.
 import ArrowRight from '../../images/Arrow/Arrow_Right_MD.png';
 import Wave from '../../images/waves/Wave One.png';
 import Home from '../../images/icons/Home_Active.svg';
+import WaveWater from '../../images/Transisi Air.png';
 
 const Header = ({ top, bottom }) => {
     return (
@@ -30,6 +31,7 @@ const Header = ({ top, bottom }) => {
                     </div>
                 </div>
             </div>
+            {/* <img className='wave-water' src={WaveWater} alt="wave water" /> */}
             <img className='wave' src={Wave} alt="The Wave" />
         </header>
     );

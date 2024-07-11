@@ -16,6 +16,7 @@ import Image from '../../images/icons/image.svg'
 // import images
 import FooterLogo from '../../images/Logo OMB 2024 - Biru.png'
 import Wave from '../../images/waves/Wave Two.png'
+import WaveWater from '../../images/Transisi Air.png'
 
 const Footer = () => {
     const location = useLocation();
@@ -94,6 +95,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <img className='wave-water' src={WaveWater} alt="wave water" />
         </footer>
     );
 }

@@ -9,7 +9,7 @@
     width: fit-content;
     margin: 0 auto;
     gap: 8px;
-    opacity: 0.8;
+    opacity: 0.6;
 
     .extended-navbar {   
         display: flex;
@@ -171,6 +171,7 @@
 }
 
 .the-whole-navbar:hover {
+    bottom: 18px;
     opacity: 1;
 }
 

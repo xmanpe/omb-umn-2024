@@ -231,6 +231,19 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 
+  img, div {
+    -webkit-user-drag: none;  /* For Safari and Chrome */
+    -khtml-user-drag: none;   /* For Konqueror */
+    -moz-user-drag: none;     /* For Firefox */
+    -o-user-drag: none;       /* For Opera */
+    user-drag: none;          /* Standard */
+    
+    -webkit-user-select: none;  /* For Safari and Chrome */
+    -moz-user-select: none;     /* For Firefox */
+    -ms-user-select: none;      /* For IE10+ */
+    user-select: none;          /* Standard */
+  }
+
   h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
     padding: 0;

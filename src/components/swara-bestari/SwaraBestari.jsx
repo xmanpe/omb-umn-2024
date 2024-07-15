@@ -28,6 +28,7 @@ const SwaraBestari = () => {
                             <iframe className='mini-player' src="https://open.spotify.com/embed/show/3n5IKS6vFtpK1h1rgnlzKm?utm_source=generator&t=0" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             <p>Swara Bestari merupakan program siniar (<i>podcast</i>) resmi OMB UMN 2024. Siniar ini akan membahas topik-topik yang harapannya dapat membantu peserta saling menanamkan integritas bersamaan dengan membangkitkan solidaritas selama masa perkuliahan. Kata "Swara" diambil dari bahasa Jawa yang memiliki arti suara dan "Bestari" diambil dari Kamus Besar Bahasa Indonesia (KBBI) yang memiliki arti luas dan dalam pengetahuannya, pendidikan baik, dan budi pekerti.
                             </p>
+                            <p>Jangan takut ketinggalan dan mulai bangun pribadi yang kuat dan positif bersama. Untuk mengalahkan FOMO dan mencapai impian-mu dengan percaya diri, dengarkan episode PENA 01 Swara Bestari di Spotify! </p>
                         </div>
                         {/* <iframe className='mini-player' src="https://open.spotify.com/embed/show/3n5IKS6vFtpK1h1rgnlzKm?utm_source=generator&t=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
                         {/* <div className='cta_button'>

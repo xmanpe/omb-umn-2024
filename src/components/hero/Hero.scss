@@ -60,6 +60,14 @@
             }
         }
     
+        .ann_center {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            width: 100%;
+        }
+
         .announcement_section {
             width: 100%;
             display: grid;
@@ -170,6 +178,14 @@
         
             .announcement_section {
                 // width: 100%;
+            }
+            .announcement_center {
+                // justify-content: center;
+                // align-items: center;
+                // gap: 28px;
+                // display: flex;
+                // width: 50%;
+                // margin: auto;
             }
         }
     }
@@ -291,6 +307,10 @@
                 .tagline_omb {
                     width: 60%;
                 }
+            }
+
+            .ann_center {
+                width: 100%;
             }
         
             .announcement_section {

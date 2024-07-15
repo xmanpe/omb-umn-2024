@@ -5,11 +5,11 @@ import Home from "./pages/Home";
 import JadwalWawancara from "./pages/JadwalWawancara";
 import PesertaMengulang from "./pages/PesertaMengulang";
 import Pelaksanaan from "./pages/pelaksanaan/Pelaksanaan";
-import TentangOMB from "./pages/tentang-omb/TentangOMB";
+import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
+import TentangOMB from "./pages/tentang-omb/TentangOMB";; 
+import AtributPeserta from "./pages/atribut-peserta/AtributPeserta";
 import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottonNav";
-
-import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="/daftar-peserta" element={<PesertaMengulang />} />
           <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
+          <Route path="/atribut-peserta" element={<AtributPeserta />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

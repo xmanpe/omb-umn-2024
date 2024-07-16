@@ -24,10 +24,11 @@ const Footer = () => {
     const isPesertaMengulangPage = location.pathname === '/daftar-peserta';
     const isHomePage = location.pathname === '/';
     const isPelaksanaanPage = location.pathname === '/pelaksanaan';
+    const isAtributPesertaPage = location.pathname === '/atribut-peserta';
 
     return (
         <footer className='footer_section'>
-            {(isHomePage || isPelaksanaanPage) && <img className='wave' src={Wave} alt="Wave" />}
+            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage) && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>
@@ -91,7 +92,7 @@ const Footer = () => {
                         <p className='copyright'>© OMB UMN 2024</p>
                         <p className='slebew'>Dikelola oleh <span className="nayanika">Divisi Nayanika<span className="popover">Cie nyariin Nayanika... koornya, ya? 🤭</span></span></p>
                         <br />
-                        <p className='update'>Konten diperbarui per tanggal 11 Juli 2024</p>
+                        <p className='update'>Konten diperbarui per tanggal 16 Juli 2024</p>
                     </div>
                 </div>
             </div>

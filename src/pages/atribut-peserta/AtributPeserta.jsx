@@ -36,7 +36,7 @@ const AtributPeserta = () => {
         <>
             <Header 
                 top="Lotus Biru bertumbuh cantik,"
-                bottom={<>Yuk, simak informasi ini baik-baik!</>}
+                bottom={<>Yuk, simak informasi atribut peserta ini baik-baik!</>}
             />
             <div className='content-wrapper'>
                 <div className='slider'>
@@ -71,9 +71,9 @@ const AtributPeserta = () => {
                         }
                     </div>
                 </div>
-                <img className='lebah' src={lebah} alt='kunang1'/>
+                {/* <img className='lebah' src={lebah} alt='kunang1'/>
                 <img className='lebah2'src={lebah2} alt='kunang2'/>
-                <img className='tangkai'src={tangkai} alt='tangkai'/>
+                <img className='tangkai'src={tangkai} alt='tangkai'/> */}
                 <div className='atribut-wrapper'>
                     {listAtributPeserta["list-atribut-peserta"].filter(item=> item.hari.includes(sliderState)).map((item, index) => (
                         <div className='each-list' key={index}>

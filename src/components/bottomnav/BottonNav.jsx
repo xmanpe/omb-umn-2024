@@ -21,6 +21,8 @@ import BingkaiNotActive from '../../images/icons/Bingkai.svg'
 import BingkaiActive from '../../images/icons/Bingkai_Active.svg'
 import PelaksanaanNotActive from '../../images/icons/Pelaksanaan.svg'
 import PelaksanaanActive from '../../images/icons/Pelaksanaan_Active.svg'
+import AtributNotActive from '../../images/icons/Atribut.svg'
+import AtributActive from '../../images/icons/Atribut_Active.svg'
 
 const divisiName = [
     { name: 'BALWANA' },
@@ -101,6 +103,10 @@ const BottomNav = () => {
                 window.location.href = '/daftar-peserta';
             }
 
+            else if (tabPath === '/atribut-peserta') {
+                window.location.href = '/atribut-peserta';
+            }
+
             setActiveTab(tabPath); // Set active tab
         }
     };
@@ -114,7 +120,8 @@ const BottomNav = () => {
         // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
         // { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
         { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
-        { path: '/pelaksanaan', icon: PelaksanaanNotActive, activeIcon: PelaksanaanActive, text: 'Pelaksanaan'}
+        { path: '/pelaksanaan', icon: PelaksanaanNotActive, activeIcon: PelaksanaanActive, text: 'Pelaksanaan' },
+        { path: '/atribut-peserta' , icon: AtributNotActive, activeIcon: AtributActive, text: 'Atribut Peserta' }
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
         // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
         // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },

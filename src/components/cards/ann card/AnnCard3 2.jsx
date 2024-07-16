@@ -6,7 +6,7 @@ import ArrowRight from '../../../images/Arrow/Arrow_Right_MD.svg';
 import Calendar from '../../../images/Calendar/Calendar.svg';
 
 // import component
-import InformationModal from './information modal/InformationModal';
+import SesiInformasi from '../sesi informasi/SesiInformasi';
 
 const AnnCard = () => {
     const [countdown, setCountdown] = useState('');
@@ -68,19 +68,17 @@ const AnnCard = () => {
     // };
 
     const openPage = () => {
-        document.getElementById('divisi_section').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('swara-bestari').scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
         <>
-        {showModal && <InformationModal onClose={toggleModal} />}
-            <div className="ann_card hightlight">
+        {showModal && <SesiInformasi onClose={toggleModal} />}
+            <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Informasi Penting & Wajib!</h3>
-                        {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
-                            {/* <h3>Formulir Keikutsertaan OMB UMN 2024</h3> */}
-                            <p>Formulir Keikutsertaan OMB UMN 2024 <b>wajib</b> diisi oleh seluruh calon peserta sebagai salah satu syarat mengikuti OMB UMN 2024.</p>
+                        <h3>Yuk, Bangun <i>Self-Support System</i> Melalui Swara Bestari!</h3>
+                        <p>Secara perdana, Swara Bestari mengeluarkan PROLOG terbaru. Dengarkan sekarang hanya di Spotify Swara Bestari!</p>
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>
@@ -91,12 +89,9 @@ const AnnCard = () => {
                     </div> */}
                 </div>
                 <div className='cta_button'>
-                    <button onClick={toggleModal}>Lihat
+                    <button onClick={openPage}>Dengar
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
-                </div>
-                <div className='label'>
-                    <p>Penting!</p>
                 </div>
             </div>
         </>

@@ -8,6 +8,7 @@ import Pelaksanaan from "./pages/pelaksanaan/Pelaksanaan";
 import TentangOMB from "./pages/tentang-omb/TentangOMB";
 import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottonNav";
+import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
 
 import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/daftar-peserta" element={<PesertaMengulang />} />
           <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
+          <Route path="/atribut-peserta" element={<AtributPeserta />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

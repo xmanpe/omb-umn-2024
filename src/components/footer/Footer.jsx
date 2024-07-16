@@ -12,6 +12,7 @@ import Email from '../../images/icons/Communication/Mail.svg'
 import Spotify from '../../images/icons/spotify.svg'
 import Twitter from '../../images/icons/twitter.svg'
 import Image from '../../images/icons/image.svg'
+import WhatsApp from '../../images/icons/whatsapp.svg'
 
 // import images
 import FooterLogo from '../../images/Logo OMB 2024 - Biru.png'
@@ -74,6 +75,10 @@ const Footer = () => {
                                 <div className='each_list'>
                                     <img src={Instagram} alt="instagram" />
                                     <a href='https://www.instagram.com/ombumn' target='_blank'>@ombumn</a>
+                                </div>
+                                <div className='each_list'>
+                                    <img src={WhatsApp} alt="whatsapp" />
+                                    <a href='https://wa.me/6285179959923' target='_blank'>085179959923</a>
                                 </div>
                                 <div className='each_list'>
                                     <img src={Facebook} alt="facebook" />

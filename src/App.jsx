@@ -5,11 +5,12 @@ import Home from "./pages/Home";
 import JadwalWawancara from "./pages/JadwalWawancara";
 import PesertaMengulang from "./pages/PesertaMengulang";
 import Pelaksanaan from "./pages/pelaksanaan/Pelaksanaan";
-import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
-import TentangOMB from "./pages/tentang-omb/TentangOMB";; 
-import AtributPeserta from "./pages/atribut-peserta/AtributPeserta";
+import TentangOMB from "./pages/tentang-omb/TentangOMB";
 import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottonNav";
+import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
+
+import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
 
 function App() {
   return (

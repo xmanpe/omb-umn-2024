@@ -57,10 +57,10 @@ const SmallModal = () => {
             <div className={`small_modal ${isVisible ? 'visible' : ''}`}>
                 <div className='left_side_modal'>
                     <img className='supergrafis' src={Supergrafis} alt="Supergrafis" />
-                    <p className='left_side'>Kenali setiap divisi yang bertugas!</p>
+                    <p className='left_side'>Yuk mengisi Formulir Keikutsertaan OMB UMN 2024!</p>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={openPage}>Melihat
+                    <button onClick={toggleModal}>Yuk!
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

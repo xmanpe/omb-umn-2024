@@ -3,6 +3,7 @@ import './Hero.scss';
 // import components
 import AnnCard from '../cards/ann card/AnnCard';
 import AnnCard2 from '../cards/ann card/AnnCard2';
+import AnnCard3 from '../cards/ann card/AnnCard3';
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
@@ -12,7 +13,6 @@ import LogoOMB2024 from '../../images/Logo OMB 2024.png'
 import TaglineOMB2024 from '../../images/Tagline OMB 2024.png'
 import Wave from '../../images/waves/Wave One.png'
 import NewWave from '../../images/waves/Wave Baru.png'
-import SesiInformasi from '../cards/sesi informasi/SesiInformasi';
 
 const Hero = () => {
     return (
@@ -23,12 +23,10 @@ const Hero = () => {
                     <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
                     <img className='tagline_omb' src={TaglineOMB2024} alt="Tagline OMB 2023" />
                 </div>
-                <div className="ann_center">
-                    <SesiInformasi />
-                </div>
                 <div className='announcement_section'>
                     <AnnCard />
                     <AnnCard2 />
+                    {/* <AnnCard3 /> */}
                 </div>
                 <div className='bem_section'>
                     <p>BAGIAN DARI BEM UMN</p>

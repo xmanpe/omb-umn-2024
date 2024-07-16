@@ -6,7 +6,6 @@ import ArrowRight from "../../../images/Arrow/Arrow_Right_MD.svg";
 import Calendar from "../../../images/Calendar/Calendar.svg";
 
 // import component
-import SesiInformationModal from "../ann card/information modal/SesiInformasiModal";
 
 const SesiInformasi = () => {
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +17,6 @@ const SesiInformasi = () => {
 
   return (
     <>
-      {showModal && <SesiInformationModal onClose={toggleModal} />}
       <div className="sesi_card">
         <div className="text_section">
           <div className="title_and_desc">

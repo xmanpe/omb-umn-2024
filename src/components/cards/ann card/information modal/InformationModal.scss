@@ -54,23 +54,23 @@
 
         .close_button {
             position: absolute;
-            top: 24px;
-            right: 24px;
+            top: 20px;
+            right: 20px;
             border: 1px solid rgb(216, 216, 216);
             background: #ffffff82;
             backdrop-filter: blur(4px);
             box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
             border-radius: 100px;
             display: flex;
-            padding: 12px;
+            padding: 8px;
             flex-direction: column;
             align-items: flex-end;
             gap: 10px;
             align-self: stretch;
 
             img {
-                width: 24px;
-                height: 24px;
+                width: 20px;
+                height: 20px;
                 opacity: 0.8;
                 cursor: pointer;
             }

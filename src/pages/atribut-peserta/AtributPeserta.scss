@@ -152,7 +152,6 @@
     }
     .atribut-wrapper{
         display: flex;
-        background-color: yellow;
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
@@ -545,7 +544,9 @@
             // width: 28%;
         }
         .atribut-wrapper{
-            // display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
             // flex-wrap: wrap;
             // gap: 24px;
             // justify-content: center;
@@ -570,7 +571,7 @@
                     // display: flex;
                     // justify-content: center;
                     // align-items: center;
-                    // width: 200px; /* Adjust this width as needed */
+                    width: initial;
                     // overflow: hidden;
                     // text-overflow: ellipsis;
                     // white-space: nowrap;
@@ -772,6 +773,7 @@
             // width: 28%;
         }
         .atribut-wrapper{
+            grid-template-columns: 1fr;
             // display: flex;
             // flex-wrap: wrap;
             // gap: 24px;
@@ -848,7 +850,8 @@
 
 @media screen and (max-width: 560px) {
     .content-wrapper{
-        padding: 60px 16px;
+        padding: 16px;
+        gap: 12px;
         // display: flex;
         // flex-direction: column;
         // gap: 64px;

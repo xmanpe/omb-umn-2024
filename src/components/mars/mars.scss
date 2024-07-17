@@ -18,6 +18,18 @@
             rgba(69, 4, 170, 0.50) 92.55%),
         #7047BF;
 
+        .mars-omb-content p {
+            opacity: 0.5; /* Lirik yang tidak aktif akan memiliki opacity 0.5 */
+            transition: opacity 0.5s; /* Tambahkan transisi untuk efek halus */
+          }
+          
+          .mars-omb-content p.active {
+            opacity: 1; /* Lirik yang aktif akan memiliki opacity 1 */
+            font-weight: bold; /* Anda juga bisa menambahkan gaya lain, seperti bold */
+            color: #ff0000; /* Warna highlight */
+          }
+
+          
     .supergrafis-kembang {
         position: absolute;
         top: 30%;

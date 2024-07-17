@@ -7,6 +7,7 @@ import Header from '../../components/header/Header';
 import listAtributPeserta from './listAtributPeserta';
 import ModalNilai from "../../components/modal-nilai/ModalNilai";
 import Footer from '../../components/footer/Footer';
+import SwaraBestari from '../../components/swara-bestari/SwaraBestari';
 
 // import images
 import ArrowDropdown from '../../images/Arrow/ArrowDropdown.svg';
@@ -96,6 +97,7 @@ const AtributPeserta = () => {
                     ))}
                 </div>
             </div>
+            <SwaraBestari />
             <Footer/>
             <ModalNilai 
                 show={modalInfo.show} 

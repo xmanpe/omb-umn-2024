@@ -95,9 +95,9 @@ const AnnCard = () => {
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>
-                <div className='label'>
+                {/* <div className='label'>
                     <p>Penting!</p>
-                </div>
+                </div> */}
             </div>
         </>
     );

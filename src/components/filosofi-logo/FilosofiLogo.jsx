@@ -60,18 +60,18 @@ const FilosofiLogo = () => {
         setCurrentText(number)
     }
 
-    useEffect(() => {
-        const intervalLogo = setInterval(() => {
-            setLoopNumber(loopNumber + 1);
-            if(loopNumber == 4) {
-                setLoopNumber(0);
-            }
-        }, 3000);
+    // useEffect(() => {
+    //     const intervalLogo = setInterval(() => {
+    //         setLoopNumber(loopNumber + 1);
+    //         if(loopNumber == 4) {
+    //             setLoopNumber(0);
+    //         }
+    //     }, 3000);
     
-        return () => {
-            clearInterval(intervalLogo);
-        };
-    }, [loopNumber]);
+    //     return () => {
+    //         clearInterval(intervalLogo);
+    //     };
+    // }, [loopNumber]);
 
     return (
         <section className="filosofi_logo_section" id="filosofi_logo_section">

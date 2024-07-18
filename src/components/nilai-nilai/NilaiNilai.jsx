@@ -31,7 +31,7 @@ const NilaiNilai = () => {
         </div>
         <div className="nilai-nilai_content">
           <div className="content-1">
-            <div className="left card">
+            <div className="left card rotate1">
               <div className="icon-and-title">
                 <img src={Flower} alt="bunga" />
                 <div className="the-real-title">
@@ -63,7 +63,7 @@ const NilaiNilai = () => {
                 </button>
               </div>
             </div>
-            <div className="right card">
+            <div className="right card rotate2">
               <div className="icon-and-title">
                 <img src={Flower} alt="bunga" />
                 <div className="the-real-title">
@@ -93,7 +93,7 @@ const NilaiNilai = () => {
             </div>
           </div>
           <div className="content-2">
-            <div className="left card">
+            <div className="left card rotate3">
               <div className="icon-and-title">
                 <img src={Flower} alt="bunga" />
                 <div className="the-real-title">
@@ -120,7 +120,7 @@ const NilaiNilai = () => {
                 </button>
               </div>
             </div>
-            <div className="right card">
+            <div className="right card rotate4">
               <div className="icon-and-title">
                 <img src={Flower} alt="bunga" />
                 <div className="the-real-title">
@@ -145,7 +145,7 @@ const NilaiNilai = () => {
             </div>
           </div>
           <div className="content-3">
-            <div className="center card">
+            <div className="center card rotate5">
               <div className="icon-and-title">
                 <img src={Flower} alt="bunga" />
                 <div className="the-real-title">

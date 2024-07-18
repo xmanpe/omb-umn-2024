@@ -417,10 +417,12 @@
             .the-arrow {
                 width: 24px;
                 height: 24px;
-                margin-bottom: 20px;
+                // margin-bottom: 20px;
+                display: none;
             }
         
             .box_text {
+                margin-top: 8px;
                 // display: flex;
                 // flex-direction: column;
                 // align-items: center;

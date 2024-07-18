@@ -1,11 +1,10 @@
 .nilai-nilai_section {
   background-image: linear-gradient(to bottom, #ffffff, #f6f4fe, #ede9fe, #e4defd, #dbd3fc, #cec4f7, #c2b4f2, #b6a5ed, #a48ee2, #9276d7, #815fcb, #7047bf);
-  // z-index: -1;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  padding: 100px 160px 100px 160px;
+  padding: 100px 160px;
   flex-direction: column;
   align-items: center;
   gap: 60px;
@@ -32,11 +31,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 100;
     gap: 8px;
 
     img {
-      // padding-top: 210px;
       width: 60px;
       height: auto;
       object-fit: cover;
@@ -45,14 +42,12 @@
     }
 
     h1 {
-      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24),
-        0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
-      text-align: center;
+      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
       font-size: 48px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
-      background: linear-gradient(180deg, #4504aa 0%, #4504aa 100%);
+      background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -63,30 +58,34 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 20px;
 
     .content-1,
     .content-2 {
       display: flex;
       width: 100%;
-      gap: 30px;
-      margin-bottom: 30px; // Add gap between rows
+      gap: 20px;
 
       .left {
+        justify-content: space-between;
         width: 40%;
       }
 
       .right {
+        justify-content: space-between;
         width: 60%;
       }
     }
 
     .content-2 {
       .left {
-        width: 55%;
+        justify-content: space-between;
+        width: 60%;
       }
 
       .right {
-        width: 45%;
+        justify-content: space-between;
+        width: 40%;
       }
     }
 
@@ -95,77 +94,99 @@
       justify-content: center;
       width: 50%;
       margin: auto;
-      // padding-bottom: 120px;
     }
 
     .card {
+      z-index: 100;
       display: flex;
       flex-direction: column;
-      background: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
-      padding: 40px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 24px; /* Increased for more rounded corners */
-      color: rgba(112, 71, 191, 1); /* Adjust text color */
+      justify-content: space-between;
+      border: 1.5px solid #F0F0F0;
+      background: white;
+      padding: 32px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
 
-      /* Background blur effect */
-      backdrop-filter: blur(100px);
-      -webkit-backdrop-filter: blur(100px); /* For Safari */
+      .icon-and-title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
 
-      h2.nilai_title,
-      p.sub_nilai {
-        text-align: center;
-        color: rgba(112, 71, 191, 1); // Adjust text color
-      }
+        img {
+          width: 40px;
+          height: 40px;
+          object-fit: cover;
+        }
 
-      p.sub_nilai {
-        font-style: italic;
-        margin-top: 0; // Smaller margin between nilai_title and sub_nilai
+        .the-real-title {
+          h2.nilai_title {
+            color: #4504AA;
+          }
+    
+          p.sub_nilai {
+            text-align: left;
+            color: rgba(112, 71, 191, 1);
+          }
+    
+          p.sub_nilai {
+            margin: 0px;
+            font-style: italic;
+          }
+        }
       }
 
       p {
-        margin: 20px 0 0;
         text-align: justify;
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 18px;
         font-weight: 500;
-        color: rgba(112, 71, 191, 1); // Adjust text color
+        color: rgba(0, 0, 0, 0.7);
+      }
+
+      b {
+        font-weight: 600;
+        color: black;
       }
 
       .show-more-button {
+        margin-top: 40px;
         display: flex;
-        padding: 2px;
-        align-items: center;
-        border-radius: 100px;
-        justify-content: flex-end;
-        align-items: center;
-        padding-top: 20px;
-        margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
+        justify-content: end;
 
         button {
           display: flex;
-          padding: 12px 20px;
-          justify-content: center;
-          align-items: center;
+          padding: 10px 20px;
+          justify-content: end;
           gap: 8px;
-          width: max-content;
-          height: 46px;
           border-radius: 100px;
           border: none;
-          background: linear-gradient(169deg, #9879d4 8.3%, #4504aa 91.79%);
-          box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.4),
-            0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset,
-            0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
-          color: #fff;
+          background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+          box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+          transition: box-shadow 0.1s ease-in-out;
+
+          color: #FFF;
           text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-          font-size: 20px;
+          font-size: 16px;
+          font-family: 'GSN';
           font-style: normal;
           font-weight: 500;
           line-height: normal;
-          transition: box-shadow 0.1s ease-in-out;
+              
+          cursor: pointer;
 
-          &:hover {
-            cursor: pointer;
+          overflow: hidden;
+
+          img {
+              width: 20px;
+              height: 20px;
           }
-        }
+      }
+
+      button:active {
+          padding: 12px 20px 8px 20px;
+          background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+      }
       }
     }
   }

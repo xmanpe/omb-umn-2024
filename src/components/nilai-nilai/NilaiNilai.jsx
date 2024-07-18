@@ -25,15 +25,20 @@ const NilaiNilai = () => {
         <img className='nilai_omb_supergrafis' src={Supergrafis} alt="Supergrafis" />
         <div className="title">
           <div className="nilai-nilai_title">
-            <img src={Flower} alt="" />
-            <h1>Nilai-Nilai <br /> OMB UMN 2024</h1>
+            {/* <img src={Flower} alt="" /> */}
+            <h1>Nilai-Nilai</h1>
           </div>
         </div>
         <div className="nilai-nilai_content">
           <div className="content-1">
             <div className="left card">
-              <h2 className="nilai_title">SDGs No. 4</h2>
-              <p className="sub_nilai">Quality Education</p>
+              <div className="icon-and-title">
+                <img src={Flower} alt="bunga" />
+                <div className="the-real-title">
+                  <h2 className="nilai_title">SDGs No. 4</h2>
+                  <p className="sub_nilai">Quality Education</p>
+                </div>
+              </div>
               <p>
                 OMB UMN 2024 ingin mengenalkan Universitas Multimedia Nusantara sebagai institusi pendidikan berkualitas 
                 yang mendorong pengembangan pribadi berkelanjutan dan memberikan kontribusi positif terhadap masyarakat. 
@@ -59,8 +64,13 @@ const NilaiNilai = () => {
               </div>
             </div>
             <div className="right card">
-              <h2 className="nilai_title">SDGs No. 13</h2>
-              <p className="sub_nilai">Climate Action</p>
+              <div className="icon-and-title">
+                <img src={Flower} alt="bunga" />
+                <div className="the-real-title">
+                  <h2 className="nilai_title">SDGs No. 13</h2>
+                  <p className="sub_nilai">Climate Action</p>
+                </div>
+              </div>
               <p>
                 Nilai SDGs No. 13 <i>Climate Action</i> ini merupakan salah satu fokus masalah yang akan ditekuni oleh Peserta OMB UMN 2024. 
                 <b> Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
@@ -84,8 +94,13 @@ const NilaiNilai = () => {
           </div>
           <div className="content-2">
             <div className="left card">
-              <h2 className="nilai_title">5C UMN</h2>
-              <p className="sub_nilai">Caring, Credible, Competent, Competitive, & Customer Delight</p>
+              <div className="icon-and-title">
+                <img src={Flower} alt="bunga" />
+                <div className="the-real-title">
+                  <h2 className="nilai_title">5C UMN</h2>
+                  <p className="sub_nilai">Caring, Credible, Competent, Competitive, & Customer Delight</p>
+                </div>
+              </div>
               <p>
                 Bertransisi menjadi bagian dari keluarga besar UMN, OMB UMN 2024 juga akan menanamkan nilai-nilai keutamaan 5C UMN 
                 untuk mewujudkan karakter mahasiswa yang sesuai dengan visi UMN. 
@@ -106,7 +121,12 @@ const NilaiNilai = () => {
               </div>
             </div>
             <div className="right card">
-              <h2 className="nilai_title">Kepercayaan Diri</h2>
+              <div className="icon-and-title">
+                <img src={Flower} alt="bunga" />
+                <div className="the-real-title">
+                  <h2 className="nilai_title">Kepercayaan Diri</h2>
+                </div>
+              </div>
               <p>
                 Dalam menunjukkan potensi dari diri Peserta OMB UMN 2024, nilai kepercayaan diri menjadi hal yang krusial bagi mereka. 
                 <b> Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri</b>.
@@ -126,7 +146,12 @@ const NilaiNilai = () => {
           </div>
           <div className="content-3">
             <div className="center card">
-              <h2 className="nilai_title">Kebijaksanaan</h2>
+              <div className="icon-and-title">
+                <img src={Flower} alt="bunga" />
+                <div className="the-real-title">
+                  <h2 className="nilai_title">Kebijaksanaan</h2>
+                </div>
+              </div>
               <p>
                 Setelah membangun kepercayaan diri, <b>Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi</b>. Kompetensi ini diharapkan dapat mengarahkan peserta untuk berpikiran dengan kritis dan bijaksana dalam mengelola segala informasi dan persoalan. 
               </p>

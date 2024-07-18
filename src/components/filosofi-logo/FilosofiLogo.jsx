@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './FilosofiLogo.scss';
 
-// import logo
 import LogoFull from '../../images/FilosofiLogo/logo_full.png'
 import LogoTulisan from '../../images/FilosofiLogo/logo_tulisan.png'
 import LogoBunga from '../../images/FilosofiLogo/logo_bunga.png'
 import LogoWarna from '../../images/FilosofiLogo/logo_warna_biru.png'
 import LogoFakultas from '../../images/FilosofiLogo/logo_fakultas.png'
-
-// import supergrafis
+import DoubleArrow from '../../images/icons/Double Arrow.svg'
 import BungaFill from '../../images/supergrafis/bunga_atas_air_1_fill.svg'
 import Kunang from '../../images/supergrafis/kunang_kiri_fill.svg'
 
@@ -16,7 +14,7 @@ const FilosofiLogo = () => {
     const textFilosofi = [
         {
             "judul": "",
-            "text": "<h3>Klik salah satu bagian</h3><h3>logo OMB UMN 2024</h3>",
+            "text": "<h3>Klik salah satu bagian logo OMB UMN 2024!</h3>",
         },
         {
             "judul": "4 Warna Fakultas",
@@ -24,7 +22,7 @@ const FilosofiLogo = () => {
         },
         {
             "judul": "Bunga Lotus Biru",
-            "text": "<p>Logo OMB UMN 2024 mengusung Lotus Biru.</p><p>Lotus Biru merupakan simbol keindahan, kebijaksanaan, kepercayaan diri, dan pengetahuan yang menggambarkan pengelolaan potensi diri serta memiliki makna yang selaras dengan nilai-nilai dan tujuan dari OMB UMN 2024. Logo Lotus Biru sendiri menggambarkan orientasi mahasiswa yang bersifat internasional, menjadi wadah pengembangan potensi dengan bijak dan berdampak positif bagi sesama. Proses mekarnya melambangkan seseorang akan terus belajar (<i>long life learner</i>) sesuai dengan visi UMN.</p>",
+            "text": "<p>Logo OMB UMN 2024 mengusung Lotus Biru.</p></br><p>Lotus Biru merupakan simbol keindahan, kebijaksanaan, kepercayaan diri, dan pengetahuan yang menggambarkan pengelolaan potensi diri serta memiliki makna yang selaras dengan nilai-nilai dan tujuan dari OMB UMN 2024. Logo Lotus Biru sendiri menggambarkan orientasi mahasiswa yang bersifat internasional, menjadi wadah pengembangan potensi dengan bijak dan berdampak positif bagi sesama. Proses mekarnya melambangkan seseorang akan terus belajar (<i>long life learner</i>) sesuai dengan visi UMN.</p>",
         },
         {
             "judul": "Warna UMN",
@@ -43,50 +41,50 @@ const FilosofiLogo = () => {
         LogoWarna,
         LogoTulisan
     ]
-    // full
-    // fakultas
-    // bunga
-    // warna
-    // tulisan
 
     const [loopNumber, setLoopNumber] = useState(0);
     const [loopImage, setLoopImage] = useState(null);
-
     const [currentText, setCurrentText] = useState(0);
     const [currentLogo, setCurrentLogo] = useState(null);
+    const boxLogoRef = useRef(null);
 
     const changeLogo = (logo, number) => {
         setCurrentLogo(logo);
-        setCurrentText(number)
-    }
+        setCurrentText(number);
+    };
 
     // useEffect(() => {
-    //     const intervalLogo = setInterval(() => {
-    //         setLoopNumber(loopNumber + 1);
-    //         if(loopNumber == 4) {
-    //             setLoopNumber(0);
+    //     const handleScroll = () => {
+    //         if (boxLogoRef.current) {
+    //             const rect = boxLogoRef.current.getBoundingClientRect();
+    //             if (rect.top >= 0) {
+    //                 boxLogoRef.current.classList.add('sticky-shadow');
+    //             } else {
+    //                 boxLogoRef.current.classList.remove('sticky-shadow');
+    //             }
     //         }
-    //     }, 3000);
-    
-    //     return () => {
-    //         clearInterval(intervalLogo);
     //     };
-    // }, [loopNumber]);
+
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
     return (
         <section className="filosofi_logo_section" id="filosofi_logo_section">
             <img src={BungaFill} className="bunga_fill" />
             <img src={Kunang} className="kunang" />
-
-            <h2 className="judul">Logo OMB UMN 2024</h2>
+            <h2 className="judul">Penjelasan Logo</h2>
             <div className="content">
-                <div className="box_logo">
+                <div className="box_logo" ref={boxLogoRef}>
                     { currentLogo ? <img src={currentLogo} /> : <img src={allImage[loopNumber]} />}
                     <div className="hitbox_fakultas" onClick={() => changeLogo(LogoFakultas, 1)}></div>
                     <div className="hitbox_bunga" onClick={() => changeLogo(LogoBunga, 2)}></div>
                     <div className="hitbox_warna" onClick={() => changeLogo(LogoWarna, 3)}></div>
                     <div className="hitbox_tulisan" onClick={() => changeLogo(LogoTulisan, 4)}></div>
                 </div>
+                <img className='the-arrow' src={DoubleArrow} alt="arrow" />
                 <div className="box_text">
                     { textFilosofi[currentText].judul && <h2>{textFilosofi[currentText].judul}</h2> }
                     <div className="text" dangerouslySetInnerHTML={{__html: textFilosofi[currentText].text}}></div>

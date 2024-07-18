@@ -5,8 +5,7 @@
     align-items: center;
     overflow-x: hidden;
     padding: 100px 160px;
-    gap: 60px;
-    
+
     .judul {
         font-size: 48px;
         font-weight: 600;
@@ -18,6 +17,7 @@
     }
 
     .bunga_fill {
+        display: none;
         position: absolute;
         width: 200px;
         bottom: 0;
@@ -26,6 +26,7 @@
     }
 
     .kunang {
+        display: none;
         position: absolute;
         top: 10%;
         right: 5%;
@@ -33,12 +34,10 @@
     }
 
     .content {
-        // background-color: yellow;
-        border-radius: 20px;
-        border: 1.5px solid rgba(0, 0, 0, 0.081);
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 0px;
         
         .box_logo {
             position: relative;
@@ -94,36 +93,45 @@
                 // background-color: red;
             }
         }
+
+        .sticky-shadow {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .the-arrow {
+            width: 32px;
+            height: 32px;
+            margin-right: 60px;
+        }
     
         .box_text {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: start;
             justify-content: center;
+            box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
             
-            width: 500px;
+            // width: 700px;
             height: fit-content;
-            min-height: 300px;
+            // min-height: 300px;
             margin: auto;
-            padding: 24px 48px;
-
-            background: linear-gradient(white, white) padding-box,
-                        linear-gradient(to right, #CABFF9, #4504AA) border-box;
-            border: 1px solid transparent;
-            border-radius: 48px;
-            filter: drop-shadow(0px 10px 11.4px rgba(0, 0, 0, 0.07));
+            padding: 32px 40px;
+            border-radius: 20px;
+            border: 1.5px solid #F0F0F0;
 
             h2 {
-                margin: 0 auto 8px;
+                font-weight: 600;
+                margin-bottom: 12px;
             }
             h3 {
-                font-size: 36px;
-                font-weight: 600;
+                font-size: 20px;
+                font-weight: 500;
                 text-align: justify;
             }
             .text {
+                text-align: left;
                 font-size: 18px;
-                text-align: justify;
+                color: rgba(0, 0, 0, 0.80);
             }
             .color_ilkom { color: #FFC634 }
             .color_seni { color: #000000 }
@@ -135,18 +143,10 @@
 
 @media screen and (max-width: 1440px) {
     .filosofi_logo_section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 100px;
     
         .content {
-            display: flex;
-            justify-content: center;
-            
             .box_logo {
-                position: relative;
-                width: fit-content;
-                height: fit-content;
                 // border: 1px solid black;
                 
                 img {
@@ -199,34 +199,12 @@
             }
         
             .box_text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                
-                width: 500px;
-                height: fit-content;
-                min-height: 200px;
-                margin: auto;
-                padding: 24px 48px;
-                
-    
-                background: linear-gradient(white, white) padding-box,
-                            linear-gradient(to right, #CABFF9, #4504AA) border-box;
-                border: 1px solid transparent;
-                border-radius: 48px;
-                filter: drop-shadow(0px 10px 11.4px rgba(0, 0, 0, 0.07));
-    
                 h2 {
-                    margin: 0 auto 8px;
                 }
+
                 h3 {
-                    font-size: 36px;
-                    text-align: justify;
                 }
                 .text {
-                    font-size: 18px;
-                    text-align: justify;
                 }
             }
         }
@@ -236,9 +214,9 @@
 
 @media screen and (max-width: 1200px) {
     .filosofi_logo_section {
+        padding: 80px;
 
         .judul {
-            font-size: 36px;
         }
 
         .bunga_fill {
@@ -258,6 +236,9 @@
         }
 
         .content {
+            flex-direction: column;
+            width: 100%;
+
             .box_logo {
                 // border: 1px solid black;
                 
@@ -309,29 +290,22 @@
                     // background-color: red;
                 }
             }
+
+            .the-arrow {
+                transform: rotate(90deg);
+                margin-right: 0;
+                margin-bottom: 32px;
+            }
         
             .box_text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                
-                width: 400px;
-                height: fit-content;
-                min-height: 200px;
-                margin: auto;
-                padding: 18px 24px;
+                width: -webkit-fill-available;
 
                 h2 {
-                    margin: 0 auto 8px;
                 }
                 h3 {
-                    font-size: 24px;
-                    text-align: justify;
                 }
                 .text {
-                    font-size: 18px;
-                    text-align: justify;
+                    // margin: auto;
                 }
             }
         }
@@ -340,9 +314,11 @@
 
 @media screen and (max-width: 810px) {
     .filosofi_logo_section {
+        padding: 40px;
+        overflow: visible;
 
         .judul {
-            font-size: 28px;
+            font-size: 40px;
         }
 
         .bunga_fill {
@@ -362,12 +338,21 @@
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+            overflow: visible;
             
             .box_logo {
                 // border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                position: sticky;
+                top: 0;
+                background: white;
+                z-index: 100;
+                width: 100%;
+                border-bottom: 1px solid transparent;
                 
                 img {
                     width: 300px;
@@ -417,29 +402,46 @@
                     // background-color: red;
                 }
             }
+
+            .box_logo::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(to right, rgba(69, 4, 170, 0) 0%, #4504AA 50%, rgba(69, 4, 170, 0) 100%);
+                pointer-events: none;
+            }
+
+            .the-arrow {
+                width: 24px;
+                height: 24px;
+                margin-bottom: 20px;
+            }
         
             .box_text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
                 
-                width: 450px;
-                height: fit-content;
-                min-height: 200px;
-                margin: auto;
-                padding: 18px 24px;
+                // width: 450px;
+                // height: fit-content;
+                // min-height: 200px;
+                // margin: auto;
+                // padding: 18px 24px;
 
                 h2 {
-                    margin: 0 auto 8px;
+                    // margin: 0 auto 8px;
                 }
                 h3 {
-                    font-size: 28px;
-                    text-align: justify;
+                    // font-size: 28px;
+                    // text-align: justify;
                 }
                 .text {
-                    font-size: 18px;
-                    text-align: justify;
+                    // font-size: 18px;
+                    // text-align: justify;
                 }
             }
         }
@@ -448,6 +450,11 @@
 
 @media screen and (max-width: 560px) {
     .filosofi_logo_section {
+        padding: 60px 16px;
+
+        .judul {
+            font-size: 32px;
+        }
 
         .bunga_fill {
             position: absolute;
@@ -466,10 +473,6 @@
         }
 
         .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
             .box_logo {
                 // border: 1px solid black;
                 
@@ -521,33 +524,33 @@
                     // background-color: red;
                 }
             }
+
+            .the-arrow {
+                margin-top: -20px;
+            }
         
             .box_text {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
                 
-                width: 300px;
-                height: fit-content;
-                min-height: 200px;
-                margin: auto;
-                padding: 18px 24px;
+                // width: 300px;
+                // height: fit-content;
+                // min-height: 200px;
+                // margin: auto;
+                // padding: 18px 24px;
 
                 h2 {
-                    margin: 0 auto 8px;
                 }
                 h3 {
-                    font-size: 24px;
-                    text-align: justify;
+                    font-size: 18px;
                 }
                 .text {
-                    font-size: 18px;
-                    text-align: justify;
+                    font-size: 16px;
                 }
                 ul {
                     li {
-                        text-align: left;
                     }
                 }
             }
@@ -558,7 +561,7 @@
 @media screen and (max-width: 432px) {
     .filosofi_logo_section {
         .judul {
-            font-size: 24px;
+            font-size: 32px;
         }
     }
 }

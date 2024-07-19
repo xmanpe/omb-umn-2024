@@ -10,6 +10,7 @@ import Ananta from '../components/ananta/Ananta';
 import SwaraBestari from '../components/swara-bestari/SwaraBestari';
 import Footer from '../components/footer/Footer';
 import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
+import InformasiPentingdanWajib from '../components/informasi penting dan wajib/InfoPW';
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
@@ -46,6 +47,7 @@ const Home = () => {
         <ApaItuOMB />
         <YouTube />
         <Divisi />
+        <InformasiPentingdanWajib/>
         <SwaraBestari />
         {/* <Ananta /> */}
         <Footer />

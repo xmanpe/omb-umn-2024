@@ -2,7 +2,7 @@ import React from "react";
 import './InfoPW.scss';
 
 // import icons
-import ArrowRight from '../../images/Arrow/Arrow_Right_MD_purple.svg';
+import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg';
 
 // import waves
 import TopWave from '../../images/waves/InfoPW_TopWave.png';

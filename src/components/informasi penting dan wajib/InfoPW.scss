@@ -126,7 +126,7 @@
                         padding: 40px 0px;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: flex-end;
+                        align-items: flex-start;
                         gap: 32px;
 
                         .text_box {
@@ -898,9 +898,10 @@
     
                             .cta_button {
                                 display: flex;
-                                justify-content: flex-end;
+                                justify-content: flex-start;
                                 width: 100%;
                                 button {
+                                    width: 100%;
                                     // margin-left: auto;
                                     // margin-right: 0;
                                     // border: greenyellow solid 2px;

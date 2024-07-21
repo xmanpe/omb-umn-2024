@@ -82,16 +82,42 @@ const AtributPeserta = () => {
                             <div className='text-wrapper'>
                                 <p className='item' dangerouslySetInnerHTML={{ __html: item.barang }}></p>
                             </div>
-                            <button onClick={() => openModal(
-                                <p className='item' dangerouslySetInnerHTML={{ __html: item.barang }}></p>,
-                                <div>
-                                    <br></br>
-                                    <img className='list-image' src={item.image} alt={item.barang}/>
-                                </div>,
-                                <p className='item' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-                                )}>
-                                Selengkapnya
-                            </button>
+                            {
+                                item.bajuDesc?(
+                                    <button onClick={() => openModal(
+                                        <p className='item' dangerouslySetInnerHTML={{ __html: item.barang }}></p>,
+                                        <></>,
+                                        <div>
+                                            <div className='fakultas-wrapper'>
+                                                {item.bajuDesc.map((item,index)=>(
+                                                    <div key={index} className='fakultas-item'>
+                                                        <img className='baju-fakultas' src={item.bajuImage} alt={item.fakultas}/>
+                                                        <div className='fakultas-text-wrapper'>
+                                                            <div className={`warna-${item.warna}`}>{item.fakultas}</div>
+                                                            <p>{item.jurusan}</p>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                            <p className='item' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
+                                        </div>,
+                                    )}>
+                                    Selengkapnya
+                                    </button>
+                                ):(
+                                    <button onClick={() => openModal(
+                                        <p className='item' dangerouslySetInnerHTML={{ __html: item.barang }}></p>,
+                                        <div>
+                                            <br></br>
+                                            <img className='list-image' src={item.image} alt={item.barang}/>
+                                        </div>,
+                                        <p className='item' dangerouslySetInnerHTML={{ __html: item.desc }}></p>
+                                    )}>
+                                    Selengkapnya
+                                    </button>
+                                )
+                            }
+                            
                             {/* <p className='text' dangerouslySetInnerHTML={{ __html: item.desc }}></p> */}
                         </div>
                     ))}

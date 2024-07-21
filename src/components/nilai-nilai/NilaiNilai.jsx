@@ -51,7 +51,7 @@ const NilaiNilai = () => {
                     OMB UMN 2024 ingin mengenalkan Universitas Multimedia Nusantara sebagai institusi pendidikan berkualitas 
                     yang mendorong pengembangan pribadi berkelanjutan dan memberikan kontribusi positif terhadap masyarakat. 
                     Selain itu, OMB UMN 2024 juga berperan sebagai jembatan edukasi yang ingin mengajak Peserta OMB UMN 2024 
-                    untuk beranjak dari seorang siswa menjadi mahasiswa. <b>Melalui nilai ini, OMB UMN 2024 diharapkan dapat 
+                    untuk beranjak dari seorang siswa menjadi mahasiswa. <b style={{fontWeight: 600}}>Melalui nilai ini, OMB UMN 2024 diharapkan dapat 
                     memberikan motivasi kepada para Peserta OMB UMN 2024 untuk mengeksplorasi potensi serta meraih prestasi 
                     melalui pencapaian pendidikan yang berkualitas dan inklusif.</b> Target 4.7 pada tahun 2030 ingin memastikan 
                     bahwa semua peserta didik memperoleh pengetahuan dan keterampilan yang dibutuhkan. Melalui nilai ini, 
@@ -82,7 +82,7 @@ const NilaiNilai = () => {
                   "Climate Action",
                   <>
                     Nilai SDGs No. 13 <i>Climate Action</i> ini merupakan salah satu fokus masalah yang akan ditekuni oleh Peserta OMB UMN 2024. 
-                    <b> Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
+                    <b style={{fontWeight: 600}}> Berangkat dari permasalahan lingkungan, Peserta OMB UMN 2024 dapat memulai keaktifannya mulai dari dalam diri dengan 
                     menunjukkan sikap kepedulian terhadap lingkungan.</b> Melalui dinamika dalam rangkaian kegiatan OMB UMN 2024, peserta akan 
                     menjalankan aksi nyata dalam menunjukkan keaktifan dan kepeduliannya terhadap lingkungan.  
                   </>
@@ -160,8 +160,7 @@ const NilaiNilai = () => {
                   "Kebijaksanaan",
                   "",
                   <>
-                    Setelah membangun kepercayaan diri, <b>Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi.</b> 
-                    Kompetensi ini diharapkan dapat mengarahkan peserta untuk berpikiran dengan kritis dan bijaksana dalam mengelola segala informasi dan persoalan. 
+                    Setelah membangun kepercayaan diri, <b style={{fontWeight: 600}}>Peserta OMB UMN 2024 juga didorong untuk lebih bijak dalam menempatkan diri di berbagai situasi.</b> Kompetensi ini diharapkan dapat mengarahkan peserta untuk berpikiran dengan kritis dan bijaksana dalam mengelola segala informasi dan persoalan. 
                     Pikiran kritis yang didampingi oleh kebijaksanaan diharapkan dapat mendorong peserta untuk menunjukkan potensi unik yang ada di dalam diri. 
                   </>
                 )}>

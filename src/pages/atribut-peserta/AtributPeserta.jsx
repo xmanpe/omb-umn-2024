@@ -37,7 +37,7 @@ const AtributPeserta = () => {
         <>
             <Header 
                 top="Lotus Biru bertumbuh cantik,"
-                bottom={<>Yuk, simak informasi atribut peserta ini baik-baik!</>}
+                bottom={<>Yuk, simak informasi atribut peserta ini dengan baik!</>}
             />
             <div className='content-wrapper'>
                 <div className='slider'>

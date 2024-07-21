@@ -37,12 +37,9 @@ const SwaraBestari = () => {
                     <div className='right'>
                         <div className='the_title'>
                             {/* <h1>PROLOG : Bangun Support System dalam Diri melalui Lingkungan Positif</h1> */}
-                            <iframe className='mini-player' src="https://open.spotify.com/embed/show/3n5IKS6vFtpK1h1rgnlzKm?utm_source=generator&t=0" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            <p>Jangan takut ketinggalan dan mulai bangun pribadi yang kuat dan positif bersama. Untuk mengalahkan FOMO dan mencapai impian-mu dengan percaya diri, dengarkan episode PENA 01 Swara Bestari di Spotify! </p>
-                            {/* <p>Swara Bestari merupakan program siniar (<i>podcast</i>) resmi OMB UMN 2024. Siniar ini akan membahas topik-topik yang harapannya dapat membantu peserta saling menanamkan integritas bersamaan dengan membangkitkan solidaritas selama masa perkuliahan. Kata "Swara" diambil dari bahasa Jawa yang memiliki arti suara dan "Bestari" diambil dari Kamus Besar Bahasa Indonesia (KBBI) yang memiliki arti luas dan dalam pengetahuannya, pendidikan baik, dan budi pekerti.
-                            </p> */}
+                            <iframe className='mini-player' src="https://open.spotify.com/embed/episode/62aX9892KIACNEgiVlD1xK?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <p>Pada PENA 02 Swara Bestari, cara mengelola ambisi untuk mencapai tujuan dengan kebijaksanaan dan kepedulian akan dibahas. Yuk, pelajari cara menjaga keseimbangan dalam perkuliahan dengan mendengarkan episode ini di Spotify!</p>
                         </div>
-                        {/* <iframe className='mini-player' src="https://open.spotify.com/embed/show/3n5IKS6vFtpK1h1rgnlzKm?utm_source=generator&t=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> */}
                         <div className='cta_button'>
                         <button onClick={toggleModal}>Tentang Swara Bestari
                             <img src={ArrowRight} alt="Arrow Icon" />

@@ -77,8 +77,8 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Yuk, Kalahkan FOMO!</h3>
-                        <p>Untuk mengalahkan FOMO dan mencapai impian-mu dengan percaya diri, dengarkan episode PENA 01 Swara Bestari di Spotify!</p>
+                        <h3>Swara Bestari: PENA 02</h3>
+                        <p>Yuk, pelajari cara menjaga keseimbangan dalam perkuliahan dengan mendengarkan episode ini di Spotify!</p>
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>

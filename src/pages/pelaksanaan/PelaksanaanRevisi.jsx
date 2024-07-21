@@ -6,6 +6,7 @@ import './PelaksanaanRevisi.scss';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import SwaraBestari from '../../components/swara-bestari/SwaraBestari';
+import InfoPWRevisi from '../../components/informasi-penting-wajib/InfoPWRevisi';
 
 //import images
 import listPelaksanaan from './listPelaksanaan';
@@ -58,6 +59,7 @@ const PelaksanaanRevisi = () => {
                     ))}
                 </div>
             </section>
+            <InfoPWRevisi/>
             <SwaraBestari />
             <Footer />
         </>

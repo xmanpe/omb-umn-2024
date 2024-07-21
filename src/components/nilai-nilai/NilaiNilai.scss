@@ -13,7 +13,7 @@
 
   .nilai_omb_supergrafis {
     position: absolute;
-    top: 10px;
+    top: 400px;
     width: 125%;
     opacity: 0.2;
     pointer-events: none;
@@ -283,6 +283,7 @@
 @media screen and (max-width: 1200px) {
   .nilai-nilai_section {
     padding: 80px;
+    box-sizing: border-box;
 
     .wave_bawah_nilai {
       margin-top: 80px;
@@ -305,34 +306,38 @@
 
       .content-1,
       .content-2 {
+        display: grid;
+        grid-template-columns: 100%;
         // display: flex;
         // width: 100%;
         // gap: 40px;
         // margin-bottom: 40px;
 
         .left {
-          // width: 40%;
+          width: initial;
         }
 
         .right {
-          // width: 60%;
+          width: initial;
         }
       }
 
       .content-2 {
         .left {
-          // width: 55%;
+          width: initial;
         }
 
         .right {
-          // width: 45%;
+          width: initial;
         }
       }
 
       .content-3 {
+        // display: grid;
+        // grid-template-columns: 1fr;
         // display: flex;
         // justify-content: center;
-        // width: 50%;
+        width: 100%;
         // margin: auto;
       }
 
@@ -409,8 +414,8 @@
     padding: 40px;
 
     .wave_bawah_nilai {
-      margin-top: 60px;
-      margin-bottom: -60px;
+      margin-top: 80px;
+      margin-bottom: -80px;
     }
 
     .nilai-nilai_title {
@@ -424,38 +429,47 @@
     }
 
     .nilai-nilai_content {
+      // display: flex;
+      // flex-direction: column;
+      // width: 100%;
+
       .content-1,
       .content-2 {
+        display: grid;
+        grid-template-columns: 100%;
+        // display: flex;
+        // width: 100%;
+        // gap: 40px;
+        // margin-bottom: 40px;
+
         .left {
-          width: 42%;
+          width: initial;
         }
+
         .right {
-          width: 58%;
+          width: initial;
         }
       }
 
       .content-2 {
         .left {
-          width: 55%;
+          width: initial;
         }
+
         .right {
-          width: 45%;
+          width: initial;
         }
       }
 
       .content-3 {
-        // display: flex;
-        // justify-content: center;
-        // width: 50%;
-        // margin: auto;
+        width: 100%;
       }
 
       .card {
         // display: flex;
         // flex-direction: column;
-        gap: 20px;
         // background: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
-        padding: 32px;
+        // padding: 40px;
         // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         // border-radius: 24px; /* Increased for more rounded corners */
         // color: rgba(112, 71, 191, 1); // Adjust text color
@@ -468,11 +482,11 @@
 
         p.sub_nilai {
           // font-style: italic;
-          margin-top: -20px; // Smaller margin between nilai_title and sub_nilai
+          // margin-top: 0; // Smaller margin between nilai_title and sub_nilai
         }
 
         p {
-          margin: 0;
+          // margin: 20px 0 0;
           // text-align: justify;
           // font-size: 20px;
           // font-weight: 500;
@@ -487,23 +501,23 @@
           // justify-content: flex-end;
           // align-items: center;
           // margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
-          padding-top: 8px;
+          padding-top: 16px;
 
           button {
             // display: flex;
-            padding: 8px 12px;
+            // padding: 12px 20px;
             // justify-content: center;
             // align-items: center;
             // gap: 8px;
-            width: auto;
-            height: 36px;
+            // width: max-content;
+            // height: 46px;
             // border-radius: 100px;
             // border: 3px solid #9879D4;
             // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
             // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
             // color: #FFF;
             // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-            font-size: 16px;
+            // font-size: 20px;
             // font-style: normal;
             // font-weight: 500;
             // line-height: normal;
@@ -521,52 +535,20 @@
 
 @media screen and (max-width: 560px) {
   .nilai-nilai_section {
-    // background: url('../../images/waves/Blurry.png');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // display: flex;
     padding: 60px 16px;
-    // flex-direction: column;
-    // align-items: center;
-    gap: 20px;
-    // overflow: hidden;
-    // position: relative;
 
     .wave_bawah_nilai {
-      margin-top: 40px;
-      // width: 150%;
-      // pointer-events: none;
-      // z-index: 99;
-      margin-bottom: -60px;
+      margin-top: 80px;
+      margin-bottom: -80px;
     }
 
-
     .nilai-nilai_title {
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
-      // gap: 8px;
 
       img {
-        // width: 60px;
-        // height: auto;
-        // object-fit: cover;
-        // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.44));
-        // opacity: 0.6;
       }
 
       h1 {
-        // text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
-        // text-align: center;
         font-size: 32px;
-        // font-style: normal;
-        // font-weight: 600;
-        // line-height: normal;
-        // background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
       }
     }
 
@@ -574,44 +556,46 @@
       // display: flex;
       // flex-direction: column;
       // width: 100%;
+      gap: 16px;
 
       .content-1,
       .content-2 {
-        display: flex;
-        flex-direction: column;
-        width: 100%; /* Ensure full width */
-        gap: 20px;
-        margin-bottom: -20px;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 16px;
+        // display: flex;
+        // width: 100%;
+        // gap: 40px;
+        // margin-bottom: 40px;
 
-        .left,
+        .left {
+          width: initial;
+        }
+
         .right {
-          width: 100%; /* Each section takes full width */
+          width: initial;
         }
       }
 
       .content-2 {
-        .left,
+        .left {
+          width: initial;
+        }
+
         .right {
-          width: 100%; /* Each section takes full width */
+          width: initial;
         }
       }
 
       .content-3 {
-        display: flex;
-        flex-direction: column; /* Change to column for stacked layout */
         width: 100%;
-        margin: 0 auto; /* Center the content */
-        gap: 20px; /* Adjust gap as needed */
       }
 
       .card {
         // display: flex;
         // flex-direction: column;
-        width: 100%; /* Ensure card takes full width */
-        max-width: 100%; /* Prevent card from exceeding screen width */
-        box-sizing: border-box; /* Include padding and border in element's total width and height */
-        padding: 20px;
         // background: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+        // padding: 40px;
         // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         // border-radius: 24px; /* Increased for more rounded corners */
         // color: rgba(112, 71, 191, 1); // Adjust text color
@@ -623,7 +607,6 @@
         }
 
         p.sub_nilai {
-          font-size: 16px;
           // font-style: italic;
           // margin-top: 0; // Smaller margin between nilai_title and sub_nilai
         }
@@ -638,23 +621,29 @@
 
         .show-more-button {
           // display: flex;
-          // width: 100%; /* Ensure button container takes full width */
-          // justify-content: flex-end; /* Align button to the right */
-          // // align-items: center;
-          // // margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
-          padding-top: 4px;
+          // padding: 2px;
+          // align-items: center;
+          // border-radius: 100px;
+          // justify-content: flex-end;
+          // align-items: center;
+          // margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
+          padding-top: 16px;
 
           button {
-            width: auto; /* Adjust to fit content */
-            padding: 8px 12px; /* Adjust padding for smaller size */
-            height: 30px; /* Optional: Adjust height if needed */
-            // border-radius: 50px; /* Optional: Adjust border radius for smaller button */
-            // border: 2px solid #9879D4; /* Optional: Adjust border size */
+            // display: flex;
+            // padding: 12px 20px;
+            // justify-content: center;
+            // align-items: center;
+            // gap: 8px;
+            // width: max-content;
+            // height: 46px;
+            // border-radius: 100px;
+            // border: 3px solid #9879D4;
             // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-            // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2), 0px -2px 4px rgba(0, 0, 0, 0.18) inset, 0px 2px 2px rgba(255, 255, 255, 0.16) inset; /* Optional: Adjust shadow */
+            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
             // color: #FFF;
-            // text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-            font-size: 12px; /* Adjust font size for smaller text */
+            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+            // font-size: 20px;
             // font-style: normal;
             // font-weight: 500;
             // line-height: normal;

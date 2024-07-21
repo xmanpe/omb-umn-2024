@@ -8,6 +8,7 @@ import listAtributPeserta from './listAtributPeserta';
 import ModalNilai from "../../components/modal-nilai/ModalNilai";
 import Footer from '../../components/footer/Footer';
 import SwaraBestari from '../../components/swara-bestari/SwaraBestari';
+import InfoPWRevisi from '../../components/informasi-penting-wajib/InfoPWRevisi';
 
 // import images
 import ArrowDropdown from '../../images/Arrow/ArrowDropdown.svg';
@@ -97,6 +98,7 @@ const AtributPeserta = () => {
                     ))}
                 </div>
             </div>
+            <InfoPWRevisi/>
             <SwaraBestari />
             <Footer/>
             <ModalNilai 

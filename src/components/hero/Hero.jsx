@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className='announcement_section'>
                     <AnnCard />
                     <AnnCard2 />
-                    {/* <AnnCard3 /> */}
+                    <AnnCard3 />
                 </div>
                 <div className='bem_section'>
                     <p>BAGIAN DARI BEM UMN</p>

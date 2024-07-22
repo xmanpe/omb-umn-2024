@@ -31,8 +31,8 @@ const TentangOMB = () => {
             {/* <VisiMisi /> */}
             <VisiMisiRevisi/>
             <MarsRevisi />
-            <InfoPWRevisi/>
-            <SwaraBestari />
+            {/* <InfoPWRevisi/>
+            <SwaraBestari /> */}
             <Footer />
         </>
     );

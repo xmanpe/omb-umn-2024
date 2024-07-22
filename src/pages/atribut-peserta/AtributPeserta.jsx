@@ -124,8 +124,8 @@ const AtributPeserta = () => {
                     ))}
                 </div>
             </div>
-            <InfoPWRevisi/>
-            <SwaraBestari />
+            {/* <InfoPWRevisi/>
+            <SwaraBestari /> */}
             <Footer/>
             <ModalNilai 
                 show={modalInfo.show} 

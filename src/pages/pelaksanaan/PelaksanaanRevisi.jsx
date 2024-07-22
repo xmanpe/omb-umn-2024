@@ -59,8 +59,8 @@ const PelaksanaanRevisi = () => {
                     ))}
                 </div>
             </section>
-            <InfoPWRevisi/>
-            <SwaraBestari />
+            {/* <InfoPWRevisi/>
+            <SwaraBestari /> */}
             <Footer />
         </>
     );

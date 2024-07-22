@@ -71,10 +71,14 @@
         .announcement_section {
             width: 100%;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             justify-content: center;
             align-items: center;
             gap: 28px;
+
+            .announcement_section::-webkit-scrollbar {
+                display: none;
+            }
         }
 
         .bem_section {

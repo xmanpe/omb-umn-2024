@@ -54,73 +54,73 @@ const DaftarFaq = {
     // Peraturan
     {
       pertanyaan: "Bagaimana jika datang terlambat pada saat hari pelaksanaan OMB UMN 2024?",
-      jawaban: "OMB UMN 2024 tidak memiliki waktu dispensasi mengenai keterlambatan. Apabila peserta datang terlambat, peserta tersebut akan dipulangkan dan harus mengulang kegiatan OMB UMN pada tahun berikutnya.",
+      jawaban: "OMB UMN 2024 <b>tidak memiliki waktu dispensasi</b> mengenai keterlambatan. Apabila peserta datang terlambat, peserta tersebut akan <b>dipulangkan</b> dan harus <b>mengulang</b> kegiatan OMB UMN pada tahun berikutnya.",
       tipe: [1],
     },
     {
       pertanyaan: "Apakah diperbolehkan membawa gawai saat mengikuti rangkaian kegiatan OMB UMN 2024?",
-      jawaban: "Peserta hanya diperbolehkan membawa satu gawai. Gawai tersebut harus dinonaktifkan dan dititipkan kepada Sakha (PIC) masing-masing selama rangkaian kegiatan OMB UMN 2024 berlangsung.",
+      jawaban: "Peserta hanya diperbolehkan membawa <b>satu gawai</b>. Gawai tersebut harus <b>dinonaktifkan</b> dan <b>dititipkan kepada Sakha (PIC)</b> masing-masing selama rangkaian kegiatan OMB UMN 2024 berlangsung.",
       tipe: [1],
     },
     {
       pertanyaan: "Apakah diperbolehkan membawa kendaraan pribadi saat pelaksanaan OMB UMN 2024?",
-      jawaban: "Seluruh Peserta OMB UMN 2024 dilarang untuk membawa kendaraan pribadi karena lahan parkir yang tersedia di area UMN akan digunakan untuk pelaksanaan kegiatan OMB UMN 2024. Seluruh peserta dianjurkan untuk diantar, menggunakan kendaraan umum, atau menggunakan fasilitas shuttle bus yang telah disediakan oleh pihak kampus. Panitia OMB UMN 2024 tidak bertanggung jawab atas keamanan dari kendaraan yang diparkirkan di luar area kampus.",
+      jawaban: "Seluruh Peserta OMB UMN 2024 <b>dilarang untuk membawa kendaraan pribadi</b> karena lahan parkir yang tersedia di area UMN akan digunakan untuk pelaksanaan kegiatan OMB UMN 2024. Seluruh peserta dianjurkan untuk <b>diantar, menggunakan kendaraan umum, atau menggunakan fasilitas <i>shuttle bus</i> </b> yang telah disediakan oleh pihak kampus. Panitia OMB UMN 2024 <b>tidak bertanggung jawab atas keamanan</b> dari kendaraan yang diparkirkan di luar area kampus.",
       tipe: [1],
     },
     {
       pertanyaan: "Apakah Peserta OMB UMN 2024 disediakan makanan?",
-      jawaban: "Peserta diwajibkan membawa bekal makanan (4 sehat 5 sempurna) dan botol minum masing-masing. Penggunaan alat makan, tempat makan, serta botol minum wajib tidak sekali pakai. Ukuran botol minum minimal 600 ml.",
+      jawaban: "Peserta <b>diwajibkan membawa bekal makanan (4 sehat 5 sempurna) dan botol minum</b> masing-masing. Penggunaan alat makan, tempat makan, serta botol minum <b>wajib tidak sekali pakai</b>. Ukuran botol minum <b>minimal 600 ml</b>.",
       tipe: [1],
     },
     {
       pertanyaan: "Apakah Peserta OMB UMN diperbolehkan untuk memakai riasan wajah?",
-      jawaban: "Peserta OMB UMN 2024 dilarang untuk menggunakan segala jenis riasan wajah selama kegiatan OMB UMN 2024 berlangsung.",
+      jawaban: "Peserta OMB UMN 2024 <b>dilarang untuk menggunakan segala jenis riasan wajah</b> selama kegiatan OMB UMN 2024 berlangsung.",
       tipe: [1],
     },
     {
       pertanyaan: "Apakah Peserta OMB UMN diperbolehkan untuk menggunakan aksesoris seperti kalung, anting, gelang, dan cincin?",
-      jawaban: "Peserta OMB UMN tidak diperbolehkan untuk menggunakan aksesoris dalam bentuk apa pun selama kegiatan OMB UMN berlangsung. Penggunaan aksesoris dengan kepercayaan tertentu diperbolehkan dengan syarat ditutupi plester dengan warna kulit.",
+      jawaban: "Peserta OMB UMN <b>tidak diperbolehkan untuk menggunakan aksesoris</b> dalam bentuk apa pun selama kegiatan OMB UMN berlangsung. Penggunaan <b>aksesoris dengan kepercayaan tertentu diperbolehkan</b> dengan syarat <b>ditutupi plester dengan warna kulit</b>.",
       tipe: [1],
     },
     {
       pertanyaan: "Apakah diperbolehkan membawa barang lain yang tidak dibutuhkan selama rangkaian kegiatan OMB UMN 2024?",
-      jawaban: "Peserta OMB UMN 2024 dilarang untuk membawa barang yang tidak berhubungan dengan pelaksanaan OMB UMN 2024.",
+      jawaban: "Peserta OMB UMN 2024 <b>dilarang untuk membawa barang yang tidak berhubungan</b> dengan pelaksanaan OMB UMN 2024.",
       tipe: [1],
     },
     // Atribut
     {
       pertanyaan: "Apakah diperbolehkan memakai kaus berkerah dengan ornamen/logo/garis pada bagian kerah dan lengan saat mengikuti rangkaian kegiatan OMB UMN 2024?",
-      jawaban: "Kaus diwajibkan berwarna polos tanpa motif atau corak, tidak berkantong, dan tidak bergaris. Apabila terdapat logo/gambar, harus mengikuti ketentuan yang berlaku. Logo yang diperbolehkan hanya di bagian depan dan ukuran maksimal 8X8 cm.",
+      jawaban: "Kaus <b>diwajibkan berwarna polos tanpa motif atau corak, tidak berkantong,</b> dan <b>tidak bergaris</b>. Apabila terdapat logo/gambar, harus mengikuti ketentuan yang berlaku. Logo yang diperbolehkan <b>hanya di bagian depan</b> dan <b>ukuran maksimal 8X8 cm</b>.",
       tipe: [2],
     },
     {
       pertanyaan: "Bagaimana peraturan pakaian bagi peserta OMB UMN 2024 yang menggunakan hijab?",
-      jawaban: "Bagi peserta OMB UMN 2024 yang menggunakan hijab tidak diperkenankan menggunakan kaus berkerah panjang. Sebagai gantinya, peserta dapat wajib menggunakan hijab dan manset yang berwarna hitam.",
+      jawaban: "Bagi peserta OMB UMN 2024 yang menggunakan hijab <b>tidak diperkenankan menggunakan kaus berkerah panjang</b>. Sebagai gantinya, peserta dapat <b>wajib menggunakan hijab dan manset yang berwarna hitam</b>.",
       tipe: [2],
     },
     {
       pertanyaan: "Apakah peserta OMB UMN 2024 boleh menggunakan handuk selain handuk Good Morning?",
-      jawaban: "Peserta OMB UMN 2024 diwajibkan untuk menggunakan handuk Good Morning yang telah ditentukan. Penggunaan handuk selain yang telah ditetapkan tidak diperbolehkan sebagai syarat dan identitas kegiatan.",
+      jawaban: "Peserta OMB UMN 2024 <b>diwajibkan untuk menggunakan handuk Good Morning</b> yang telah ditentukan. Penggunaan handuk selain yang telah ditetapkan tidak diperbolehkan sebagai <b>syarat</b> dan <b>identitas</b> kegiatan.",
       tipe: [2],
     },
     {
       pertanyaan: "Bagaimana jika peserta tidak memenuhi kelengkapan atribut atau hal lainnya terkait pelaksanaan OMB UMN 2024 yang diwajibkan?",
-      jawaban: "Peserta diwajibkan untuk membawa seluruh atribut ataupun kelengkapan yang diwajibkan karena sudah diumumkan jauh sebelum OMB berlangsung sehingga tidak ada alasan untuk tidak memenuhi atribut yang diwajibkan.",
+      jawaban: "Peserta diwajibkan untuk membawa seluruh atribut ataupun kelengkapan yang diwajibkan karena <b>sudah diumumkan jauh sebelum OMB berlangsung</b> sehingga tidak ada alasan untuk tidak memenuhi atribut yang diwajibkan.",
       tipe: [2],
     },
     {
       pertanyaan: "Apakah bagi peserta OMB UMN 2024 yang memiliki rambut panjang diperbolehkan untuk digerai?",
-      jawaban: "Peserta yang memiliki rambut panjang, baik perempuan dan laki-laki, wajib untuk mengikat rambut dengan ikat rambut hitam polos dan tidak beraksesoris. Bagi peserta yang berponi panjang, wajib untuk menggunakan bando atau jepitan berwarna hitam.",
+      jawaban: "Peserta yang memiliki rambut panjang, baik perempuan dan laki-laki, <b>wajib</b> untuk mengikat rambut dengan <b>ikat rambut hitam polos dan tidak beraksesoris</b>. Bagi peserta yang berponi panjang, wajib untuk menggunakan <b>bando atau jepitan berwarna hitam</b>.",
       tipe: [2],
     },
     {
       pertanyaan: "Bagaimana peraturan mengenai penggunaan celana jeans hitam bagi peserta OMB UMN 2024?",
-      jawaban: "Peserta OMB UMN 2024 wajib mengenakan celana jeans panjang berwarna hitam pekat polos dengan model slim fit atau regular fit, tidak robek, dan tidak dilipat keluar.",
+      jawaban: "Peserta OMB UMN 2024 wajib mengenakan celana jeans panjang <b>berwarna hitam pekat polos</b> dengan model <b><i>slim fit</i> atau <i>regular fit</i>, tidak robek, dan tidak dilipat keluar</b>.",
       tipe: [2],
     },
     {
       pertanyaan: "Bagaimana peraturan mengenai penggunaan sepatu bagi peserta OMB UMN 2024?",
-      jawaban: "Peserta OMB UMN 2024 wajib menggunakan sepatu kets yang nyaman dan bersifat mengencangkan agar peserta dapat mengikuti rangkaian dengan aman dan nyaman.",
+      jawaban: "Peserta OMB UMN 2024 <b>wajib</b> menggunakan <b>sepatu kets yang nyaman dan bersifat mengencangkan</b> agar peserta dapat mengikuti rangkaian dengan <b>aman</b> dan <b>nyaman</b>.",
       tipe: [2],
     },
     // Orang Tua

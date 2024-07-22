@@ -14,6 +14,9 @@ import TaglineOMB2024 from '../../images/Tagline OMB 2024.png'
 import Wave from '../../images/waves/Wave One.png'
 import NewWave from '../../images/waves/Wave Baru.png'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
 const Hero = () => {
     return (
         <section className="hero_section" id='hero'>
@@ -23,15 +26,36 @@ const Hero = () => {
                     <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
                     <img className='tagline_omb' src={TaglineOMB2024} alt="Tagline OMB 2023" />
                 </div>
-                <div className='announcement_section'>
-                    <AnnCard />
-                    <AnnCard2 />
-                    {/* <AnnCard3 /> */}
-                </div>
+            </div>
+
+            <div className='announcement_swiper'>
+                <Swiper
+                    slidesPerView={2.3}
+                    breakpoints={{
+                        810: {
+                            slidesPerView: 1.3,
+                        },
+                        432: {
+                            slidesPerView: 1.3,
+                        },
+                        200: {
+                            slidesPerView: 1.3,
+                        },
+                    }}
+                    className="mySwiper"
+                >
+                    <SwiperSlide><AnnCard /></SwiperSlide>
+                    <SwiperSlide><AnnCard2 /></SwiperSlide>
+                    <SwiperSlide><AnnCard3 /></SwiperSlide>
+                </Swiper>
+            </div>
+
+            <div className='the_hero_content'>
                 <div className='bem_section'>
                     <p>BAGIAN DARI BEM UMN</p>
                 </div>
             </div>
+
             <img className='wave' src={Wave} alt="Wave" />
             <img className='new-wave' src={NewWave} alt="wave baru" />
         </section>

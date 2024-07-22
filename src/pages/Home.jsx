@@ -12,7 +12,6 @@ import Footer from '../components/footer/Footer';
 import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
 import InformasiPentingdanWajib from '../components/informasi-penting-wajib/InfoPW';
 import InfoPWRevisi from '../components/informasi-penting-wajib/InfoPWRevisi';
-import Faq from '../components/faq/Faq';
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
@@ -47,7 +46,6 @@ const Home = () => {
         {/* {showExperience && <Experience />} */}
         <Hero />
         <ApaItuOMB />
-        <Faq />
         <YouTube />
         <Divisi />
         {/* <InformasiPentingdanWajib/> */}

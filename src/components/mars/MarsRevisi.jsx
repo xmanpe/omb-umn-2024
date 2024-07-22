@@ -17,7 +17,7 @@ const MarsRevisi = () => {
     const [modeState, setModeState] = useState(0);
     const [musicState, setMusicState] = useState(0);
 
-    const slidesMode = ["Sahaja", "Dhyāna"];
+    const slidesMode = ["Standar", "Fokus"];
     const slidesMusic = ["OMB", "UMN"];
 
     return (
@@ -29,7 +29,7 @@ const MarsRevisi = () => {
             <div className='mars_content'>
                 <div className='mars_title'>
                     <h1>Mars</h1>
-                    <p>Sahaja (keseluruhan) dan Dhyāna (terfokus) menawarkan cara yang berbeda dalam memutar lagu Mars OMB dan Mars UMN sesuai kebutuhan.</p>
+                    <p>Tersedia dua mode, yaitu mode standar yang menampilkan lirik dengan tampilan menyeluruh dan mode fokus yang menampilkan lirik dengan tersorot saat sedang dinyanyikan.</p>
                     <div className='slider-wrapper'>
                         <div className='slider'>
                             {slidesMode.map((slide, index) => (

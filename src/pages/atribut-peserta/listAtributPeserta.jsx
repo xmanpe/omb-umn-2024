@@ -17,6 +17,10 @@ import Sepatu from "../../images/atribut/Sepatu.png";
 import Tas from "../../images/atribut/Tas.png";
 import Topi from "../../images/atribut/Topi.png";
 import Zoom from "../../images/atribut/Zoom.png";
+import abu from "../../images/atribut/baju-fakultas/abu.png"; 
+import hitam from "../../images/atribut/baju-fakultas/hitam.png"; 
+import jingga from "../../images/atribut/baju-fakultas/jingga.png"; 
+import kuning from "../../images/atribut/baju-fakultas/kuning.png"; 
 
 const listAtributPeserta = {
     "list-atribut-peserta":[
@@ -29,8 +33,33 @@ const listAtributPeserta = {
         {
             barang:"Kaus Berkerah Polos Berwarna Fakultas",
             image:KaosFakultas,
-            desc:"Peserta OMB UMN 2024 wajib menggunakan kaus berkerah sesuai dengan warna fakultas masing-masing dengan warna polos, tidak memiliki kantong, dan tidak bergaris. Jika terdapat logo/gambar, hanya diperbolehkan di bagian depan dengan ukuran maksimal 8 x 8 cm. <br></br> <span className=text-ilkom>Fakultas Ilmu Komunikasi</span>: Komunikasi Strategis dan Jurnalistik </br><span className=text-bisnis>Fakultas Bisnis</span>: Akuntansi, Manajemen, dan D3 Perhotelan </br> <span className=text-seni>Fakultas Seni dan Desain</span>: Desain Komunikasi Visual, Film dan Animasi, dan Arsitektur </br><span className=text-fti>Fakultas Teknik dan Informatika</span>: Teknik Komputer, Teknik Elektro, Teknik Fisika, Informatika, dan Sistem Informasi",
+            desc:"Peserta OMB UMN 2024 wajib menggunakan kaus berkerah sesuai dengan warna fakultas masing-masing dengan warna polos, tidak memiliki kantong, dan tidak bergaris. Jika terdapat logo/gambar, hanya diperbolehkan di bagian depan dengan ukuran maksimal 8 x 8 cm.",
             hari:[1],
+            bajuDesc:[
+            {
+                fakultas:"Fakultas Ilmu Komunikasi",
+                jurusan:"Komunikasi Strategis dan Jurnalistik",
+                bajuImage:kuning,
+                warna:"kuning",
+            },
+            {
+                fakultas:"Fakultas Seni dan Desain",
+                jurusan:"Desain Komunikasi Visual, Film dan Animasi, dan Arsitektur",
+                bajuImage:hitam,
+                warna:"hitam",
+            },
+            {
+                fakultas:"Fakultas Teknik dan Informatika",
+                jurusan:"Teknik Komputer, Teknik Elektro, Teknik Fisika, Informatika, dan Sistem Informasi",
+                bajuImage:jingga,
+                warna:"jingga",
+            },
+            {
+                fakultas:"Fakultas Bisnis dan D3 Perhotelan",
+                jurusan:"Manajemen dan Akutansi",
+                bajuImage:abu,
+                warna:"abu",
+            }],
         },
         {
             barang:"Kaus atau Kemeja Berkerah",

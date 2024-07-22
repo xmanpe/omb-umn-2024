@@ -23,7 +23,7 @@ const MarsRevisi = () => {
             <div className='mars_content'>
                 <div className='mars_title'>
                     <h1>Mars</h1>
-                    <p>Sahaja (keseluruhan) dan Dhyāna (terfokus) menawarkan cara yang berbeda dalam memutar lagu Mars OMB dan Mars UMN sesuai kebutuhan.</p>
+                    <p>Sahaja (keseluruhan) dan Dhyāna (terfokus) menawarkan cara yang berbeda<br />dalam memutar lagu Mars OMB dan Mars UMN sesuai kebutuhan.</p>
                     <div className='slider-wrapper'>
                         <div className='slider'>
                             {slidesMode.map((slide, index) => (

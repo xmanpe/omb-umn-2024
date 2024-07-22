@@ -1,722 +1,722 @@
-.mars-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 60px;
-    overflow: hidden;
-    position: relative;
-    min-height: 120vh;
-    padding-bottom: 100px;
-    background:
-        linear-gradient(144deg,
-            rgba(255, 208, 228, 0.20) -14.93%,
-            rgba(202, 191, 249, 0.20) 2.56%,
-            rgba(69, 4, 170, 0.20) 25.07%),
-        linear-gradient(248deg,
-            rgba(255, 208, 228, 0.50) 11.97%,
-            rgba(202, 191, 249, 0.50) 47.21%,
-            rgba(69, 4, 170, 0.50) 92.55%),
-        #7047BF;
+// .mars-container {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 60px;
+//     overflow: hidden;
+//     position: relative;
+//     min-height: 120vh;
+//     padding-bottom: 100px;
+//     background:
+//         linear-gradient(144deg,
+//             rgba(255, 208, 228, 0.20) -14.93%,
+//             rgba(202, 191, 249, 0.20) 2.56%,
+//             rgba(69, 4, 170, 0.20) 25.07%),
+//         linear-gradient(248deg,
+//             rgba(255, 208, 228, 0.50) 11.97%,
+//             rgba(202, 191, 249, 0.50) 47.21%,
+//             rgba(69, 4, 170, 0.50) 92.55%),
+//         #7047BF;
 
-        .mars-omb-content p {
-            opacity: 0.5; /* Lirik yang tidak aktif akan memiliki opacity 0.5 */
-            transition: opacity 0.5s; /* Tambahkan transisi untuk efek halus */
-          }
+//         .mars-omb-content p {
+//             opacity: 0.5; /* Lirik yang tidak aktif akan memiliki opacity 0.5 */
+//             transition: opacity 0.5s; /* Tambahkan transisi untuk efek halus */
+//           }
           
-          .mars-omb-content p.active {
-            opacity: 1; /* Lirik yang aktif akan memiliki opacity 1 */
-            font-weight: bold; /* Anda juga bisa menambahkan gaya lain, seperti bold */
-            color: #ff0000; /* Warna highlight */
-          }
+//           .mars-omb-content p.active {
+//             opacity: 1; /* Lirik yang aktif akan memiliki opacity 1 */
+//             font-weight: bold; /* Anda juga bisa menambahkan gaya lain, seperti bold */
+//             color: #ff0000; /* Warna highlight */
+//           }
 
           
-    .supergrafis-kembang {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        object-fit: cover;
-        opacity: 0.4;
-        pointer-events: none;
-    }
-
-    .supergrafis-tangkai {
-        position: absolute;
-        bottom: 20%;
-        right: 0;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        object-fit: cover;
-        opacity: 0.4;
-        pointer-events: none;
-    }
-
-    .supergrafis-lebah {
-        position: absolute;
-        width: 100%;
-        max-width: 100px;
-        height: auto;
-        object-fit: cover;
-        opacity: 0.4;
-        bottom: 10%;
-        left: 55%;
-        pointer-events: none;
-    }
-
-    .supergrafis-kunang {
-        position: absolute;
-        width: 100%;
-        max-width: 100px;
-        height: auto;
-        object-fit: cover;
-        opacity: 0.4;
-        top: 40%;
-        right: 55%;
-        pointer-events: none;
-    }
-
-    .supergrafis-air-kanan {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        object-fit: cover;
-        opacity: 0.4;
-        pointer-events: none;
-    }
-
-    .supergrafis-air-kiri {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        object-fit: cover;
-        opacity: 0.4;
-        pointer-events: none;
-    }
-}
-
-//wave
-.wave-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    rotate: 180deg;
-    position: relative;
-    top: -2px;
-}
-
-.wave-one-3 {
-    max-width: 100%;
-    height: auto;
-    pointer-events: none;
-}
-
-.mars-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 88px;
-    gap: 30px;
-}
-
-.supergrafis-mars {
-    position: relative;
-    width: 100%;
-    height: 155.986px;
-    top: -20px;
-    max-width: 500px;
-    opacity: 0.4;
-    pointer-events: none;
-}
-
-.mars-title h1 {
-    color: #fff;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    text-shadow: 0px 0px 18px rgba(255, 255, 255, 0.25);
-    line-height: normal;
-}
-
-.mars-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 48px;
-    padding: 0 160px;
-}
-
-.mars-omb,
-.mars-umn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    align-items: center;
-    align-self: stretch;
-    gap: 20px;
-    border-radius: 32px;
-    border-top: 2px solid rgba(255, 255, 255, 0.434);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.434);
-    justify-content: space-between;
-    padding: 28px;
-}
-
-.mars-omb-title,
-.mars-umn-title {
-    display: flex;
-    align-items: center;
-}
-
-.mars-omb-title h2,
-.mars-umn-title h2 {
-    color: #fff;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    text-align: center;
-    text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.50),
-        0px 4px 12px rgba(0, 0, 0, 0.25);
-    line-height: normal;
-}
-
-.mars-omb-content,
-.mars-umn-content {
-    // height: fit-content;
-}
-
-.mars-omb-content p,
-.mars-umn-content p {
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.50),
-        0px 4px 12px rgba(0, 0, 0, 0.25);
-    line-height: normal;
-}
-
-.mars-omb-audio, .mars-umn-audio {
-    padding: 0;
-    margin-top: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-@media screen and (max-width: 1440px) {
-    .mars-container {
-        padding: 0 100px 50px;
-
-        .supergrafis-kembang {
-            position: absolute;
-            top: 40%;
-            left: 0;
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-tangkai {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-lebah {
-            position: absolute;
-            width: 100%;
-            max-width: 70px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            bottom: 5%;
-            left: 55%;
-        }
-
-        .supergrafis-kunang {
-            position: absolute;
-            width: 100%;
-            max-width: 70px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            top: 45%;
-            right: 55%;
-        }
-
-        .supergrafis-air-kanan {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-air-kiri {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-    }
-
-    .wave-one-3 {
-        max-width: 200%;
-    }
-
-    .mars-title img {
-        top: 62%;
-    }
-
-    .supergrafis-mars {
-        position: relative;
-        width: 100%;
-        height: 155.986px;
-        transform: translateY(-50%);
-        max-width: 300px;
-        opacity: 0.4;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .mars-container {
-        padding: 0 80px;
-
-        .supergrafis-kembang {
-            position: absolute;
-            top: 25%;
-            left: 0;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-tangkai {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-lebah {
-            position: absolute;
-            width: 100%;
-            max-width: 80px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            bottom: 15%;
-            left: 5%;
-        }
-
-        .supergrafis-kunang {
-            position: absolute;
-            width: 100%;
-            max-width: 80px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            top: 30%;
-            right: 10%;
-        }
-
-        .supergrafis-air-kanan {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-air-kiri {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-    }
-
-    .supergrafis-mars {
-        // position: relative;
-        // width: 100%;
-        // height: 155.986px;
-        // transform: translateY(-50%);
-        // max-width: 300px;
-        // opacity: 0.4;
-    }
-
-    .wave-one-3 {
-        max-width: 200%;
-    }
-
-    .mars-title img {
-        top: 62%;
-    }
-
-    .mars-content {
-        flex-direction: column;
-    }
-
-    .mars-umn-audio,
-    .mars-omb-audio {
-        margin: 20px;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    .mars-container {
-        padding: 0 40px;
-
-        .supergrafis-kembang {
-            position: absolute;
-            top: 20%;
-            left: 0;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-tangkai {
-            position: absolute;
-            top: 60%;
-            right: 0;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-lebah {
-            position: absolute;
-            width: 100%;
-            max-width: 80px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            bottom: 35%;
-            left: 5%;
-        }
-
-        .supergrafis-kunang {
-            position: absolute;
-            width: 100%;
-            max-width: 80px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            top: 25%;
-            right: 10%;
-        }
-
-        .supergrafis-air-kanan {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-air-kiri {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-    }
-
-    .wave-one-3 {
-        max-width: 200%;
-    }
-
-    .mars-title {
-        gap: 10px;
-    }
-
-    .supergrafis-mars {
-        // position: relative;
-        // width: 100%;
-        // height: 155.986px;
-        transform: translateY(-40%);
-        max-width: 200px;
-        // opacity: 0.4;
-
-    }
-
-    .mars-title h1 {
-        font-size: 40px;
-    }
-
-    .mars-content {
-        flex-direction: column;
-    }
-
-    .mars-umn-audio {
-        margin: 80px;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .mars-container {
-        gap: 20px;
-        padding: 60px 10px;
-
-        .supergrafis-kembang {
-            position: absolute;
-            top: 20%;
-            left: 0;
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-tangkai {
-            position: absolute;
-            top: 60%;
-            right: 0;
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-lebah {
-            position: absolute;
-            width: 100%;
-            max-width: 60px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            bottom: 40%;
-            left: 5%;
-        }
-
-        .supergrafis-kunang {
-            position: absolute;
-            width: 100%;
-            max-width: 60px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            top: 25%;
-            right: 10%;
-        }
-
-        .supergrafis-air-kanan {
-            display: none;
-        }
-
-        .supergrafis-air-kiri {
-            display: none;
-        }
-    }
-
-    .supergrafis-mars {
-        // position: relative;
-        // width: 100%;
-        // height: 155.986px;
-        transform: translateY(-40%);
-        max-width: 150px;
-        // opacity: 0.4;
-    }
-
-    .wave-container {
-        position: relative;
-        top: -62px;
-    }
-
-    .wave-one-3 {
-        max-width: 200%;
-    }
-
-    .mars-title h1 {
-        font-size: 32px;
-    }
-
-    .mars-title img {
-        top: 62%;
-    }
-
-    .mars-content {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .mars-omb,
-    .mars-umn {
-        padding: 0px;
-        gap: 20px;
-    }
-
-    .mars-omb-title h2,
-    .mars-umn-title h2 {
-        font-size: 28px;
-    }
-
-    .mars-omb-content,
-    .mars-umn-content {
-        height: 300px;
-    }
-
-    .mars-omb-content p,
-    .mars-umn-content p {
-        font-size: 18px;
-        padding: 0 10px;
-    }
-
-    .mars-umn-audio {
-        margin: 60px;
-    }
-}
-
-@media screen and (max-width: 432px) {
-    .mars-container {
-        gap: 20px;
-        padding: 60px 0;
-
-        .supergrafis-kembang {
-            position: absolute;
-            top: 20%;
-            left: 0;
-            width: 100%;
-            max-width: 180px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-tangkai {
-            position: absolute;
-            top: 65%;
-            right: 0;
-            width: 100%;
-            max-width: 180px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-        }
-
-        .supergrafis-lebah {
-            position: absolute;
-            width: 100%;
-            max-width: 60px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            bottom: 38%;
-            left: 5%;
-        }
-
-        .supergrafis-kunang {
-            position: absolute;
-            width: 100%;
-            max-width: 60px;
-            height: auto;
-            object-fit: cover;
-            opacity: 0.4;
-            top: 20%;
-            right: 10%;
-        }
-
-        .supergrafis-air-kanan {
-            display: none;
-        }
-
-        .supergrafis-air-kiri {
-            display: none;
-        }
-    }
-
-    .wave-container {
-        position: relative;
-        top: -65px;
-    }
-
-    .wave-one-3 {
-        max-width: 200%;
-    }
-
-    .mars-title h1 {
-        font-size: 32px;
-    }
-
-    .mars-title img {
-        top: 62%;
-    }
-
-    .mars-content {
-        flex-direction: column;
-    }
-
-    .mars-omb,
-    .mars-umn {
-        padding: 0px;
-    }
-
-    .mars-omb-title h2,
-    .mars-umn-title h2 {
-        font-size: 28px;
-    }
-
-    .mars-omb-content,
-    .mars-umn-content {
-        height: 400px;
-    }
-
-    .mars-omb-content p,
-    .mars-umn-content p {
-        font-size: 18px;
-    }
-
-    .mars-umn-audio {
-        margin: 20px;
-    }
-}
+//     .supergrafis-kembang {
+//         position: absolute;
+//         top: 30%;
+//         left: 0;
+//         width: 100%;
+//         max-width: 250px;
+//         height: auto;
+//         object-fit: cover;
+//         opacity: 0.4;
+//         pointer-events: none;
+//     }
+
+//     .supergrafis-tangkai {
+//         position: absolute;
+//         bottom: 20%;
+//         right: 0;
+//         width: 100%;
+//         max-width: 250px;
+//         height: auto;
+//         object-fit: cover;
+//         opacity: 0.4;
+//         pointer-events: none;
+//     }
+
+//     .supergrafis-lebah {
+//         position: absolute;
+//         width: 100%;
+//         max-width: 100px;
+//         height: auto;
+//         object-fit: cover;
+//         opacity: 0.4;
+//         bottom: 10%;
+//         left: 55%;
+//         pointer-events: none;
+//     }
+
+//     .supergrafis-kunang {
+//         position: absolute;
+//         width: 100%;
+//         max-width: 100px;
+//         height: auto;
+//         object-fit: cover;
+//         opacity: 0.4;
+//         top: 40%;
+//         right: 55%;
+//         pointer-events: none;
+//     }
+
+//     .supergrafis-air-kanan {
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         width: 100%;
+//         max-width: 400px;
+//         height: auto;
+//         object-fit: cover;
+//         opacity: 0.4;
+//         pointer-events: none;
+//     }
+
+//     .supergrafis-air-kiri {
+//         position: absolute;
+//         bottom: 0;
+//         right: 0;
+//         width: 100%;
+//         max-width: 400px;
+//         height: auto;
+//         object-fit: cover;
+//         opacity: 0.4;
+//         pointer-events: none;
+//     }
+// }
+
+// //wave
+// .wave-container {
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+//     rotate: 180deg;
+//     position: relative;
+//     top: -2px;
+// }
+
+// .wave-one-3 {
+//     max-width: 100%;
+//     height: auto;
+//     pointer-events: none;
+// }
+
+// .mars-title {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     height: 88px;
+//     gap: 30px;
+// }
+
+// .supergrafis-mars {
+//     position: relative;
+//     width: 100%;
+//     height: 155.986px;
+//     top: -20px;
+//     max-width: 500px;
+//     opacity: 0.4;
+//     pointer-events: none;
+// }
+
+// .mars-title h1 {
+//     color: #fff;
+//     font-size: 48px;
+//     font-style: normal;
+//     font-weight: 600;
+//     text-align: center;
+//     text-shadow: 0px 0px 18px rgba(255, 255, 255, 0.25);
+//     line-height: normal;
+// }
+
+// .mars-content {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     gap: 48px;
+//     padding: 0 160px;
+// }
+
+// .mars-omb,
+// .mars-umn {
+//     display: flex;
+//     flex-direction: column;
+//     flex-basis: 100%;
+//     flex: 1;
+//     align-items: center;
+//     align-self: stretch;
+//     gap: 20px;
+//     border-radius: 32px;
+//     border-top: 2px solid rgba(255, 255, 255, 0.434);
+//     border-bottom: 2px solid rgba(255, 255, 255, 0.434);
+//     justify-content: space-between;
+//     padding: 28px;
+// }
+
+// .mars-omb-title,
+// .mars-umn-title {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .mars-omb-title h2,
+// .mars-umn-title h2 {
+//     color: #fff;
+//     font-size: 28px;
+//     font-style: normal;
+//     font-weight: 500;
+//     text-align: center;
+//     text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.50),
+//         0px 4px 12px rgba(0, 0, 0, 0.25);
+//     line-height: normal;
+// }
+
+// .mars-omb-content,
+// .mars-umn-content {
+//     // height: fit-content;
+// }
+
+// .mars-omb-content p,
+// .mars-umn-content p {
+//     color: #fff;
+//     text-align: center;
+//     font-size: 20px;
+//     font-style: normal;
+//     font-weight: 500;
+//     text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.50),
+//         0px 4px 12px rgba(0, 0, 0, 0.25);
+//     line-height: normal;
+// }
+
+// .mars-omb-audio, .mars-umn-audio {
+//     padding: 0;
+//     margin-top: 20px;
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+// }
+
+// @media screen and (max-width: 1440px) {
+//     .mars-container {
+//         padding: 0 100px 50px;
+
+//         .supergrafis-kembang {
+//             position: absolute;
+//             top: 40%;
+//             left: 0;
+//             width: 100%;
+//             max-width: 200px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-tangkai {
+//             position: absolute;
+//             top: 50%;
+//             right: 0;
+//             width: 100%;
+//             max-width: 200px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-lebah {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 70px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             bottom: 5%;
+//             left: 55%;
+//         }
+
+//         .supergrafis-kunang {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 70px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             top: 45%;
+//             right: 55%;
+//         }
+
+//         .supergrafis-air-kanan {
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 100%;
+//             max-width: 300px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-air-kiri {
+//             position: absolute;
+//             bottom: 0;
+//             right: 0;
+//             width: 100%;
+//             max-width: 300px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+//     }
+
+//     .wave-one-3 {
+//         max-width: 200%;
+//     }
+
+//     .mars-title img {
+//         top: 62%;
+//     }
+
+//     .supergrafis-mars {
+//         position: relative;
+//         width: 100%;
+//         height: 155.986px;
+//         transform: translateY(-50%);
+//         max-width: 300px;
+//         opacity: 0.4;
+//     }
+// }
+
+// @media screen and (max-width: 1200px) {
+//     .mars-container {
+//         padding: 0 80px;
+
+//         .supergrafis-kembang {
+//             position: absolute;
+//             top: 25%;
+//             left: 0;
+//             width: 100%;
+//             max-width: 300px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-tangkai {
+//             position: absolute;
+//             top: 50%;
+//             right: 0;
+//             width: 100%;
+//             max-width: 300px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-lebah {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 80px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             bottom: 15%;
+//             left: 5%;
+//         }
+
+//         .supergrafis-kunang {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 80px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             top: 30%;
+//             right: 10%;
+//         }
+
+//         .supergrafis-air-kanan {
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 100%;
+//             max-width: 250px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-air-kiri {
+//             position: absolute;
+//             bottom: 0;
+//             right: 0;
+//             width: 100%;
+//             max-width: 250px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+//     }
+
+//     .supergrafis-mars {
+//         // position: relative;
+//         // width: 100%;
+//         // height: 155.986px;
+//         // transform: translateY(-50%);
+//         // max-width: 300px;
+//         // opacity: 0.4;
+//     }
+
+//     .wave-one-3 {
+//         max-width: 200%;
+//     }
+
+//     .mars-title img {
+//         top: 62%;
+//     }
+
+//     .mars-content {
+//         flex-direction: column;
+//     }
+
+//     .mars-umn-audio,
+//     .mars-omb-audio {
+//         margin: 20px;
+//     }
+// }
+
+// @media screen and (max-width: 810px) {
+//     .mars-container {
+//         padding: 0 40px;
+
+//         .supergrafis-kembang {
+//             position: absolute;
+//             top: 20%;
+//             left: 0;
+//             width: 100%;
+//             max-width: 250px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-tangkai {
+//             position: absolute;
+//             top: 60%;
+//             right: 0;
+//             width: 100%;
+//             max-width: 250px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-lebah {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 80px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             bottom: 35%;
+//             left: 5%;
+//         }
+
+//         .supergrafis-kunang {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 80px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             top: 25%;
+//             right: 10%;
+//         }
+
+//         .supergrafis-air-kanan {
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 100%;
+//             max-width: 250px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-air-kiri {
+//             position: absolute;
+//             bottom: 0;
+//             right: 0;
+//             width: 100%;
+//             max-width: 250px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+//     }
+
+//     .wave-one-3 {
+//         max-width: 200%;
+//     }
+
+//     .mars-title {
+//         gap: 10px;
+//     }
+
+//     .supergrafis-mars {
+//         // position: relative;
+//         // width: 100%;
+//         // height: 155.986px;
+//         transform: translateY(-40%);
+//         max-width: 200px;
+//         // opacity: 0.4;
+
+//     }
+
+//     .mars-title h1 {
+//         font-size: 40px;
+//     }
+
+//     .mars-content {
+//         flex-direction: column;
+//     }
+
+//     .mars-umn-audio {
+//         margin: 80px;
+//     }
+// }
+
+// @media screen and (max-width: 560px) {
+//     .mars-container {
+//         gap: 20px;
+//         padding: 60px 10px;
+
+//         .supergrafis-kembang {
+//             position: absolute;
+//             top: 20%;
+//             left: 0;
+//             width: 100%;
+//             max-width: 200px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-tangkai {
+//             position: absolute;
+//             top: 60%;
+//             right: 0;
+//             width: 100%;
+//             max-width: 200px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-lebah {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 60px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             bottom: 40%;
+//             left: 5%;
+//         }
+
+//         .supergrafis-kunang {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 60px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             top: 25%;
+//             right: 10%;
+//         }
+
+//         .supergrafis-air-kanan {
+//             display: none;
+//         }
+
+//         .supergrafis-air-kiri {
+//             display: none;
+//         }
+//     }
+
+//     .supergrafis-mars {
+//         // position: relative;
+//         // width: 100%;
+//         // height: 155.986px;
+//         transform: translateY(-40%);
+//         max-width: 150px;
+//         // opacity: 0.4;
+//     }
+
+//     .wave-container {
+//         position: relative;
+//         top: -62px;
+//     }
+
+//     .wave-one-3 {
+//         max-width: 200%;
+//     }
+
+//     .mars-title h1 {
+//         font-size: 32px;
+//     }
+
+//     .mars-title img {
+//         top: 62%;
+//     }
+
+//     .mars-content {
+//         flex-direction: column;
+//         width: 100%;
+//     }
+
+//     .mars-omb,
+//     .mars-umn {
+//         padding: 0px;
+//         gap: 20px;
+//     }
+
+//     .mars-omb-title h2,
+//     .mars-umn-title h2 {
+//         font-size: 28px;
+//     }
+
+//     .mars-omb-content,
+//     .mars-umn-content {
+//         height: 300px;
+//     }
+
+//     .mars-omb-content p,
+//     .mars-umn-content p {
+//         font-size: 18px;
+//         padding: 0 10px;
+//     }
+
+//     .mars-umn-audio {
+//         margin: 60px;
+//     }
+// }
+
+// @media screen and (max-width: 432px) {
+//     .mars-container {
+//         gap: 20px;
+//         padding: 60px 0;
+
+//         .supergrafis-kembang {
+//             position: absolute;
+//             top: 20%;
+//             left: 0;
+//             width: 100%;
+//             max-width: 180px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-tangkai {
+//             position: absolute;
+//             top: 65%;
+//             right: 0;
+//             width: 100%;
+//             max-width: 180px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//         }
+
+//         .supergrafis-lebah {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 60px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             bottom: 38%;
+//             left: 5%;
+//         }
+
+//         .supergrafis-kunang {
+//             position: absolute;
+//             width: 100%;
+//             max-width: 60px;
+//             height: auto;
+//             object-fit: cover;
+//             opacity: 0.4;
+//             top: 20%;
+//             right: 10%;
+//         }
+
+//         .supergrafis-air-kanan {
+//             display: none;
+//         }
+
+//         .supergrafis-air-kiri {
+//             display: none;
+//         }
+//     }
+
+//     .wave-container {
+//         position: relative;
+//         top: -65px;
+//     }
+
+//     .wave-one-3 {
+//         max-width: 200%;
+//     }
+
+//     .mars-title h1 {
+//         font-size: 32px;
+//     }
+
+//     .mars-title img {
+//         top: 62%;
+//     }
+
+//     .mars-content {
+//         flex-direction: column;
+//     }
+
+//     .mars-omb,
+//     .mars-umn {
+//         padding: 0px;
+//     }
+
+//     .mars-omb-title h2,
+//     .mars-umn-title h2 {
+//         font-size: 28px;
+//     }
+
+//     .mars-omb-content,
+//     .mars-umn-content {
+//         height: 400px;
+//     }
+
+//     .mars-omb-content p,
+//     .mars-umn-content p {
+//         font-size: 18px;
+//     }
+
+//     .mars-umn-audio {
+//         margin: 20px;
+//     }
+// }

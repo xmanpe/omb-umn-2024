@@ -84,12 +84,16 @@
     }
     
     p {
-        color: rgba(0, 0, 0, 0.80);
+        color: rgba(0, 0, 0, 0.60);
         text-align: justify;
         font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+    }
+
+    p:hover {
+        color: rgba(0, 0, 0, 0.80);
     }
 
     .cta_button {

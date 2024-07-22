@@ -26,10 +26,11 @@ const Footer = () => {
     const isHomePage = location.pathname === '/';
     const isPelaksanaanPage = location.pathname === '/pelaksanaan';
     const isAtributPesertaPage = location.pathname === '/atribut-peserta';
+    const isTentangOMBPage = location.pathname === '/tentang-omb';
 
     return (
         <footer className='footer_section'>
-            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage) && <img className='wave' src={Wave} alt="Wave" />}
+            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage) && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>

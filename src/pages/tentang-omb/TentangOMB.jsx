@@ -13,6 +13,7 @@ import FilosofiLogo from '../../components/filosofi-logo/FilosofiLogo';
 import Tagline from '../../components/tagline-omb/Tagline';
 import ApaItuOMB from '../../components/apa itu omb/ApaItuOMB';
 import VisiMisiRevisi from '../../components/visi-misi/VisiMisiRevisi';
+import MarsRevisi from '../../components/mars/MarsRevisi';
 
 const TentangOMB = () => {
     return (
@@ -27,7 +28,7 @@ const TentangOMB = () => {
             <NilaiNilai />
             {/* <VisiMisi /> */}
             <VisiMisiRevisi/>
-            <Mars/>
+            <MarsRevisi />
             <Footer />
         </>
     );

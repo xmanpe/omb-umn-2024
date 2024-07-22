@@ -15,14 +15,7 @@ import ArrowDropdown from '../../images/Arrow/ArrowDropdown.svg'
 
 const Pelaksanaan = () => {
     const [sliderState,setSliderState] = useState(0);
-    const [showMobileDropdown, setShowMobileDropdown] =useState(false);
-    const handleDropdownClick = () => {
-        setShowMobileDropdown(!showMobileDropdown);
-    }
-    const handleUserClick = (index) => {
-        setShowMobileDropdown(!showMobileDropdown);
-        setSliderState(index);
-    }
+
     const slides = ["Landasan Pelaksanaan","Maksud Pelaksanaan","Tujuan Pelaksanaan"];
     return (
         <>
@@ -43,29 +36,6 @@ const Pelaksanaan = () => {
                                 {slides}
                             </button>
                         ))}
-                    </div>
-                </div>
-                <div className='slider-wrapper-mobile'>
-                    <div className='slider-mobile'>
-                        {slides.map((slides,index)=>(
-                            sliderState === index && 
-                            <button key={index} className='slider-button-mobile-active' onClick={handleDropdownClick}>
-                                {slides}
-                                <img className={`arrow ${!showMobileDropdown ? 'up':'down'}`} src={ArrowDropdown} alt='drop'/>
-                            </button>
-                        ))}
-                        {showMobileDropdown && 
-                            <div className='dropdown-wrapper'>
-                                {slides.map((slides,index)=>(
-                                    sliderState !== index &&
-                                        <button key={index}
-                                                className={`slider-button-mobile`}
-                                                onClick={() => handleUserClick(index)}>
-                                            {slides}
-                                        </button>
-                                ))}
-                            </div>
-                        }
                     </div>
                 </div>
                 <div className='list-wrapper'>

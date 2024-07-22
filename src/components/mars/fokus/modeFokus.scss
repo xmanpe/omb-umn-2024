@@ -25,7 +25,7 @@
         padding-top: 20px;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         position: sticky;
-        top: -2px;
+        top: -8px;
     }
 
     .the-lyrics {
@@ -74,5 +74,98 @@
             color: #fff;
         }
     }
+}
 
+@media screen and (max-width: 1440px) {
+    .mode-fokus {
+        .focus-title {
+        }
+    
+        .audio {
+        }
+    
+        .the-lyrics {
+            gap: 32px;
+    
+            p {
+            }
+    
+            .each-line {
+                font-size: 32px;
+    
+                i {
+                }
+    
+                .active {
+                }
+            }
+    
+            .active {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mode-fokus {
+        gap: 16px;
+
+        .focus-title {
+        }
+    
+        .audio {
+        }
+    
+        .the-lyrics {
+            p {
+                font-size: 16px;
+            }
+    
+            .each-line {
+                font-size: 28px;
+    
+                i {
+                    font-size: 18px;
+                }
+    
+                .active {
+                }
+            }
+    
+            .active {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .mode-fokus {
+
+        .focus-title {
+        }
+    
+        .audio {
+        }
+    
+        .the-lyrics {
+            gap: 24px;
+
+            p {
+            }
+    
+            .each-line {    
+                font-size: 24px;
+
+                i {
+                    font-size: 18px;
+                }
+    
+                .active {
+                }
+            }
+    
+            .active {
+            }
+        }
+    }
 }

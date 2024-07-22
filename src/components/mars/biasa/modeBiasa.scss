@@ -12,6 +12,7 @@
         background-color: rgba(255, 255, 255, 0.8);
         border: 1.5px solid #F0F0F0;
         box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(4px);
         border-radius: 20px;
         padding: 32px;
         justify-content: space-between;
@@ -62,5 +63,119 @@
 
     .mars:hover {
         transform: translateY(-5px);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mode-biasa {
+        .mars {
+            padding: 28px;
+    
+            .top-part {
+                gap: 16px;
+    
+                .mars-title {
+                }
+        
+                .lirik {
+                }
+            }
+    
+            .info-mars {
+            }
+            
+            .audio {
+            }
+        }
+    
+        .mars:hover {
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mode-biasa {
+        gap: 16px;
+
+        .mars {
+            padding: 20px;
+    
+            .top-part {
+                .mars-title {
+                    font-size: 24px;
+                }
+        
+                .lirik {
+                    font-size: 18px;
+                }
+            }
+    
+            .info-mars {
+                font-size: 14px;
+            }
+            
+            .audio {
+            }
+        }
+    
+        .mars:hover {
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .mode-biasa {
+        gap: 16px;
+        flex-direction: column;
+
+        .mars {
+            width: initial;
+    
+            .top-part {
+                .mars-title {
+                }
+        
+                .lirik {
+                }
+            }
+    
+            .info-mars {
+            }
+            
+            .audio {
+            }
+        }
+    
+        .mars:hover {
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .mode-biasa {
+        gap: 16px;
+        flex-direction: column;
+
+        .mars {
+            width: initial;
+    
+            .top-part {
+                .mars-title {
+                }
+        
+                .lirik {
+                    font-size: 16px;
+                }
+            }
+    
+            .info-mars {
+            }
+            
+            .audio {
+            }
+        }
+    
+        .mars:hover {
+        }
     }
 }

@@ -204,9 +204,11 @@
         .slider {
             top: 8px;
             gap: 8px;
+            width: -webkit-fill-available;
 
             .slider-button {
                 padding: 8px 20px;
+                width: 100%;
 
             }
     

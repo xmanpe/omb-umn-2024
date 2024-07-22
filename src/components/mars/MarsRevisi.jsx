@@ -4,6 +4,9 @@ import './MarsRevisi.scss';
 
 // import images
 import SecondWave from '../../images/waves/Wave Three.png';
+import SupergrafisKembang from '../../images/supergrafis/Mars supergrafis/Supergrafis Putih - kembang.svg';
+import Superputihkiri from '../../images/supergrafis/Mars supergrafis/Supergrafis Putih-kiri.svg';
+import Superputihkanan from '../../images/supergrafis/Mars supergrafis/Supergrafis Putih-kanan.svg';
 
 // import components
 import ModeFokusOMB from './fokus/modeFokusOMB';
@@ -20,10 +23,13 @@ const MarsRevisi = () => {
     return (
         <section className="mars_section">
             <img className='second-wave' src={SecondWave} alt="The Wave" />
+            <img src={SupergrafisKembang} alt="" className='supergrafis-kembang' />
+            <img src={Superputihkanan} alt="" className='supergrafis-air-kanan' />
+            <img src={Superputihkiri} alt="" className='supergrafis-air-kiri' />
             <div className='mars_content'>
                 <div className='mars_title'>
                     <h1>Mars</h1>
-                    <p>Sahaja (keseluruhan) dan Dhyāna (terfokus) menawarkan cara yang berbeda<br />dalam memutar lagu Mars OMB dan Mars UMN sesuai kebutuhan.</p>
+                    <p>Sahaja (keseluruhan) dan Dhyāna (terfokus) menawarkan cara yang berbeda dalam memutar lagu Mars OMB dan Mars UMN sesuai kebutuhan.</p>
                     <div className='slider-wrapper'>
                         <div className='slider'>
                             {slidesMode.map((slide, index) => (

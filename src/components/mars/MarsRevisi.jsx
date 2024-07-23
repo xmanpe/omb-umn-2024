@@ -29,7 +29,7 @@ const MarsRevisi = () => {
             <div className='mars_content'>
                 <div className='mars_title'>
                     <h1>Mars</h1>
-                    <p>Tersedia dua mode, yaitu mode standar yang menampilkan lirik dengan tampilan menyeluruh dan mode fokus yang menampilkan lirik dengan tersorot saat sedang dinyanyikan.</p>
+                    <p>Dalam pemutaran lagu Mars OMB dan Mars UMN, kami menyediakan dua tampilan, yaitu "Standar" yang menampilkan seluruh lirik dan lagu, serta "Fokus" yang memfokuskan lirik per bait lagu.</p>
                     <div className='slider-wrapper'>
                         <div className='slider'>
                             {slidesMode.map((slide, index) => (

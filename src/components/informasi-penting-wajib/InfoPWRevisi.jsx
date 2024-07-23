@@ -18,7 +18,7 @@ const InfoPWRevisi = () => {
     }
 
     return (
-        <section className="infopw_section">
+        <section className="infopw_section" id='infopw_section'>
             <img className='wave_two' src={Wave} alt="Wave" />
             <div className='infopw_content'>
                 <div className='kiri'>
@@ -33,10 +33,10 @@ const InfoPWRevisi = () => {
                         <h1>Formulir Keikutsertaan OMB UMN 2024</h1>
                     </div>
                     <p>
-                        Formulir Keikutsertaan OMB UMN 2024 merupakan salah satu syarat wajib untuk mengikuti OMB UMN 2024 yang mencakup persetujuan orang tua, data diri, dan riwayat kesehatan. <br /><br />Formulir Keikutsertaan OMB UMN 2024 telah dibuka pada Minggu, 30 Juni 2024 pukul 08.00 WIB hingga Minggu, 18 Agustus 2024 pukul 23.59 WIB.
+                        Formulir Keikutsertaan OMB UMN 2024 merupakan salah satu syarat wajib untuk mengikuti OMB UMN 2024 yang mencakup persetujuan orang tua, data diri, dan riwayat kesehatan. <br /><br />Formulir Keikutsertaan OMB UMN 2024 telah dibuka pada Minggu, 30 Juni 2024 pukul 08.00 WIB hingga Minggu, 18 Agustus 2024 pukul 12.00 WIB.
                     </p>
                     <div className='cta_button'>
-                        <button onClick={openPage}>Isi Formulir
+                        <button onClick={openPage}>Isi formulir
                             <img src={ArrowRight} alt="Arrow Icon" />
                         </button>
                     </div>

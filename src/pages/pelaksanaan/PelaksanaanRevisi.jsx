@@ -29,7 +29,7 @@ const PelaksanaanRevisi = () => {
     return (
         <>
             <Header 
-                top="Lotus Biru merajut mimpi masa depan,"
+                top="Pelaksanaan"
                 bottom={<>Selamat datang di laman pelaksanaan!</>}
             />
             <section className='pelaksanaan_content'>

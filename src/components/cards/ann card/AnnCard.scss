@@ -1,11 +1,11 @@
 @keyframes shine {
     0% {
-        left: -100%; /* Start the shine animation from outside the div */
-        transform: skewX(-20deg); /* Skew the shine to create a diagonal effect */
+        left: -100%;
+        transform: skewX(-20deg);
     }
     100% {
-        left: 100%; /* Move the shine all the way to the right */
-        transform: skewX(20deg); /* Skew the shine to create a diagonal effect */
+        left: 100%;
+        transform: skewX(20deg);
     }
 }
 
@@ -31,6 +31,7 @@
     box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(7.099999904632568px);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 
     .text_section {
         width: 100%;
@@ -164,9 +165,8 @@
 }
 
 .ann_card:hover {
-    transform: translateY(-5px); /* Move the card up slightly on hover */
+    transform: translateY(-5px);
     box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.3);
-    // animation: vibrate 0.3s ease-in-out infinite;
 }
 
 .highlight {

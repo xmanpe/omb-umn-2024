@@ -18,7 +18,7 @@ const FilosofiLogo = () => {
         },
         {
             "judul": "4 Warna Fakultas",
-            "text": "<p>Warna pada benang sari melambangkan keempat fakultas di Universitas Multimedia Nusantara, yaitu:</p><ul><li><span class='color_ilkom'><b>Fakultas Ilmu Komunikasi</b></span>: Komunikasi Strategis, Jurnalistik</li><li><span class='color_bisnis'><b>Fakultas Bisnis</b></span>: Akuntansi, Manajemen, dan D3 Perhotelan</li><li><span class='color_seni'><b>Fakultas Seni dan Desain</b></span>: Desain Komunikasi Visual, Film dan Animasi, Arsitektur</li><li><span class='color_teknik'><b>Fakultas Teknik dan Informatika</b></span>: Teknik Komputer, Teknik Elektro, Teknik Fisika, Informatika, Sistem Informasi</li></ul>"
+            "text": "<p>Warna pada benang sari melambangkan keempat fakultas di Universitas Multimedia Nusantara, yaitu:</p><ul><li><span class='color_ilkom'>Fakultas Ilmu Komunikasi</></span>: Komunikasi Strategis, Jurnalistik</li><li><span class='color_bisnis'>Fakultas Bisnis</></span>: Akuntansi, Manajemen, dan D3 Perhotelan</li><li><span class='color_seni'>Fakultas Seni dan Desain</></span>: Desain Komunikasi Visual, Film dan Animasi, Arsitektur</li><li><span class='color_teknik'>Fakultas Teknik dan Informatika</></span>: Teknik Komputer, Teknik Elektro, Teknik Fisika, Informatika, Sistem Informasi</li></ul>"
         },
         {
             "judul": "Bunga Lotus Biru",

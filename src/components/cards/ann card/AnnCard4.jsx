@@ -6,7 +6,7 @@ import ArrowRight from '../../../images/Arrow/Arrow_Right_MD.svg';
 import Calendar from '../../../images/Calendar/Calendar.svg';
 
 // import component
-import InformationModal from './information modal/InformationModal';
+import SesiInformasi from '../sesi informasi/SesiInformasi';
 
 const AnnCard = () => {
     const [countdown, setCountdown] = useState('');
@@ -68,19 +68,17 @@ const AnnCard = () => {
     // };
 
     const openPage = () => {
-        document.getElementById('infopw_section').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('swara-bestari').scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
         <>
-        {showModal && <InformationModal onClose={toggleModal} />}
-            <div className="ann_card hightlight">
+        {showModal && <SesiInformasi onClose={toggleModal} />}
+            <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Informasi Penting & Wajib!</h3>
-                        {/* <p>Klik tombol disamping untuk melihat daftar Peserta OMB UMN 2024 bagi mahasiswa aktif.</p> */}
-                            {/* <h3>Formulir Keikutsertaan OMB UMN 2024</h3> */}
-                            <p>Formulir Keikutsertaan OMB UMN 2024 <b style={{fontWeight: 600}}>wajib</b> diisi oleh seluruh calon peserta sebagai salah satu syarat mengikuti OMB UMN 2024.</p>
+                        <h3>Modul Kekerasan Seksual</h3>
+                        <p>Yuk, turut serta dalam mencegah Kampus Bebas Kekerasan Seksual dengan mengakses Modul #KampusBebasKS melalui tombol di bawah ini!</p>
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>
@@ -91,13 +89,10 @@ const AnnCard = () => {
                     </div> */}
                 </div>
                 <div className='cta_button'>
-                    <button onClick={openPage}>Lihat
+                    <button onClick={openPage}>Akses di sini
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>
-                {/* <div className='label'>
-                    <p>Penting!</p>
-                </div> */}
             </div>
         </>
     );

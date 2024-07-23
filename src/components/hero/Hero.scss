@@ -136,6 +136,20 @@
                     overflow: visible;
                 }
             }
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    background: #FFF;
+                    opacity: 0.3;
+                    width: 8px;
+                    height: 8px;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: #FFF;
+                    opacity: 1;
+                }
+            }
         }
     }
 }

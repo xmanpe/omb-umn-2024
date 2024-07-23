@@ -60,7 +60,7 @@ const SmallModal = () => {
                     <p className='left_side'>Yuk, isi Formulir Keikutsertaan OMB UMN 2024!</p>
                 </div>
                 <div className='cta_button'>
-                    <button onClick={toggleModal}>Yuk!
+                    <button onClick={toggleModal}>Yuk
                         <img src={ArrowRight} alt="Arrow Icon" />
                     </button>
                 </div>

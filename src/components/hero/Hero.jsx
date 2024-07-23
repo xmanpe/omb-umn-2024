@@ -1,10 +1,12 @@
 import React from 'react';
 import './Hero.scss';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 // import components
 import AnnCard from '../cards/ann card/AnnCard';
 import AnnCard2 from '../cards/ann card/AnnCard2';
 import AnnCard3 from '../cards/ann card/AnnCard3';
+import AnnCard4 from '../cards/ann card/AnnCard4';
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
@@ -18,7 +20,6 @@ import NewWave from '../../images/waves/Wave Baru.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
 
 const Hero = () => {
     return (
@@ -34,6 +35,7 @@ const Hero = () => {
             <div className='announcement_swiper'>
                 <Swiper
                     spaceBetween={16}
+                    modules={[Navigation, Pagination, Autoplay, A11y]}
                     // slidesPerView={1.3}
                     breakpoints={{
                         432: {
@@ -56,12 +58,18 @@ const Hero = () => {
                         },
                     }}
                     pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    autoplay={{
+                        delay: 6000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                      }}
                     className="mySwiper"
                 >
                     <SwiperSlide><AnnCard /></SwiperSlide>
                     <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard3 /></SwiperSlide>
-                    {/* <SwiperSlide><AnnCard3 /></SwiperSlide> */}
+                    <SwiperSlide><AnnCard4 /></SwiperSlide>
                 </Swiper>
             </div>
 

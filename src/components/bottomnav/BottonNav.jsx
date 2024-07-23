@@ -119,7 +119,7 @@ const BottomNav = () => {
         { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
         // { path: '/hasil-seleksi', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: `Hasil Seleksi ${selectedDivisiName}` },
         // { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
-        { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang' },
+        { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang OMB' },
         { path: '/pelaksanaan', icon: PelaksanaanNotActive, activeIcon: PelaksanaanActive, text: 'Pelaksanaan' },
         { path: '/atribut-peserta' , icon: AtributNotActive, activeIcon: AtributActive, text: 'Atribut Peserta' }
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },

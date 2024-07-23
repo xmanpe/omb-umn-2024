@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './AnnCard.scss';
 
-import KS from '../../../pdf/modul-kekerasan-seksual.pdf';
-
 // import icons
 import ArrowRight from '../../../images/Arrow/Arrow_Right_MD.svg';
 
 const AnnCard = () => {
     const openPage = () => {
-        window.open('../../../pdf/modul-kekerasan-seksual.pdf', '_blank');
+        window.open('/pdf/modul-kekerasan-seksual.pdf', '_blank');
     };
 
     return (

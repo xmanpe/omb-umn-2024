@@ -1,3 +1,4 @@
+import React from 'react';
 import './Hero.scss';
 
 // import components
@@ -16,6 +17,8 @@ import NewWave from '../../images/waves/Wave Baru.png'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
 
 const Hero = () => {
     return (
@@ -30,30 +33,40 @@ const Hero = () => {
 
             <div className='announcement_swiper'>
                 <Swiper
-                    slidesPerView={2.3}
+                    spaceBetween={16}
+                    // slidesPerView={1.3}
                     breakpoints={{
-                        810: {
-                            slidesPerView: 1.3,
-                        },
                         432: {
-                            slidesPerView: 1.3,
+                            slidesPerView: 1,
                         },
-                        200: {
-                            slidesPerView: 1.3,
+                        560: {
+                            slidesPerView: 1,
+                        },
+                        810: {
+                            slidesPerView: 1,
+                        },
+                        1200: {
+                            slidesPerView: 2,
+                        },
+                        1440: {
+                            slidesPerView: 2,
+                        },
+                        1920: {
+                            slidesPerView: 2,
                         },
                     }}
+                    pagination={{ clickable: true }}
                     className="mySwiper"
                 >
                     <SwiperSlide><AnnCard /></SwiperSlide>
                     <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard3 /></SwiperSlide>
+                    {/* <SwiperSlide><AnnCard3 /></SwiperSlide> */}
                 </Swiper>
             </div>
 
-            <div className='the_hero_content'>
-                <div className='bem_section'>
-                    <p>BAGIAN DARI BEM UMN</p>
-                </div>
+            <div className='bem_section'>
+                <p>BAGIAN DARI BEM UMN</p>
             </div>
 
             <img className='wave' src={Wave} alt="Wave" />
@@ -61,5 +74,5 @@ const Hero = () => {
         </section>
     );
 }
- 
+
 export default Hero;

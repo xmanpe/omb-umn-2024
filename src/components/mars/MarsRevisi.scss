@@ -28,7 +28,7 @@
 
     .supergrafis-kembang {
         position: absolute;
-        top: 30%;
+        top: 300px;
         left: 0;
         width: 20%;
         height: auto;
@@ -38,6 +38,7 @@
     }
 
     .supergrafis-air-kanan {
+        display: none;
         display: none;
         position: absolute;
         top: 140px;
@@ -51,6 +52,7 @@
     }
         
     .supergrafis-air-kiri {
+        display: none;
         position: absolute;
         bottom: 20%;
         right: 0;

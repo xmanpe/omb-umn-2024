@@ -29,7 +29,7 @@ const MarsRevisi = () => {
             <div className='mars_content'>
                 <div className='mars_title'>
                     <h1>Mars</h1>
-                    <p>Dalam pemutaran lagu Mars OMB dan Mars UMN, kami menyediakan dua tampilan, yaitu "Standar" yang menampilkan seluruh lirik dan lagu, serta "Fokus" yang memfokuskan lirik per bait lagu.</p>
+                    <p>Dalam pemutaran lagu Mars OMB dan Mars UMN, kami menyediakan dua tampilan, yaitu "<b>Standar</b>" yang menampilkan seluruh lirik dan lagu, serta "<b>Fokus</b>" yang memfokuskan lirik per bait lagu.</p>
                     <div className='slider-wrapper'>
                         <div className='slider'>
                             {slidesMode.map((slide, index) => (

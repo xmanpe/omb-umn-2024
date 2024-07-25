@@ -6,7 +6,6 @@ import './Faq.scss';
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import Faq from '../../components/faq/Faq';
-import ShuttleBus from '../../components/shuttle-bus/ShuttleBus';
 
 const PelaksanaanRevisi = () => {
     return (

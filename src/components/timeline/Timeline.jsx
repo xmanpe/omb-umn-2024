@@ -9,7 +9,7 @@ import Flower from "../../images/supergrafis/icon_timeline.svg";
 
 const events = [
   {
-    date: "12 Agustus 2024",
+    date: "Senin, 12 Agustus 2024",
     title: "Sesi Informasi OMB UMN 2024",
     description: "<i>Online</i>/Daring",
     icon: (
@@ -21,7 +21,7 @@ const events = [
     ),
   },
   {
-    date: "19 Agustus 2024",
+    date: "Senin, 19 Agustus 2024",
     title: "Hari Pemupukan",
     description: "<i>Offline</i>/Luring",
     icon: (
@@ -33,7 +33,7 @@ const events = [
     ),
   },
   {
-    date: "20 Agustus 2024",
+    date: "Selasa, 20 Agustus 2024",
     title: "Perkembangan Hari 1",
     description: "<i>Offline</i>/Luring",
     icon: (
@@ -45,7 +45,7 @@ const events = [
     ),
   },
   {
-    date: "21 Agustus 2024",
+    date: "Rabu, 21 Agustus 2024",
     title: "Perkembangan Hari 2",
     description: "<i>Offline</i>/Luring",
     icon: (
@@ -57,9 +57,9 @@ const events = [
     ),
   },
   {
-    date: "23 Agustus 2024",
+    date: "Jumat, 23 Agustus 2024",
     title: "Sidang Terbuka Senat",
-    description: "",
+    description: "<i>Offline</i>/Luring",
     icon: (
       <img
         src={Flower}
@@ -69,7 +69,7 @@ const events = [
     ),
   },
   {
-    date: "26-28 Agustus 2024",
+    date: "Senin, 26 Agustus 2024 - Rabu, 28 Agustus 2024",
     title: "Pameran Meliora",
     description: "Pameran dokumentasi di balik perjalanan OMB UMN 2024",
     icon: (
@@ -81,9 +81,9 @@ const events = [
     ),
   },
   {
-    date: "30 Agustus 2024",
+    date: "Jumat, 30 Agustus 2024",
     title: "Forum OMB",
-    description: "",
+    description: "<i>Offline</i>/Luring",
     icon: (
       <img
         src={Flower}

@@ -1,20 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Faq.scss";
 import DaftarFaq from "./DaftarFaq";
-import ArrowUp from "../../images/Arrow/ArrowUp.svg";
 import ArrowDropdown from "../../images/Arrow/ArrowDropdown.svg";
 import Up from "../../images/icons/Up 2.svg";
 import Down from "../../images/icons/Down 2.svg";
 
-const FaqItem = ({ question, answer, number }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleFaq = () => {
-    setIsOpen(!isOpen);
-  };
-
+const FaqItem = ({ question, answer, number, isOpen, onToggle }) => {
   return (
-    <div className={`faq_content ${isOpen ? "open" : ""}`} onClick={toggleFaq}>
+    <div className={`faq_content ${isOpen ? "open" : ""}`} onClick={onToggle}>
       <div className="faq_question">
         <p className="number_faq">{number}</p>
         <p className="text_faq">{question}</p>
@@ -36,6 +29,7 @@ const FaqItem = ({ question, answer, number }) => {
 const Faq = () => {
   const [sliderState, setSliderState] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
   // Filter FAQ items based on the search query
   const filteredFaqs = DaftarFaq["daftar-faq-omb"].filter((item) =>
@@ -69,21 +63,12 @@ const Faq = () => {
     "Lain-Lain",
   ];
 
+  const handleFaqToggle = (index) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
+
   return (
     <section className="faq_section">
-      <div className="faq_title">
-        <h1>FAQ</h1>
-      </div>
-      <div className="note-search">
-        <div className="search_wrapper">
-          <input
-            type="text"
-            placeholder="Temukan pertanyaan dengan kata kunci..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </div>
-      </div>
       <div className="slider">
         {slides.map((slide, index) => (
           <button
@@ -141,8 +126,15 @@ const Faq = () => {
               number={item.nomor}
               question={item.pertanyaan}
               answer={item.jawaban}
+              isOpen={openFaqIndex === index}
+              onToggle={() => handleFaqToggle(index)}
             />
           ))}
+        {filteredFaqs.length === 0 && (
+          <div className="no_results">
+            <p>Pencarian tidak ditemukan!</p>
+          </div>
+        )}
       </div>
     </section>
   );

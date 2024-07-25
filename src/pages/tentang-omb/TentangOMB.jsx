@@ -21,7 +21,7 @@ const TentangOMB = () => {
     return (
         <>
             <Header 
-                top="Tentang OMB"
+                top="Tentang OMB UMN"
                 bottom={<>Yuk, kenalan dengan OMB UMN 2024!</>}
             />
             {/* <ApaItuOMB /> */}

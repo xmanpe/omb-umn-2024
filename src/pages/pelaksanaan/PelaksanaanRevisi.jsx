@@ -29,7 +29,7 @@ const PelaksanaanRevisi = () => {
     return (
         <>
             <Header 
-                top="Pelaksanaan"
+                top="Pelaksanaan OMB UMN 2024"
                 bottom={<>Selamat datang di laman pelaksanaan!</>}
             />
             <section className='pelaksanaan_content'>

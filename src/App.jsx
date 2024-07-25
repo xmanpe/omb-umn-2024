@@ -9,8 +9,11 @@ import TentangOMB from "./pages/tentang-omb/TentangOMB";
 import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottonNav";
 import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
-
 import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
+
+import InformasiOMB from "./pages/informasi/Informasi";
+import Faq from "./pages/faq/Faq";
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
           <Route path="/atribut-peserta" element={<AtributPeserta />} />
+          <Route path="/faq" element={<Faq />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

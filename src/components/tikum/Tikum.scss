@@ -1,0 +1,253 @@
+.tikum_section {
+  display: flex;
+  padding: 100px 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  overflow: hidden;
+  position: relative;
+
+  .tikum_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    h1 {
+      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24),
+        0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      background: linear-gradient(180deg, #cabbf9 0%, #4504aa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      text-align: justify;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .slider {
+    position: sticky;
+    top: 12px;
+    display: flex;
+    gap: 0px;
+    border: 1.5px solid rgba(0, 0, 0, 0.056);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 2px;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    .slider-button {
+      border: none;
+      border-radius: 100px;
+      padding: 12px 16px;
+      font-size: 16px;
+      font-family: "GSN";
+      background: none;
+      color: rgba(0, 0, 0, 0.365);
+      cursor: pointer;
+    }
+    .active {
+      border: 2px solid #4504aa;
+      border-radius: 100px;
+      padding: 10px 14px;
+      font-size: 16px;
+      font-family: "GSN";
+      background-color: #4404aa21;
+      color: #4504aa;
+    }
+  }
+  .slider:hover {
+    box-shadow: 0px 7px 10.7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .tikum_content {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+    // justify-content: center;
+    gap: 36px;
+
+    .map-tikum {
+      width: 80%;
+      overflow: hidden;
+      border: 1.5px solid #F0F0F0;
+      border-radius: 20px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+      width: 50%;
+
+    }
+
+    .image-tikum {
+      width: 80%;
+      overflow: hidden;
+      border: 1.5px solid #F0F0F0;
+      border-radius: 20px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      img {
+        width: 50;
+        border-radius: 20px;
+        object-fit: contain; /* Ensure the image retains its aspect ratio */
+        
+      }
+      
+
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .tikum_section {
+    padding: 100px;
+    gap: 40px;
+
+    .tikum_title {
+      h1 {
+      }
+    }
+
+    .slider {    
+      .slider-button {
+          padding: 8px 16px;
+      }
+
+      .active {
+      }
+  }
+
+    .tikum_content {
+      .map-tikum {
+      }
+
+      .timage-tikum {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tikum_section {
+    padding: 80px;
+
+    .tikum_title {
+      h1 {
+      }
+    }
+
+      
+    .slider {    
+      .slider-button {
+      }
+
+      .active {
+      }
+  }
+
+    .tikum_content {
+      display: flex;
+      flex-direction: column; /* Change layout to a single column */
+      width: 100%;
+
+      .map-tikum {
+        width: 100%; /* Set width to 100% to take up the full width */
+      }
+
+      .image-tikum {
+        width: 100%; /* Set width to 100% to take up the full width */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .tikum_section {
+    padding: 40px;
+
+    .tikum_title {
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+      
+    .slider {    
+      .slider-button {
+      }
+
+      .active {
+      }
+  }
+
+    .tikum_content {
+      display: flex;
+      flex-direction: column; /* Change layout to a single column */
+      width: 100%;
+
+      .map-tikum {
+      }
+
+      .image-tikum {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tikum_section {
+    padding: 60px 16px;
+
+    .tikum_title {
+      h1 {
+        font-size: 32px;
+      }
+      P {
+        font-size: 20px;
+      }
+    }
+
+    .slider {
+      top: 8px;
+      gap: 8px;
+      width: -webkit-fill-available;
+
+      .slider-button {
+          padding: 8px 20px;
+          width: 100%;
+
+      }
+
+      .active {
+      }
+  }
+
+    .tikum_content {
+      .map-tikum {
+      }
+
+      .image-tikum {
+      
+      }
+    }
+  }
+}

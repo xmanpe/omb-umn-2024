@@ -1,11 +1,9 @@
 .faq_section {
   display: flex;
-  padding: 100px 160px;
   flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  overflow: hidden;
-  position: relative;
+  gap: 32px;
+  padding: 40px 160px;
+  overflow: visible;
 
   .faq_title {
     display: flex;
@@ -69,7 +67,7 @@
 
       input {
         display: flex;
-        padding: 24px 40px;
+        padding: 16px 40px;
         border-radius: 100px;
         border: 2px solid rgb(230, 230, 230);
         background: #ffffffe7;
@@ -220,6 +218,19 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    .no_results {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        gap: 16px;
+        font-size: 24px;
+        font-weight: 500;
+        color: #4504aa;
+      }
+    }
   }
 
   .faq_content {
@@ -278,7 +289,7 @@
 
 @media screen and (max-width: 1440px) {
   .faq_section {
-    padding: 100px;
+    padding: 40px 100px;
 
     .faq_title {
       h1 {
@@ -312,7 +323,7 @@
     .note-search {
       .search_wrapper {
         input {
-          padding: 24px 32px;
+          padding: 16px 32px;
           font-size: 20px;
         }
       }

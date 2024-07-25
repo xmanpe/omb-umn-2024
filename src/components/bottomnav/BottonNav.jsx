@@ -103,8 +103,16 @@ const BottomNav = () => {
                 window.location.href = '/daftar-peserta';
             }
 
+            // else if (tabPath === '/informasi') {
+            //     window.location.href = '/informasi';
+            // }
+
             else if (tabPath === '/atribut-peserta') {
                 window.location.href = '/atribut-peserta';
+            }
+
+            else if (tabPath === '/faq') {
+                window.location.href = '/faq';
             }
 
             setActiveTab(tabPath); // Set active tab
@@ -121,9 +129,10 @@ const BottomNav = () => {
         // { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
         { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang OMB' },
         { path: '/pelaksanaan', icon: PelaksanaanNotActive, activeIcon: PelaksanaanActive, text: 'Pelaksanaan' },
-        { path: '/atribut-peserta' , icon: AtributNotActive, activeIcon: AtributActive, text: 'Atribut Peserta' }
+        { path: '/atribut-peserta' , icon: AtributNotActive, activeIcon: AtributActive, text: 'Atribut Peserta' },
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
-        // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
+        // {path: `/mobilitas`, icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Mobilitas'},
+        { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
         // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },
         // { path: '/koor', icon: KoorNotActive, activeIcon: KoorActive, text: 'Linimasa' },
     ];

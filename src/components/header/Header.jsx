@@ -25,7 +25,7 @@ const Header = ({ top, bottom }) => {
                 <div className='title_divisi'>
                     <div className='left_thing'>
                         <div className='literally_title'>
-                            <p>{top}</p>
+                        <p dangerouslySetInnerHTML={{ __html: top }}></p>
                             <h1>{bottom}</h1>
                         </div>
                     </div>

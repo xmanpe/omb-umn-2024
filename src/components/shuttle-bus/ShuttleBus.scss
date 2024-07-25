@@ -1,0 +1,563 @@
+.shuttle_bus_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 100px 160px;
+
+  .shuttle_bus_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+
+    h1 {
+      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24),
+        0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      background: linear-gradient(180deg, #cabbf9 0%, #4504aa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      text-align: justify;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  .slider {
+    position: sticky;
+    top: 12px;
+    display: flex;
+    gap: 0px;
+    border: 1.5px solid rgba(0, 0, 0, 0.056);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 2px;
+    border-radius: 100px;
+    background: white;
+    box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+    .slider-button {
+      border: none;
+      border-radius: 100px;
+      padding: 12px 16px;
+      font-size: 16px;
+      font-family: "GSN";
+      background: none;
+      color: rgba(0, 0, 0, 0.365);
+      cursor: pointer;
+    }
+    .active {
+      border: 2px solid #4504aa;
+      border-radius: 100px;
+      padding: 10px 14px;
+      font-size: 16px;
+      font-family: "GSN";
+      background-color: #4404aa21;
+      color: #4504aa;
+    }
+  }
+  .slider:hover {
+    box-shadow: 0px 7px 10.7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .shuttle_bus_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 16px;
+    margin: auto;
+    border: 1.5px solid #F0F0F0;
+    border-radius: 20px;
+    box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+
+    img {
+      width: 240px;
+      height: auto;
+    }
+  }
+
+  .shuttle_bus_content {
+    // display: flex;
+    // flex-direction: column;
+    // gap: 40px;
+
+    .shuttle_bus_timeline {
+      display: flex;
+      align-items: center; /* Align items vertically center */
+      justify-content: space-between; /* Space out the shuttle_bus_type and shuttle_bus_item */
+      position: relative;
+      width: 100%; /* Ensure it takes full width */
+      margin: auto;
+
+      border: 1.5px solid #f0f0f0;
+      background: white;
+      padding: 24px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      transition: transform 0.2s ease-in-out;
+
+      margin-bottom: 40px;
+
+      .shuttle_bus_type {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+        width: 50%;
+
+        img {
+          width: 80px; /* Adjust image width */
+          height: auto; /* Maintain aspect ratio */
+        }
+
+        .shuttle_bus_type_title {
+          margin-top: 10px;
+          font-size: 1.2em;
+          font-weight: bold;
+          // color: #4504aa; /* Color for the title */
+          text-align: center;
+        }
+      }
+
+      .shuttle_bus_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin: 0 40px; /* Increased margin for better spacing */
+        width: 50%;
+
+        // .shuttle_bus_circle {
+        //   width: 20px;
+        //   height: 20px;
+        //   background-color: #4504aa;
+        //   border-radius: 50%;
+        //   margin-bottom: 10px;
+        // }
+
+        .shuttle_bus_image {
+          // width: 80px;
+          // height: 80px;
+          margin-bottom: 20px;
+
+          img {
+            // width: 100%;
+            // height: 100%;
+          }
+        }
+
+        .shuttle_bus_time {
+          font-size: 1.2em;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        .shuttle_bus_route {
+          margin-top: 5px;
+          font-size: 1em;
+          color: #555;
+          text-align: center;
+        }
+
+        .shuttle_bus_line {
+          position: absolute;
+          top: 30%; /* Align line with the center of the circle */
+          left: calc(100% + 10px);
+          height: 4px;
+          width: 40px;
+          background-color: #4504aa;
+          transform: translateY(
+            -50%
+          ); /* Center line vertically relative to circle */
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .shuttle_bus_section {
+    padding: 100px;
+    gap: 40px;
+
+    .shuttle_bus_title {
+      h1 {
+      }
+
+      p {
+      }
+    }
+    .shuttle_bus_subtitle {
+      p {
+      }
+    }
+    .shuttle_bus_image {
+      img {
+      }
+    }
+
+    .slider {
+      .slider-button {
+        padding: 8px 16px;
+      }
+
+      .active {
+      }
+    }
+
+    .shuttle_bus_content {
+      .shuttle_bus_timeline {
+        padding: 16px;
+        .shuttle_bus_type {
+          img {
+          }
+          .shuttle_bus_type_title {
+          }
+        }
+        .shuttle_bus_item {
+          .shuttle_bus_circle {
+          }
+          .shuttle_bus_time {
+          }
+          .shuttle_bus_route {
+          }
+          .shuttle_bus_line {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .shuttle_bus_section {
+    padding: 80px;
+
+    .shuttle_bus_title {
+      h1 {
+      }
+
+      p {
+      }
+    }
+    .shuttle_bus_subtitle {
+      p {
+      }
+    }
+    .shuttle_bus_image {
+      img {
+      }
+    }
+
+    .slider {
+      .slider-button {
+      }
+
+      .active {
+      }
+    }
+
+    .shuttle_bus_content {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+
+      .shuttle_bus_timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 45%;
+        margin: auto;
+        border: 1.5px solid #f0f0f0;
+        background: white;
+        padding: 16px;
+        box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        transition: transform 0.2s ease-in-out;
+
+        .shuttle_bus_type {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          padding-bottom: 20px;
+          width: 100%;
+          margin: auto;
+
+          img {
+            width: 60px; /* Adjust image width */
+            height: auto; /* Maintain aspect ratio */
+          }
+
+          .shuttle_bus_type_title {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+        .shuttle_bus_item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          margin: 20px 0; /* Margin for vertical spacing */
+          width: 100%;
+
+          .shuttle_bus_circle {
+            width: 80px;
+            height: 80px;
+            background-color: #4504aa;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%;
+            }
+          }
+
+          .shuttle_bus_time {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+          }
+
+          .shuttle_bus_route {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+          }
+
+          // .shuttle_bus_line {
+          //   position: absolute;
+          //   top: calc(100% + 10px); /* Position the line below the circle */
+          //   left: 50%; /* Center the line horizontally */
+          //   width: 4px;
+          //   height: 40px;
+          //   background-color: #4504aa;
+          //   transform: translateX(-50%); /* Center the line horizontally relative to circle */
+          // }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .shuttle_bus_section {
+    padding: 40px;
+
+    .shuttle_bus_title {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+      }
+    }
+    .shuttle_bus_subtitle {
+      p {
+      }
+    }
+    .shuttle_bus_image {
+      img {
+      }
+    }
+
+    .slider {
+      .slider-button {
+      }
+
+      .active {
+      }
+    }
+
+    .shuttle_bus_content {
+      display: flex;
+      flex-direction: column;
+
+      .shuttle_bus_timeline {
+        display: flex;
+        flex-direction: column; /* Change to column for vertical alignment */
+        align-items: center; /* Align items horizontally center */
+        justify-content: flex-start; /* Align items to the top */
+        position: relative;
+        width: 100%; /* Ensure it takes full width */
+        margin: auto;
+        border: 1.5px solid #f0f0f0;
+        background: white;
+        padding: 16px;
+        box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        transition: transform 0.2s ease-in-out;
+
+        .shuttle_bus_type {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 20px;
+          width: 100%;
+
+          img {
+            width: 80px; /* Adjust image width */
+            height: auto; /* Maintain aspect ratio */
+          }
+
+          .shuttle_bus_type_title {
+            margin-top: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
+        .shuttle_bus_item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          margin: 20px 0; /* Margin for vertical spacing */
+          width: 100%;
+
+          // .shuttle_bus_circle {
+          //   width: 20px;
+          //   height: 20px;
+          //   background-color: #4504aa;
+          //   border-radius: 50%;
+          //   margin-bottom: 10px;
+          // }
+
+          .shuttle_bus_time {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+          }
+
+          .shuttle_bus_route {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+          }
+
+          .shuttle_bus_line {
+            position: absolute;
+            top: calc(100% + 10px); /* Position the line below the circle */
+            left: 50%; /* Center the line horizontally */
+            width: 4px;
+            height: 40px;
+            background-color: #4504aa;
+            transform: translateX(
+              -50%
+            ); /* Center the line horizontally relative to circle */
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .shuttle_bus_section {
+    padding: 60px 16px;
+
+    .shuttle_bus_title {
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+
+    .slider {
+      top: 8px;
+      gap: 8px;
+      width: -webkit-fill-available;
+
+      .slider-button {
+        padding: 8px 20px;
+        width: 100%;
+      }
+
+      .active {
+      }
+    }
+
+    .shuttle_bus_subtitle {
+      p {
+      }
+    }
+    .shuttle_bus_image {
+      img {
+      }
+    }
+    .shuttle_bus_timeline {
+      .shuttle_bus_type {
+        img {
+        }
+
+        .shuttle_bus_type_title {
+        }
+      }
+
+      .shuttle_bus_item {
+        .shuttle_bus_circle {
+        }
+
+        .shuttle_bus_time {
+        }
+
+        .shuttle_bus_route {
+        }
+
+        .shuttle_bus_line {
+        }
+      }
+    }
+    .shuttle_bus_line {
+      position: absolute;
+      left: 50%; /* Center the line horizontally */
+      top: 0;
+      width: 4px;
+      height: 40px;
+      background-color: #4504aa;
+      transform: translateX(
+        -50%
+      ); /* Center the line horizontally relative to circle */
+    }
+  }
+}

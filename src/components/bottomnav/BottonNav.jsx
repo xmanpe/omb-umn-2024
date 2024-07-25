@@ -13,6 +13,8 @@ import KoorNotActive from '../../images/icons/Timeline.svg'
 import KoorActive from '../../images/icons/Timeline_Active.svg'
 import TentangNotActive from '../../images/icons/Tentang.svg'
 import TentangActive from '../../images/icons/Tentang_Active.svg'
+import DinamikaNotActive from '../../images/icons/Dinamika.svg'
+import DinamikaActive from '../../images/icons/Dinamika_Active.svg'
 import InformasiNotActive from '../../images/icons/Informasi.svg'
 import InformasiActive from '../../images/icons/Informasi_Active.svg'
 import FaqNotActive from '../../images/icons/Faq.svg'
@@ -107,6 +109,10 @@ const BottomNav = () => {
                 window.location.href = '/atribut-peserta';
             }
 
+            else if (tabPath === '/rembaka-anindita') {
+                window.location.href = '/rembaka-anindita';
+            }
+
             setActiveTab(tabPath); // Set active tab
         }
     };
@@ -121,7 +127,8 @@ const BottomNav = () => {
         // { path: '/daftar-peserta', icon: WawancaraNotActive, activeIcon: WawancaraActive, text: 'Daftar Peserta' },
         { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang OMB' },
         { path: '/pelaksanaan', icon: PelaksanaanNotActive, activeIcon: PelaksanaanActive, text: 'Pelaksanaan' },
-        { path: '/atribut-peserta' , icon: AtributNotActive, activeIcon: AtributActive, text: 'Atribut Peserta' }
+        { path: '/atribut-peserta' , icon: AtributNotActive, activeIcon: AtributActive, text: 'Atribut Peserta' },
+        { path: '/rembaka-anindita' , icon: DinamikaNotActive, activeIcon: DinamikaActive, text: 'Rembaka Anindita' }
         // { path: '/informasi', icon: InformasiNotActive, activeIcon: InformasiActive, text: 'Informasi' },
         // { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
         // { path: '/bingkai', icon: BingkaiNotActive, activeIcon: BingkaiActive, text: 'Bingkai' },

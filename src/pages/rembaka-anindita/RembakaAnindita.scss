@@ -1,0 +1,280 @@
+.rembaka_anindita {
+    display: flex;
+    flex-direction: column;
+
+    .wordingan {
+        margin: 100px auto;
+        .judul {
+            font-size: 48px;
+            margin: 0 0 48px;
+            
+            text-align: center;
+            background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .penjelasan {
+            width: 1200px;
+            font-size: 24px;
+
+            text-align: justify;
+            color: #4504AA;
+            margin: 0 auto;
+        }
+        .button_cara {
+            width: fit-content;
+            font-size: 20px;
+            font-weight: 600;
+            margin: 24px auto;
+            padding: 12px 24px;
+            
+            border-radius: 100px;
+            color: #FFFFFF;
+            background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+            box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+            backdrop-filter: blur(36px);
+        }
+        .button_cara:active {
+            background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+        }
+    }
+
+    .dinamika {
+        background-image: radial-gradient(#B5A0E0 0%, #F2EFFE 10%, #CABFF9 99%);
+
+        .konten {
+            display: flex;
+            justify-content: center;
+
+            margin: 100px 0;
+    
+            .tahapan {
+                width: 400px;
+                height: 400px;
+                margin: auto 100px auto 0;
+            }
+            .unity {
+                display: flex;   
+            }
+            .cara_bermain {
+                width: 400px;
+                margin: auto 0 auto 100px;
+                h1 {
+                    font-size: 24px;
+                    color: #4504AA;
+                }
+                li {
+                    font-size: 18px;
+                    color: #4504AA;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px){
+    .rembaka_anindita {
+    
+        .wordingan {
+            margin: 100px auto;
+            .judul {
+                font-size: 48px;
+                margin: 0 0 48px;
+            }
+            .penjelasan {
+                width: 900px;
+                font-size: 24px;
+            }
+            .button_cara {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 24px auto;
+                padding: 12px 24px;
+            }
+        }
+    
+        .dinamika {
+            .konten {
+                margin: 100px 0;
+                .tahapan {
+                    width: 350px;
+                    height: 350px;
+                    margin: auto 48px auto 0;
+                }
+                .unity {
+                }
+                .cara_bermain {
+                    width: 350px;
+                    margin: auto 0 auto 48px;
+                    h1 {
+                        font-size: 24px;
+                    }
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .rembaka_anindita {
+    
+        .wordingan {
+            margin: 48px auto;
+            .judul {
+                font-size: 48px;
+                margin: 0 0 48px;
+            }
+            .penjelasan {
+                width: 700px;
+                font-size: 24px;
+            }
+            .button_cara {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 24px auto;
+                padding: 12px 24px;
+            }
+        }
+    
+        .dinamika {
+            background-image: radial-gradient(#B5A0E0 0%, #F2EFFE 50%, #CABFF9 99%);
+            .konten {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin: 48px 0;
+                .tahapan {
+                    width: 400px;
+                    height: 400px;
+                    margin: 48px 0;
+                }
+                .unity {
+                }
+                .cara_bermain {
+                    width: 400px;
+                    margin: auto 0;
+                    h1 {
+                        font-size: 24px;
+                    }
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .rembaka_anindita {
+    
+        .wordingan {
+            margin: 48px auto;
+            .judul {
+                font-size: 36px;
+                margin: 0 0 24px;
+            }
+            .penjelasan {
+                width: 500px;
+                font-size: 18px;
+            }
+            .button_cara {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 24px auto;
+                padding: 12px 24px;
+            }
+        }
+    
+        .dinamika {
+            background-image: radial-gradient(#B5A0E0 0%, #F2EFFE 50%, #CABFF9 99%);
+            .konten {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin: 48px 0;
+                .tahapan {
+                    width: 400px;
+                    height: 400px;
+                    margin: 48px 0;
+                }
+                .unity {
+                }
+                .cara_bermain {
+                    width: 400px;
+                    margin: auto 0;
+                    h1 {
+                        font-size: 24px;
+                    }
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .rembaka_anindita {
+    
+        .wordingan {
+            margin: 48px auto;
+            .judul {
+                font-size: 28px;
+                margin: 0 0 24px;
+            }
+            .penjelasan {
+                width: 300px;
+                font-size: 18px;
+            }
+            .button_cara {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 24px auto;
+                padding: 12px 24px;
+            }
+        }
+    
+        .dinamika {
+            background-image: radial-gradient(#B5A0E0 0%, #F2EFFE 50%, #CABFF9 99%);
+            .konten {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                margin: 48px 0;
+                .tahapan {
+                    width: 300px;
+                    height: 300px;
+                    margin: 48px 0;
+                }
+                .unity {
+                }
+                .cara_bermain {
+                    width: 300px;
+                    margin: auto 0;
+                    h1 {
+                        font-size: 24px;
+                    }
+                    li {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+
+}

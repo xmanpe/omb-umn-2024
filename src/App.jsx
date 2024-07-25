@@ -11,6 +11,7 @@ import BottomNav from "./components/bottomnav/BottonNav";
 import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
 
 import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
+import RembakaAnindita from "./pages/rembaka-anindita/RembakaAnindita";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
           <Route path="/atribut-peserta" element={<AtributPeserta />} />
+          <Route path="/rembaka-anindita" element={<RembakaAnindita />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

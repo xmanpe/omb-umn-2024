@@ -23,7 +23,7 @@ const events = [
   {
     date: "Senin, 19 Agustus 2024",
     title: "Hari Pemupukan",
-    description: "<i>Offline</i>/Luring",
+    description: "<i>Online/i>/Daring",
     icon: (
       <img
         src={Flower}
@@ -71,7 +71,7 @@ const events = [
   {
     date: "Senin, 26 Agustus 2024 - Rabu, 28 Agustus 2024",
     title: "Pameran Meliora",
-    description: "Pameran dokumentasi di balik perjalanan OMB UMN 2024",
+    description: "Pameran dokumentasi di balik perjalanan OMB UMN 2024 (<i>Offline</i>/Luring)",
     icon: (
       <img
         src={Flower}

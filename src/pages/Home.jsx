@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import Loading from '../components/loading/Loading';
-import Hero from '../components/hero/Hero';
-import SmallModal from '../components/small modal/SmallModal';
-import ApaItuOMB from '../components/apa itu omb/ApaItuOMB';
-import YouTube from '../components/youtube/YouTube';
-import Divisi from '../components/divisi/Divisi';
-import Pelaksanaan from './pelaksanaan/Pelaksanaan';
-import Ananta from '../components/ananta/Ananta';
-import SwaraBestari from '../components/swara-bestari/SwaraBestari';
-import Footer from '../components/footer/Footer';
-import PetugasUpacara from '../components/petugas-upacara/PetugasUpacara';
-import InformasiPentingdanWajib from '../components/informasi-penting-wajib/InfoPW';
-import InfoPWRevisi from '../components/informasi-penting-wajib/InfoPWRevisi';
+import React, { useState, useEffect } from "react";
+import Loading from "../components/loading/Loading";
+import Hero from "../components/hero/Hero";
+import SmallModal from "../components/small modal/SmallModal";
+import ApaItuOMB from "../components/apa itu omb/ApaItuOMB";
+import YouTube from "../components/youtube/YouTube";
+import Divisi from "../components/divisi/Divisi";
+import Pelaksanaan from "./pelaksanaan/Pelaksanaan";
+import Ananta from "../components/ananta/Ananta";
+import SwaraBestari from "../components/swara-bestari/SwaraBestari";
+import Footer from "../components/footer/Footer";
+import PetugasUpacara from "../components/petugas-upacara/PetugasUpacara";
+import InformasiPentingdanWajib from "../components/informasi-penting-wajib/InfoPW";
+import InfoPWRevisi from "../components/informasi-penting-wajib/InfoPWRevisi";
+import Bingkai from "../components/bingkai-resmi/Bingkai";
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('scrollPosition', window.pageYOffset);
+    localStorage.setItem("scrollPosition", window.pageYOffset);
 
-    const scrollPosition = localStorage.getItem('scrollPosition');
+    const scrollPosition = localStorage.getItem("scrollPosition");
 
     if (scrollPosition) {
       window.scrollTo(0, parseInt(scrollPosition));
@@ -32,27 +33,28 @@ const Home = () => {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
   return (
     <>
-        {/* <BottomNav /> */}
-        {showExperience && <SmallModal />}
-        {/* {showExperience && <Experience />} */}
-        <Hero />
-        <ApaItuOMB />
-        <YouTube />
-        <Divisi />
-        {/* <InformasiPentingdanWajib/> */}
-        <InfoPWRevisi/>
-        <SwaraBestari />
-        {/* <Ananta /> */}
-        <Footer />
+      {/* <BottomNav /> */}
+      {showExperience && <SmallModal />}
+      {/* {showExperience && <Experience />} */}
+      <Hero />
+      <ApaItuOMB />
+      <Bingkai />
+      <YouTube />
+      <Divisi />
+      {/* <InformasiPentingdanWajib/> */}
+      <InfoPWRevisi />
+      <SwaraBestari />
+      {/* <Ananta /> */}
+      <Footer />
     </>
   );
 };

@@ -9,17 +9,17 @@
     width: fit-content;
     margin: 0 auto;
     gap: 8px;
-    opacity: 0.6;
+    // opacity: 0.6;
 
     .extended-navbar {   
         display: flex;
         flex-direction: column;
         background: #ffffff;
-        gap: 4px;
         padding: 4px;
         border-radius: 20px;
         border: 1px solid rgb(228, 228, 228);
         box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.17);
+        z-index: 1;
 
         .title-nav {
             margin-left: 18px;
@@ -34,7 +34,6 @@
         .each-extended {
             display: flex;
             border-radius: 100px;
-            border: 1px solid rgb(237, 237, 237);
             padding: 8px 16px;
             display: flex;
             align-items: center;
@@ -44,7 +43,6 @@
             img {
                 width: 22px;
                 height: 22px;
-                transform: scaleX(-1);
             }
 
             p {
@@ -58,7 +56,7 @@
 
         .each-extended:hover {
             cursor: pointer;
-            background: #f5eeffc4;
+            background: #f5eeff96;
         }
     }
 
@@ -71,6 +69,7 @@
         margin: auto;
         align-items: center;
         border: 2px solid rgb(228, 228, 228);
+        position: relative;
         box-shadow: 0px 0px 100px 0px #000;
         transition: width 0.3s ease, background-color 0.3s ease; /* Added transition for width and background-color */
       
@@ -170,7 +169,6 @@
 
 .the-whole-navbar:hover {
     bottom: 18px;
-    opacity: 1;
 }
 
 @media screen and (max-width: 560px) {

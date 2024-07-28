@@ -33,6 +33,15 @@
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+
+      b {
+        font-weight: 600;
+        color: black;
+      }
+    }
+
+    p:hover {
+      color: rgba(0, 0, 0, 0.8);
     }
   }
 

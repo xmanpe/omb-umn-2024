@@ -7,9 +7,11 @@ import PesertaMengulang from "./pages/PesertaMengulang";
 import Pelaksanaan from "./pages/pelaksanaan/Pelaksanaan";
 import TentangOMB from "./pages/tentang-omb/TentangOMB";
 import Error from "./pages/Error";
-import BottomNav from "./components/bottomnav/BottonNav";
+import BottomNav from "./components/bottomnav/BottomNav";
 import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
 import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
+import RembakaAnindita from "./pages/rembaka-anindita/RembakaAnindita";
+import Mobilitas from "./pages/mobilitas/Mobilitas";
 
 import InformasiOMB from "./pages/informasi/Informasi";
 import Faq from "./pages/faq/Faq";
@@ -26,6 +28,8 @@ function App() {
           <Route path="/pelaksanaan" element={<PelaksanaanRevisi />} />
           <Route path="/tentang-omb" element={<TentangOMB />} />
           <Route path="/atribut-peserta" element={<AtributPeserta />} />
+          <Route path="/rembaka-anindita" element={<RembakaAnindita />} />
+          <Route path="/mobilitas-peserta" element={<Mobilitas />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="*" element={<Error />} />
         </Routes>

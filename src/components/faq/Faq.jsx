@@ -31,7 +31,6 @@ const Faq = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  // Filter FAQ items based on the search query
   const filteredFaqs = DaftarFaq["daftar-faq-omb"].filter((item) =>
     item.pertanyaan.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -45,7 +44,6 @@ const Faq = () => {
     setSliderState(index);
   };
 
-  // Optional: Update the sliderState if filtered FAQs do not match the current slider
   useEffect(() => {
     if (
       filteredFaqs.length > 0 &&

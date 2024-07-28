@@ -8,11 +8,14 @@ import Footer from '../../components/footer/Footer';
 import Faq from '../../components/faq/Faq';
 
 const PelaksanaanRevisi = () => {
+    const top = `<i>Frequently Asked Questions</i>`;
+    const bottom = `Selamat datang di laman FAQ!`;
+
     return (
         <>
             <Header 
-                top="<i>Frequently Asked Questions</i>"
-                bottom={<>Selamat datang di laman FAQ!</>}
+                top={top}
+                bottom={bottom}
             />
             <Faq />
             <Footer />

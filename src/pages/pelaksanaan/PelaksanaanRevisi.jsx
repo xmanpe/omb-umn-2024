@@ -16,6 +16,9 @@ import Supergrafis3 from '../../images/supergrafis/SupergrafisPelaksanaan3.svg'
 import ArrowDropdown from '../../images/Arrow/ArrowDropdown.svg'
 
 const PelaksanaanRevisi = () => {
+    const top = `Pelaksanaan`;
+    const bottom = `Selamat datang di laman pelaksanaan!`;
+
     const [sliderState,setSliderState] = useState(0);
     const [showMobileDropdown, setShowMobileDropdown] =useState(false);
     const handleDropdownClick = () => {
@@ -26,11 +29,12 @@ const PelaksanaanRevisi = () => {
         setSliderState(index);
     }
     const slides = ["Landasan","Maksud","Tujuan"];
+
     return (
         <>
             <Header 
-                top="Pelaksanaan OMB UMN 2024"
-                bottom={<>Selamat datang di laman pelaksanaan!</>}
+                top={top}
+                bottom={bottom}
             />
             <section className='pelaksanaan_content'>
                 <div className='slider'>

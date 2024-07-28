@@ -28,12 +28,13 @@ const Footer = () => {
     const isAtributPesertaPage = location.pathname === '/atribut-peserta';
     const isTentangOMBPage = location.pathname === '/tentang-omb';
     const isFaqPage = location.pathname === '/faq';
-    const isMobilitasPage = location.pathname === '/mobilitas';
+    const isMobilitasPage = location.pathname === '/mobilitas-peserta';
     const isInformasiPage = location.pathname === '/informasi';
+    const isLinimasaPage = location.pathname === '/linimasa';
 
     return (
         <footer className='footer_section'>
-            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage || isFaqPage) && <img className='wave' src={Wave} alt="Wave" />}
+            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage || isFaqPage || isMobilitasPage || isLinimasaPage ) && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>

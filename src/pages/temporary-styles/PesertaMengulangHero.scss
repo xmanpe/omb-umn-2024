@@ -107,6 +107,15 @@
                         font-weight: 600;
                         line-height: normal;
                     }
+
+                    .description-text {
+                        margin-top: 20px;
+                        font-size: 20px;
+
+                        b {
+                            font-weight: 600;
+                        }
+                    }
                 }
             }
 
@@ -589,6 +598,15 @@
                             // font-style: normal;
                             // font-weight: 600;
                             // line-height: normal;
+                        }
+
+                        .description-text {
+                            margin-top: 12px;
+                            font-size: 16px;
+    
+                            b {
+                                font-weight: 600;
+                            }
                         }
                     }
                 }

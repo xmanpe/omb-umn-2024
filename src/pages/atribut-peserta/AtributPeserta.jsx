@@ -17,6 +17,9 @@ import lebah2 from '../../images/supergrafis/SUPERGRAFIS METALLIC VIOLET/Fill - 
 import tangkai from '../../images/supergrafis/Tangkai-line.svg';
 
 const AtributPeserta = () => {
+    const top = `Atribut Peserta`;
+    const bottom = `Yuk, simak informasi atribut peserta ini dengan baik!`;
+
     const [modalInfo, setModalInfo] = useState({ show: false, title: "", subtitle: "", content: "" });
     const openModal = (title, subtitle, content) => {
         setModalInfo({ show: true, title, subtitle, content });
@@ -37,8 +40,8 @@ const AtributPeserta = () => {
     return (
         <>
             <Header 
-                top="Atribut Peserta"
-                bottom={<>Yuk, simak informasi atribut peserta ini dengan baik!</>}
+                top={top}
+                bottom={bottom}
             />
             <div className='content-wrapper'>
                 <div className='slider'>

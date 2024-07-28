@@ -6,7 +6,6 @@ import Header from '../../components/header/Header';
 
 // import pages
 import NilaiNilai from '../../components/nilai-nilai/NilaiNilai';
-import Mars from '../../components/mars/Mars'
 import VisiMisi from '../../components/visi-misi/VisiMisi';
 import Footer from '../../components/footer/Footer';
 import FilosofiLogo from '../../components/filosofi-logo/FilosofiLogo';
@@ -18,11 +17,14 @@ import InfoPWRevisi from '../../components/informasi-penting-wajib/InfoPWRevisi'
 import SwaraBestari from '../../components/swara-bestari/SwaraBestari';
 
 const TentangOMB = () => {
+    const top = `Tentang OMB UMN`;
+    const bottom = `Yuk, kenalan dengan OMB UMN 2024!`;
+
     return (
         <>
             <Header 
-                top="Tentang OMB UMN"
-                bottom={<>Yuk, kenalan dengan OMB UMN 2024!</>}
+                top={top}
+                bottom={bottom}
             />
             {/* <ApaItuOMB /> */}
             <FilosofiLogo />

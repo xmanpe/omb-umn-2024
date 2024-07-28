@@ -47,7 +47,7 @@ const Home = () => {
       {/* {showExperience && <Experience />} */}
       <Hero />
       <ApaItuOMB />
-      <Bingkai />
+      {/* <Bingkai /> */}
       <YouTube />
       <Divisi />
       {/* <InformasiPentingdanWajib/> */}

@@ -8,14 +8,17 @@ import Tikum from '../../components/tikum/Tikum';
 import ShuttleBus from '../../components/shuttle-bus/ShuttleBus';
 
 const Mobilitas = () => {
+    const top = `Mobilitas Peserta`;
+    const bottom = `Selamat datang di laman mobilitas peserta!`;
+
     return (
         <>
             <Header 
-                top="Mobilitas Peserta"
-                bottom={<>Selamat datang di laman mobilitas peserta!</>}
+                top={top}
+                bottom={bottom}
             />
               <Tikum />
-              <ShuttleBus />
+              {/* <ShuttleBus /> */}
             <Footer />
         </>
     );

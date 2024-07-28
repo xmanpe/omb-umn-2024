@@ -22,6 +22,8 @@ import AtributNotActive from '../../images/icons/Atribut.svg';
 import AtributActive from '../../images/icons/Atribut_Active.svg';
 import MarsNotActive from '../../images/icons/Mars.svg';
 import MarsActive from '../../images/icons/Mars_Active.svg';
+import TimelineNotActive from '../../images/icons/Timeline.svg';
+import TimelineActive from '../../images/icons/Timeline_Active.svg';
 
 const tabsConfig = [
     { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
@@ -36,7 +38,8 @@ const tabsConfig = [
             { path: '/pelaksanaan', text: 'Pelaksanaan', icon: PelaksanaanNotActive },
             { path: '/atribut-peserta', text: 'Atribut Peserta', icon: AtributNotActive },
             { path: '/mars', text: 'Mars', icon: MarsNotActive },
-            { path: '/mobilitas-peserta', text: 'Mobilitas Peserta', icon: MobilitasNotActive }
+            { path: '/mobilitas-peserta', text: 'Mobilitas Peserta', icon: MobilitasNotActive },
+            { path: '/linimasa', text: 'Linimasa', icon: TimelineNotActive },
         ]
     },
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.scss';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
 
 // import components
 import AnnCard from '../cards/ann card/AnnCard';
@@ -35,7 +35,7 @@ const Hero = () => {
             <div className='announcement_swiper'>
                 <Swiper
                     spaceBetween={16}
-                    modules={[Navigation, Pagination, Autoplay, A11y]}
+                    modules={[Navigation, Pagination, Autoplay, A11y, Mousewheel]}
                     // slidesPerView={1.3}
                     breakpoints={{
                         432: {
@@ -59,6 +59,7 @@ const Hero = () => {
                     }}
                     pagination={{ clickable: true }}
                     scrollbar={{ draggable: true }}
+                    mousewheel={true}
                     autoplay={{
                         delay: 6000,
                         disableOnInteraction: false,

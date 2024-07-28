@@ -11,10 +11,10 @@ import Wave from '../../images/waves/Wave One.png';
 import Home from '../../images/icons/Home_Active.svg';
 import WaveWater from '../../images/Transisi Air.png';
 
-const Header = ({ top, bottom }) => {
+const Header = ({ top, bottom, veryBottom }) => {
     return (
         <header className="hero-peserta_section">
-            <img className='bunga-lotus' src={BungaLotus} alt="" />
+            <img className='bunga-lotus' src={BungaLotus} alt="Bunga Lotus" />
             <div className='hero-peserta_content'>
                 {/* <Link to={{ pathname: '/' }} style={{textDecoration: "none"}}>
                     <div className='back_button'>
@@ -25,8 +25,9 @@ const Header = ({ top, bottom }) => {
                 <div className='title_divisi'>
                     <div className='left_thing'>
                         <div className='literally_title'>
-                        <p dangerouslySetInnerHTML={{ __html: top }}></p>
-                            <h1>{bottom}</h1>
+                            <p dangerouslySetInnerHTML={{ __html: top }}></p>
+                            <h1 dangerouslySetInnerHTML={{ __html: bottom }}></h1>
+                            <p className='description-text' dangerouslySetInnerHTML={{ __html: veryBottom }}></p>
                         </div>
                     </div>
                 </div>
@@ -36,5 +37,5 @@ const Header = ({ top, bottom }) => {
         </header>
     );
 }
- 
+
 export default Header;

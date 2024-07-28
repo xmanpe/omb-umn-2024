@@ -5,9 +5,14 @@ import ArrowDropdown from "../../images/Arrow/ArrowDropdown.svg";
 import Up from "../../images/icons/Up 2.svg";
 import Down from "../../images/icons/Down 2.svg";
 
-const FaqItem = ({ question, answer, number, isOpen, onToggle }) => {
+const FaqItem = ({ question, answer, number, isOpen, onToggle, isDimmed }) => {
   return (
-    <div className={`faq_content ${isOpen ? "open" : ""}`} onClick={onToggle}>
+    <div
+      className={`faq_content ${isOpen ? "open" : ""} ${
+        isDimmed ? "dimmed" : ""
+      }`}
+      onClick={onToggle}
+    >
       <div className="faq_question">
         <p className="number_faq">{number}</p>
         <p className="text_faq">{question}</p>
@@ -29,16 +34,17 @@ const FaqItem = ({ question, answer, number, isOpen, onToggle }) => {
 const Faq = () => {
   const [sliderState, setSliderState] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+  const [openFaqIndex, setOpenFaqIndex] = useState({});
+  const [showMobileDropdown, setShowMobileDropdown] = useState(false);
 
   const filteredFaqs = DaftarFaq["daftar-faq-omb"].filter((item) =>
     item.pertanyaan.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  const [showMobileDropdown, setShowMobileDropdown] = useState(false);
   const handleDropdownClick = () => {
     setShowMobileDropdown(!showMobileDropdown);
   };
+
   const handleUserClick = (index) => {
     setShowMobileDropdown(!showMobileDropdown);
     setSliderState(index);
@@ -62,8 +68,13 @@ const Faq = () => {
   ];
 
   const handleFaqToggle = (index) => {
-    setOpenFaqIndex(openFaqIndex === index ? null : index);
+    setOpenFaqIndex((prevOpenFaqIndex) => ({
+      ...prevOpenFaqIndex,
+      [sliderState]: prevOpenFaqIndex[sliderState] === index ? null : index,
+    }));
   };
+
+  const isAnyOpen = openFaqIndex[sliderState] !== undefined && openFaqIndex[sliderState] !== null;
 
   return (
     <section className="faq_section">
@@ -124,8 +135,9 @@ const Faq = () => {
               number={item.nomor}
               question={item.pertanyaan}
               answer={item.jawaban}
-              isOpen={openFaqIndex === index}
+              isOpen={openFaqIndex[sliderState] === index}
               onToggle={() => handleFaqToggle(index)}
+              isDimmed={isAnyOpen && openFaqIndex[sliderState] !== index}
             />
           ))}
         {filteredFaqs.length === 0 && (

@@ -12,6 +12,7 @@ import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
 import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
 import RembakaAnindita from "./pages/rembaka-anindita/RembakaAnindita";
 import Mobilitas from "./pages/mobilitas/Mobilitas";
+import Linimasa from "./pages/Linimasa";
 
 import InformasiOMB from "./pages/informasi/Informasi";
 import Faq from "./pages/faq/Faq";
@@ -30,6 +31,7 @@ function App() {
           <Route path="/atribut-peserta" element={<AtributPeserta />} />
           <Route path="/rembaka-anindita" element={<RembakaAnindita />} />
           <Route path="/mobilitas-peserta" element={<Mobilitas />} />
+          <Route path="/linimasa" element={<Linimasa />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="*" element={<Error />} />
         </Routes>

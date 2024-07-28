@@ -6,6 +6,16 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import "./Timeline.scss";
 import Flower from "../../images/supergrafis/icon_timeline.svg";
+import TestIcon from '../../images/icons/TestImage.png';
+import useSingleColumnTimeline from './UseSingleColumnTimeline';
+
+import First from '../../images/First.png'
+import Second from '../../images/Second.png'
+import Third from '../../images/Third.png'
+import Fourth from '../../images/Fourth.png'
+import Fifth from '../../images/Fifth.png'
+import Sixth from '../../images/Sixth.png'
+import Seventh from '../../images/Seventh.png'
 
 const events = [
   {
@@ -19,11 +29,12 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: Sixth,
   },
   {
     date: "Senin, 19 Agustus 2024",
     title: "Hari Pemupukan",
-    description: "<i>Online/i>/Daring",
+    description: "<i>Online</i>/Daring",
     icon: (
       <img
         src={Flower}
@@ -31,6 +42,7 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: First,
   },
   {
     date: "Selasa, 20 Agustus 2024",
@@ -43,6 +55,7 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: Second,
   },
   {
     date: "Rabu, 21 Agustus 2024",
@@ -55,6 +68,7 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: Third,
   },
   {
     date: "Jumat, 23 Agustus 2024",
@@ -67,6 +81,7 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: Fourth,
   },
   {
     date: "Senin, 26 Agustus 2024 - Rabu, 28 Agustus 2024",
@@ -79,6 +94,7 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: Seventh,
   },
   {
     date: "Jumat, 30 Agustus 2024",
@@ -91,19 +107,19 @@ const events = [
         style={{ width: "100%", height: "100%", opacity: "0.8" }}
       />
     ),
+    theImage: Fifth,
   },
 ];
 
 const Timeline = () => {
+  useSingleColumnTimeline();
+
   return (
     <section className="timeline_section">
-      <div className="timeline_title">
+      {/* <div className="timeline_title">
         <h1>LINIMASA</h1>
-      </div>
-      <VerticalTimeline
-        lineColor="rgba(69, 4, 179, 0.3)"
-        style={{ backgroundColor: "white" }}
-      >
+      </div> */}
+      <VerticalTimeline>
         {events.map((event, index) => (
           <VerticalTimelineElement
             key={index}
@@ -114,24 +130,18 @@ const Timeline = () => {
             icon={event.icon}
             contentArrowStyle={{
               borderRight: "12px solid  rgba(69, 4, 179, 0.8)",
-              // background: "white",
               borderWidth: "12px",
-              // border: "1.5px solid #F0F0F0",
-              // boxShadow: "0px 7px 12px 0px rgba(0, 0, 0, 0.05)",
-            }}
-            contentStyle={{
-              border: "1.5px solid rgba(69, 4, 179, 1)",
-              background: "white",
-              boxShadow: "0px 7px 12px 0px rgba(69, 4, 179, 0.1)",
-              borderRadius: "20px",
             }}
           >
-            <div className="timeline-date">{event.date}</div>
-            <h3 className="vertical-timeline-element-title">{event.title}</h3>
-            <div
-              className="vertical-timeline-element-subtitle"
-              dangerouslySetInnerHTML={{ __html: event.description }}
-            />
+            <img className="image-side" src={event.theImage} alt="" />
+            <div className="content-side">
+              <div className="timeline-date">{event.date}</div>
+              <h3 className="vertical-timeline-element-title">{event.title}</h3>
+              <div
+                className="vertical-timeline-element-subtitle"
+                dangerouslySetInnerHTML={{ __html: event.description }}
+              />
+            </div>
           </VerticalTimelineElement>
         ))}
       </VerticalTimeline>

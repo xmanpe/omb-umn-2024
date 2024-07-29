@@ -34,12 +34,12 @@ const tabsConfig = [
         activeIcon: MenuActive, 
         text: 'Informasi OMB UMN 2024',
         subMenu: [
-            { path: '/tentang-omb', text: 'Tentang OMB UMN 2024', icon: TentangNotActive },
-            { path: '/pelaksanaan', text: 'Pelaksanaan', icon: PelaksanaanNotActive },
             { path: '/atribut-peserta', text: 'Atribut Peserta', icon: AtributNotActive },
+            { path: '/linimasa', text: 'Linimasa', icon: TimelineNotActive },
             { path: '/mars', text: 'Mars', icon: MarsNotActive },
             { path: '/mobilitas-peserta', text: 'Mobilitas Peserta', icon: MobilitasNotActive },
-            { path: '/linimasa', text: 'Linimasa', icon: TimelineNotActive },
+            { path: '/pelaksanaan', text: 'Pelaksanaan', icon: PelaksanaanNotActive },
+            { path: '/tentang-omb', text: 'Tentang OMB UMN 2024', icon: TentangNotActive },
         ]
     },
 ];

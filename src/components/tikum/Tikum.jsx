@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import Image1 from "../../images/tikum/1.jpeg";
-import Image2 from "../../images/tikum/2.jpeg";
+import FotoTikum from '../../images/foto tikum.jpg'
 
 
 const Tikum = () => {
@@ -27,7 +27,7 @@ const Tikum = () => {
         <div className="map-tikum">
           <iframe
             width="100%"
-            height="400"
+            height="100%"
             frameBorder="0"
             scrolling="no"
             marginHeight="0"
@@ -38,8 +38,7 @@ const Tikum = () => {
           </iframe>
         </div>
         <div className="image-tikum">
-          <img src={Image1} alt="Titik Kumpul" />
-      
+          <img src={FotoTikum} alt="Titik Kumpul" />
         </div>
       </div>
     </section>

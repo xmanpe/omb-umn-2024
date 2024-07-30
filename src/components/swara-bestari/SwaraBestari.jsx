@@ -37,7 +37,7 @@ const SwaraBestari = () => {
                     <div className='right'>
                         <div className='the_title'>
                             {/* <h1>PROLOG : Bangun Support System dalam Diri melalui Lingkungan Positif</h1> */}
-                            <iframe className='mini-player' src="https://open.spotify.com/embed/episode/62aX9892KIACNEgiVlD1xK?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe className='mini-player' src="https://open.spotify.com/embed/episode/1lBN1xjhzegBoyhLL7VorR?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                             <p>Pada PENA 02 Swara Bestari, cara mengelola ambisi untuk mencapai tujuan dengan kebijaksanaan dan kepedulian akan dibahas. Yuk, pelajari cara menjaga keseimbangan dalam perkuliahan dengan mendengarkan episode ini di Spotify!</p>
                         </div>
                         <div className='cta_button'>

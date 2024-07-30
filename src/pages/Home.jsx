@@ -10,7 +10,6 @@ import Ananta from "../components/ananta/Ananta";
 import SwaraBestari from "../components/swara-bestari/SwaraBestari";
 import Footer from "../components/footer/Footer";
 import PetugasUpacara from "../components/petugas-upacara/PetugasUpacara";
-import InformasiPentingdanWajib from "../components/informasi-penting-wajib/InfoPW";
 import InfoPWRevisi from "../components/informasi-penting-wajib/InfoPWRevisi";
 import Bingkai from "../components/bingkai-resmi/Bingkai";
 
@@ -42,17 +41,14 @@ const Home = () => {
 
   return (
     <>
-      {/* <BottomNav /> */}
       {showExperience && <SmallModal />}
       {/* {showExperience && <Experience />} */}
       <Hero />
       <ApaItuOMB />
       {/* <Bingkai /> */}
       <YouTube />
-      <Divisi />
-      {/* <InformasiPentingdanWajib/> */}
-      <InfoPWRevisi />
       <SwaraBestari />
+      <InfoPWRevisi />
       {/* <Ananta /> */}
       <Footer />
     </>

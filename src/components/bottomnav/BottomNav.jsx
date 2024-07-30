@@ -24,6 +24,8 @@ import MarsNotActive from '../../images/icons/Mars.svg';
 import MarsActive from '../../images/icons/Mars_Active.svg';
 import TimelineNotActive from '../../images/icons/Timeline.svg';
 import TimelineActive from '../../images/icons/Timeline_Active.svg';
+import DivisiNotActive from '../../images/icons/Divisi.svg';
+import DivisiActive from '../../images/icons/Divisi_Active.svg';
 
 const tabsConfig = [
     { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
@@ -35,6 +37,7 @@ const tabsConfig = [
         text: 'Informasi OMB UMN 2024',
         subMenu: [
             { path: '/atribut-peserta', text: 'Atribut Peserta', icon: AtributNotActive },
+            { path: '/divisi', text: 'Divisi', icon: DivisiNotActive },
             { path: '/linimasa', text: 'Linimasa', icon: TimelineNotActive },
             { path: '/mars', text: 'Mars', icon: MarsNotActive },
             { path: '/mobilitas-peserta', text: 'Mobilitas Peserta', icon: MobilitasNotActive },
@@ -49,6 +52,10 @@ const BottomNav = () => {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState({ path: location.pathname, text: '' });
     const [subMenu, setSubMenu] = useState(null);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
 
     useEffect(() => {
         const currentPath = location.pathname;

@@ -22,7 +22,7 @@ const MarsRevisi = () => {
 
     return (
         <section className="mars_section">
-            <img className='second-wave' src={SecondWave} alt="The Wave" />
+            {/* <img className='second-wave' src={SecondWave} alt="The Wave" /> */}
             <img src={SupergrafisKembang} alt="" className='supergrafis-kembang' />
             <img src={Superputihkanan} alt="" className='supergrafis-air-kanan' />
             <img src={Superputihkiri} alt="" className='supergrafis-air-kiri' />

@@ -32,7 +32,7 @@ const TentangOMB = () => {
             <NilaiNilai />
             {/* <VisiMisi /> */}
             <VisiMisiRevisi/>
-            <MarsRevisi />
+            {/* <MarsRevisi /> */}
             {/* <InfoPWRevisi/>
             <SwaraBestari /> */}
             <Footer />

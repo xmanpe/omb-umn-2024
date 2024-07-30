@@ -36,7 +36,7 @@ const Dinamika = () => {
   
   return (
     <div className="dinamika">
-      <img className='wave1' src={Wave1} alt="Wave1" />
+      <img className='wave' src={Wave1} alt="Wave1" />
       <div className="konten">
         {screenSize.width > 1200 &&
          <img className='tahapan' src={TahapanObject} alt="TahapanObject" />
@@ -59,7 +59,7 @@ const Dinamika = () => {
           </ol>
         </div>
       </div>
-      <img className='wave2' src={Wave2} alt="Wave2" />
+      <img className='wave' src={Wave2} alt="Wave2" />
     </div>
   );
 }

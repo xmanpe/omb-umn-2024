@@ -43,6 +43,7 @@
 
     .dinamika {
         background-image: radial-gradient(#B5A0E0 0%, #F2EFFE 10%, #CABFF9 99%);
+        overflow-x: hidden;
 
         .konten {
             display: flex;

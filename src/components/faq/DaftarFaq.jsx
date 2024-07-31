@@ -149,14 +149,14 @@ const DaftarFaq = {
     },
     // Orang Tua
     {
-      pertanyaan: "Apakah orang tua boleh menunggu di salah satu gedung di UMN?",
-      jawaban: "Orang tua peserta hanya diperbolehkan untuk mengantar sampai di <b>pintu gerbang UMN.</b>",
+      pertanyaan: "Apakah orang tua boleh menunggu di salah satu gedung di Universitas Multimedia Nusantara?",
+      jawaban: "Orang tua peserta hanya diperbolehkan untuk mengantar Peserta OMB UMN 2024 sampai di depan <b>pintu gerbang  Universitas Multimedia Nusantara.</b>",
       tipe: [3],
       nomor: 1,
     },
     {
       pertanyaan: "Jika Perlengkapan atau atribut saya tertinggal, apakah boleh diantarkan atau dititipkan oleh orang tua/wali?​",
-      jawaban: "Barang-barang seperti pakaian dan keperluan penugasan peserta OMB UMN 2024, <b>tidak boleh dititipkan dengan alasan apapun.</b>  Barang yang dititipkan hanya boleh barang-barang <b>yang bersifat urgensi tinggi</b>. Seperti <b>obat-obatan pribadi.</b>",
+      jawaban: "Barang-barang seperti pakaian dan keperluan penugasan Peserta OMB UMN 2024, <b>tidak boleh dititipkan dengan alasan apapun.</b>  Barang yang dititipkan hanya boleh barang-barang <b>yang bersifat urgensi tinggi</b>, seperti <b>obat-obatan pribadi.</b>",
       tipe: [3],
       nomor: 2,
     },
@@ -174,8 +174,8 @@ const DaftarFaq = {
     },
     // Lain-lain
     {
-      pertanyaan: "Apakah ada peraturan mengenai penggunaan masker selama rangkaian kegiatan OMB UMN 2024?",
-      jawaban: "OMB UMN 2024 <b>menyediakan obat-obatan</b> untuk seluruh Peserta OMB UMN 2024. Namun, Peserta OMB UMN 2024 yang <b>memerlukan obat khusus wajib membawa obat-obatan pribadi.</b>",
+      pertanyaan: "Apakah OMB UMN menyediakan obat-obatan?",
+      jawaban: "OMB UMN 2024 menyediakan <b>obat-obatan general</b> untuk seluruh Peserta OMB UMN 2024. Namun, Peserta OMB UMN 2024 yang <b>memerlukan obat khusus wajib membawa obat-obatan pribadi.</b>",
       tipe: [4],
       nomor: 1,
     },
@@ -187,7 +187,7 @@ const DaftarFaq = {
     },
     {
       pertanyaan: "Apa yang harus saya lakukan jika saya memiliki pertanyaan atau saran untuk OMB UMN 2024?",
-      jawaban: "Peserta OMB UMN 2024 dapat memberikan pertanyaan secara langsung kepada <b>Sakha (PIC)</b> masing-masing. Peserta OMB UMN 2024 juga bisa menghubungi <b>LINE OA (@yqq6359s)</b> atau <b>WhatsApp (085179959923)</b> untuk menyampaikan pertanyaan dan saran yang dimiliki.",
+      jawaban: "Peserta OMB UMN 2024 dapat memberikan pertanyaan secara langsung kepada <b>Sakha atau Person In Charge</b> masing-masing. Peserta OMB UMN 2024 juga bisa menghubungi <b>akun resmi OMB UMN</b> untuk menyampaikan pertanyaan dan saran yang dimiliki. ",
       tipe: [4],
       nomor: 3,
     },

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { motion } from "framer-motion"
+import { Link, useLocation } from 'react-router-dom';
 import './BottomNav.scss';
 
 // Import icons
@@ -26,12 +25,14 @@ import TimelineNotActive from '../../images/icons/Timeline.svg';
 import TimelineActive from '../../images/icons/Timeline_Active.svg';
 import DivisiNotActive from '../../images/icons/Divisi.svg';
 import DivisiActive from '../../images/icons/Divisi_Active.svg';
+import DinamikaNotActive from '../../images/icons/Dinamika.svg';
+import DinamikaActive from '../../images/icons/Dinamika_Active.svg';
 
 const tabsConfig = [
     { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
     { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
+    { path: '/rembaka-anindita', icon: DinamikaNotActive, activeIcon: DinamikaActive, text: 'Rembaka Anindita' },
     { 
-        path: '/whatever', 
         icon: MenuNotActive, 
         activeIcon: MenuActive, 
         text: 'Informasi OMB UMN 2024',
@@ -49,7 +50,6 @@ const tabsConfig = [
 
 const BottomNav = () => {
     const location = useLocation();
-    const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState({ path: location.pathname, text: '' });
     const [subMenu, setSubMenu] = useState(null);
 
@@ -83,18 +83,20 @@ const BottomNav = () => {
 
     const handleTabClick = (tab) => (e) => {
         e.preventDefault();
-        if (tab.subMenu) {
-            setSubMenu(subMenu === tab.path ? null : tab.path);
-        } else {
+        if (location.pathname === '/rembaka-anindita' && tab.path && tab.path !== '/rembaka-anindita') {
+            window.location.href = tab.path;
+        } else if (tab.subMenu) {
+            setSubMenu(subMenu === tab.text ? null : tab.text);
+        } else if (tab.path) {
             setActiveTab({ path: tab.path, text: tab.text });
-            navigate(tab.path);
+            window.location.href = tab.path;
             setSubMenu(null);
         }
     };
 
     const handleSubMenuClick = (item) => {
         setActiveTab({ path: item.path, text: item.text });
-        navigate(item.path);
+        window.location.href = item.path;
         setSubMenu(null);
     };
 
@@ -121,7 +123,7 @@ const BottomNav = () => {
         <div className='the-whole-navbar'>
             {subMenu && (
                 <nav className='extended-navbar'>
-                    {tabsConfig.find(tab => tab.path === subMenu).subMenu.map((item, index) => (
+                    {tabsConfig.find(tab => tab.text === subMenu).subMenu.map((item, index) => (
                         <div 
                             className={`each-extended ${item.path === activeTab.path ? 'active' : ''}`} 
                             key={index} 
@@ -138,12 +140,10 @@ const BottomNav = () => {
                     <div key={index} onClick={handleTabClick(tab)}>
                         <Link
                             className={`each-tab ${tab.path === activeTab.path || (tab.subMenu && tab.subMenu.some(sub => sub.path === activeTab.path)) ? 'active' : ''}`}
-                            to={tab.path}
+                            to={tab.path || '#'}
                             onClick={(e) => {
-                                if (tab.subMenu) {
-                                    e.preventDefault();
-                                    handleTabClick(tab)(e);
-                                }
+                                e.preventDefault();
+                                handleTabClick(tab)(e);
                             }}
                             style={{ textDecoration: "none" }}
                         >

@@ -1,68 +1,30 @@
-import React from "react";
-import { useState, useEffect } from 'react';
+import React, { useState } from "react";
 
 import Dinamika from "../../components/dinamika/Dinamika";
+import CaraDinamika from "../../components/dinamika/CaraDinamika";
 import Footer from "../../components/footer/Footer";
 import Header from '../../components/header/Header';
 
 import RembakaImage from '../../images/rembaka-anindita.png'
 
-import TutorialDinamika from '../../videos/TutorialDinamika.mp4'
-
 import './RembakaAnindita.scss';
-import Modal from "../../components/modal/Modal";
-
-import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg'
 
 const RembakaAnindita = () => {
     const top = `Rembaka Anindita`;
     const bottom = `Yuk, kenali kampus melalui dinamika`;
 
-    const [screenSize, setScreenSize] = useState({
-        width: window.innerWidth,
-        height: window.innerHeight
-    });
-    const [widthVideo, setWidthVideo] = useState(0);
-    const [heightVideo, setHeightVideo] = useState(0);
-    const [showModal, setShowModal] = useState(false);
+    const [isModalCara, setIsModalCara] = useState(false);
+    const [isModalMain, setIsModalMain] = useState(false);
 
-    const toggleModal = () => {
-        setShowModal(!showModal);
-    };
-
-    useEffect(() => {
-        const handleResize = () => {
-          setScreenSize({
-            width: window.innerWidth,
-            height: window.innerHeight
-          });
-        };
-
-        if(screenSize.width >= 1440) {
-            setWidthVideo(1100)
-            setHeightVideo(700)
-        } else if(screenSize.width > 1200) {
-            setWidthVideo(900)
-            setHeightVideo(600)
-        } else if(screenSize.width > 810) {
-            setWidthVideo(600)
-            setHeightVideo(400)
-        } else if(screenSize.width > 560) {
-            setWidthVideo(450)
-            setHeightVideo(300)
-        } else if(screenSize.width > 320) {
-            setWidthVideo(300)
-            setHeightVideo(200)
-        }
-    
-        window.addEventListener('resize', handleResize);
-        return () => {
-          window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+    const openModalCara = () => setIsModalCara(true);
+    const openModalMain = () => setIsModalMain(true);
+    const closeModalCara = () => setIsModalCara(false);
+    const closeModalMain = () => setIsModalMain(false);
 
     return (
         <>
+            {isModalCara && <CaraDinamika onClose={closeModalCara} />}
+            {isModalMain && <Dinamika onClose={closeModalMain} />}
             <Header 
                 top={top}
                 bottom={bottom}
@@ -81,28 +43,17 @@ const RembakaAnindita = () => {
                     <br />
                     <div className="button-wrapper">
                         <div className='cta_button'>
-                            <button className="dinamika-button" onClick={null}>Cara berdinamika
+                            <button className="dinamika-button" onClick={openModalCara}>Cara berdinamika
                             </button>
                         </div>
                         <div className='cta_button'>
-                            <button onClick={null}>Mulai berdinamika!
-                                {/* <img src={ArrowRight} alt="Arrow Icon" /> */}
+                            <button onClick={openModalMain}>Mulai berdinamika!
                             </button>
                         </div>
                     </div>
                 </div>
             </section>
-            {/* <Dinamika /> */}
             <Footer />
-            {/* {showModal &&
-                <Modal handleClose={toggleModal}>
-                    <div style={{width: '100%', height: '100%', display: 'flex'}}>
-                        <video width={widthVideo} height={heightVideo} controls style={{margin: 'auto'}}>
-                            <source src={TutorialDinamika} type="video/mp4" />
-                        </video>
-                    </div>
-                </Modal>
-            } */}
         </>
     )
 }

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 import TahapanObject from '../../images/rembakaAnindita/Tahapan_Object.png'
-import Wave1 from '../../images/waves/WaveWhite_1.svg'
-import Wave2 from '../../images/waves/WaveWhite_2.svg'
+import X from '../../images/Menu/Close_MD.svg'
 
-// Error Boundary Component
+import './Dinamika.scss';
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -29,7 +29,12 @@ class ErrorBoundary extends React.Component {
   }
 }
 
-const Dinamika = () => {
+const Dinamika = ({ onClose }) => {
+  
+  const handleClose = () => {
+    window.location.href = '/rembaka-anindita';
+  };
+
   const { unityProvider, loadingProgression } = useUnityContext({
     loaderUrl: "../build/rembaka_anindita.loader.js",
     dataUrl: "../build/rembaka_anindita.data.unityweb",
@@ -54,7 +59,6 @@ const Dinamika = () => {
 
     window.addEventListener('resize', handleResize);
 
-    // Add a small delay before initializing Unity
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
@@ -66,35 +70,23 @@ const Dinamika = () => {
   }, []);
   
   return (
-    <div className="dinamika">
-      <img className='wave' src={Wave1} alt="Wave1" />
-      <div className="konten">
-        {screenSize.width > 1200 &&
-         <img className='tahapan' src={TahapanObject} alt="TahapanObject" />
-        }
-        <div className="unity" style={{ width: 330, height: 450 }}>
-          <p className="loading" style={{ display: (loadingProgression === 1)? 'none' : 'block' }}>Memuat... {Math.round(loadingProgression * 100)}%</p>
-          {isLoaded && (
-            <ErrorBoundary>
-              <Unity unityProvider={unityProvider} style={{ width: 330, height: 450, margin: "auto 0" }}  />
-            </ErrorBoundary>
-          )}
+    <div className="overlay">
+    <div className="modal">
+        <div className='close_button'>
+            <img src={X} alt="Close button" onClick={handleClose} />
         </div>
-        {screenSize.width <= 1200 &&
-         <img className='tahapan' src={TahapanObject} alt="TahapanObject" />
-        }
-        <div className="cara_bermain">
-          <h1>Cara Berdinamika</h1>
-          <ol>
-            <li>Ketuk tombol "Mulai" untuk berdinamika.</li><br />
-            <li>Agar mendapatkan poin, gabungkan objek yang serupa untuk menciptakan objek baru.</li><br />
-            <li>Jawab pertanyaan yang muncul untuk menambah poin dalam berdinamika. Pertanyaan akan terlihat setiap menggabungkan objek baru <i>(TRUE or FALSE)</i>.</li><br />
-            <li>Jawablah pertanyaan dengan tepat! Karena jawaban yang benar akan mendapatkan 30 poin tambahan.</li><br />
-            <li>Susun strategi untuk menciptakan Lotus Biru tanpa melampaui garis pembatas yang ada.</li><br />
-          </ol>
+        <div className='dinamika_section'>
+          <div className="unity">
+            <p className="loading" style={{ display: (loadingProgression === 1)? 'none' : 'block' }}>Memuat... {Math.round(loadingProgression * 100)}%</p>
+            {isLoaded && (
+              <ErrorBoundary>
+                <Unity className="unity-game" unityProvider={unityProvider}  />
+              </ErrorBoundary>
+            )}
+            <p className="axel">Dibuat oleh NAYANIKA - Axel Ferdinand</p>
+          </div>
         </div>
-      </div>
-      <img className='wave' src={Wave2} alt="Wave2" />
+    </div>
     </div>
   );
 }

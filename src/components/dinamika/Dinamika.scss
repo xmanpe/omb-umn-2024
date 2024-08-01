@@ -1,0 +1,183 @@
+.unity {
+    // width: 330px;
+    // height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    align-items: center;
+
+    .loading {
+        color: #4504AA;
+    }
+
+    .unity-game {
+        border-radius: 20px;
+        width: 370px;
+        height: 480px;
+    }
+    
+    .axel {
+        margin-top: 4px;
+        font-size: 10px;
+        opacity: 0.2;
+    }
+
+    .axel:hover {
+        opacity: 1;
+    }
+}
+
+.cara_section {
+    border: 1px solid rgb(199, 199, 199);
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    max-height: calc(80vh - 100px);
+    overflow-y: auto;
+
+    video {
+        width: 100%;
+        border-radius: 16px;
+        box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+    } 
+
+    .how-to {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+
+        h1 {
+            font-size: 28px;
+            color: #4504AA;
+        }
+
+        ol {
+            li {
+                font-size: 18px;
+                color: rgba(0, 0, 0, 0.6);
+            }
+
+            li:hover {
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .reminder-sosmed {
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1.5px solid #00000016;
+
+            p {
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .cara_section {
+        padding: 32px;    
+        video {
+        } 
+    
+        .how-to {
+            h1 {
+            }
+    
+            ol {
+                li {
+                }
+
+                li:hover {
+                }
+            }
+    
+            p {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cara_section {
+        padding: 28px;    
+        video {
+        } 
+    
+        .how-to {
+            h1 {
+            }
+    
+            ol {
+                li {
+                }
+
+                li:hover {
+                }
+            }
+    
+            p {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .cara_section {  
+        gap: 12px;
+
+        video {
+        } 
+    
+        .how-to {
+            h1 {
+                font-size: 24px;
+            }
+    
+            ol {
+                li {
+                    font-size: 16px;
+                }
+
+                li:hover {
+                }
+            }
+    
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .cara_section {  
+        padding: 16px;
+
+        video {
+        } 
+    
+        .how-to {
+            h1 {
+            }
+    
+            ol {
+                li {
+                }
+
+                li:hover {
+                }
+            }
+    
+            p {
+            }
+        }
+    }
+}

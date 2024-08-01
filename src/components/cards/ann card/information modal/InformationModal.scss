@@ -1,33 +1,33 @@
 @keyframes fadeInFromBottom {
     from {
       opacity: 0;
-      transform: translateY(50px); /* Move modal 50px down initially */
+      transform: translateY(50px);
     }
     to {
       opacity: 1;
-      transform: translateY(0); /* Move modal to its original position */
+      transform: translateY(0);
     }
 }
 
 @keyframes fadeOutToTop {
     from {
       opacity: 1;
-      transform: translateY(0); /* Start from its original position */
+      transform: translateY(0);
     }
     to {
       opacity: 0;
-      transform: translateY(-50px); /* Move modal 50px up */
+      transform: translateY(-50px);
     }
 }
 
 @keyframes shine {
     0% {
-        left: -100%; /* Start the shine animation from outside the div */
-        transform: skewX(-20deg); /* Skew the shine to create a diagonal effect */
+        left: -100%;
+        transform: skewX(-20deg);
     }
     100% {
-        left: 100%; /* Move the shine all the way to the right */
-        transform: skewX(20deg); /* Skew the shine to create a diagonal effect */
+        left: 100%;
+        transform: skewX(20deg);
     }
 }
 

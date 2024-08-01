@@ -270,10 +270,12 @@
         gap: 20px;
     
         img {
-            width: 320px;
+            width: 200px;
         }
     
         .explanation {
+            gap: 12px;
+            
             .penjelasan {
                 text-align: justify;
 
@@ -284,7 +286,7 @@
             .penjelasan:hover {
             }
     
-            .button-wrapper {    
+            .button-wrapper {  
                 gap: 12px;
                 flex-direction: column;
                 width: 100%;

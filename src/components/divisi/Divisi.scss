@@ -248,8 +248,8 @@
         align-items: center;
         gap: 32px;
         align-self: stretch;
-        max-height: calc(80vh - 100px); /* Adjust the max height of the content section */
-        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: calc(80vh - 100px);
+        overflow-y: auto;
 
         .logo_and_text {
             display: flex;

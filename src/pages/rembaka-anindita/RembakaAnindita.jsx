@@ -11,7 +11,7 @@ import './RembakaAnindita.scss';
 
 const RembakaAnindita = () => {
     const top = `Rembaka Anindita`;
-    const bottom = `Yuk, kenali kampus melalui dinamika`;
+    const bottom = `Yuk, berdinamika melalui Rembaka Anindita!`;
 
     const [isModalCara, setIsModalCara] = useState(false);
     const [isModalMain, setIsModalMain] = useState(false);

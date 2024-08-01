@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer';
 const DivisiOMB = () => {
     const top = `Divisi`;
     const bottom = `Selamat datang di laman divisi!`;
-    const veryBottom = 'Klik divisi untuk melihat informasi lebih lanjut'
+    const veryBottom = 'Klik divisi untuk melihat informasi lebih lanjut.'
 
     return (
         <>

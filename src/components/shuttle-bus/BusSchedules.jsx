@@ -19,7 +19,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
+            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 14.45 WIB." },
       ],
@@ -41,7 +41,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 14.45 WIB." },
       ],
@@ -61,7 +61,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
+            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 14.45 WIB." },
       ],
@@ -83,7 +83,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 14.45 WIB." },
       ],
@@ -103,7 +103,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
+            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 11.45 WIB." },
       ],
@@ -125,7 +125,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 11.45 WIB." },
       ],
@@ -145,7 +145,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
+            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Pasar Modern BSD (Halte Pasar Modern BSD)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 11.45 WIB." },
       ],
@@ -167,7 +167,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; Dormitory UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 11.45 WIB." },
       ],

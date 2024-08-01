@@ -129,54 +129,7 @@ function Bingkai() {
 
   return (
     <div className="container-bingkai">
-      <h2>Image:</h2>
-      <input type="file" onChange={uploadFoto} />
-      <div className="frame-container">
-        <Stage
-          width={600}
-          height={600}
-          onWheel={handleWheel}
-          onTouchMove={handleTouchMove}
-          onTouchStart={handleTouchStart}
-          style={{
-            margin: "auto",
-            display: "block",
-            width: "100%",
-            height: "auto",
-            opacity: isEditing ? 0.9 : 1,
-            transition: "opacity 0.3s",
-          }}
-        >
-          <Layer>
-            {foto && (
-              <KonvaImage
-                image={foto}
-                x={transform.x}
-                y={transform.y}
-                scaleX={transform.scale}
-                scaleY={transform.scale}
-                draggable={isEditing}
-                onDragEnd={handleDragEnd}
-              />
-            )}
-            {borderImage && (
-              <KonvaImage
-                image={borderImage}
-                x={0}
-                y={0}
-                width={600}
-                height={600}
-                draggable={false}
-                listening={false}
-              />
-            )}
-          </Layer>
-        </Stage>
-      </div>
-      <button onClick={toggleEditMode}>
-        {isEditing ? "Selesai Mengatur Foto" : "Atur Foto"}
-      </button>
-      <button onClick={download}>Download Bingkai Profile</button>
+      <h3>Siapkah kamu mengukir :</h3>
       <button onClick={() => changeBorderImage(BorderBingkaiOrange)}>
         Border Orange
       </button>
@@ -189,6 +142,78 @@ function Bingkai() {
       <button onClick={() => changeBorderImage(BorderBingkaiYellow)}>
         Border Yellow
       </button>
+
+      <div className="content-container">
+        <div className="content-1">
+          <input type="file" onChange={uploadFoto} />
+          <div className="frame-container">
+            <Stage
+              width={600}
+              height={600}
+              onWheel={handleWheel}
+              onTouchMove={handleTouchMove}
+              onTouchStart={handleTouchStart}
+              style={{
+                margin: "auto",
+                display: "block",
+                width: "100%",
+                height: "auto",
+                opacity: isEditing ? 0.9 : 1,
+                transition: "opacity 0.3s",
+              }}
+            >
+              <Layer>
+                {foto && (
+                  <KonvaImage
+                    image={foto}
+                    x={transform.x}
+                    y={transform.y}
+                    scaleX={transform.scale}
+                    scaleY={transform.scale}
+                    draggable={isEditing}
+                    onDragEnd={handleDragEnd}
+                  />
+                )}
+                {borderImage && (
+                  <KonvaImage
+                    image={borderImage}
+                    x={0}
+                    y={0}
+                    width={600}
+                    height={600}
+                    draggable={false}
+                    listening={false}
+                  />
+                )}
+              </Layer>
+            </Stage>
+          </div>
+        </div>
+        <div className="content-2">
+          <p>
+            Lotus Biru mengilhami petualangan baru,
+            <br />
+            Saya siap mencetak sejarah baru! <br />
+            …<br />
+            Halo semuanya!
+            <br />
+            <br />
+            Perkenalkan nama saya (nama lengkap), mahasiswa program studi (nama
+            program studi), Universitas Multimedia Nusantara (UMN) 2024. Saya
+            bangga turut serta mencetak sejarah baru dengan mengikuti Orientasi
+            Mahasiswa Baru (OMB) UMN dan menjadi bagian dari keluarga besar
+            Universitas Multimedia Nusantara. Saya siap menamankan ambisi untuk
+            menumbuhkan potensi bagi almamater, persada, dan sesama. <br />
+            <br />
+            #OMBUMN2024 <br />
+            #TangguhBerambisiTumbuhBerpotensi
+          </p>
+        </div>
+      </div>
+      <button onClick={toggleEditMode}>
+        {isEditing ? "Selesai Mengatur Foto" : "Atur Foto"}
+      </button>
+      <button onClick={download}>Download Bingkai Profile</button>
     </div>
   );
 }

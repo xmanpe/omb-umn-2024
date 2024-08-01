@@ -1,0 +1,14 @@
+.container {
+  min-height: 100vh;
+  padding: 0px 160px 0px 160px;
+
+  .title-container {
+    gap: 40px;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}

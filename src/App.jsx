@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
 import JadwalWawancara from "./pages/JadwalWawancara";
@@ -7,7 +7,7 @@ import PesertaMengulang from "./pages/PesertaMengulang";
 import TentangOMB from "./pages/tentang-omb/TentangOMB";
 import Error from "./pages/Error";
 import BottomNav from "./components/bottomnav/BottomNav";
-import AtributPeserta from "./pages/atribut-peserta/AtributPeserta"
+import AtributPeserta from "./pages/atribut-peserta/AtributPeserta";
 import PelaksanaanRevisi from "./pages/pelaksanaan/PelaksanaanRevisi";
 import RembakaAnindita from "./pages/rembaka-anindita/RembakaAnindita";
 import Mobilitas from "./pages/mobilitas/Mobilitas";
@@ -15,7 +15,7 @@ import Linimasa from "./pages/Linimasa";
 import DivisiOMB from "./pages/DivisiOMB";
 import MarsOMB from "./pages/MarsOMB";
 import Faq from "./pages/faq/Faq";
-
+import Bingkai from "./pages/bingkai/BingkaiPage";
 
 function App() {
   return (
@@ -34,6 +34,7 @@ function App() {
           <Route path="/linimasa" element={<Linimasa />} />
           <Route path="/mars" element={<MarsOMB />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/bingkai" element={<Bingkai />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

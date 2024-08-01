@@ -11,10 +11,10 @@ const CaraDinamika = ({ onClose }) => {
     };
 
     return (
-    <div className="overlay">
+    <div className="overlay" onClick={handleClose}>
         <div className="modal">
-            <div className='close_button'>
-                <img src={X} alt="Close button" onClick={handleClose} />
+            <div className='close_button' onClick={handleClose}>
+                <img src={X} alt="Close button" />
             </div>
             <div className='cara_section'>
                 <video controls>
@@ -30,7 +30,7 @@ const CaraDinamika = ({ onClose }) => {
                         <li>Susun strategi untuk menciptakan Lotus Biru tanpa melampaui garis pembatas yang ada.</li>
                     </ol>
                     <div className='reminder-sosmed'>
-                        <p>Jangan lupa bagikan hasil poin teman-teman di media sosial masing-masing dengan menambahkan tagar #BerdinamikadenganOMB</p>
+                        <p>Bagikan hasil poin yang kamu dapatkan ke Instagram masing-masing dengan menggunakan hastag <b>#RembakaAninditaOMBUMN2024</b>.</p>
                     </div>
                     <br />
                 </div>

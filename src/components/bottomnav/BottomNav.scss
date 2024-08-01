@@ -188,7 +188,7 @@
         // gap: 8px;
     
         .extended-navbar {   
-            width: fit-content;
+            width: 90%;
             margin: auto;
             // display: flex;
             // flex-direction: column;
@@ -322,5 +322,9 @@
                 text-overflow: ellipsis; // Displays an ellipsis (...) to represent clipped text
             }
         }
+    }
+
+    .the-whole-navbar:hover {
+        bottom: 12px;
     }
 }

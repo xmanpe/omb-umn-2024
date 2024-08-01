@@ -76,6 +76,11 @@
             p {
                 font-size: 20px;
                 color: rgba(0, 0, 0, 0.8);
+
+                b {
+                    font-weight: 600;
+                    color: #4504AA;
+                }
             }
         }
     }
@@ -99,7 +104,12 @@
                 }
             }
     
-            p {
+            .reminder-sosmed {    
+                p {
+    
+                    b {
+                    }
+                }
             }
         }
     }
@@ -123,7 +133,12 @@
                 }
             }
     
-            p {
+            .reminder-sosmed {    
+                p {
+    
+                    b {
+                    }
+                }
             }
         }
     }
@@ -150,14 +165,37 @@
                 }
             }
     
-            p {
-                font-size: 18px;
+            .reminder-sosmed {   
+                margin-top: 12px; 
+
+                p {
+                    font-size: 18px;
+    
+                    b {
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 560px) {
+    .unity {
+        .loading {
+        }
+    
+        .unity-game {
+            width: 330px;
+            height: 450px;
+        }
+        
+        .axel {
+        }
+    
+        .axel:hover {
+        }
+    }
+
     .cara_section {  
         padding: 16px;
 
@@ -176,7 +214,13 @@
                 }
             }
     
-            p {
+            .reminder-sosmed {   
+                margin-top: 8px; 
+                
+                p {
+                    b {
+                    }
+                }
             }
         }
     }

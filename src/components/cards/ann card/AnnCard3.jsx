@@ -6,7 +6,7 @@ import ArrowRight from '../../../images/Arrow/Arrow_Right_MD.svg';
 
 const AnnCard = () => {
     const openPage = () => {
-        window.location.href = '/atribut-peserta';
+        window.location.href = '/rembaka-anindita';
     };
 
     // const openPage = () => {
@@ -18,8 +18,8 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Informasi Atribut Peserta OMB UMN 2024</h3>
-                        <p>Klik tombol di bawah ini untuk mengakses Atribut Peserta OMB UMN 2024!</p>
+                        <h3>Rembaka Anindita</h3>
+                        <p>Temukan informasi tentang Universitas Multimedia Nusantara sambil berdinamika seru bersama Rembaka Anindita!</p>
                     </div>
                 </div>
                 <div className='cta_button'>

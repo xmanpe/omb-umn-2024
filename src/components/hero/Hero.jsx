@@ -68,8 +68,8 @@ const Hero = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide><AnnCard /></SwiperSlide>
-                    <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard3 /></SwiperSlide>
+                    <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard4 /></SwiperSlide>
                 </Swiper>
             </div>

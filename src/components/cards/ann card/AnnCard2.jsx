@@ -78,7 +78,7 @@ const AnnCard = () => {
                 <div className='text_section'>
                     <div className='title_and_desc'>
                         <h3>Swara Bestari: PENA 03</h3>
-                        <p>Yuk, pelajari cara meningkatkan kesadaran akan pengaruh lingkungan pertemanan dengan mendengarkan episode ini di Spotify!</p>
+                        <p>Swara Bestari ingin meningkatkan kesadaran akan pengaruh lingkungan pertemanan terhadap perkembangan dan prestasi diri di dunia perkuliahan. Yuk, dengarkan sekarang!</p>
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>

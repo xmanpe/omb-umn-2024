@@ -2,75 +2,99 @@ import React, { useState, useEffect } from "react";
 import "./ShuttleBus.scss";
 import BigBus from "../../images/icons/bus/bus.png";
 import MiniBus from "../../images/icons/bus/school-bus.png";
-import UMN from "../../images/shuttle-bus/UMN.jpg";
-
+import ArrowDropdown from "../../images/Arrow/ArrowDropdown.svg";
+import BusSchedules from "./BusSchedules.jsx";
 const ShuttleBus = () => {
   const [sliderState, setSliderState] = useState(0);
-  const slides = ["Keberangkatan", "Kepulangan"];
 
-  const schedules = {
-    bigBus: {
-      departure: [
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-      ],
-      return: [
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-      ],
-    },
-    miniBus: {
-      departure: [
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-      ],
-      return: [
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-        { time: "WAKTU", route: "LOKASI",  image:UMN},
-      ],
-    },
+  const [showMobileDropdown, setShowMobileDropdown] = useState(false);
+
+  const handleDropdownClick = () => {
+    setShowMobileDropdown(!showMobileDropdown);
   };
 
+  const handleUserClick = (index) => {
+    setShowMobileDropdown(!showMobileDropdown);
+    setSliderState(index);
+  };
+
+  const slides = [
+    "Perkembangan Hari 1",
+    "Perkembangan Hari 2",
+    "Sidang Senat Terbuka",
+    "Perkenalan Prodi",
+  ];
+
   const renderSchedule = (type, scheduleType) => (
-    <div className="shuttle_bus_timeline">
-      <div className="shuttle_bus_type">
-        <img src={type === "bigBus" ? BigBus : MiniBus} alt={type} />
-        <div className="shuttle_bus_type_title">
-          {type === "bigBus" ? "Bus Besar" : "Bus Kecil"}
+    <div className="shuttle_bus_container_card">
+      <div className="shuttle_bus_timeline">
+        <div className="shuttle_bus_type">
+          <img src={type === "bigBus" ? BigBus : MiniBus} alt={type} />
+          <p>Keberangkatan</p>
+          <div className="shuttle_bus_type_title">
+            {type === "bigBus" ? "Bus Besar" : "Bus Kecil"}
+          </div>
+        </div>
+        {BusSchedules[slides[sliderState]][type]?.[scheduleType]?.map(
+          (schedule, index) => (
+            <div key={index} className="shuttle_bus_item">
+              <div className="shuttle_bus_card">
+                <div className="shuttle_bus_image">
+                  <img src={schedule.image} alt={`Schedule ${index + 1}`} />
+                </div>
+                <div className="shuttle_bus_time">{schedule.time}</div>
+                {/* <div className="shuttle_bus_route">{schedule.route}</div> */}
+                <div
+                  className="shuttle_bus_route"
+                  dangerouslySetInnerHTML={{ __html: schedule.route }}
+                />
+
+                {index <
+                  BusSchedules[slides[sliderState]][type][scheduleType].length -
+                    1 && (
+                  <div className="shuttle_bus_line">
+                    {" "}
+                    <div class="arrow">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )
+        )}
+      </div>
+      <div className="shuttle_bus_kepulangan">
+        <p
+          dangerouslySetInnerHTML={{
+            __html:
+              BusSchedules[slides[sliderState]][type]?.return?.[0]
+                ?.description || "",
+          }}
+        />
+        <div className="shuttle_bus_kepulangan_note">
+          {BusSchedules[slides[sliderState]][type]?.return?.[1]?.note}
         </div>
       </div>
-      {schedules[type][scheduleType].map((schedule, index) => (
-        <div key={index} className="shuttle_bus_item">
-          {/* <div className="shuttle_bus_circle"></div> */}
-          <div className="shuttle_bus_image">
-            <img src={schedule.image} alt={`Schedule ${index + 1}`} />
-          </div>
-          <div className="shuttle_bus_time">{schedule.time}</div>
-          <div className="shuttle_bus_route">{schedule.route}</div>
-          {index < schedules[type][scheduleType].length - 1 && (
-            <div className="shuttle_bus_line"></div>
-          )}
-        </div>
-      ))}
     </div>
   );
 
   return (
     <section className="shuttle_bus_section">
       <div className="shuttle_bus_title">
-        <h1>Shuttle Bus</h1>
+        <h1>
+          <i>Shuttle Bus</i>
+        </h1>
         <p>
-          Simak <b>rute shuttle bus</b> UMN yang dapat digunakan oleh{" "}
-          <b>Peserta OMB UMN 2024</b> selama rangkaian kegiatan berlangsung.
-          Shuttle bus disediakan <b>gratis</b> selama rangkaian{" "}
-          <b>OMB UMN 2024</b> berlangsung serta dapat dingunakan untuk{" "}
-          <b>keberangkatan dan kepulangan</b> Peserta OMB UMN 2024.
+          <i>Shuttle bus</i> disediakan <b>gratis </b> selama rangkaian{" "}
+          <b>OMB UMN 2024</b>{" "}
+          berlangsung dan dapat digunakan untuk{" "}
+          <b>keberangkatan serta kepulangan Peserta OMB UMN 2024</b>.
         </p>
       </div>
+
       <div className="slider">
         {slides.map((slide, index) => (
           <button
@@ -82,18 +106,48 @@ const ShuttleBus = () => {
           </button>
         ))}
       </div>
+      <div className="slider-wrapper-mobile">
+        <div className="slider-mobile">
+          {slides.map(
+            (slides, index) =>
+              sliderState === index && (
+                <button
+                  key={index}
+                  className="slider-button-mobile-active"
+                  onClick={handleDropdownClick}
+                >
+                  {slides}
+                  <img
+                    className={`arrow ${!showMobileDropdown ? "up" : "down"}`}
+                    src={ArrowDropdown}
+                    alt="drop"
+                  />
+                </button>
+              )
+          )}
+          {showMobileDropdown && (
+            <div className="dropdown-wrapper">
+              {slides.map(
+                (slides, index) =>
+                  sliderState !== index && (
+                    <button
+                      key={index}
+                      className={`slider-button-mobile`}
+                      onClick={() => handleUserClick(index)}
+                    >
+                      {slides}
+                    </button>
+                  )
+              )}
+            </div>
+          )}
+        </div>
+      </div>
       <div className="shuttle_bus_content">
-        {sliderState === 0 ? (
-          <>
-            {renderSchedule("bigBus", "departure")}
-            {renderSchedule("miniBus", "departure")}
-          </>
-        ) : (
-          <>
-            {renderSchedule("bigBus", "return")}
-            {renderSchedule("miniBus", "return")}
-          </>
-        )}
+        {renderSchedule("bigBus", "departure")}
+        {renderSchedule("miniBus", "departure")}
+        {/* {renderSchedule("bigBus", "return")}
+        {renderSchedule("miniBus", "return")} */}
       </div>
     </section>
   );

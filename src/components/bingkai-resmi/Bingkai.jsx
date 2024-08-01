@@ -4,16 +4,11 @@ import useImage from "use-image";
 
 import "./bingkai.scss";
 
-import BorderBingkaiOrange from "../../images/bingkai resmi/bingkai orange.png";
-import BorderBingkaiBlack from "../../images/bingkai resmi/bingkai hitam.png";
-import BorderBingkaiGrey from "../../images/bingkai resmi/bingkai grey.png";
-import BorderBingkaiYellow from "../../images/bingkai resmi/bingkai yellow.png";
-
 function Bingkai() {
   const [file, setFile] = useState(null);
   const [filename, setFileName] = useState("");
   const [foto, setFoto] = useState(null);
-  const [borderImageSrc, setBorderImageSrc] = useState(BorderBingkaiOrange);
+  const [borderImageSrc, setBorderImageSrc] = useState();
   const [borderImage] = useImage(borderImageSrc);
   const [transform, setTransform] = useState({ scale: 1, x: 0, y: 0 });
   const [isEditing, setIsEditing] = useState(false);
@@ -69,7 +64,7 @@ function Bingkai() {
       const touch2 = e.evt.touches[1];
       const dist = Math.sqrt(
         Math.pow(touch1.clientX - touch2.clientX, 2) +
-          Math.pow(touch1.clientY - touch2.clientY, 2)
+        Math.pow(touch1.clientY - touch2.clientY, 2)
       );
       pinchData.current.dist = dist;
       pinchData.current.scale = transform.scale;
@@ -83,7 +78,7 @@ function Bingkai() {
     const touch2 = e.evt.touches[1];
     const dist = Math.sqrt(
       Math.pow(touch1.clientX - touch2.clientX, 2) +
-        Math.pow(touch1.clientY - touch2.clientY, 2)
+      Math.pow(touch1.clientY - touch2.clientY, 2)
     );
 
     const stage = e.target.getStage();
@@ -129,20 +124,19 @@ function Bingkai() {
 
   return (
     <div className="container-bingkai">
-      <h3>Siapkah kamu mengukir :</h3>
-      <button onClick={() => changeBorderImage(BorderBingkaiOrange)}>
-        Border Orange
-      </button>
-      <button onClick={() => changeBorderImage(BorderBingkaiBlack)}>
-        Border Black
-      </button>
-      <button onClick={() => changeBorderImage(BorderBingkaiGrey)}>
-        Border Grey
-      </button>
-      <button onClick={() => changeBorderImage(BorderBingkaiYellow)}>
-        Border Yellow
-      </button>
-
+      <div className="title-container">
+        <h2>Awali pijakanmu melalui Bingkai Resmi OMB UMN 2024!</h2>
+        <div className="sub-title-container">
+          <p>
+            Tunjukan semangat solidaritasmu di OMB UMN 2024, dengan mengunggah
+            foto diri menggunakan bingkai resmi sesuai program studi
+            masing-masing!
+          </p>
+        </div>
+      </div>
+      <div className="ngukir-title">
+        <h3>Siapkah kamu mengukir :</h3>
+      </div>
       <div className="content-container">
         <div className="content-1">
           <input type="file" onChange={uploadFoto} />
@@ -190,24 +184,26 @@ function Bingkai() {
           </div>
         </div>
         <div className="content-2">
-          <p>
-            Lotus Biru mengilhami petualangan baru,
-            <br />
-            Saya siap mencetak sejarah baru! <br />
-            …<br />
-            Halo semuanya!
-            <br />
-            <br />
-            Perkenalkan nama saya (nama lengkap), mahasiswa program studi (nama
-            program studi), Universitas Multimedia Nusantara (UMN) 2024. Saya
-            bangga turut serta mencetak sejarah baru dengan mengikuti Orientasi
-            Mahasiswa Baru (OMB) UMN dan menjadi bagian dari keluarga besar
-            Universitas Multimedia Nusantara. Saya siap menamankan ambisi untuk
-            menumbuhkan potensi bagi almamater, persada, dan sesama. <br />
-            <br />
-            #OMBUMN2024 <br />
-            #TangguhBerambisiTumbuhBerpotensi
-          </p>
+          <div className="isi-content-2">
+            <p>
+              Lotus Biru mengilhami petualangan baru,
+              <br />
+              Saya siap mencetak sejarah baru! <br />
+              …<br />
+              Halo semuanya!
+              <br />
+              <br />
+              Perkenalkan nama saya (nama lengkap), mahasiswa program studi (nama
+              program studi), Universitas Multimedia Nusantara (UMN) 2024. Saya
+              bangga turut serta mencetak sejarah baru dengan mengikuti Orientasi
+              Mahasiswa Baru (OMB) UMN dan menjadi bagian dari keluarga besar
+              Universitas Multimedia Nusantara. Saya siap menamankan ambisi untuk
+              menumbuhkan potensi bagi almamater, persada, dan sesama. <br />
+              <br />
+              #OMBUMN2024 <br />
+              #TangguhBerambisiTumbuhBerpotensi
+            </p>
+          </div>
         </div>
       </div>
       <button onClick={toggleEditMode}>

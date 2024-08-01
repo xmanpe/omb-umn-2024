@@ -30,7 +30,7 @@ const CaraDinamika = ({ onClose }) => {
                         <li>Susun strategi untuk menciptakan Lotus Biru tanpa melampaui garis pembatas yang ada.</li>
                     </ol>
                     <div className='reminder-sosmed'>
-                        <p>Jangan lupa bagikan hasil poin teman-teman di media sosial masing-masing dengan menambahkan tagar #BerdinamkadenganOMB</p>
+                        <p>Jangan lupa bagikan hasil poin teman-teman di media sosial masing-masing dengan menambahkan tagar #BerdinamikadenganOMB</p>
                     </div>
                     <br />
                 </div>

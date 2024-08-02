@@ -16,6 +16,7 @@ import DivisiOMB from "./pages/DivisiOMB";
 import MarsOMB from "./pages/MarsOMB";
 import Faq from "./pages/faq/Faq";
 import Bingkai from "./pages/bingkai/BingkaiPage";
+import BingkaiPageRevisi from "./pages/bingkai/BingkaiPageRevisi";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/linimasa" element={<Linimasa />} />
           <Route path="/mars" element={<MarsOMB />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/bingkai" element={<Bingkai />} />
+          <Route path="/bingkai" element={<BingkaiPageRevisi />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

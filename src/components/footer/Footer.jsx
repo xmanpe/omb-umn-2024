@@ -33,10 +33,11 @@ const Footer = () => {
     const isDivisiPage = location.pathname === '/divisi';
     const isMarsPage = location.pathname === '/mars';
     const isDinamikaPage = location.pathname === '/rembaka-anindita';
+    const isBingkaiPage = location.pathname === '/bingkai';
 
     return (
         <footer className='footer_section'>
-            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage || isFaqPage || isMobilitasPage || isLinimasaPage || isDivisiPage || isMarsPage || isDinamikaPage ) && <img className='wave' src={Wave} alt="Wave" />}
+            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage || isFaqPage || isMobilitasPage || isLinimasaPage || isDivisiPage || isMarsPage || isDinamikaPage || isBingkaiPage ) && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>

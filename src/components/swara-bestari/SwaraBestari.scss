@@ -1,0 +1,405 @@
+.swara-bestari_section {
+    background-image: linear-gradient(
+    235deg,
+    hsl(26deg 39% 83%) 0%,
+    hsl(29deg 78% 61%) 25%,
+    hsl(7deg 51% 44%) 50%,
+    hsl(332deg 48% 24%) 75%,
+    hsl(274deg 27% 28%) 100%
+    );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    border-top: 4px solid white;
+
+    .grain {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.1;
+    }
+
+    .wave_swara-bestari_top {
+        margin-top: -4px;
+        width: 100%;
+        pointer-events: none;
+        transform: scaleY(-1) scaleX(-1);
+    }
+
+    .wave_swara-bestari_bottom {
+        width: 100%;
+        pointer-events: none;
+        transform: scaleX(-1);
+        margin-bottom: -3px;
+    }
+
+    .swara-bestari_content {
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+        flex-shrink: 0;
+        align-items: center;
+        padding: 0px 160px 0px 160px;
+
+        .kupu_top {
+            z-index: 0;
+            position: absolute;
+            width: 40%;
+            height: auto;
+            left: -80px;
+            top: 100px;
+            transform: rotate(40deg);
+            opacity: 0.15;
+        }
+    
+        .the_content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+            z-index: 96;
+    
+            .left {
+                border-radius: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                border-right: 3px solid rgba(255, 255, 255, 0.25);
+        
+                img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+                    max-width: 600px; /* Ensure the image does not exceed its container's width */
+                    max-height: 100%; /* Ensure the image does not exceed its container's height */
+                    object-fit: cover;
+                }
+            }
+        
+            .right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 60px;
+                width: 50%;
+        
+                .the_title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 40px;
+        
+                    h1 {
+                        text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(255, 255, 255, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        background: linear-gradient(92deg, #FFF5C1 -0.06%, #FFF 101.3%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                    .mini-player {
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        border: 2px solid rgba(255, 255, 255, 0.363);
+                        border-radius: 20px;
+                        height: 152px;
+                    }
+        
+                    p {
+                        color: rgba(255, 255, 255, 0.80);
+                        text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        text-align: justify;
+                    }
+                }
+        
+                .cta_button {            
+                    button {
+                        display: flex;
+                        padding: 12px 22px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 100px;
+                        border: 1.5px solid white;
+                        background: none;
+                        transition: background 0.2s ease-in-out;
+            
+                        /* font */
+                        color: white;
+                        font-size: 18px;
+                        font-family: 'GSN';
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+
+                        cursor: pointer;
+                        
+                        img {
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+            
+                    button:hover {
+                        background: rgba(255, 255, 255, 0.094);
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .swara-bestari_section {    
+        .wave_swara-bestari_top {
+        }
+    
+        .wave_swara-bestari_bottom {
+        }
+    
+        .swara-bestari_content {
+            gap: 0;
+            padding: 0px 100px 0px 100px;
+    
+            .kupu_top {
+            }
+        
+            .the_content {
+                gap: 80px;
+        
+                .left {
+                    img {
+                        max-width: 560px; /* Ensure the image does not exceed its container's width */
+                        // max-height: 100%;
+                    }
+                }
+            
+                .right {
+                    gap: 48px;
+                    width: 56%;
+            
+                    .the_title {
+                        gap: 32px;
+            
+                        h1 {
+                        }
+                        
+                        .mini-player {
+                        }    
+
+                        p {
+                        }
+                    }
+            
+                    .cta_button {
+                        button {
+                            img {
+                            }
+                        }
+        
+                        button:hover {
+                        }
+                
+                        button:active {
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .swara-bestari_section {    
+        .wave_swara-bestari_top {
+        }
+    
+        .wave_swara-bestari_bottom {
+        }
+    
+        .swara-bestari_content {
+            padding: 0px 80px 0px 80px;
+    
+            .kupu_top {
+            }
+        
+            .the_content {
+                flex-direction: column;
+                gap: 20px;
+        
+                .left {
+                    margin-top: -120px;
+                    border: none;
+                    img {
+                        width: 80%;
+                    }
+                }
+            
+                .right {
+                    align-items: center;
+                    gap: 40px;
+                    width: 100%;
+            
+                    .the_title {
+                        align-items: center;
+                        gap: 28px;
+            
+                        h1 {
+                            font-size: 28px;
+                            text-align: center;
+                        }
+
+                        .mini-player {
+                        } 
+            
+                        p {
+                            text-align: center;
+                        }
+                    }
+            
+                    .cta_button {
+                        button {
+                            img {
+                            }
+                        }
+        
+                        button:hover {
+                        }
+                
+                        button:active {
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .swara-bestari_section {
+        .wave_swara-bestari_top {
+        }
+    
+        .wave_swara-bestari_bottom {
+        }
+    
+        .swara-bestari_content {
+            padding: 0px 40px 0px 40px;
+    
+            .kupu_top {
+                width: 80%;
+            }
+        
+            .the_content {
+                .left {     
+                    margin-bottom: -60px;
+
+                    img {
+                        max-width: 72%;
+                        max-height: 72%;
+                    }
+                }
+            
+                .right {
+                    .the_title {
+                        h1 {
+                            font-size: 28px;
+                        }
+            
+                        p {
+                            text-align: center;
+                        }
+                    }
+            
+                    .cta_button {
+                        button {
+                            font-size: 18px;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+        
+                        button:hover {
+                        }
+                
+                        button:active {
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .swara-bestari_section {
+        .wave_swara-bestari_top {
+        }
+    
+        .wave_swara-bestari_bottom {
+        }
+    
+        .swara-bestari_content {
+            padding: 0px 16px 0px 16px;
+    
+            .kupu_top {
+            }
+        
+            .the_content {
+                .left {
+                    img {
+                        // max-width: 64%;
+                        // max-height: 64%;
+                    }
+                }
+            
+                .right {
+                    .the_title {
+                        h1 {
+                            font-size: 32px;
+                        }
+
+                        .mini-player {
+                            height: 152px;
+                        }
+            
+                        p {
+                            font-size: 16px;
+                        }
+                    }
+            
+                    .cta_button {
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                            font-size: 16px;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+        
+                        button:hover {
+                        }
+                
+                        button:active {
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .hero_section {
-    background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
+    background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -8,12 +8,22 @@
     justify-content: center;
     align-items: center;
     width: auto;
+    box-sizing: border-box;
     position: relative;
 
     .wave {
+        z-index: 1;
         margin-bottom: -1px;
         width: 100%;
         pointer-events: none;
+        position: relative;
+    }
+
+    .new-wave {
+        position: absolute;
+        bottom: -10%;
+        width: 100%;
+        z-index: 1;
     }
 
     .hero_supergrafis {
@@ -24,13 +34,8 @@
     }
 
     .the_hero_content {
-        z-index: 100;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 72px;
-        padding: 100px 160px 200px 160px;
+        padding: 100px 160px 20px 160px;
+        position: relative;
 
         .logo_section {
             width: 100%;
@@ -41,7 +46,7 @@
             gap: 12px;
     
             .logo_omb {
-                width: 24%;
+                width: 20%;
                 height: auto;
             }
     
@@ -50,8 +55,101 @@
             }
         }
     
+        .ann_center {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            width: 100%;
+        }
+
         .announcement_section {
             width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+
+            .announcement_section::-webkit-scrollbar {
+                display: none;
+            }
+        } 
+    }
+
+    .bem_section {
+        margin: 100px 0px 300px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative; /* Position relative to create a context for pseudo-elements */
+        padding: 20px 0; /* Add padding to make space for the borders */
+    
+        p {
+            color: #FFF;
+            text-align: center;
+            font-family: "GSN";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 6px;
+            text-shadow: 0px 4px 24.9px #FFF;
+        }
+        
+        /* Add the top border */
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px; /* Height of the border */
+            background: linear-gradient(to right, transparent, #FFF 50%, transparent);
+        }
+        
+        /* Add the bottom border */
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px; /* Height of the border */
+            background: linear-gradient(to right, transparent, #FFF 50%, transparent);
+        }
+    }
+
+    .announcement_swiper {
+        width: 100%;
+
+        .swiper {
+            padding: 60px 160px;
+
+            .swiper-wrapper {
+                display: flex;
+
+                .swiper-slide {
+                    overflow: visible;
+                }
+            }
+
+            .swiper-pagination {
+                .swiper-pagination-bullet {
+                    background: #FFF;
+                    opacity: 0.3;
+                    width: 8px;
+                    height: 8px;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background: #FFF;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
@@ -87,7 +185,7 @@
             // justify-content: center;
             // align-items: flex-start;
             // gap: 72px;
-            padding: 100px 100px 200px 100px;
+            padding: 100px 100px 20px 100px;
     
             .logo_section {
                 // width: 100%;
@@ -109,6 +207,25 @@
         
             .announcement_section {
                 // width: 100%;
+            }
+            .announcement_center {
+                // justify-content: center;
+                // align-items: center;
+                // gap: 28px;
+                // display: flex;
+                // width: 50%;
+                // margin: auto;
+            }
+        }
+
+        .announcement_swiper {
+            .swiper {
+                padding: 60px 100px;
+    
+                .swiper-wrapper {    
+                    .swiper-slide {
+                    }
+                }
             }
         }
     }
@@ -145,7 +262,7 @@
             // justify-content: center;
             // align-items: flex-start;
             // gap: 72px;
-            padding: 100px 80px 200px 80px;
+            padding: 100px 80px 20px 80px;
     
             .logo_section {
                 // width: 100%;
@@ -169,6 +286,17 @@
                 // width: 100%;
             }
         }
+
+        .announcement_swiper {
+            .swiper {
+                padding: 60px 80px;
+    
+                .swiper-wrapper {    
+                    .swiper-slide {
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -190,6 +318,13 @@
             // width: 100%;
             // pointer-events: none;
         }
+
+        .new-wave {
+            position: absolute;
+            bottom: -5%;
+            width: 100%;
+            z-index: 1;
+        }
     
         .hero_supergrafis {
             // display: none;
@@ -204,7 +339,7 @@
             // justify-content: center;
             // align-items: flex-start;
             gap: 40px;
-            padding: 40px 40px 100px 40px;
+            padding: 40px 40px 40px 40px;
     
             .logo_section {
                 // width: 100%;
@@ -224,59 +359,73 @@
                     width: 60%;
                 }
             }
+
+            .ann_center {
+                width: 100%;
+            }
         
             .announcement_section {
+                grid-template-columns: 1fr;
                 // width: 100%;
+            }
+        }
+
+        .bem_section {
+            margin: 40px 0px 200px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            padding: 20px 0;
+        
+            p {
+                color: #FFF;
+                text-align: center;
+                font-family: "GSN";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 6px;
+                text-shadow: 0px 4px 24.9px #FFF;
+            }
+        }
+
+        .announcement_swiper {
+            .swiper {
+                padding: 40px 40px;
+    
+                .swiper-wrapper {    
+                    .swiper-slide {
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 560px){
-    .hero_section {
-        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // width: auto;
-        // position: relative;
-    
+    .hero_section {    
         .wave {
-            // margin-bottom: -1px;
-            // width: 100%;
-            // pointer-events: none;
         }
     
         .hero_supergrafis {
-            // position: absolute;
             top: 40px;
-            // mix-blend-mode: soft-light;
         }
     
         .the_hero_content {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
             gap: 40px;
-            padding: 100px 16px 40px 16px;
+            padding: 60px 16px 12px 16px;
     
             .logo_section {
-                // width: 100%;
-                // display: flex;
                 flex-direction: column;
-                // justify-content: space-around;
-                // align-items: center;
-                // align-self: stretch;
                 gap: 32px;
         
                 .logo_omb {
                     width: 40%;
-                    // height: auto;
                 }
         
                 .tagline_omb {
@@ -285,7 +434,17 @@
             }
         
             .announcement_section {
-                // width: 100%;
+            }
+        }
+    }
+
+    .announcement_swiper {
+        .swiper {
+            padding: 60px 16px;
+
+            .swiper-wrapper {    
+                .swiper-slide {
+                }
             }
         }
     }
@@ -293,58 +452,27 @@
 
 @media screen and (max-width: 320px){
     .hero_section {
-        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // width: auto;
-        // position: relative;
-    
         .wave {
-            // margin-bottom: -1px;
-            // width: 100%;
-            // pointer-events: none;
         }
     
         .hero_supergrafis {
-            // position: absolute;
-            // top: 0px;
-            // mix-blend-mode: soft-light;
         }
     
         .the_hero_content {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
             gap: 20px;
             padding: 16px 16px 32px 16px;
     
             .logo_section {
-                // width: 100%;
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: space-around;
-                // align-items: center;
-                // align-self: stretch;
                 gap: 20px;
         
                 .logo_omb {
-                    // width: 32%;
-                    // height: auto;
                 }
         
                 .tagline_omb {
-                    // width: 60%;
                 }
             }
         
             .announcement_section {
-                // width: 100%;
             }
         }
     }

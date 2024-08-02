@@ -9,6 +9,7 @@ const Error = () => {
                 <p>Gada apa” disini, kok. Disini yang ada cuma salam dari koor NAYANIKA, <br/>”Semangat berjuang, para Lotus Biru!”</p>
             </div>
             <p>Klik <a href="/">ini</a>  untuk kembali ke website OMB UMN 2024.</p>
+            <meta name="robots" content="noindex" />
         </section>
     );
 }

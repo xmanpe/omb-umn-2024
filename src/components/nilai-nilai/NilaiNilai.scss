@@ -1,0 +1,660 @@
+.nilai-nilai_section {
+  background: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 100px 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  overflow: hidden;
+  position: relative;
+
+  .nilai_omb_supergrafis {
+    position: absolute;
+    top: 400px;
+    width: 125%;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
+  .wave_bawah_nilai {
+    display: none;
+    margin-top: 120px;
+    width: 150%;
+    pointer-events: none;
+    margin-bottom: -110px;
+  }
+
+  .nilai-nilai_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    img {
+      width: 60px;
+      height: auto;
+      object-fit: cover;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.44));
+      opacity: 0.6;
+    }
+
+    h1 {
+      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .nilai-nilai_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+
+    .content-1,
+    .content-2 {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+
+      .left {
+        justify-content: space-between;
+        width: 40%;
+      }
+
+      // .rotate1{
+      //   transform: rotate(2deg);
+      //   z-index: 1000;
+      // }
+
+      // .rotate2 {
+      //   transform: rotate(-2deg);
+      // }
+
+      // .rotate3 {
+      //   transform: rotate(-4deg);
+      // }
+
+      // .rotate4 {
+      //   transform: rotate(3deg);
+      // }
+
+      // .rotate5 {
+      //   transform: rotate(-1deg);
+      // }
+
+      .right {
+        justify-content: space-between;
+        width: 60%;
+      }
+    }
+
+    .content-2 {
+      .left {
+        justify-content: space-between;
+        width: 60%;
+      }
+
+      .right {
+        justify-content: space-between;
+        width: 40%;
+      }
+    }
+
+    .content-3 {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin: auto;
+    }
+
+    .card {
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1.5px solid #F0F0F0;
+      background: white;
+      padding: 32px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      transition: transform 0.2s ease-in-out;
+
+      .icon-and-title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 32px;
+          height: 32px;
+          object-fit: cover;
+        }
+
+        .the-real-title {
+          h2.nilai_title {
+            color: #4504AA;
+          }
+    
+          p.sub_nilai {
+            text-align: left;
+            color: rgba(112, 71, 191, 1);
+          }
+    
+          p.sub_nilai {
+            margin: 0px;
+            font-style: italic;
+          }
+        }
+      }
+
+      p {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.7);
+      }
+
+      b {
+        font-weight: 600;
+        color: black;
+      }
+
+      .show-more-button {
+        margin-top: 40px;
+        display: flex;
+        justify-content: end;
+
+        button {
+          display: flex;
+          padding: 10px 20px;
+          justify-content: end;
+          gap: 8px;
+          border-radius: 100px;
+          border: none;
+          background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+          box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+          transition: box-shadow 0.1s ease-in-out;
+
+          color: #FFF;
+          text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+          font-size: 16px;
+          font-family: 'GSN';
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+              
+          cursor: pointer;
+
+          overflow: hidden;
+
+          img {
+              width: 20px;
+              height: 20px;
+          }
+      }
+
+      button:active {
+          padding: 12px 20px 8px 20px;
+          background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+      }
+      }
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .nilai-nilai_section {
+    padding: 100px;
+    gap: 40px;
+
+    .wave_bawah_nilai {
+    }
+
+    .nilai-nilai_title {
+
+      img {
+      }
+
+      h1 {
+      }
+    }
+
+    .nilai-nilai_content {
+      .content-1,
+      .content-2 {
+
+        .left {
+        }
+
+        .right {
+        }
+      }
+
+      .content-2 {
+        .left {
+        }
+
+        .right {
+        }
+      }
+
+      .content-3 {
+      }
+
+      .card {
+
+        h2.nilai_title,
+        p.sub_nilai {
+        }
+
+        p.sub_nilai {
+        }
+
+        p {
+        }
+
+        .show-more-button {
+          button {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nilai-nilai_section {
+    padding: 80px;
+    box-sizing: border-box;
+
+    .wave_bawah_nilai {
+      margin-top: 80px;
+      margin-bottom: -80px;
+    }
+
+    .nilai-nilai_title {
+
+      img {
+      }
+
+      h1 {
+      }
+    }
+
+    .nilai-nilai_content {
+      // display: flex;
+      // flex-direction: column;
+      // width: 100%;
+
+      .content-1,
+      .content-2 {
+        display: grid;
+        grid-template-columns: 100%;
+        // display: flex;
+        // width: 100%;
+        // gap: 40px;
+        // margin-bottom: 40px;
+
+        .left {
+          width: initial;
+        }
+
+        .right {
+          width: initial;
+        }
+      }
+
+      .content-2 {
+        .left {
+          width: initial;
+        }
+
+        .right {
+          width: initial;
+        }
+      }
+
+      .content-3 {
+        // display: grid;
+        // grid-template-columns: 1fr;
+        // display: flex;
+        // justify-content: center;
+        width: 100%;
+        // margin: auto;
+      }
+
+      .card {
+        // display: flex;
+        // flex-direction: column;
+        // background: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+        // padding: 40px;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        // border-radius: 24px; /* Increased for more rounded corners */
+        // color: rgba(112, 71, 191, 1); // Adjust text color
+
+        h2.nilai_title,
+        p.sub_nilai {
+          // text-align: center;
+          // color: rgba(112, 71, 191, 1); // Adjust text color
+        }
+
+        p.sub_nilai {
+          // font-style: italic;
+          // margin-top: 0; // Smaller margin between nilai_title and sub_nilai
+        }
+
+        p {
+          // margin: 20px 0 0;
+          // text-align: justify;
+          // font-size: 20px;
+          // font-weight: 500;
+          // color: rgba(112, 71, 191, 1); // Adjust text color
+        }
+
+        .show-more-button {
+          // display: flex;
+          // padding: 2px;
+          // align-items: center;
+          // border-radius: 100px;
+          // justify-content: flex-end;
+          // align-items: center;
+          // margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
+          padding-top: 16px;
+
+          button {
+            // display: flex;
+            // padding: 12px 20px;
+            // justify-content: center;
+            // align-items: center;
+            // gap: 8px;
+            // width: max-content;
+            // height: 46px;
+            // border-radius: 100px;
+            // border: 3px solid #9879D4;
+            // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+            // color: #FFF;
+            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+            // font-size: 20px;
+            // font-style: normal;
+            // font-weight: 500;
+            // line-height: normal;
+            // transition: box-shadow 0.1s ease-in-out;
+
+            &:hover {
+              // cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .nilai-nilai_section {
+    padding: 40px;
+
+    .wave_bawah_nilai {
+      margin-top: 80px;
+      margin-bottom: -80px;
+    }
+
+    .nilai-nilai_title {
+
+      img {
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+    .nilai-nilai_content {
+      // display: flex;
+      // flex-direction: column;
+      // width: 100%;
+
+      .content-1,
+      .content-2 {
+        display: grid;
+        grid-template-columns: 100%;
+        // display: flex;
+        // width: 100%;
+        // gap: 40px;
+        // margin-bottom: 40px;
+
+        .left {
+          width: initial;
+        }
+
+        .right {
+          width: initial;
+        }
+      }
+
+      .content-2 {
+        .left {
+          width: initial;
+        }
+
+        .right {
+          width: initial;
+        }
+      }
+
+      .content-3 {
+        width: 100%;
+      }
+
+      .card {
+        // display: flex;
+        // flex-direction: column;
+        // background: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+        // padding: 40px;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        // border-radius: 24px; /* Increased for more rounded corners */
+        // color: rgba(112, 71, 191, 1); // Adjust text color
+
+        h2.nilai_title,
+        p.sub_nilai {
+          // text-align: center;
+          // color: rgba(112, 71, 191, 1); // Adjust text color
+        }
+
+        p.sub_nilai {
+          // font-style: italic;
+          // margin-top: 0; // Smaller margin between nilai_title and sub_nilai
+        }
+
+        p {
+          // margin: 20px 0 0;
+          // text-align: justify;
+          // font-size: 20px;
+          // font-weight: 500;
+          // color: rgba(112, 71, 191, 1); // Adjust text color
+        }
+
+        .show-more-button {
+          // display: flex;
+          // padding: 2px;
+          // align-items: center;
+          // border-radius: 100px;
+          // justify-content: flex-end;
+          // align-items: center;
+          // margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
+          padding-top: 16px;
+
+          button {
+            // display: flex;
+            // padding: 12px 20px;
+            // justify-content: center;
+            // align-items: center;
+            // gap: 8px;
+            // width: max-content;
+            // height: 46px;
+            // border-radius: 100px;
+            // border: 3px solid #9879D4;
+            // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+            // color: #FFF;
+            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+            // font-size: 20px;
+            // font-style: normal;
+            // font-weight: 500;
+            // line-height: normal;
+            // transition: box-shadow 0.1s ease-in-out;
+
+            &:hover {
+              // cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .nilai-nilai_section {
+    padding: 60px 16px;
+
+    .wave_bawah_nilai {
+      margin-top: 80px;
+      margin-bottom: -80px;
+    }
+
+    .nilai-nilai_title {
+
+      img {
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+    }
+
+    .nilai-nilai_content {
+      // display: flex;
+      // flex-direction: column;
+      // width: 100%;
+      gap: 16px;
+
+      .content-1,
+      .content-2 {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 16px;
+        // display: flex;
+        // width: 100%;
+        // gap: 40px;
+        // margin-bottom: 40px;
+
+        .left {
+          width: initial;
+        }
+
+        .right {
+          width: initial;
+        }
+      }
+
+      .content-2 {
+        .left {
+          width: initial;
+        }
+
+        .right {
+          width: initial;
+        }
+      }
+
+      .content-3 {
+        width: 100%;
+      }
+
+      .card {
+        // display: flex;
+        // flex-direction: column;
+        // background: rgba(255, 255, 255, 0.5); /* White with 50% opacity */
+        // padding: 40px;
+        // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        // border-radius: 24px; /* Increased for more rounded corners */
+        // color: rgba(112, 71, 191, 1); // Adjust text color
+
+        h2.nilai_title,
+        p.sub_nilai {
+          // text-align: center;
+          // color: rgba(112, 71, 191, 1); // Adjust text color
+        }
+
+        p.sub_nilai {
+          // font-style: italic;
+          // margin-top: 0; // Smaller margin between nilai_title and sub_nilai
+        }
+
+        p {
+          // margin: 20px 0 0;
+          // text-align: justify;
+          font-size: 16px;
+          // font-weight: 500;
+          // color: rgba(112, 71, 191, 1); // Adjust text color
+        }
+
+        .show-more-button {
+          // display: flex;
+          // padding: 2px;
+          // align-items: center;
+          // border-radius: 100px;
+          // justify-content: flex-end;
+          // align-items: center;
+          // margin-top: auto; /* Menempatkan tombol di sisi paling bawah kartu */
+          padding-top: 16px;
+
+          button {
+            // display: flex;
+            // padding: 12px 20px;
+            // justify-content: center;
+            // align-items: center;
+            // gap: 8px;
+            // width: max-content;
+            // height: 46px;
+            // border-radius: 100px;
+            // border: 3px solid #9879D4;
+            // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+            // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
+            // color: #FFF;
+            // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+            // font-size: 20px;
+            // font-style: normal;
+            // font-weight: 500;
+            // line-height: normal;
+            // transition: box-shadow 0.1s ease-in-out;
+
+            &:hover {
+              // cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

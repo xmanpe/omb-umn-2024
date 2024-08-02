@@ -17,6 +17,16 @@ import SakhaBg from '../../images/background/SAKHA.jpeg'
 import SarkaraBg from '../../images/background/SARKARA.jpeg'
 import BimasenaBg from '../../images/background/BIMASENA.jpeg'
 
+import Acara  from '../../images/Logo Divisi OMB 2024/Balwana Large.png'
+import Desain from '../../images/Logo Divisi OMB 2024/Lavanya Large.png';
+import Dokum from '../../images/Logo Divisi OMB 2024/Baskara Large.png';
+import Keamanan from '../../images/Logo Divisi OMB 2024/Bimasena Large.png';
+import Konsum from '../../images/Logo Divisi OMB 2024/Sarkara Large.png';
+import Perkap from '../../images/Logo Divisi OMB 2024/Gajendra Large.png';
+import Pic from '../../images/Logo Divisi OMB 2024/Sakha Large.png';
+import Pr from '../../images/Logo Divisi OMB 2024/Caksana Large.png';
+import Web from '../../images/Logo Divisi OMB 2024/Nayanika Large.png';
+
 // import icons
 import ArrowRight from '../../images/Arrow/Arrow_Right_MD.png';
 import Warning from '../../images/Warning/Circle_Warning_White.svg';
@@ -46,10 +56,21 @@ const divisionColors = {
 };
 
 const HeroWawancara = () => {
+    let theLogo
     const selectedDivisi = JSON.parse(localStorage.getItem('selectedDivisi'));
     const divisionName = selectedDivisi?.name || "Error";
     const [color1, color2, color3] = divisionColors[divisionName] || [0, 0, 0];
     const backgroundImg = divisionBackgrounds[divisionName] || Background;
+
+    if (selectedDivisi?.name === "BALWANA") theLogo = Acara;
+    if (selectedDivisi?.name === "LAVANYA") theLogo = Desain;
+    if (selectedDivisi?.name === "BASKARA") theLogo = Dokum;
+    if (selectedDivisi?.name === "BIMASENA") theLogo = Keamanan;
+    if (selectedDivisi?.name === "SARKARA") theLogo = Konsum;
+    if (selectedDivisi?.name === "GAJENDRA") theLogo = Perkap;
+    if (selectedDivisi?.name === "SAKHA") theLogo = Pic;
+    if (selectedDivisi?.name === "CAKSANA") theLogo = Pr;
+    if (selectedDivisi?.name === "NAYANIKA") theLogo = Web;
 
     const divisionNotes = {
         // BALWANA: {
@@ -71,11 +92,11 @@ const HeroWawancara = () => {
             text: "<ul><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 18:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>"
         },
         CAKSANA: {
-            text: "<ul><li>Terdapat perubahan jadwal wawancara. Mohon diperhatikan dengan saksama waktunya.</li><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 17:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>"
+            text: "<ul><li>Terdapat perubahan jadwal wawancara. Mohon diperhatikan dengan saksama waktunya.</li><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 18:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>"
         },
     };
     
-    const defaultText = "<ul><li>Calon panitia diharapkan hadir 20 menit lebih awal, yaitu pukul 17:10 WIB.</li><li>Wawancara menggunakan sistem FIFO (<i>First In First Out</i>); untuk itu, jangan lupa untuk tulis nama pada kertas yang sudah disediakan di pintu ruangan.</li></ul>";
+    const defaultText = "<ul><li>Silakan bergabung ke dalam grup LINE divisi yang dikirimkan melalui <i>email</i> kalian.</li><li>Sebelum bergabung, pastikan <i>display name</i> kalian merupakan nama asli dan menggunakan <i>profile picture</i> dengan foto diri yang terkini dan wajah terlihat dengan jelas. </li></ul>";
 
     return (
         <section className="hero-wawancara_section"
@@ -92,15 +113,16 @@ const HeroWawancara = () => {
                 </Link>
                 <div className='title_divisi'>
                     <div className='left_thing'>
-                        <img src={selectedDivisi?.logo} alt="" />
+                        <img src={theLogo} alt="" />
                         <div className='literally_title'>
-                            <p>{divisionName === "BALWANA" ? "Jadwal Seleksi" : "Jadwal Wawancara"}</p>
+                            <p>{divisionName === "BALWANA" ? "Hasil Seleksi" : "Hasil Seleksi"}</p>
                             <h1>Divisi {divisionName}</h1>
                         </div>
                     </div>
                     <div className='right_thing'>
                         {/* <img src={Warning} alt="" /> */}
-                        <p dangerouslySetInnerHTML={{ __html: divisionNotes[divisionName]?.text || defaultText }}></p>
+                        {/* <p dangerouslySetInnerHTML={{ __html: divisionNotes[divisionName]?.text || defaultText }}></p> */}
+                        <p dangerouslySetInnerHTML={{ __html: defaultText }}></p>
                     </div>
                 </div>
             </div>

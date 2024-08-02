@@ -1,0 +1,360 @@
+.mars_section {
+    background:
+        linear-gradient(144deg,
+            rgba(255, 208, 228, 0.20) -14.93%,
+            rgba(202, 191, 249, 0.20) 2.56%,
+            rgba(69, 4, 170, 0.20) 25.07%),
+        linear-gradient(248deg,
+            rgba(255, 208, 228, 0.50) 11.97%,
+            rgba(202, 191, 249, 0.50) 47.21%,
+            rgba(69, 4, 170, 0.50) 92.55%),
+        #7047BF;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: relative;
+    overflow: visible;
+
+    .second-wave {
+        margin-top: -4px;
+        width: 100%;
+        pointer-events: none;
+        transform: scaleY(-1) scaleX(-1);
+        height: 30px;
+    }
+
+    .supergrafis-kembang {
+        position: absolute;
+        top: 300px;
+        left: 0;
+        width: 20%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.6;
+        mix-blend-mode: soft-light;
+    }
+
+    .supergrafis-air-kanan {
+        display: none;
+        display: none;
+        position: absolute;
+        top: 140px;
+        left: 0;
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.6;
+        mix-blend-mode: soft-light;
+        pointer-events: none;
+    }
+        
+    .supergrafis-air-kiri {
+        display: none;
+        position: absolute;
+        bottom: 20%;
+        right: 0;
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+        opacity: 0.6;
+        mix-blend-mode: soft-light;
+        pointer-events: none;
+    }
+
+    .second-wave-bottom {
+        width: 100%;
+        pointer-events: none;
+        transform: scaleX(-1);
+        margin-bottom: -3px;
+    }
+
+    .mars_content {
+        box-sizing: border-box;
+        padding: 60px 160px 0px 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        overflow: visible;
+        box-sizing: border-box;
+
+        .mars_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            overflow: visible;
+            box-sizing: border-box;
+
+            h1 {
+                color: #fff;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                text-align: center;
+                text-shadow: 0px 0px 18px rgba(255, 255, 255, 0.25);
+                line-height: normal;
+            }
+
+            p {
+                margin-top: -20px;
+                color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                align-self: stretch;
+
+                b {
+                    color: white;
+                    font-weight: 600;
+                }
+            }
+
+            p:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+
+            .slider-wrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                overflow: visible;
+                box-sizing: border-box;
+
+                .slider {
+                    display: flex;
+                    gap: 0px;
+                    border: 1.5px solid rgba(0, 0, 0, 0.056);
+                    justify-content: center;
+                    align-items: center;
+                    width: fit-content;
+                    margin: auto;
+                    padding: 2px;
+                    border-radius: 100px;
+                    background: white;
+                    box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+            
+                    .slider-button {
+                        border: none;
+                        border-radius: 100px;
+                        padding: 12px 16px;
+                        font-size: 16px;
+                        font-family: 'GSN';
+                        background: none;
+                        color: rgba(0, 0, 0, 0.365);
+                        cursor: pointer;
+                    }
+            
+                    .active {
+                        border: 2px solid #4504AA;
+                        border-radius: 100px;
+                        font-size: 16px;
+                        font-family: 'GSN';
+                        background-color: #4404aa21;
+                        color: #4504AA;
+                    }
+                }
+            
+                .slider:hover {
+                    box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .mars_section {
+        gap: 40px;
+    
+        .second-wave {
+        }
+    
+        .second-wave-bottom {
+        }
+    
+        .mars_content {
+            padding: 60px 100px 0px 100px;
+    
+            .mars_title {
+                h1 {
+                }
+    
+                .slider-wrapper {
+    
+                    .slider {
+                        .slider-button {
+                            padding: 8px 16px;
+                        }
+                
+                        .active {
+                        }
+                    }
+                
+                    .slider:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mars_section {
+        .second-wave {
+        }
+    
+        .second-wave-bottom {
+        }
+    
+        .mars_content {
+            padding: 60px 80px 0px 80px;
+    
+            .mars_title {
+                h1 {
+                }
+    
+                .slider-wrapper {
+    
+                    .slider {
+                        .slider-button {
+                        }
+                
+                        .active {
+                        }
+                    }
+                
+                    .slider:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .mars_section {
+        .second-wave {
+        }
+    
+        .second-wave-bottom {
+        }
+    
+        .mars_content {
+            padding: 40px 40px 0px 40px;
+    
+            .mars_title {
+                h1 {
+                    font-size: 40px;
+                }
+    
+                .slider-wrapper {
+                    gap: 12px;
+                    
+                    .slider {
+                        .slider-button {
+                        }
+                
+                        .active {
+                        }
+                    }
+                
+                    .slider:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .mars_section {
+        gap: 40px;
+
+        .second-wave {
+        }
+    
+        .second-wave-bottom {
+        }
+    
+        .mars_content {
+            padding: 40px 16px 0px 16px;
+    
+            .mars_title {
+                h1 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+    
+                .slider-wrapper {
+                    gap: 12px;
+                    width: -webkit-fill-available;
+                    
+                    .slider {
+                        width: -webkit-fill-available;
+                        gap: 8px;
+
+                        .slider-button {
+                            padding: 8px 20px;
+                            width: 100%;
+                        }
+                
+                        .active {
+                        }
+                    }
+                
+                    .slider:hover {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .mars_section {
+        .second-wave {
+        }
+    
+        .second-wave-bottom {
+        }
+    
+        .mars_content {
+    
+            .mars_title {
+                h1 {
+                }
+    
+                .slider-wrapper {
+                    flex-direction: column;
+
+                    .slider {
+                        gap: 8px;
+
+                        .slider-button {
+                        }
+                
+                        .active {
+                        }
+                    }
+                
+                    .slider:hover {
+                    }
+                }
+            }
+        }
+    }
+}

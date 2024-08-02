@@ -1,0 +1,1077 @@
+.wrapper-content{
+    padding: 100px 160px 100px 160px;
+    position: relative;
+    overflow: hidden;
+    .slider-wrapper{
+        padding: 32px 10px;
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(to right, transparent 25%, #4504aa 25%, #4504aa 75%, transparent 75%);
+        border-image-slice: 100;
+        .slider{
+            border-radius: 32px;
+            border: 1px solid #4504aa;
+            background: rgba(255, 255, 255, 0.50);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            max-width: fit-content;
+            .slider-button{
+                font-family: "GSN";
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                border-radius: 28px;
+                border: none;
+                font-size: 20px;
+                padding: 10px 16px;
+                color:#4304a980;
+                background-color: #fff;
+                cursor: pointer;
+            }
+            .active{
+                cursor: default;
+                color:#fff;
+                background: rgb(69,4,170);
+                background: linear-gradient(90deg, rgba(69,4,170,1) 0%, rgba(112,71,191,1) 100%);
+            }
+        }
+    }
+    .slider-wrapper-mobile{
+        display: none;
+        margin: 4px;
+        justify-content: center;
+        align-items: center;
+        .slider-mobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            .slider-button-mobile-active{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 16px;
+                gap: 16px;
+                color: #4504aa;
+                font-family: "Gill Sans Nova";
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                background-color: #fff;
+                border-radius: 32px;
+                border: 2px solid #4504aa;
+                box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                .arrow.up{
+                    margin-top: 2px;
+                    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transition-duration: 500ms;
+                    scale: 158%;
+                }
+                .arrow.down {
+                    transform: rotate(-180deg);
+                    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                    transition-duration: 500ms;
+                    scale: 158%;
+                }
+            }
+            .dropdown-wrapper{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background-color: #fff;
+                border: solid 2px #4504aa;
+                border-radius: 20px;
+                gap: 2px;
+                padding: 2px;
+                margin-bottom: -200px;
+                box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                
+                z-index: 100;
+                .slider-button-mobile{
+                    cursor: pointer;
+                    padding: 10px 16px;
+                    gap: 16px;
+                    border: none;
+                    border-radius: 18px;
+                    width: 100%;
+                    color: #4504aa;
+                    background-color: #fff;
+                    font-family: "Gill Sans Nova";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                button:active{
+                    color: #fff;
+                    background-color: #4504aa;
+                }
+                .slider-button-mobile:hover{
+                    color: #fff;
+                    background-color: #4504aa;
+                }
+            }
+        }
+    }
+    .list-wrapper{
+        .list{
+            padding: 40px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 50px;
+            .each-list{
+                display: inherit;
+                justify-content: flex-start;
+                align-items: center;
+                margin: auto;
+                padding: 20px;
+                width: 54vw;
+                gap: 12px;
+                border: solid 2px rgb(255, 255, 255);
+                border-radius: 20px;
+                backdrop-filter: blur(36px);
+                background-color: rgba(255, 255, 255, 0.86);
+                box-shadow: 0px 6px 12px rgba( #000000, 0.2);
+                .number{
+                    font-family: "GSN";
+                    font-weight: 700;
+                    font-size: 32px;
+                    color: #fff;
+                    background: rgb(69,4,170);
+                    background: linear-gradient(139deg, rgba(69,4,170,1) 0%, rgba(255,208,228,1) 100%);
+                    padding: 7px 20px;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    z-index: 1;
+                }
+                .text{
+                    color: #7047BF;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .background-upper{
+        padding-top: 126px;
+        left: 0;
+        object-fit: contain;
+        position:absolute;
+        z-index: -1;
+        background-size: cover;
+        width: 100%;
+    }
+    .background-lower{
+        right: 0;
+        padding-top: 840px;
+        object-fit: contain;
+        position:absolute;
+        z-index: -1;
+        background-size: cover;
+        width: 28%;
+    }
+    .background-extra{
+        left: 0;
+        padding-top: 1600px;
+        object-fit: contain;
+        position:absolute;
+        z-index: -1;
+        background-size: cover;
+        width: 16%;
+        opacity: 50%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .wrapper-content{
+        // margin: auto;
+        padding: 100px;
+        .slider-wrapper{
+            // padding: 32px;
+            // border-bottom: 2px solid transparent;
+            // border-image: linear-gradient(to right, transparent 25%, #4504aa 25%, #4504aa 75%, transparent 75%);
+            // border-image-slice: 100;
+            .slider{
+                // border-radius: 32px;
+                // border: 1px solid #4504aa;
+                // background: rgba(255, 255, 255, 0.50);
+                // margin: auto;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // padding: 4px;
+                // max-width: fit-content;
+                .slider-button{
+                    // font-family: "GSN";
+                    // font-style: normal;
+                    // font-weight: 700;
+                    // line-height: normal;
+                    // border-radius: 28px;
+                    // border: none;
+                    // font-size: 20px;
+                    // padding: 10px 16px;
+                    // color:#4304a980;
+                    // background-color: #fff;
+                    // cursor: pointer;
+                }
+                .active{
+                    // cursor: default;
+                    // color:#fff;
+                    // background: rgb(69,4,170);
+                    // background: linear-gradient(90deg, rgba(69,4,170,1) 0%, rgba(112,71,191,1) 100%);
+                }
+            }
+        }
+        .slider-wrapper-mobile{
+            // display: none;
+            // margin: 4px;
+            // justify-content: center;
+            // align-items: center;
+            .slider-mobile{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+                // gap: 10px;
+                // width: 100%;
+                .slider-button-mobile-active{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // padding: 10px 16px;
+                    // gap: 16px;
+                    // color: #4504aa;
+                    // font-family: "Gill Sans Nova";
+                    // font-size: 24px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                    // background-color: #fff;
+                    // border-radius: 32px;
+                    // border: 2px solid #4504aa;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    .arrow.up{
+                        // margin-top: 2px;
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                    .arrow.down {
+                        // transform: rotate(-180deg);
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                }
+                .dropdown-wrapper{
+                    // position: absolute;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // flex-direction: column;
+                    // background-color: #fff;
+                    // border: solid 2px #4504aa;
+                    // border-radius: 20px;
+                    // gap: 2px;
+                    // padding: 2px;
+                    // margin-bottom: -200px;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    // z-index: 100;
+                    .slider-button-mobile{
+                        // cursor: pointer;
+                        // padding: 10px 16px;
+                        // gap: 16px;
+                        // border: none;
+                        // border-radius: 18px;
+                        // width: 100%;
+                        // color: #4504aa;
+                        // background-color: #fff;
+                        // font-family: "Gill Sans Nova";
+                        // font-size: 24px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                    }
+                    .slider-button-mobile:hover{
+                        // color: #fff;
+                        // background-color: #4504aa;
+                    }
+                }
+            }
+        }
+        .list-wrapper{
+            .list{
+                // padding: 40px 0px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
+                // flex-direction: column;
+                // gap: 50px;
+                .each-list{
+                    // display: inherit;
+                    // justify-content: flex-start;
+                    // align-items: flex-start;
+                    // margin: auto;
+                    // padding: 20px;
+                    // width: 54vw;
+                    // gap: 12px;
+                    // border: solid 2px rgb(255, 255, 255);
+                    // border-radius: 20px;
+                    // backdrop-filter: blur(36px);
+                    // background-color: rgba(255, 255, 255, 0.68);
+                    // box-shadow: 0px 6px 12px rgba( #000000, 0.2);
+                    .number{
+                        // font-family: "GSN";
+                        // font-weight: 700;
+                        // font-size: 32px;
+                        // color: #fff;
+                        // background: rgb(69,4,170);
+                        // background: linear-gradient(139deg, rgba(69,4,170,1) 0%, rgba(255,208,228,1) 100%);
+                        // padding: 7px 20px;
+                        // border-radius: 50%;
+                        // flex-shrink: 0;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // margin-right: 20px;
+                        // z-index: 1;
+                    }
+                    .text{
+                        // color: #7047BF;
+                        // font-size: 20px;
+                    }
+                }
+            }
+        }
+        .background{
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 100%;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper-content{
+        // margin: auto;
+        padding: 80px;
+        .slider-wrapper{
+            // padding: 32px;
+            // border-bottom: 2px solid transparent;
+            // border-image: linear-gradient(to right, transparent 25%, #4504aa 25%, #4504aa 75%, transparent 75%);
+            // border-image-slice: 100;
+            .slider{
+                // border-radius: 32px;
+                // border: 1px solid #4504aa;
+                // background: rgba(255, 255, 255, 0.50);
+                // margin: auto;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // padding: 4px;
+                // max-width: fit-content;
+                .slider-button{
+                    // font-family: "GSN";
+                    // font-style: normal;
+                    // font-weight: 700;
+                    // line-height: normal;
+                    // border-radius: 28px;
+                    // border: none;
+                    // font-size: 20px;
+                    // padding: 10px 16px;
+                    // color:#4304a980;
+                    // background-color: #fff;
+                    // cursor: pointer;
+                }
+                .active{
+                    // cursor: default;
+                    // color:#fff;
+                    // background: rgb(69,4,170);
+                    // background: linear-gradient(90deg, rgba(69,4,170,1) 0%, rgba(112,71,191,1) 100%);
+                }
+            }
+        }
+        .slider-wrapper-mobile{
+            // display: none;
+            // margin: 4px;
+            // justify-content: center;
+            // align-items: center;
+            .slider-mobile{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+                // gap: 10px;
+                // width: 100%;
+                .slider-button-mobile-active{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // padding: 10px 16px;
+                    // gap: 16px;
+                    // color: #4504aa;
+                    // font-family: "Gill Sans Nova";
+                    // font-size: 24px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                    // background-color: #fff;
+                    // border-radius: 32px;
+                    // border: 2px solid #4504aa;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    .arrow.up{
+                        // margin-top: 2px;
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                    .arrow.down {
+                        // transform: rotate(-180deg);
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                }
+                .dropdown-wrapper{
+                    // position: absolute;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // flex-direction: column;
+                    // background-color: #fff;
+                    // border: solid 2px #4504aa;
+                    // border-radius: 20px;
+                    // gap: 2px;
+                    // padding: 2px;
+                    // margin-bottom: -200px;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    // z-index: 100;
+                    .slider-button-mobile{
+                        // cursor: pointer;
+                        // padding: 10px 16px;
+                        // gap: 16px;
+                        // border: none;
+                        // border-radius: 18px;
+                        // width: 100%;
+                        // color: #4504aa;
+                        // background-color: #fff;
+                        // font-family: "Gill Sans Nova";
+                        // font-size: 24px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                    }
+                    .slider-button-mobile:hover{
+                        // color: #fff;
+                        // background-color: #4504aa;
+                    }
+                }
+            }
+        }
+        .list-wrapper{
+            .list{
+                // padding: 40px 0px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
+                // flex-direction: column;
+                // gap: 50px;
+                .each-list{
+                    // display: inherit;
+                    // justify-content: flex-start;
+                    // align-items: flex-start;
+                    // margin: auto;
+                    // padding: 20px;
+                    width: 68vw;
+                    // gap: 12px;
+                    // border: solid 2px rgb(255, 255, 255);
+                    // border-radius: 20px;
+                    // backdrop-filter: blur(36px);
+                    // background-color: rgba(255, 255, 255, 0.68);
+                    // box-shadow: 0px 6px 12px rgba( #000000, 0.2);
+                    .number{
+                        // font-family: "GSN";
+                        // font-weight: 700;
+                        // font-size: 32px;
+                        // color: #fff;
+                        // background: rgb(69,4,170);
+                        // background: linear-gradient(139deg, rgba(69,4,170,1) 0%, rgba(255,208,228,1) 100%);
+                        // padding: 7px 20px;
+                        // border-radius: 50%;
+                        // flex-shrink: 0;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // margin-right: 20px;
+                        // z-index: 1;
+                    }
+                    .text{
+                        // color: #7047BF;
+                        // font-size: 20px;
+                    }
+                }
+            }
+        }
+        .background{
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .wrapper-content{
+        // margin: auto;
+        padding: 40px;
+        .slider-wrapper{
+            // padding: 32px;
+            // border-bottom: 2px solid transparent;
+            // border-image: linear-gradient(to right, transparent 25%, #4504aa 25%, #4504aa 75%, transparent 75%);
+            // border-image-slice: 100;
+            .slider{
+                // border-radius: 32px;
+                // border: 1px solid #4504aa;
+                // background: rgba(255, 255, 255, 0.50);
+                // margin: auto;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // padding: 4px;
+                // max-width: fit-content;
+                .slider-button{
+                    // font-family: "GSN";
+                    // font-style: normal;
+                    font-weight: 640;
+                    // line-height: normal;
+                    // border-radius: 28px;
+                    // border: none;
+                    font-size: 20px;
+                    // padding: 10px 16px;
+                    // color:#4304a980;
+                    // background-color: #fff;
+                    // cursor: pointer;
+                }
+                .active{
+                    // cursor: default;
+                    // color:#fff;
+                    // background: rgb(69,4,170);
+                    // background: linear-gradient(90deg, rgba(69,4,170,1) 0%, rgba(112,71,191,1) 100%);
+                }
+            }
+        }
+        .slider-wrapper-mobile{
+            // display: none;
+            // margin: 4px;
+            // justify-content: center;
+            // align-items: center;
+            .slider-mobile{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+                // gap: 10px;
+                // width: 100%;
+                .slider-button-mobile-active{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // padding: 10px 16px;
+                    // gap: 16px;
+                    // color: #4504aa;
+                    // font-family: "Gill Sans Nova";
+                    // font-size: 24px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                    // background-color: #fff;
+                    // border-radius: 32px;
+                    // border: 2px solid #4504aa;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    .arrow.up{
+                        // margin-top: 2px;
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                    .arrow.down {
+                        // transform: rotate(-180deg);
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                }
+                .dropdown-wrapper{
+                    // position: absolute;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // flex-direction: column;
+                    // background-color: #fff;
+                    // border: solid 2px #4504aa;
+                    // border-radius: 20px;
+                    // gap: 2px;
+                    // padding: 2px;
+                    // margin-bottom: -200px;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    // z-index: 100;
+                    .slider-button-mobile{
+                        // cursor: pointer;
+                        // padding: 10px 16px;
+                        // gap: 16px;
+                        // border: none;
+                        // border-radius: 18px;
+                        // width: 100%;
+                        // color: #4504aa;
+                        // background-color: #fff;
+                        // font-family: "Gill Sans Nova";
+                        // font-size: 24px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                    }
+                    .slider-button-mobile:hover{
+                        // color: #fff;
+                        // background-color: #4504aa;
+                    }
+                }
+            }
+        }
+        .list-wrapper{
+            .list{
+                // padding: 40px 0px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
+                // flex-direction: column;
+                // gap: 50px;
+                .each-list{
+                    // display: inherit;
+                    // justify-content: flex-start;
+                    // align-items: flex-start;
+                    // margin: auto;
+                    // padding: 20px;
+                    width: 72vw;
+                    // gap: 12px;
+                    // border: solid 2px rgb(255, 255, 255);
+                    // border-radius: 20px;
+                    // backdrop-filter: blur(36px);
+                    // background-color: rgba(255, 255, 255, 0.68);
+                    // box-shadow: 0px 6px 12px rgba( #000000, 0.2);
+                    .number{
+                        // font-family: "GSN";
+                        // font-weight: 700;
+                        // font-size: 32px;
+                        // color: #fff;
+                        // background: rgb(69,4,170);
+                        // background: linear-gradient(139deg, rgba(69,4,170,1) 0%, rgba(255,208,228,1) 100%);
+                        // padding: 7px 20px;
+                        // border-radius: 50%;
+                        // flex-shrink: 0;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // margin-right: 20px;
+                        // z-index: 1;
+                    }
+                    .text{
+                        // color: #7047BF;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .background{
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .wrapper-content{
+        // margin: auto;
+        padding: 60px 16px;
+        .slider-wrapper{
+            display: none;
+            // padding: 32px;
+            // border-bottom: 2px solid transparent;
+            // border-image: linear-gradient(to right, transparent 25%, #4504aa 25%, #4504aa 75%, transparent 75%);
+            // border-image-slice: 100;
+            .slider{
+                // border-radius: 32px;
+                // border: 1px solid #4504aa;
+                // background: rgba(255, 255, 255, 0.50);
+                // margin: auto;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // padding: 4px;
+                // max-width: fit-content;
+                .slider-button{
+                    // font-family: "GSN";
+                    // font-style: normal;
+                    // font-weight: 700;
+                    // line-height: normal;
+                    // border-radius: 28px;
+                    // border: none;
+                    // font-size: 20px;
+                    // padding: 10px 16px;
+                    // color:#4304a980;
+                    // background-color: #fff;
+                    // cursor: pointer;
+                }
+                .active{
+                    // cursor: default;
+                    // color:#fff;
+                    // background: rgb(69,4,170);
+                    // background: linear-gradient(90deg, rgba(69,4,170,1) 0%, rgba(112,71,191,1) 100%);
+                }
+            }
+        }
+        .slider-wrapper-mobile{
+            display: flex;
+            // margin: 4px;
+            // justify-content: center;
+            // align-items: center;
+            .slider-mobile{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+                // gap: 10px;
+                // width: 100%;
+                .slider-button-mobile-active{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // padding: 10px 16px;
+                    // gap: 16px;
+                    // color: #4504aa;
+                    // font-family: "Gill Sans Nova";
+                    font-size: 18px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                    // background-color: #fff;
+                    // border-radius: 32px;
+                    // border: 2px solid #4504aa;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    .arrow.up{
+                        // margin-top: 2px;
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        scale: 124%;
+                    }
+                    .arrow.down {
+                        // transform: rotate(-180deg);
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        scale: 124%;
+                    }
+                }
+                .dropdown-wrapper{
+                    // position: absolute;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // flex-direction: column;
+                    // background-color: #fff;
+                    // border: solid 2px #4504aa;
+                    // border-radius: 20px;
+                    // gap: 2px;
+                    // padding: 2px;
+                    // margin-bottom: -200px;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    // z-index: 100;
+                    .slider-button-mobile{
+                        // cursor: pointer;
+                        // padding: 10px 16px;
+                        // gap: 16px;
+                        // border: none;
+                        // border-radius: 18px;
+                        // width: 100%;
+                        // color: #4504aa;
+                        // background-color: #fff;
+                        // font-family: "Gill Sans Nova";
+                        font-size: 18px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                    }
+                    button:active{
+                        color: #fff;
+                        background-color: #4504aa;
+                    }
+                }
+            }
+        }
+        .list-wrapper{
+            .list{
+                // padding: 40px 0px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
+                // flex-direction: column;
+                gap: 30px;
+                .each-list{
+                    // display: inherit;
+                    // justify-content: flex-start;
+                    // align-items: flex-start;
+                    // margin: auto;
+                    // padding: 20px;
+                    // width: 54vw;
+                    gap: 4px;
+                    // border: solid 2px rgb(255, 255, 255);
+                    // border-radius: 20px;
+                    // backdrop-filter: blur(36px);
+                    // background-color: rgba(255, 255, 255, 0.68);
+                    // box-shadow: 0px 6px 12px rgba( #000000, 0.2);
+                    .number{
+                        // font-family: "GSN";
+                        font-weight: 700;
+                        font-size: 26px;
+                        // color: #fff;
+                        // background: rgb(69,4,170);
+                        // background: linear-gradient(139deg, rgba(69,4,170,1) 0%, rgba(255,208,228,1) 100%);
+                        padding: 4px 15.4px;
+                        // border-radius: 50%;
+                        // flex-shrink: 0;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // margin-right: 20px;
+                        // z-index: 1;
+                    }
+                    .text{
+                        // color: #7047BF;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .background{
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 432px) {
+    .wrapper-content{
+        // margin: auto;
+        // padding: 100px 160px 100px 160px;
+        .slider-wrapper{
+            // padding: 32px 10px;
+            // border-bottom: 2px solid transparent;
+            // border-image: linear-gradient(to right, transparent 25%, #4504aa 25%, #4504aa 75%, transparent 75%);
+            // border-image-slice: 100;
+            .slider{
+                // border-radius: 32px;
+                // border: 1px solid #4504aa;
+                // background: rgba(255, 255, 255, 0.50);
+                // margin: auto;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // padding: 4px;
+                // max-width: fit-content;
+                .slider-button{
+                    // font-family: "GSN";
+                    // font-style: normal;
+                    // font-weight: 700;
+                    // line-height: normal;
+                    // border-radius: 28px;
+                    // border: none;
+                    // font-size: 20px;
+                    // padding: 10px 16px;
+                    // color:#4304a980;
+                    // background-color: #fff;
+                    // cursor: pointer;
+                }
+                .active{
+                    // cursor: default;
+                    // color:#fff;
+                    // background: rgb(69,4,170);
+                    // background: linear-gradient(90deg, rgba(69,4,170,1) 0%, rgba(112,71,191,1) 100%);
+                }
+            }
+        }
+        .slider-wrapper-mobile{
+            // display: none;
+            // margin: 4px;
+            // justify-content: center;
+            // align-items: center;
+            .slider-mobile{
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // flex-direction: column;
+                // gap: 10px;
+                // width: 100%;
+                .slider-button-mobile-active{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // padding: 10px 16px;
+                    // gap: 16px;
+                    // color: #4504aa;
+                    // font-family: "Gill Sans Nova";
+                    // font-size: 24px;
+                    // font-style: normal;
+                    // font-weight: 500;
+                    // line-height: normal;
+                    // background-color: #fff;
+                    // border-radius: 32px;
+                    // border: 2px solid #4504aa;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    .arrow.up{
+                        // margin-top: 2px;
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                    .arrow.down {
+                        // transform: rotate(-180deg);
+                        // transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+                        // transition-duration: 500ms;
+                        // scale: 158%;
+                    }
+                }
+                .dropdown-wrapper{
+                    // position: absolute;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // flex-direction: column;
+                    // background-color: #fff;
+                    // border: solid 2px #4504aa;
+                    // border-radius: 20px;
+                    // gap: 2px;
+                    // padding: 2px;
+                    // margin-bottom: -200px;
+                    // box-shadow: 0px 2px 6px rgba(9, 9, 9, 0.4);
+                    
+                    // z-index: 100;
+                    .slider-button-mobile{
+                        // cursor: pointer;
+                        // padding: 10px 16px;
+                        // gap: 16px;
+                        // border: none;
+                        // border-radius: 18px;
+                        // width: 100%;
+                        // color: #4504aa;
+                        // background-color: #fff;
+                        // font-family: "Gill Sans Nova";
+                        // font-size: 24px;
+                        // font-style: normal;
+                        // font-weight: 500;
+                        // line-height: normal;
+                    }
+                    button:active{
+                        // color: #fff;
+                        // background-color: #4504aa;
+                    }
+                    .slider-button-mobile:hover{
+                        // color: #fff;
+                        // background-color: #4504aa;
+                    }
+                }
+            }
+        }
+        .list-wrapper{
+            .list{
+                // padding: 40px 0px;
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
+                // flex-direction: column;
+                // gap: 50px;
+                .each-list{
+                    // display: inherit;
+                    // justify-content: flex-start;
+                    // align-items: center;
+                    // margin: auto;
+                    // padding: 20px;
+                    // width: 54vw;
+                    // gap: 12px;
+                    // border: solid 2px rgb(255, 255, 255);
+                    // border-radius: 20px;
+                    // backdrop-filter: blur(36px);
+                    // background-color: rgba(255, 255, 255, 0.86);
+                    // box-shadow: 0px 6px 12px rgba( #000000, 0.2);
+                    .number{
+                        // font-family: "GSN";
+                        // font-weight: 700;
+                        // font-size: 32px;
+                        // color: #fff;
+                        // background: rgb(69,4,170);
+                        // background: linear-gradient(139deg, rgba(69,4,170,1) 0%, rgba(255,208,228,1) 100%);
+                        // padding: 7px 20px;
+                        // border-radius: 50%;
+                        // flex-shrink: 0;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // margin-right: 20px;
+                        // z-index: 1;
+                    }
+                    .text{
+                        // color: #7047BF;
+                        // font-size: 20px;
+                    }
+                }
+            }
+        }
+        .background-upper{
+            // padding-top: 126px;
+            // left: 0;
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 100%;
+        }
+        .background-lower{
+            // right: 0;
+            // padding-top: 840px;
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 28%;
+        }
+        .background-extra{
+            // left: 0;
+            // padding-top: 1600px;
+            // object-fit: contain;
+            // position:absolute;
+            // z-index: -1;
+            // background-size: cover;
+            // width: 24%;
+            // opacity: 50%;
+        }
+    } 
+}

@@ -1,6 +1,6 @@
 .small_modal {
     position: fixed;
-    top: 20px;
+    top: 12px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -10,7 +10,7 @@
     align-items: center;
     border-radius: 100px;
     /* background: linear-gradient(97deg, rgba(84, 0, 184, 0.70) 0%, rgba(176, 110, 209, 0.70) 56.97%, rgba(255, 207, 229, 0.70) 100%); */
-    background: #ffffffec;
+    background: #ffffff;
     box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
     gap: 60px;
     opacity: 0; /* Initially hidden */
@@ -21,12 +21,12 @@
 .left_side_modal {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
 }
 
 .small_modal .supergrafis {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
 }
 
 .small_modal.visible {
@@ -36,7 +36,7 @@
 .small_modal p {
     color: #4504AA;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -65,7 +65,7 @@
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.40), 0px -4px 8px 0px rgba(0, 0, 0, 0.36) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset;
     color: #FFF;
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

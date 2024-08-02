@@ -12,6 +12,7 @@ import Footer from "../components/footer/Footer";
 import PetugasUpacara from "../components/petugas-upacara/PetugasUpacara";
 import InfoPWRevisi from "../components/informasi-penting-wajib/InfoPWRevisi";
 import Bingkai from "../components/bingkai-resmi/Bingkai";
+import SIO from "../components/sio/SIO";
 
 const Home = () => {
   const [showExperience, setShowExperience] = useState(false);
@@ -49,6 +50,7 @@ const Home = () => {
       <YouTube />
       <SwaraBestari />
       <InfoPWRevisi />
+      <SIO />
       {/* <Ananta /> */}
       <Footer />
     </>

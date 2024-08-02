@@ -22,6 +22,7 @@ import BorderFilm from "../../images/bingkai resmi/SENI DAN DESAIN/FilmAnimasi.p
 
 import Download from '../../images/icons/Interface/Download.svg'
 import Copy from '../../images/icons/Edit/Copy.svg'
+import Checked from '../../images/icons/Interface/Check.svg'
 
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";

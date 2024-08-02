@@ -35,6 +35,7 @@ const ShuttleBus = () => {
             {type === "bigBus" ? "Bus Besar" : "Bus Kecil"}
           </div>
         </div>
+        <div className="right-bus">
         {BusSchedules[slides[sliderState]][type]?.[scheduleType]?.map(
           (schedule, index) => (
             <div key={index} className="shuttle_bus_item">
@@ -43,7 +44,6 @@ const ShuttleBus = () => {
                   <img src={schedule.image} alt={`Schedule ${index + 1}`} />
                 </div>
                 <div className="shuttle_bus_time">{schedule.time}</div>
-                {/* <div className="shuttle_bus_route">{schedule.route}</div> */}
                 <div
                   className="shuttle_bus_route"
                   dangerouslySetInnerHTML={{ __html: schedule.route }}
@@ -65,6 +65,7 @@ const ShuttleBus = () => {
             </div>
           )
         )}
+        </div>
       </div>
       <div className="shuttle_bus_kepulangan">
         <p
@@ -85,69 +86,64 @@ const ShuttleBus = () => {
     <section className="shuttle_bus_section">
       <div className="shuttle_bus_title">
         <h1>
-          <i>Shuttle Bus</i>
+          Rute <i>Shuttle Bus</i>
         </h1>
         <p>
-          <i>Shuttle bus</i> disediakan <b>gratis </b> selama rangkaian{" "}
-          <b>OMB UMN 2024</b>{" "}
-          berlangsung dan dapat digunakan untuk{" "}
-          <b>keberangkatan serta kepulangan Peserta OMB UMN 2024</b>.
+          <i>Shuttle bus</i> disediakan <b>gratis </b>selama rangkaian <b>OMB UMN 2024</b> berlangsung dan dapat digunakan untuk <b>keberangkatan serta kepulangan Peserta OMB UMN 2024</b>.
         </p>
-      </div>
-
-      <div className="slider">
-        {slides.map((slide, index) => (
-          <button
-            key={index}
-            className={`slider-button ${sliderState === index ? "active" : ""}`}
-            onClick={() => setSliderState(index)}
-          >
-            {slide}
-          </button>
-        ))}
-      </div>
-      <div className="slider-wrapper-mobile">
-        <div className="slider-mobile">
-          {slides.map(
-            (slides, index) =>
-              sliderState === index && (
-                <button
-                  key={index}
-                  className="slider-button-mobile-active"
-                  onClick={handleDropdownClick}
-                >
-                  {slides}
-                  <img
-                    className={`arrow ${!showMobileDropdown ? "up" : "down"}`}
-                    src={ArrowDropdown}
-                    alt="drop"
-                  />
-                </button>
-              )
-          )}
-          {showMobileDropdown && (
-            <div className="dropdown-wrapper">
-              {slides.map(
-                (slides, index) =>
-                  sliderState !== index && (
-                    <button
-                      key={index}
-                      className={`slider-button-mobile`}
-                      onClick={() => handleUserClick(index)}
-                    >
-                      {slides}
-                    </button>
-                  )
-              )}
-            </div>
-          )}
+        <div className="slider">
+          {slides.map((slide, index) => (
+            <button
+              key={index}
+              className={`slider-button ${sliderState === index ? "active" : ""}`}
+              onClick={() => setSliderState(index)}
+            >
+              {slide}
+            </button>
+          ))}
+        </div>
+        <div className="slider-wrapper-mobile">
+          <div className="slider-mobile">
+            {slides.map(
+              (slides, index) =>
+                sliderState === index && (
+                  <button
+                    key={index}
+                    className="slider-button-mobile-active"
+                    onClick={handleDropdownClick}
+                  >
+                    {slides}
+                    <img
+                      className={`arrow ${!showMobileDropdown ? "up" : "down"}`}
+                      src={ArrowDropdown}
+                      alt="drop"
+                    />
+                  </button>
+                )
+            )}
+            {showMobileDropdown && (
+              <div className="dropdown-wrapper">
+                {slides.map(
+                  (slides, index) =>
+                    sliderState !== index && (
+                      <button
+                        key={index}
+                        className={`slider-button-mobile`}
+                        onClick={() => handleUserClick(index)}
+                      >
+                        {slides}
+                      </button>
+                    )
+                )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
+
       <div className="shuttle_bus_content">
         {renderSchedule("bigBus", "departure")}
         {renderSchedule("miniBus", "departure")}
-        {/* {renderSchedule("bigBus", "return")}
-        {renderSchedule("miniBus", "return")} */}
       </div>
     </section>
   );

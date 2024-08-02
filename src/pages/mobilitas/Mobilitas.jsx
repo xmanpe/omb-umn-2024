@@ -18,7 +18,7 @@ const Mobilitas = () => {
                 bottom={bottom}
             />
               <Tikum />
-              {/* <ShuttleBus /> */}
+              <ShuttleBus />
             <Footer />
         </>
     );

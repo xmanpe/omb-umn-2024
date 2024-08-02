@@ -7,21 +7,59 @@
 
     .progress-bar {
         display: flex;
-        background-color: white;
-        justify-content: center;
-        background-color: blue;
-        padding: 4px;
-        border-radius: 100px;
-
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+      
         .step {
-            border: 1px solid black;
-            border-radius: 100px;
-            padding: 12px;
-        }
-
-        .active {
-            background-color: #4504AA;
-            color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          width: 34%;
+      
+          &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 3px solid white;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            background-color: #e0e0e07c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 8px;
+          }
+      
+          &::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: calc(50% + 15px);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            width: calc(100% - 30px);
+            height: 2.5px;
+            background-color: #e0e0e0;
+          }
+      
+          &:last-child::after {
+            display: none;
+          }
+      
+          &.active {
+            &::before {
+              background-color: #4504AA;
+            }
+      
+            &::after {
+              background-color: #4504AA;
+            }
+          }
         }
     }
 
@@ -569,22 +607,23 @@
         padding: 40px 100px;
     
         .progress-bar {
-            display: flex;
-            background-color: white;
-            justify-content: center;
-            background-color: blue;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .step {
-                border: 1px solid black;
-                border-radius: 100px;
-                padding: 12px;
-            }
-    
-            .active {
-                background-color: #4504AA;
-                color: white;
+            .step {          
+              &::before {
+              }
+          
+              &::after {
+              }
+          
+              &:last-child::after {
+              }
+          
+              &.active {
+                &::before {
+                }
+          
+                &::after {
+                }
+              }
             }
         }
     
@@ -775,22 +814,23 @@
         padding: 80px;
     
         .progress-bar {
-            display: flex;
-            background-color: white;
-            justify-content: center;
-            background-color: blue;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .step {
-                border: 1px solid black;
-                border-radius: 100px;
-                padding: 12px;
-            }
-    
-            .active {
-                background-color: #4504AA;
-                color: white;
+            .step {          
+              &::before {
+              }
+          
+              &::after {
+              }
+          
+              &:last-child::after {
+              }
+          
+              &.active {
+                &::before {
+                }
+          
+                &::after {
+                }
+              }
             }
         }
     
@@ -995,22 +1035,23 @@
         padding: 40px;
     
         .progress-bar {
-            display: flex;
-            background-color: white;
-            justify-content: center;
-            background-color: blue;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .step {
-                border: 1px solid black;
-                border-radius: 100px;
-                padding: 12px;
-            }
-    
-            .active {
-                background-color: #4504AA;
-                color: white;
+            .step {          
+              &::before {
+              }
+          
+              &::after {
+              }
+          
+              &:last-child::after {
+              }
+          
+              &.active {
+                &::before {
+                }
+          
+                &::after {
+                }
+              }
             }
         }
     
@@ -1218,22 +1259,23 @@
         padding: 16px;
     
         .progress-bar {
-            display: flex;
-            background-color: white;
-            justify-content: center;
-            background-color: blue;
-            padding: 4px;
-            border-radius: 100px;
-    
-            .step {
-                border: 1px solid black;
-                border-radius: 100px;
-                padding: 12px;
-            }
-    
-            .active {
-                background-color: #4504AA;
-                color: white;
+            .step {          
+              &::before {
+              }
+          
+              &::after {
+              }
+          
+              &:last-child::after {
+              }
+          
+              &.active {
+                &::before {
+                }
+          
+                &::after {
+                }
+              }
             }
         }
     

@@ -206,9 +206,15 @@ function BingkaiPage() {
         setTimeout(() => setCopied(false), 2000);
     };
 
+    const stripHtml = (html) => {
+        const tmp = document.createElement("DIV");
+        tmp.innerHTML = html;
+        return tmp.textContent || tmp.innerText || "";
+      }
+
     const textToCopy = `
         🪷<br>
-        Lotus Biru merajut kisah indah, <br>
+        Lotus Biru merajut kisah indah,<br>
         Saya siap untuk awali langkah!
         <br><br>
         Perkenalkan nama saya ${name}, mahasiswa dari program studi ${majors.find(m => m.value === major)?.label} Universitas Multimedia Nusantara 2024. Saya bangga untuk mencetak sejarah baru dengan mengikuti Orientasi Mahasiswa Baru UMN 2024 dan menjadi bagian dari keluarga besar Universitas Multimedia Nusantara.
@@ -226,11 +232,11 @@ function BingkaiPage() {
             veryBottom={veryBottom}
         />
         <div className="bingkaiResmi_section">
-            {/* <div className="progress-bar">
-                <div className={`step ${step >= 1 ? 'active' : ''}`}>Kenali Aku</div>
+            <div className="progress-bar">
+                <div className={`step ${step >= 1 ? 'active' : ''}`}>Data Diri</div>
                 <div className={`step ${step >= 2 ? 'active' : ''}`}>Atur Bingkai</div>
                 <div className={`step ${step >= 3 ? 'active' : ''}`}>Siap OMB!</div>
-            </div> */}
+            </div>
 
             {step === 1 && (
                 <div className="step-1">
@@ -238,7 +244,7 @@ function BingkaiPage() {
                         <img src={FotoArtis} alt="Kevin Ken" />
                     </div>
                     <div className="konten-kanan">
-                        <h1>Kenali Aku</h1>
+                        <h1>Data Diri</h1>
                         <div className="the-form">
                             <div className="the-input">
                                 <p>Nama</p>
@@ -357,7 +363,7 @@ function BingkaiPage() {
                                     </button>
                                 </div>
                                 <div className='cta_button'>
-                                    <CopyToClipboard text={textToCopy} onCopy={handleCopyText}>
+                                    <CopyToClipboard text={stripHtml(textToCopy)} onCopy={handleCopyText}>
                                         <button>{copied ? 'Teks tersalin!' : <span>Salin teks</span>}
                                         <img src={Copy} alt="copypaste" />
                                         </button>

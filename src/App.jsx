@@ -35,7 +35,7 @@ function App() {
           <Route path="/linimasa" element={<Linimasa />} />
           <Route path="/mars" element={<MarsOMB />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/bingkai" element={<BingkaiPageRevisi />} />
+          <Route path="/bingkai-resmi" element={<BingkaiPageRevisi />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

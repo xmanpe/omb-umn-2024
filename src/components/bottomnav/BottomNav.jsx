@@ -27,6 +27,8 @@ import DivisiNotActive from '../../images/icons/Divisi.svg';
 import DivisiActive from '../../images/icons/Divisi_Active.svg';
 import DinamikaNotActive from '../../images/icons/Dinamika.svg';
 import DinamikaActive from '../../images/icons/Dinamika_Active.svg';
+import BingkaiNotActive from '../../images/icons/Bingkai.svg';
+import BingkaiActive from '../../images/icons/Bingkai_Active.svg';
 
 const tabsConfig = [
     { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
@@ -38,6 +40,7 @@ const tabsConfig = [
         text: 'Informasi OMB UMN 2024',
         subMenu: [
             { path: '/atribut-peserta', text: 'Atribut Peserta', icon: AtributNotActive },
+            { path: '/bingkai-resmi', text: 'Bingkai Resmi', icon: BingkaiNotActive },
             { path: '/divisi', text: 'Divisi', icon: DivisiNotActive },
             { path: '/linimasa', text: 'Linimasa', icon: TimelineNotActive },
             { path: '/mars', text: 'Mars', icon: MarsNotActive },

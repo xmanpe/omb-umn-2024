@@ -7,6 +7,7 @@ import AnnCard from '../cards/ann card/AnnCard';
 import AnnCard2 from '../cards/ann card/AnnCard2';
 import AnnCard3 from '../cards/ann card/AnnCard3';
 import AnnCard4 from '../cards/ann card/AnnCard4';
+import AnnCard5 from '../cards/ann card/AnnCard5';
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
@@ -68,6 +69,7 @@ const Hero = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide><AnnCard /></SwiperSlide>
+                    <SwiperSlide><AnnCard5 /></SwiperSlide>
                     <SwiperSlide><AnnCard3 /></SwiperSlide>
                     <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard4 /></SwiperSlide>

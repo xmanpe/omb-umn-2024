@@ -216,7 +216,7 @@ function BingkaiPage() {
 Lotus Biru merajut kisah indah,<br>
 Saya siap untuk awali langkah!<br><br>
     
-Perkenalkan nama saya ${name}, mahasiswa dari program studi ${majors.find(m => m.value === major)?.label} Universitas Multimedia Nusantara 2024. Saya bangga untuk mencetak sejarah baru dengan mengikuti Orientasi Mahasiswa Baru UMN 2024 dan menjadi bagian dari keluarga besar Universitas Multimedia Nusantara.<br>
+Perkenalkan nama saya ${name}, mahasiswa dari program studi ${majors.find(m => m.value === major)?.label} Universitas Multimedia Nusantara 2024. Saya bangga untuk mencetak sejarah baru dengan mengikuti Orientasi Mahasiswa Baru UMN 2024 dan menjadi bagian dari keluarga besar Universitas Multimedia Nusantara.<br><br>
 
 Saya siap untuk tangguhkan ambisi dan menumbuhkan potensi bagi almamater, persada, dan sesama.<br><br>
     

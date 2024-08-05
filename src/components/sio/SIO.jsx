@@ -3,14 +3,16 @@ import "./SIO.scss";
 
 //images
 import Arrow from "../../images/Arrow/Arrow_Right_MD.svg"
-import Laptop from "../../images/sio/Laptop.png" //temporary, jgn lupa diganti
+import Laptop from "../../images/sio/sio_laptop.png" //temporary, jgn lupa diganti
 import BG from "../../images/sio/BG.png"
 import Calender_Days from "../../images/icons/Calendar_Days.svg"
 import Clock from "../../images/icons/Clock.svg"
 
+
 //supergrafis
 import Tangkai from "../../images/supergrafis/SupergrafisSIO/Outline - 4 Bunga Lotus Biru.svg"
 import Bunga from "../../images/supergrafis/SupergrafisSIO/Outline - Bunga Lotus Biru di Atas Air 1.svg"
+import SecondWave from '../../images/waves/Wave Three.png'
 
 const SIO = () => {
     const openPage = () => {

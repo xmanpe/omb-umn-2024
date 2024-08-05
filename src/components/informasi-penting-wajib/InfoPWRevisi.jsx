@@ -19,7 +19,7 @@ const InfoPWRevisi = () => {
 
     return (
         <section className="infopw_section" id='infopw_section'>
-            <img className='wave_two' src={Wave} alt="Wave" />
+            {/* <img className='wave_two' src={Wave} alt="Wave" /> */}
             <div className='infopw_content'>
                 <div className='kiri'>
                     <img className='stack-form' src={StackForm} alt="" />

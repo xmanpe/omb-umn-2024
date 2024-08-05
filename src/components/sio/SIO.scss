@@ -1,933 +1,517 @@
 .sesi-informasi-omb{
     position: relative;
     overflow: hidden;
-    .background-sio{
-        filter: grayscale(100%);
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        object-fit:cover;
-    }
+
     .tangkai-sio{
         position: absolute;
         mix-blend-mode: soft-light;
         z-index: 0;
-        margin-top: 50px;
+        top: -70px;
+        left: -20px;
     }
+
     .bunga-sio{
+        display: none;
         position: absolute;
         mix-blend-mode: soft-light;
         z-index: 0;
         height: 24vw;
         right: 0px;
     }
+
     .content-wrapper-sio{
         display: flex;
-        gap: 20px;
+        gap: 32px;
         flex-direction: column;
         padding: 100px 160px 100px 160px;
-        background: linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 125%);
+        background: 
+        linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 100%),
+        url('../../images/sio/BG.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
         .judul{
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 64px;
-            .text-SIO{
-                width: 50%;
-                text-align: justify;
+            gap: 8px;
+            position: relative;
+            padding-bottom: 40px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 600;
+                color: white;
+                text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
             }
-            .laptop-SIO{
-                width: 40%;
-                z-index: 2;
+
+            p {
+                text-align: center;
+                font-size: 22px;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.8);
+            }
+            
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(to right, transparent, #FFF 50%, transparent);
             }
         }
-        .modal-SIO{
+
+        .keterangan-wrapper{
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
-            background-color: rgba(226, 199, 239, 0.4);
-            border: 1px solid white;
-            border-radius: 40px;
-            padding: 32px 40px 32px 40px;
-            backdrop-filter: blur(6px);
-            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-            transition: transform 0.2s ease-in-out;
-            .keterangan-wrapper{
+            gap: 60px;
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(7.099999904632568px);
+            padding: 32px;
+            border-radius: 20px;
+
+            .pelaksanaan-wrapper {
                 display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-bottom: 32px;
-                .pelaksanaan-wrapper{
-                    width: 40%;
-                    .calender{
+                flex-direction: column;
+                gap: 28px;
+
+                .title-thing {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0px;
+
+                    h1 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        color: white;
+                        text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
+                    }
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 400;
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+                
+                .icons {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+
+                    .each-icons {
                         display: flex;
-                        flex-direction: row;
+                        gap: 8px;
+                        align-items: center;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        p {
+                            font-size: 20px;
+                            font-weight: 400;
+                            color: rgba(255, 255, 255, 1);
+                        }
+                    }
+                }
+
+                .cta_button {
+                    button {
+                        display: flex;
+                        padding: 12px 24px;
+                        justify-content: center;
                         align-items: center;
                         gap: 8px;
-                    }
-                    .clock{
-                        display: flex;
-                        flex-direction: row;
-                        gap: 8px;
-    
-                    }
-                    .wajib{
-                        border: 1px solid white;
                         border-radius: 100px;
-                        margin-top: 20px;
-                        padding: 12px;
-                        text-align: center;
+                        border: none;
+                        background: white;
+                        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+                        transition: box-shadow 0.1s ease-in-out;
+            
+                        color: #4504AA;
+                        font-size: 18px;
+                        font-family: 'GSN';
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                            
+                        cursor: pointer;
+            
+                        overflow: hidden;
+            
+                        img {
+                            transform: scaleX(-1);
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+            
+                    button:active {
+                        padding: 12px 24px 10px 24px;
+                        background: white;
+                        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
                     }
                 }
-                .vertical-line{
-                    background-color: white;
-                    width: 1px;
-                    border: 1px solid rgb(255, 255, 255);
-                    border-radius: 100px;
-                }
-                .horizontal-line{
-                    display: none;
-                }
-                .tujuan-wrapper{
-                    width: 40%;
-                    
-                    p{
-                        text-align: justify;
-                    }
-                }
             }
-            .cta-button-SIO{
-                margin-top: 12px;
-                display: flex;
-                padding: 12px 24px;
-                justify-content: center;
-                align-items: center;
-                gap: 8px;
-                border-radius: 100px;
-                border: none;
-                background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-                box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
-                transition: box-shadow 0.1s ease-in-out;
-    
-                color: #FFF;
-                text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                font-size: 18px;
-                font-family: 'GSN';
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-                    
-                cursor: pointer;
-    
-                overflow: hidden;
-    
-                img {
-                    width: 20px;
-                    height: 20px;
-                }
-            }
-            .cta-button-SIO:active {
-                padding: 12px 24px 10px 24px;
-                background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
-                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+
+            .laptop-SIO{
+                width: 500px;
+                height: auto;
+                filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.29));
+                transform: rotate(10deg);
             }
         }
-        .modal-SIO:hover{
-            transform: translateY(-5px); 
+
+        .wajib {
+            display: none;
+            padding: 16px;
+            // border: 1px solid white;
+            border-radius: 12px;
+            background-color: rgba(255, 255, 255, 0.2);
+
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
+            text-align: center;
         }
-    }
-    h1{
-        font-size: 42px;
-        font-weight:600;
-        color: white;
-        text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
-    }
-    h2{
-        font-weight: 500;
-        color: white;
-    }
-    p{
-        font-size: 20px;
-        font-weight: 400;
-        color: white;
     }
 }
 
 @media screen and (max-width: 1440px){
     .sesi-informasi-omb{
-        // position: relative;
-        // overflow: hidden;
-        .background-sio{
-            // filter: grayscale(100%);
-            // position: absolute;
-            // height: 100%;
-            // width: 100%;
-            // z-index: -1;
-            // object-fit:cover;
-        }
         .tangkai-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // margin-top: 50px;
         }
+    
         .bunga-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // height: 24vw;
-            // right: 0px;
         }
+    
         .content-wrapper-sio{
-            // display: flex;
-            // gap: 20px;
-            // flex-direction: column;
-            padding: 100px;
-            // background: linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 125%);
+            padding: 100px 100px 100px 100px;
+    
             .judul{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // gap: 64px;
-                .text-SIO{
-                    // width: 40%;
-                    // text-align: justify;
+                padding-bottom: 32px;
+    
+                h1 {
                 }
+    
+                p {
+                }
+                
+                &::after {
+                }
+            }
+    
+            .keterangan-wrapper{
+                gap: 32px;
+    
+                .pelaksanaan-wrapper {
+                    gap: 28px;
+    
+                    .title-thing {
+    
+                        h1 {
+                        }
+    
+                        p {
+                        }
+                    }
+                    
+                    .icons {
+                        .each-icons {
+                            img {
+                            }
+    
+                            p {
+                            }
+                        }
+                    }
+    
+                    .cta_button {
+                        button {
+                            img {
+                            }
+                        }
+                
+                        button:active {
+                        }
+                    }
+                }
+    
                 .laptop-SIO{
-                    // width: 32%;
-                    // z-index: 2;
+                    width: 460px;
                 }
             }
-            .modal-SIO{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // flex-direction: column;
-                // background-color: rgba(226, 199, 239, 0.4);
-                // border: 1px solid white;
-                // border-radius: 40px;
-                // padding: 32px 50px 32px 50px;
-                // backdrop-filter: blur(6px);
-                // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-                // transition: transform 0.2s ease-in-out;
-                .keterangan-wrapper{
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: space-between;
-                    // margin-bottom: 32px;
-                    .pelaksanaan-wrapper{
-                        // width: 40%;
-                        .calender{
-                            // display: flex;
-                            // flex-direction: row;
-                            // align-items: center;
-                            // gap: 8px;
-                        }
-                        .clock{
-                            // display: flex;
-                            // flex-direction: row;
-                            // gap: 8px;
-                        }
-                        .wajib{
-                            // border: 1px solid white;
-                            // border-radius: 100px;
-                            // margin-top: 20px;
-                            // padding: 16px;
-                            // text-align: justify;
-                        }
-                    }
-                    .vertical-line{
-                        // background-color: white;
-                        // width: 1px;
-                        // border: 1px solid rgb(255, 255, 255);
-                        // border-radius: 100px;
-                    }
-                    .horizontal-line{
-                        // display: none;
-                    }
-                    .tujuan-wrapper{
-                        // width: 40%;
-                    }
-                }
-                .cta-button-SIO{
-                    // margin-top: 12px;
-                    // display: flex;
-                    // padding: 12px 24px;
-                    // justify-content: center;
-                    // align-items: center;
-                    // gap: 8px;
-                    // border-radius: 100px;
-                    // border: none;
-                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
-                    // transition: box-shadow 0.1s ease-in-out;
-        
-                    // color: #FFF;
-                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                    // font-size: 18px;
-                    // font-family: 'GSN';
-                    // font-style: normal;
-                    // font-weight: 500;
-                    // line-height: normal;
-                        
-                    // cursor: pointer;
-        
-                    // overflow: hidden;
-        
-                    img {
-                        // width: 20px;
-                        // height: 20px;
-                    }
-                }
-                .cta-button-SIO:active {
-                    // padding: 12px 24px 10px 24px;
-                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
-                    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
-                }
+    
+            .wajib {
             }
-            .modal-SIO:hover{
-                // transform: translateY(-5px); 
-            }
-        }
-        h1{
-            // font-size: 42px;
-            // font-weight:600;
-            // color: white;
-            // text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
-        }
-        h2{
-            // font-weight: 500;
-            // color: white;
-        }
-        p{
-            // font-size: 20px;
-            // font-weight: 400;
-            // color: white;
         }
     }
 }
+
 @media screen and (max-width: 1200px){
     .sesi-informasi-omb{
-        // position: relative;
-        // overflow: hidden;
-        .background-sio{
-            // filter: grayscale(100%);
-            // position: absolute;
-            // height: 100%;
-            // width: 100%;
-            // z-index: -1;
-            // object-fit:cover;
-        }
         .tangkai-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // margin-top: 50px;
         }
+    
         .bunga-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // height: 24vw;
-            // right: 0px;
         }
+    
         .content-wrapper-sio{
-            // display: flex;
-            // gap: 20px;
-            // flex-direction: column;
-            padding: 80px;
-            // background: linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 125%);
+            padding: 80px 80px 80px 80px;
+    
             .judul{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                gap: 28px;
-                .text-SIO{
-                    width: 56%;
-                    // text-align: justify;
+                h1 {
+                    // font-size: 40px;
                 }
+    
+                p {
+                    font-size: 20px;
+                }
+                
+                &::after {
+                }
+            }
+    
+            .keterangan-wrapper{
+                margin: auto;
+                width: fit-content;
+                margin-top: 100px;
+                flex-direction: column-reverse;
+                gap: 20px;
+    
+                .pelaksanaan-wrapper {
+                    gap: 28px;
+    
+                    .title-thing {
+    
+                        h1 {
+                        }
+    
+                        p {
+                        }
+                    }
+                    
+                    .icons {
+                        .each-icons {
+                            img {
+                            }
+    
+                            p {
+                            }
+                        }
+                    }
+    
+                    .cta_button {
+                        button {
+                            img {
+                            }
+                        }
+                
+                        button:active {
+                        }
+                    }
+                }
+    
                 .laptop-SIO{
-                    width: 44%;
-                    // z-index: 2;
+                    margin-top: -140px;
+                    width: 460px;
                 }
             }
-            .modal-SIO{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // flex-direction: column;
-                // background-color: rgba(226, 199, 239, 0.4);
-                // border: 1px solid white;
-                // border-radius: 40px;
-                padding: 28px 40px 28px 40px;
-                // backdrop-filter: blur(6px);
-                // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-                // transition: transform 0.2s ease-in-out;
-                .keterangan-wrapper{
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: space-between;
-                    // margin-bottom: 32px;
-                    .pelaksanaan-wrapper{
-                        width: 46%;
-                        .calender{
-                            // display: flex;
-                            // flex-direction: row;
-                            // align-items: center;
-                            // gap: 8px;
-                        }
-                        .clock{
-                            // display: flex;
-                            // flex-direction: row;
-                            // gap: 8px;
-                        }
-                        .wajib{
-                            // border: 1px solid white;
-                            // border-radius: 100px;
-                            // margin-top: 20px;
-                            // padding: 16px;
-                            // text-align: justify;
-                        }
-                    }
-                    .vertical-line{
-                        // background-color: white;
-                        // width: 1px;
-                        // border: 1px solid rgb(255, 255, 255);
-                        // border-radius: 100px;
-                    }
-                    .horizontal-line{
-                        // display: none;
-                    }
-                    .tujuan-wrapper{
-                        width: 46%;
-                    }
-                }
-                .cta-button-SIO{
-                    // margin-top: 12px;
-                    // display: flex;
-                    // padding: 12px 24px;
-                    // justify-content: center;
-                    // align-items: center;
-                    // gap: 8px;
-                    // border-radius: 100px;
-                    // border: none;
-                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
-                    // transition: box-shadow 0.1s ease-in-out;
-        
-                    // color: #FFF;
-                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                    // font-size: 18px;
-                    // font-family: 'GSN';
-                    // font-style: normal;
-                    // font-weight: 500;
-                    // line-height: normal;
-                        
-                    // cursor: pointer;
-        
-                    // overflow: hidden;
-        
-                    img {
-                        // width: 20px;
-                        // height: 20px;
-                    }
-                }
-                .cta-button-SIO:active {
-                    // padding: 12px 24px 10px 24px;
-                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
-                    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
-                }
+    
+            .wajib {
             }
-            .modal-SIO:hover{
-                // transform: translateY(-5px); 
-            }
-        }
-        h1{
-            // font-size: 42px;
-            // font-weight:600;
-            // color: white;
-            // text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
-        }
-        h2{
-            // font-weight: 500;
-            // color: white;
-        }
-        p{
-            // font-size: 20px;
-            // font-weight: 400;
-            // color: white;
         }
     }
 }
+
 @media screen and (max-width: 810px){
     .sesi-informasi-omb{
-        // position: relative;
-        // overflow: hidden;
-        .background-sio{
-            // filter: grayscale(100%);
-            // position: absolute;
-            // height: 100%;
-            // width: 100%;
-            // z-index: -1;
-            // object-fit:cover;
-        }
         .tangkai-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            margin-top: 360px;
-            height: 80vw;
         }
+    
         .bunga-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            width: 60vw;
-            right: 0px;
         }
+    
         .content-wrapper-sio{
-            // display: flex;
-            // gap: 20px;
-            // flex-direction: column;
-            padding: 40px;
-            // background: linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 125%);
+            padding: 40px 40px 40px 40px;
+    
             .judul{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
+                h1 {
+                    font-size: 36px;
+                }
+    
+                p {
+                    font-size: 20px;
+                }
+                
+                &::after {
+                }
+            }
+    
+            .keterangan-wrapper{
+                width: -webkit-fill-available;
+                margin-top: 100px;
+                flex-direction: column-reverse;
                 gap: 20px;
-                flex-direction: column;
-                .text-SIO{
-                    margin-top: 30px;
-                    width: 80%;
-                    // text-align: justify;
+    
+                .pelaksanaan-wrapper {
+                    width: 100%;
+                    gap: 28px;
+    
+                    .title-thing {
+                        justify-content: center;
+                        align-items: center;
+    
+                        h1 {
+                            text-align: center;
+                            font-size: 28px;
+                        }
+    
+                        p {
+                            text-align: center;
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    .icons {
+                        margin: auto;
+                        width: fit-content;
+
+                        .each-icons {
+                            img {
+                            }
+    
+                            p {
+                            }
+                        }
+                    }
+    
+                    .cta_button {
+                        width: 100%;
+                        font-size: 18px;
+
+                        button {
+                            margin: auto;
+
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                
+                        button:active {
+                        }
+                    }
                 }
+    
                 .laptop-SIO{
-                    width: 62%;
-                    // z-index: 2;
+                    margin-top: -140px;
+                    width: 460px;
                 }
             }
-            .modal-SIO{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // flex-direction: column;
-                // background-color: rgba(226, 199, 239, 0.4);
-                // border: 1px solid white;
-                // border-radius: 40px;
-                padding: 24px 32px 24px 32px;
-                // backdrop-filter: blur(6px);
-                // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-                // transition: transform 0.2s ease-in-out;
-                .keterangan-wrapper{
-                    // display: flex;
-                    flex-direction: column;
-                    gap: 46px;
-                    // justify-content: space-between;
-                    // margin-bottom: 32px;
-                    .pelaksanaan-wrapper{
-                        width: 100%;
-                        .calender{
-                            // display: flex;
-                            // flex-direction: row;
-                            // align-items: center;
-                            // gap: 8px;
-                        }
-                        .clock{
-                            // display: flex;
-                            // flex-direction: row;
-                            // gap: 8px;
-                        }
-                        .wajib{
-                            // border: 1px solid white;
-                            // border-radius: 100px;
-                            // margin-top: 20px;
-                            // padding: 16px;
-                            // text-align: justify;
-                        }
-                    }
-                    .vertical-line{
-                        display: none;
-                        // background-color: white;
-                        // width: 1px;
-                        // border: 1px solid rgb(255, 255, 255);
-                        // border-radius: 100px;
-                    }
-                    .horizontal-line{
-                        display: block;
-                        background-color: white;
-                        height: 1px;
-                        border: 1px solid rgb(255, 255, 255);
-                        border-radius: 100px;
-                    }
-                    .tujuan-wrapper{
-                        margin-top: -12px;
-                        width: 100%;
-                    }
-                }
-                .cta-button-SIO{
-                    // margin-top: 12px;
-                    // display: flex;
-                    // padding: 12px 24px;
-                    // justify-content: center;
-                    // align-items: center;
-                    // gap: 8px;
-                    // border-radius: 100px;
-                    // border: none;
-                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
-                    // transition: box-shadow 0.1s ease-in-out;
-        
-                    // color: #FFF;
-                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                    // font-size: 18px;
-                    // font-family: 'GSN';
-                    // font-style: normal;
-                    // font-weight: 500;
-                    // line-height: normal;
-                        
-                    // cursor: pointer;
-        
-                    // overflow: hidden;
-        
-                    img {
-                        // width: 20px;
-                        // height: 20px;
-                    }
-                }
-                .cta-button-SIO:active {
-                    // padding: 12px 24px 10px 24px;
-                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
-                    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
-                }
+    
+            .wajib {
             }
-            .modal-SIO:hover{
-                // transform: translateY(-5px); 
-            }
-        }
-        h1{
-            // font-size: 42px;
-            // font-weight:600;
-            // color: white;
-            // text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
-        }
-        h2{
-            // font-weight: 500;
-            // color: white;
-        }
-        p{
-            // font-size: 20px;
-            // font-weight: 400;
-            // color: white;
         }
     }
 }
+
 @media screen and (max-width: 560px){
     .sesi-informasi-omb{
-        // position: relative;
-        // overflow: hidden;
-        .background-sio{
-            // filter: grayscale(100%);
-            // position: absolute;
-            // height: 100%;
-            // width: 100%;
-            // z-index: -1;
-            // object-fit:cover;
-        }
         .tangkai-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // margin-top: 50px;
         }
+    
         .bunga-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // height: 24vw;
-            // right: 0px;
         }
+    
         .content-wrapper-sio{
-            // display: flex;
-            // gap: 20px;
-            // flex-direction: column;
-            padding: 60px 16px;
-            // background: linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 125%);
+            padding: 60px 16px 60px 16px;
+    
             .judul{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // gap: 20px;
-                .text-SIO{
-                    // width: 40%;
-                    // text-align: justify;
+                h1 {
+                    font-size: 28px;
                 }
+    
+                p {
+                    font-size: 18px;
+                }
+                
+                &::after {
+                }
+            }
+    
+            .keterangan-wrapper{
+                width: -webkit-fill-available;
+                margin-top: 100px;
+                flex-direction: column-reverse;
+                gap: 20px;
+    
+                .pelaksanaan-wrapper {
+                    width: 100%;
+                    gap: 28px;
+    
+                    .title-thing {
+                        justify-content: center;
+                        align-items: center;
+    
+                        h1 {
+                            text-align: center;
+                            font-size: 24px;
+                        }
+    
+                        p {
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                    
+                    .icons {
+                        margin: auto;
+                        width: fit-content;
+
+                        .each-icons {
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+    
+                            p {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+    
+                    .cta_button {
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                            margin: auto;
+                            font-size: 16px;
+                            
+                            img {
+                            }
+                        }
+                
+                        button:active {
+                        }
+                    }
+                }
+    
                 .laptop-SIO{
-                    width: 64%;
-                    // z-index: 2;
+                    margin-top: -140px;
+                    width: 320px;
                 }
             }
-            .modal-SIO{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // flex-direction: column;
-                // background-color: rgba(226, 199, 239, 0.4);
-                // border: 1px solid white;
-                // border-radius: 40px;
-                padding: 16px 24px 16px 24px;
-                // backdrop-filter: blur(6px);
-                // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-                // transition: transform 0.2s ease-in-out;
-                .keterangan-wrapper{
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: space-between;
-                    // margin-bottom: 32px;
-                    .pelaksanaan-wrapper{
-                        // width: 40%;
-                        .calender{
-                            // display: flex;
-                            // flex-direction: row;
-                            // align-items: center;
-                            // gap: 8px;
-                        }
-                        .clock{
-                            // display: flex;
-                            // flex-direction: row;
-                            // gap: 8px;
-                        }
-                        .wajib{
-                            // border: 1px solid white;
-                            // border-radius: 100px;
-                            // margin-top: 20px;
-                            // padding: 16px;
-                            // text-align: justify;
-                        }
-                    }
-                    .vertical-line{
-                        // background-color: white;
-                        // width: 1px;
-                        // border: 1px solid rgb(255, 255, 255);
-                        // border-radius: 100px;
-                    }
-                    .horizontal-line{
-                        // display: none;
-                    }
-                    .tujuan-wrapper{
-                        // width: 40%;
-                    }
-                }
-                .cta-button-SIO{
-                    // margin-top: 12px;
-                    // display: flex;
-                    // padding: 12px 24px;
-                    // justify-content: center;
-                    // align-items: center;
-                    // gap: 8px;
-                    // border-radius: 100px;
-                    // border: none;
-                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
-                    // transition: box-shadow 0.1s ease-in-out;
-        
-                    // color: #FFF;
-                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                    // font-size: 18px;
-                    // font-family: 'GSN';
-                    // font-style: normal;
-                    // font-weight: 500;
-                    // line-height: normal;
-                        
-                    // cursor: pointer;
-        
-                    // overflow: hidden;
-        
-                    img {
-                        // width: 20px;
-                        // height: 20px;
-                    }
-                }
-                .cta-button-SIO:active {
-                    // padding: 12px 24px 10px 24px;
-                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
-                    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
-                }
+    
+            .wajib {
             }
-            .modal-SIO:hover{
-                // transform: translateY(-5px); 
-            }
-        }
-        h1{
-            // font-size: 42px;
-            // font-weight:600;
-            // color: white;
-            // text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
-        }
-        h2{
-            // font-weight: 500;
-            // color: white;
-        }
-        p{
-            // font-size: 20px;
-            // font-weight: 400;
-            // color: white;
-        }
-    }
-}
-@media screen and (max-width: 432px){
-    .sesi-informasi-omb{
-        // position: relative;
-        // overflow: hidden;
-        .background-sio{
-            // filter: grayscale(100%);
-            // position: absolute;
-            // height: 100%;
-            // width: 100%;
-            // z-index: -1;
-            // object-fit:cover;
-        }
-        .tangkai-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // margin-top: 50px;
-        }
-        .bunga-sio{
-            // position: absolute;
-            // mix-blend-mode: soft-light;
-            // z-index: 0;
-            // height: 24vw;
-            // right: 0px;
-        }
-        .content-wrapper-sio{
-            // display: flex;
-            // gap: 20px;
-            // flex-direction: column;
-            // padding: 60px 16px;
-            // background: linear-gradient(117deg, rgba(86, 0, 223, 0.9) 0%, rgba(112,71,191,0.9) 40%, rgba(255, 208, 228, 0.9) 125%);
-            .judul{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // gap: 64px;
-                .text-SIO{
-                    // width: 40%;
-                    // text-align: justify;
-                }
-                .laptop-SIO{
-                    // width: 32%;
-                    // z-index: 2;
-                }
-            }
-            .modal-SIO{
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // flex-direction: column;
-                // background-color: rgba(226, 199, 239, 0.4);
-                // border: 1px solid white;
-                // border-radius: 40px;
-                // padding: 50px 50px 32px 50px;
-                // backdrop-filter: blur(6px);
-                // box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-                // transition: transform 0.2s ease-in-out;
-                .keterangan-wrapper{
-                    // display: flex;
-                    // flex-direction: row;
-                    // justify-content: space-between;
-                    // margin-bottom: 32px;
-                    .pelaksanaan-wrapper{
-                        // width: 40%;
-                        .calender{
-                            // display: flex;
-                            // flex-direction: row;
-                            // align-items: center;
-                            // gap: 8px;
-                        }
-                        .clock{
-                            // display: flex;
-                            // flex-direction: row;
-                            // gap: 8px;
-                        }
-                        .wajib{
-                            // border: 1px solid white;
-                            // border-radius: 100px;
-                            // margin-top: 4px;
-                            // padding: 8px 24px;
-                            // text-align: justify;
-                        }
-                    }
-                    .vertical-line{
-                        // background-color: white;
-                        // width: 1px;
-                        // border: 1px solid rgb(255, 255, 255);
-                        // border-radius: 100px;
-                    }
-                    .horizontal-line{
-                        // display: none;
-                    }
-                    .tujuan-wrapper{
-                        // width: 40%;
-                    }
-                }
-                .cta-button-SIO{
-                    // margin-top: 12px;
-                    // display: flex;
-                    // padding: 12px 24px;
-                    // justify-content: center;
-                    // align-items: center;
-                    // gap: 8px;
-                    // border-radius: 100px;
-                    // border: none;
-                    // background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
-                    // box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
-                    // transition: box-shadow 0.1s ease-in-out;
-        
-                    // color: #FFF;
-                    // text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
-                    // font-size: 18px;
-                    // font-family: 'GSN';
-                    // font-style: normal;
-                    // font-weight: 500;
-                    // line-height: normal;
-                        
-                    // cursor: pointer;
-        
-                    // overflow: hidden;
-        
-                    img {
-                        // width: 20px;
-                        // height: 20px;
-                    }
-                }
-                .cta-button-SIO:active {
-                    // padding: 12px 24px 10px 24px;
-                    // background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
-                    // box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
-                }
-            }
-            .modal-SIO:hover{
-                // transform: translateY(-5px); 
-            }
-        }
-        h1{
-            font-size: 32px;
-            // font-weight:600;
-            // color: white;
-            // text-shadow: 1px 1px 40px rgba(255, 255, 255, 0.4);
-        }
-        h2{
-            font-size: 28;
-            // font-weight: 500;
-            // color: white;
-        }
-        p{
-            font-size: 16px;
-            // font-weight: 400;
-            // color: white;
         }
     }
 }

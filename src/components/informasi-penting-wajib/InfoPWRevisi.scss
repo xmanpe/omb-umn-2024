@@ -27,12 +27,11 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        padding: 0px 160px;
+        padding: 100px 160px 0px 160px;
         box-sizing: border-box;
         gap: 60px;
 
         .kiri {
-            // margin-left: -300px;
             img {
                 width: 100%;
                 height: auto;
@@ -58,8 +57,7 @@
                     align-items: center;
                     padding: 6px 16px;
                     border-radius: 100px;
-                    background: linear-gradient(169deg, #FFF 8.25%, #F4F4F4 91.75%);
-                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.03), 0px 4px 4px 0px rgba(255, 255, 255, 0.32) inset, 0px -3px 7.3px 0px rgba(0, 0, 0, 0.05) inset;
+                    border: 2px solid #4504AA;
     
                     img {
                         width: 20px;
@@ -146,7 +144,7 @@
         }
     
         .infopw_content {
-            padding: 0px 100px;
+            padding: 100px 100px 0px 100px;
             gap: 30px;
     
             .kiri {
@@ -187,6 +185,8 @@
 
 @media screen and (max-width: 1200px){
     .infopw_section {
+        gap: 80px;
+
         .wave_two {
         }
     
@@ -194,7 +194,7 @@
         }
     
         .infopw_content {
-            padding: 0px 80px;
+            padding: 80px 80px 0px 80px;
             flex-direction: column;
 
             .kiri {
@@ -244,6 +244,8 @@
 
 @media screen and (max-width: 810px){
     .infopw_section {
+        gap: 40px;
+
         .wave_two {
         }
     
@@ -251,7 +253,7 @@
         }
     
         .infopw_content {
-            padding: 0px 40px;
+            padding: 40px 40px 0px 40px;
 
             .kiri {
                 img {
@@ -279,7 +281,11 @@
     
                 .cta_button {
                     button {
+                        font-size: 18px;
+
                         img {
+                            height: 20px;
+                            width: 20px;
                         }
                     }
             
@@ -293,6 +299,8 @@
 
 @media screen and (max-width: 560px){
     .infopw_section {
+        gap: 60px;
+
         .wave_two {
         }
     
@@ -300,7 +308,7 @@
         }
     
         .infopw_content {
-            padding: 0px 16px;
+            padding: 60px 16px 0px 16px;
 
             .kiri {
                 img {
@@ -332,6 +340,7 @@
     
                 .cta_button {
                     button {
+                        font-size: 16px;
                         width: 100%;
 
                         img {

@@ -40,10 +40,9 @@
     .swara-bestari_content {
         display: flex;
         flex-direction: column;
-        gap: 120px;
         flex-shrink: 0;
         align-items: center;
-        padding: 0px 160px 0px 160px;
+        padding: 0px 160px 100px 160px;
 
         .kupu_top {
             z-index: 0;
@@ -60,20 +59,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 100px;
+            gap: 80px;
             z-index: 96;
     
             .left {
-                border-radius: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 width: fit-content;
-                border-right: 3px solid rgba(255, 255, 255, 0.25);
+                border-right: 3px solid rgba(255, 255, 255, 0.12);
         
-                img { /* Set the width to 100% of its container */ /* Maintain aspect ratio */
-                    max-width: 600px; /* Ensure the image does not exceed its container's width */
-                    max-height: 100%; /* Ensure the image does not exceed its container's height */
+                img {
+                    max-width: 600px;
+                    max-height: 100%;
                     object-fit: cover;
                 }
             }
@@ -133,7 +131,6 @@
                         background: none;
                         transition: background 0.2s ease-in-out;
             
-                        /* font */
                         color: white;
                         font-size: 18px;
                         font-family: 'GSN';
@@ -168,7 +165,7 @@
     
         .swara-bestari_content {
             gap: 0;
-            padding: 0px 100px 0px 100px;
+            padding: 0px 100px 100px 100px;
     
             .kupu_top {
             }
@@ -178,8 +175,7 @@
         
                 .left {
                     img {
-                        max-width: 560px; /* Ensure the image does not exceed its container's width */
-                        // max-height: 100%;
+                        max-width: 560px;
                     }
                 }
             
@@ -220,6 +216,8 @@
 
 @media screen and (max-width: 1200px) {
     .swara-bestari_section {    
+        gap: 80px;
+
         .wave_swara-bestari_top {
         }
     
@@ -227,7 +225,7 @@
         }
     
         .swara-bestari_content {
-            padding: 0px 80px 0px 80px;
+            padding: 0px 80px 80px 80px;
     
             .kupu_top {
             }
@@ -238,9 +236,10 @@
         
                 .left {
                     margin-top: -120px;
+                    margin-bottom: -100px;
                     border: none;
                     img {
-                        width: 80%;
+                        width: 100%;
                     }
                 }
             
@@ -286,6 +285,8 @@
 
 @media screen and (max-width: 810px) {
     .swara-bestari_section {
+        gap: 40px;
+
         .wave_swara-bestari_top {
         }
     
@@ -293,7 +294,7 @@
         }
     
         .swara-bestari_content {
-            padding: 0px 40px 0px 40px;
+            padding: 0px 40px 40px 40px;
     
             .kupu_top {
                 width: 80%;
@@ -304,8 +305,8 @@
                     margin-bottom: -60px;
 
                     img {
-                        max-width: 72%;
-                        max-height: 72%;
+                        max-width: 62%;
+                        max-height: 62%;
                     }
                 }
             
@@ -344,6 +345,8 @@
 
 @media screen and (max-width: 560px) {
     .swara-bestari_section {
+        gap: 60px;
+
         .wave_swara-bestari_top {
         }
     
@@ -351,7 +354,7 @@
         }
     
         .swara-bestari_content {
-            padding: 0px 16px 0px 16px;
+            padding: 0px 16px 60px 16px;
     
             .kupu_top {
             }
@@ -359,8 +362,6 @@
             .the_content {
                 .left {
                     img {
-                        // max-width: 64%;
-                        // max-height: 64%;
                     }
                 }
             

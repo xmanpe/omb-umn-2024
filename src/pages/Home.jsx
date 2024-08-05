@@ -49,8 +49,8 @@ const Home = () => {
       {/* <Bingkai /> */}
       <YouTube />
       <SwaraBestari />
-      <InfoPWRevisi />
       <SIO />
+      <InfoPWRevisi />
       {/* <Ananta /> */}
       <Footer />
     </>

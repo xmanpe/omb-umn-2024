@@ -37,8 +37,8 @@ const SwaraBestari = () => {
                     <div className='right'>
                         <div className='the_title'>
                             {/* <h1>PROLOG : Bangun Support System dalam Diri melalui Lingkungan Positif</h1> */}
-                            <iframe className='mini-player' src="https://open.spotify.com/embed/episode/1lBN1xjhzegBoyhLL7VorR?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            <p>Dalam PENA 03, Swara Bestari ingin meningkatkan kesadaran akan pengaruh lingkungan pertemanan terhadap perkembangan dan prestasi diri di dunia perkuliahan. <br /><br /> Yuk, dengarkan sekarang!</p>
+                            <iframe className='mini-player' src="https://open.spotify.com/embed/episode/3pQnXj47iCFRUhCMv0bvFP?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <p>Dalam PENA 04, Swara Bestari ingin mengajak Sobat PENA untuk menentukan target atau tujuan dari awal hingga akhir perkuliahan. Yuk, dengarkan sekarang!</p>
                         </div>
                         <div className='cta_button'>
                         <button onClick={toggleModal}>Tentang Swara Bestari
@@ -51,7 +51,7 @@ const SwaraBestari = () => {
                     <p>Tentunya OMB UMN 2024 akan membawakan konsep baru untuk pameran <i>online</i> dan <i>offline</i> nya. Ditunggu, ya!</p>
                 </div> */}
             </div>
-            <img className='wave_swara-bestari_bottom' src={SecondWave} alt="Wave" />
+            {/* <img className='wave_swara-bestari_bottom' src={SecondWave} alt="Wave" /> */}
         </section>
         </>
     );

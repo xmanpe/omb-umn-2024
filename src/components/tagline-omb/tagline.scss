@@ -21,7 +21,7 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  gap: 100px;
   background: linear-gradient(144deg,
       rgba(255, 208, 228, 0.7) -14.93%,
       rgba(202, 191, 249, 0.7) 2.56%,
@@ -110,7 +110,7 @@
 @media screen and (max-width: 1440px) {
   .tagline-container {
     gap: 80px;
-  
+
     .wave-atas {
     }
   
@@ -147,8 +147,8 @@
 
 @media screen and (max-width: 1200px) {
   .tagline-container {
-    gap: 80px;
-  
+    gap: 60px;
+
     .wave-atas {
     }
   
@@ -190,7 +190,6 @@
 
 @media screen and (max-width: 810px) {
   .tagline-container {
-    gap: 60px;
   
     .wave-atas {
     }

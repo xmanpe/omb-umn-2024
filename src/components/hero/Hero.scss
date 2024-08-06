@@ -133,6 +133,8 @@
                 display: flex;
 
                 .swiper-slide {
+                    display: flex;
+                    height: auto;
                     overflow: visible;
                 }
             }

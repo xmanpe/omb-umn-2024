@@ -8,11 +8,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
+    gap: 40px;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
-    padding: 100px 160px;
+    padding: 40px 160px;
 
     .visimisi_content {
         display: flex;
@@ -85,7 +85,7 @@
 
     .visimisi_section {
         gap: 40px;
-        padding: 100px;
+        padding: 40px 100px;
     
         .visimisi_content {
             .visimisi {
@@ -126,7 +126,7 @@
     }
 
     .visimisi_section {
-        padding: 80px;
+        padding: 40px 80px;
     
         .visimisi_content {
             .visimisi {
@@ -213,7 +213,7 @@
     }
 
     .visimisi_section {
-        padding: 60px 16px;
+        padding: 40px 16px;
     
         .visimisi_content {
             .visimisi {

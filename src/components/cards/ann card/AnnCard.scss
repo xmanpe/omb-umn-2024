@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: flex-end;
     align-self: stretch;
-    min-height: 220px;
+    height: auto;
     border-radius: 20px;
     border: 1.5px solid #ffffff88;
     background: rgba(255, 255, 255, 0.321);
@@ -174,8 +174,6 @@
 
 @media screen and (max-width: 1440px){
     .ann_card {
-        min-height: 250px;
-    
         .text_section {
             gap: 32px;
     
@@ -227,7 +225,6 @@
 
 @media screen and (max-width: 1200px){
     .ann_card {
-        min-height: 260px;
         flex-direction: column;
         padding: 32px;
         gap: 32px;
@@ -283,7 +280,6 @@
 
 @media screen and (max-width: 810px){
     .ann_card {
-        min-height: 220px;
         padding: 24px;
         gap: 32px;
         width: initial;
@@ -347,7 +343,6 @@
 
 @media screen and (max-width: 560px){
     .ann_card {
-        min-height: 240px;
         width: initial;
         padding: 16px;
         gap: 32px;

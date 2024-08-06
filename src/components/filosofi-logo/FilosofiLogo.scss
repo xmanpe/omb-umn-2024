@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    padding: 100px 160px;
+    padding: 40px 160px;
 
     .judul {
         font-size: 48px;
@@ -154,7 +154,7 @@
 
 @media screen and (max-width: 1440px) {
     .filosofi_logo_section {
-        padding: 100px;
+        padding: 40px 100px;
     
         .content {
             .box_logo {
@@ -463,7 +463,7 @@
 
 @media screen and (max-width: 560px) {
     .filosofi_logo_section {
-        padding: 60px 16px;
+        padding: 40px 16px;
 
         .judul {
             font-size: 32px;
@@ -567,14 +567,6 @@
                     }
                 }
             }
-        }
-    }
-}
-
-@media screen and (max-width: 432px) {
-    .filosofi_logo_section {
-        .judul {
-            font-size: 32px;
         }
     }
 }

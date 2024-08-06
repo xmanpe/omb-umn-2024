@@ -1,9 +1,9 @@
 .tikum_section {
   display: flex;
-  padding: 100px 160px;
+  padding: 40px 160px;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   overflow: hidden;
   position: relative;
 
@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
 
     h1 {
       text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24),
@@ -110,7 +109,7 @@
 
 @media screen and (max-width: 1200px) {
   .tikum_section {
-    padding: 80px;
+    padding: 40px 80px;
 
     .tikum_title {
       h1 {
@@ -177,7 +176,7 @@
 
 @media screen and (max-width: 560px) {
   .tikum_section {
-    padding: 16px;
+    padding: 40px 16px;
 
     .tikum_title {
       h1 {

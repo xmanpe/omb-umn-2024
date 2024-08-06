@@ -343,17 +343,6 @@ const Divisi = () => {
             <section className="divisi_section" id='divisi_section'>
                 {/* <img className='wave_two' src={Wave} alt="Wave" /> */}
                 <img className='divisi_supergrafis' src={Supergrafis2} alt="Supergrafis" />
-                <div className="title_and_description">
-                    <div className='divisi_title'>
-                        {/* <img src={Supergrafis} alt="Supergrafis" /> */}
-                        {/* <h1>Divisi-Divisi OMB UMN</h1> */}
-                    </div>
-                    {/* <p>Klik divisi untuk melihat informasi lebih lanjut.</p> */}
-                    {/* <div className='notes'>
-                        <img src={Warning} alt="Circle Warning" />
-                        <p>Pendaftaran kepanitiaan OMB UMN 2024 <i>batch</i> 2 telah dibuka untuk beberapa divisi. Kami mengimbau kepada calon panitia OMB UMN 2024 untuk memakai <i>email</i> pribadi saat mengisi Formulir Pendaftaran!</p>
-                    </div> */}
-                </div>
                 <div className="divisi_wrapper">
                     {divisiInfo.map((divisi, index) => (
                         <div className="each_divisi" key={index} onClick={() => handleDivisiClick(index)}>

@@ -51,7 +51,7 @@ const NilaiNilai = () => {
                     OMB UMN 2024 ingin mengenalkan Universitas Multimedia Nusantara sebagai institusi pendidikan berkualitas 
                     yang mendorong pengembangan pribadi berkelanjutan dan memberikan kontribusi positif terhadap masyarakat. 
                     Selain itu, OMB UMN 2024 juga berperan sebagai jembatan edukasi yang ingin mengajak Peserta OMB UMN 2024 
-                    untuk beranjak dari seorang siswa menjadi mahasiswa. <b style={{fontWeight: 600}}>Melalui nilai ini, OMB UMN 2024 diharapkan dapat 
+                    untuk beranjak dari seorang siswa menjadi mahasiswa.<br /><br /><b style={{fontWeight: 600}}>Melalui nilai ini, OMB UMN 2024 diharapkan dapat 
                     memberikan motivasi kepada para Peserta OMB UMN 2024 untuk mengeksplorasi potensi serta meraih prestasi 
                     melalui pencapaian pendidikan yang berkualitas dan inklusif.</b> Target 4.7 pada tahun 2030 ingin memastikan 
                     bahwa semua peserta didik memperoleh pengetahuan dan keterampilan yang dibutuhkan. Melalui nilai ini, 
@@ -136,7 +136,7 @@ const NilaiNilai = () => {
                   "Kepercayaan Diri",
                   "",
                   <>
-                    Dalam menunjukkan potensi dari diri Peserta OMB UMN 2024, nilai kepercayaan diri menjadi hal yang krusial bagi mereka. <b> Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri.</b> Harapannya, Peserta OMB UMN 2024 memiliki kepercayaan diri untuk bertindak, berinovasi, dan berkarya ke depannya. 
+                    Dalam menunjukkan potensi dari diri Peserta OMB UMN 2024, nilai kepercayaan diri menjadi hal yang krusial bagi mereka. <b style={{fontWeight: 600}}> Nilai ini merupakan fondasi awal yang mendorong peserta untuk lebih percaya diri lagi dalam mengekspresikan diri.</b> Harapannya, Peserta OMB UMN 2024 memiliki kepercayaan diri untuk bertindak, berinovasi, dan berkarya ke depannya. 
                   </>
                 )}>
                   Selengkapnya

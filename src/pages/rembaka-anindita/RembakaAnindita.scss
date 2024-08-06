@@ -1,8 +1,8 @@
 .rembaka_anindita {
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    padding: 100px 160px;
+    gap: 40px;
+    padding: 40px 160px;
     overflow: visible;
     box-sizing: border-box;
 
@@ -123,8 +123,8 @@
 
 @media screen and (max-width: 1440px) {
     .rembaka_anindita {
-        gap: 60px;
-        padding: 100px;
+        gap: 40px;
+        padding: 40px 100px;
     
         img {
         }
@@ -167,7 +167,7 @@
     .rembaka_anindita {
         flex-direction: column;
         gap: 40px;
-        padding: 80px;
+        padding: 40px 80px;
     
         img {
         }
@@ -266,16 +266,17 @@
 
 @media screen and (max-width: 560px) {
     .rembaka_anindita {
-        padding: 16px;
-        gap: 20px;
+        padding: 40px 16px;
+        gap: 40px;
     
         img {
+            display: none;
             width: 200px;
         }
     
         .explanation {
             gap: 12px;
-            
+
             .penjelasan {
                 text-align: justify;
 

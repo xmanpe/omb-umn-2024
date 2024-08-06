@@ -1,0 +1,27 @@
+.titik_section {
+    padding: 0px 160px;
+}
+
+@media screen and (max-width: 1440px) {
+    .titik_section {
+        padding: 0px 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .titik_section {
+        padding: 0px 80px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .titik_section {
+        padding: 0px 40px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .titik_section {
+        padding: 0px 16px;
+    }
+}

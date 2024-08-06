@@ -43,8 +43,8 @@ const Tikum = () => {
         <div className="image-tikum">
           <iframe
             src="https://www.google.com/maps/embed?pb=!4v1722922608301!6m8!1m7!1saM1XbYmogPYQY1h_2W4kUQ!2m2!1d-6.25663702072276!2d106.6141708857596!3f183.367125833248!4f-18.840736570512547!5f0.7820865974627469"
-            width="900"
-            height="600"
+            width="100%"
+            height="100%"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"

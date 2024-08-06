@@ -19,25 +19,25 @@ const TitikPemulangan = () => {
         {
             "desc": "Depan <i>Lobby</i> Utama Universitas Multimedia Nusantara",
             "kiri": GateA,
-            "kanan": <iframe src="https://www.google.com/maps/embed?pb=!4v1722866108088!6m8!1m7!1sJUUdqo-Jp8RBQ1x5kvc6cw!2m2!1d-6.256146197084946!2d106.618540918073!3f195.4311436636625!4f7.591993859012021!5f0.7820865974627469" width="600" height="450" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+            "kanan": <iframe src="https://www.google.com/maps/embed?pb=!4v1722866108088!6m8!1m7!1sJUUdqo-Jp8RBQ1x5kvc6cw!2m2!1d-6.256146197084946!2d106.618540918073!3f195.4311436636625!4f7.591993859012021!5f0.7820865974627469" width="100%" height="100%" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
             "note": "Informasi Tambahan: <i>Shuttle</i> bus berada di depan gerbang Universitas Multimedia Nusantara"
         },
         {
             "desc": "Samping Universitas Multimedia Nusantara (Sebrang Halte SDC)",
             "kiri": GateB,
-            "kanan": <iframe src="https://www.google.com/maps/embed?pb=!4v1722866578357!6m8!1m7!1sMLbPUAjp_huq6Zp2aUke6g!2m2!1d-6.25761620339708!2d106.6170252608093!3f141.47483490088743!4f-5.319592550325538!5f0.7820865974627469" width="600" height="450" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+            "kanan": <iframe src="https://www.google.com/maps/embed?pb=!4v1722866578357!6m8!1m7!1sMLbPUAjp_huq6Zp2aUke6g!2m2!1d-6.25761620339708!2d106.6170252608093!3f141.47483490088743!4f-5.319592550325538!5f0.7820865974627469" width="100%" height="100%" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
             "note": ""
         },
         {
             "desc": "Belakang Universitas Multimedia Nusantara (Seberang Pradita <i>University</i>) ",
             "kiri": GateC,
-            "kanan": <iframe src="https://www.google.com/maps/embed?pb=!4v1722866756964!6m8!1m7!1szNZEZmyFvxjpwR6GuPJ2iw!2m2!1d-6.259665610133069!2d106.6185660112301!3f20.97148893857417!4f-5.0300419540307075!5f0.7820865974627469" width="600" height="450" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
+            "kanan": <iframe src="https://www.google.com/maps/embed?pb=!4v1722866756964!6m8!1m7!1szNZEZmyFvxjpwR6GuPJ2iw!2m2!1d-6.259665610133069!2d106.6185660112301!3f20.97148893857417!4f-5.0300419540307075!5f0.7820865974627469" width="100%" height="100%" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>,
             "note": ""
         }
     ]
 
     const [selected, setSelected] = useState(0);
-    const slides = ["Gate A","Gate B","Gate C"];
+    const slides = ["Gerbang A","Gerbang B","Gerbang C"];
     const [showMobileDropdown, setShowMobileDropdown] = useState(false);
 
     const handleDropdownClick = () => {
@@ -50,16 +50,9 @@ const TitikPemulangan = () => {
 
     return (
         <>
-            <Header 
-                top={top}
-                bottom={bottom}
-            />
             <section className="titik_pemulangan_section">
                 <div className="tikum_title">
-                    <h1>LOKASI TITIK PEMULANGAN</h1>
-                </div>
-
-                <div className="content-wrapper">
+                    <h1>Titik Pemulangan</h1>
                     <div className='slider'>
                         {slides.map((slides,index)=>(
                             <button key={index}
@@ -93,7 +86,6 @@ const TitikPemulangan = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="tikum_title">
                     <p dangerouslySetInnerHTML={{ __html: data[selected].desc }}></p>
                 </div>
@@ -109,7 +101,6 @@ const TitikPemulangan = () => {
                     <p dangerouslySetInnerHTML={{ __html: data[selected].note }}></p>
                 </div>
             </section>
-            <Footer />
         </>
     )
 }

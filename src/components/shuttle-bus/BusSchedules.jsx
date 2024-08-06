@@ -28,7 +28,7 @@ const busSchedules = {
       departure: [
         {
           time: "05.10",
-          route: "Halte Tangerang City Mall",
+          route: "Halte Tangerang City Mall (depan lobby Sudirman)",
           image: TangCityMall,
         },
         { time: "05.45", route: "<i>Dormitory</i> UMN", image: Dormitory },

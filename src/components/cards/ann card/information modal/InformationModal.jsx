@@ -22,7 +22,7 @@ const InformationModal = ({ onClose }) => {
                     <p>
                         Formulir Keikutsertaan OMB UMN 2024 merupakan salah satu syarat <b>wajib</b> untuk mengikuti OMB UMN 2024 yang mencakup <b>persetujuan orang tua, data diri, dan riwayat kesehatan</b>. 
                         <br></br> <br></br>
-                        Formulir Keikutsertaan OMB UMN 2024 telah dibuka pada <b>Minggu, 30 Juni 2024 pukul 08.00 WIB</b> hingga <b>Minggu, 18 Agustus 2024 pukul 23.59 WIB</b>. 
+                        Formulir Keikutsertaan OMB UMN 2024 telah dibuka pada <b>Minggu, 30 Juni 2024 pukul 08.00 WIB</b> hingga <b>Minggu, 18 Agustus 2024 pukul 12.00 WIB</b>. 
                         <br></br> <br></br>
                         Isi Formulir Keikutsertaan OMB UMN 2024 sekarang juga! 
                     </p>

@@ -16,6 +16,12 @@ import SecondWave from '../../images/waves/Wave Three.png'
 
 const SIO = () => {
     const openPage = () => {
+        window.gtag('event', 'click', {
+            event_category: 'Button',
+            event_label: 'Daftar Sekarang',
+            value: 'SIO_Registration'
+        });
+
         window.open("https://forms.gle/N51HPnDK8ERLmWRF9", "_blank");
     }
     return(

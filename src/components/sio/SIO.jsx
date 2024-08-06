@@ -20,7 +20,7 @@ const SIO = () => {
     }
     return(
         <>
-        <section className="sesi-informasi-omb" >
+        <section className="sesi-informasi-omb" id="sio_section">
             <img className="tangkai-sio" src={Tangkai} alt="tangkai"/>
             <img className="bunga-sio" src={Bunga} alt="bunga"/>
             <div className="content-wrapper-sio">

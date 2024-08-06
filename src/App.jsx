@@ -17,6 +17,7 @@ import MarsOMB from "./pages/MarsOMB";
 import Faq from "./pages/faq/Faq";
 import Bingkai from "./pages/bingkai/BingkaiPage";
 import BingkaiPageRevisi from "./pages/bingkai/BingkaiPageRevisi";
+import TitikPemulangan from "./components/titik-pemulangan/TitikPemulangan";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="/mars" element={<MarsOMB />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/bingkai-resmi" element={<BingkaiPageRevisi />} />
+          <Route path="/titik-pemulangan" element={<TitikPemulangan />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

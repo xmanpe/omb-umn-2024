@@ -279,7 +279,7 @@
         }
     
         .images_section {
-            gap: 12px;
+            gap: 8px;
             grid-template-columns: 1fr 1fr;
             height: 300px;
     
@@ -298,12 +298,12 @@
             }
 
             .left-rotate {
-                transform: rotate(2deg);
+                transform: rotate(0deg);
                 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.204);
             }
     
             .right-rotate {
-                transform: rotate(-2deg);
+                transform: rotate(0deg);
                 box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.204);
             }
         }

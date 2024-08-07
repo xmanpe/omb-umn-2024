@@ -55,6 +55,7 @@ const BottomNav = () => {
     const location = useLocation();
     const [activeTab, setActiveTab] = useState({ path: location.pathname, text: '' });
     const [subMenu, setSubMenu] = useState(null);
+    const [isClosing, setIsClosing] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -89,18 +90,36 @@ const BottomNav = () => {
         if (location.pathname === '/rembaka-anindita' && tab.path && tab.path !== '/rembaka-anindita') {
             window.location.href = tab.path;
         } else if (tab.subMenu) {
-            setSubMenu(subMenu === tab.text ? null : tab.text);
+            if (subMenu === tab.text) {
+                setIsClosing(true);
+                setTimeout(() => {
+                    setSubMenu(null);
+                    setIsClosing(false);
+                }, 500);
+            } else {
+                setSubMenu(tab.text);
+            }
         } else if (tab.path) {
             setActiveTab({ path: tab.path, text: tab.text });
             window.location.href = tab.path;
-            setSubMenu(null);
+            if (subMenu) {
+                setIsClosing(true);
+                setTimeout(() => {
+                    setSubMenu(null);
+                    setIsClosing(false);
+                }, 500);
+            }
         }
     };
 
     const handleSubMenuClick = (item) => {
         setActiveTab({ path: item.path, text: item.text });
-        window.location.href = item.path;
-        setSubMenu(null);
+        setIsClosing(true);
+        setTimeout(() => {
+            window.location.href = item.path;
+            setSubMenu(null);
+            setIsClosing(false);
+        }, 500);
     };
 
     const anantaButton = () => {
@@ -124,8 +143,8 @@ const BottomNav = () => {
 
     return (
         <div className='the-whole-navbar'>
-            {subMenu && (
-                <nav className='extended-navbar'>
+            {(subMenu || isClosing) && (
+                <nav className={`extended-navbar ${isClosing ? 'fadeOutFromTop' : ''}`}>
                     {tabsConfig.find(tab => tab.text === subMenu).subMenu.map((item, index) => (
                         <div 
                             className={`each-extended ${item.path === activeTab.path ? 'active' : ''}`} 

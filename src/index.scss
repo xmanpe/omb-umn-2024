@@ -250,6 +250,7 @@ body {
     box-sizing: border-box;
   }
 
+
   .omb {
     .error_section {
       background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('./images/background/Wiskira.jpeg'), lightgray 50% / cover no-repeat;
@@ -263,7 +264,7 @@ body {
       align-items: center;
       gap: 40px;
       flex-shrink: 0;
-      height: 100vh; /* Set the height to 100% of viewport height */
+      height: 100vh;
 
       img {
         display: none;
@@ -326,24 +327,28 @@ body {
   }
 }
 
-.fade-overlay {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
-  pointer-events: none; /* Allows clicks to pass through the overlay */
-  z-index: 999;
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes fadeOutFromTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+  }
 }

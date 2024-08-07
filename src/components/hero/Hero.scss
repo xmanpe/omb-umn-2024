@@ -144,11 +144,15 @@
                     opacity: 0.3;
                     width: 8px;
                     height: 8px;
+                    border-radius: 50%;
                 }
-
+            
                 .swiper-pagination-bullet-active {
                     background: #FFF;
-                    opacity: 1;
+                    opacity: 0.8;
+                    width: 32px;
+                    height: 8px;
+                    border-radius: 100px;
                 }
             }
         }

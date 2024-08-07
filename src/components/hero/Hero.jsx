@@ -38,7 +38,6 @@ const Hero = () => {
                 <Swiper
                     spaceBetween={16}
                     modules={[Navigation, Pagination, Autoplay, A11y, Mousewheel]}
-                    // slidesPerView={1.3}
                     breakpoints={{
                         432: {
                             slidesPerView: 1,
@@ -53,10 +52,10 @@ const Hero = () => {
                             slidesPerView: 2,
                         },
                         1440: {
-                            slidesPerView: 2,
+                            slidesPerView: 3,
                         },
                         1920: {
-                            slidesPerView: 2,
+                            slidesPerView: 3,
                         },
                     }}
                     pagination={{ clickable: true }}

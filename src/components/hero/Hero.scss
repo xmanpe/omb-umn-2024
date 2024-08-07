@@ -40,18 +40,19 @@
         .logo_section {
             width: 100%;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             align-self: stretch;
-            gap: 12px;
+            gap: 100px;
     
             .logo_omb {
-                width: 20%;
+                width: 18%;
                 height: auto;
+                filter: drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.224));
             }
     
             .tagline_omb {
-                width: 50%;
+                width: 42%;
             }
         }
     
@@ -78,15 +79,15 @@
     }
 
     .bem_section {
-        margin: 100px 0px 300px 0px;
+        margin: 40px 0px 300px 0px;
         display: flex;
         flex-direction: column;
         gap: 12px;
         justify-content: center;
         align-items: center;
         width: 100%;
-        position: relative; /* Position relative to create a context for pseudo-elements */
-        padding: 20px 0; /* Add padding to make space for the borders */
+        position: relative;
+        padding: 20px 0;
     
         p {
             color: #FFF;
@@ -100,25 +101,23 @@
             text-shadow: 0px 4px 24.9px #FFF;
         }
         
-        /* Add the top border */
         &::before {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 1px; /* Height of the border */
+            height: 1px;
             background: linear-gradient(to right, transparent, #FFF 50%, transparent);
         }
         
-        /* Add the bottom border */
         &::after {
             content: "";
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 1px; /* Height of the border */
+            height: 1px;
             background: linear-gradient(to right, transparent, #FFF 50%, transparent);
         }
     }
@@ -158,65 +157,26 @@
 
 @media screen and (max-width: 1440px){
     .hero_section {
-        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // width: auto;
-        // position: relative;
-    
         .wave {
-            // margin-bottom: -1px;
-            // width: 100%;
-            // pointer-events: none;
         }
     
         .hero_supergrafis {
-            // position: absolute;
-            // top: 0px;
-            // mix-blend-mode: soft-light;
         }
     
         .the_hero_content {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
-            // gap: 72px;
             padding: 100px 100px 20px 100px;
     
-            .logo_section {
-                // width: 100%;
-                // display: flex;
-                // justify-content: space-around;
-                // align-items: center;
-                // align-self: stretch;
-                // gap: 12px;
-        
+            .logo_section {        
                 .logo_omb {
-                    // width: 24%;
-                    // height: auto;
                 }
         
                 .tagline_omb {
-                    // width: 50%;
                 }
             }
         
             .announcement_section {
-                // width: 100%;
             }
             .announcement_center {
-                // justify-content: center;
-                // align-items: center;
-                // gap: 28px;
-                // display: flex;
-                // width: 50%;
-                // margin: auto;
             }
         }
 
@@ -234,58 +194,25 @@
 }
 
 @media screen and (max-width: 1200px){
-    .hero_section {
-        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // width: auto;
-        // position: relative;
-    
+    .hero_section {    
         .wave {
-            // margin-bottom: -1px;
-            // width: 100%;
-            // pointer-events: none;
         }
     
         .hero_supergrafis {
-            // position: absolute;
-            // top: 0px;
-            // mix-blend-mode: soft-light;
         }
     
         .the_hero_content {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
-            // gap: 72px;
             padding: 100px 80px 20px 80px;
     
             .logo_section {
-                // width: 100%;
-                // display: flex;
-                // justify-content: space-around;
-                // align-items: center;
-                // align-self: stretch;
-                // gap: 12px;
-        
                 .logo_omb {
-                    // width: 24%;
-                    // height: auto;
                 }
         
                 .tagline_omb {
-                    // width: 50%;
                 }
             }
         
             .announcement_section {
-                // width: 100%;
             }
         }
 
@@ -304,21 +231,7 @@
 
 @media screen and (max-width: 810px){
     .hero_section {
-        // background: linear-gradient(97deg, rgba(84, 0, 184, 0.90) 0%, rgba(176, 110, 209, 0.90) 56.97%, rgba(255, 207, 229, 0.90) 100%), url('../../images/background/Cover.jpeg'), lightgray 50% / cover no-repeat;
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
-        // width: auto;
-        // position: relative;
-    
         .wave {
-            // margin-bottom: -1px;
-            // width: 100%;
-            // pointer-events: none;
         }
 
         .new-wave {
@@ -329,32 +242,18 @@
         }
     
         .hero_supergrafis {
-            // display: none;
-            // position: absolute;
-            // top: 0px;
-            // mix-blend-mode: soft-light;
         }
     
         .the_hero_content {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: flex-start;
             gap: 40px;
-            padding: 40px 40px 40px 40px;
+            padding: 60px 40px 40px 40px;
     
             .logo_section {
-                // width: 100%;
-                // display: flex;
                 flex-direction: column;
-                // justify-content: space-around;
-                // align-items: center;
-                // align-self: stretch;
                 gap: 32px;
         
                 .logo_omb {
                     width: 32%;
-                    // height: auto;
                 }
         
                 .tagline_omb {
@@ -368,7 +267,6 @@
         
             .announcement_section {
                 grid-template-columns: 1fr;
-                // width: 100%;
             }
         }
 
@@ -427,25 +325,33 @@
                 gap: 32px;
         
                 .logo_omb {
-                    width: 40%;
+                    width: 36%;
                 }
         
                 .tagline_omb {
-                    width: 80%;
+                    width: 70%;
                 }
             }
         
             .announcement_section {
             }
         }
-    }
 
-    .announcement_swiper {
-        .swiper {
-            padding: 60px 16px;
+        .bem_section {
+            margin: 40px 0px 100px 0px;
 
-            .swiper-wrapper {    
-                .swiper-slide {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .announcement_swiper {
+            .swiper {
+                padding: 40px 24px 40px 24px;
+    
+                .swiper-wrapper {    
+                    .swiper-slide {
+                    }
                 }
             }
         }

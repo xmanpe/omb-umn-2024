@@ -69,7 +69,7 @@
         align-items: center;
         border: 2px solid rgb(228, 228, 228);
         position: relative;
-        box-shadow: 0px 0px 100px 0px #000;
+        box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
         transition: width 0.3s ease, background-color 0.3s ease;
       
         &.active {
@@ -163,10 +163,6 @@
         width: fit-content;
         transition: visibility 0.2s, opacity 0.2s, transform 0.2s;
     }
-}
-
-.the-whole-navbar:hover {
-    bottom: 18px;
 }
 
 @media screen and (max-width: 560px) {

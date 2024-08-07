@@ -45,7 +45,7 @@ const Home = () => {
       {showExperience && <SmallModal />}
       {/* {showExperience && <Experience />} */}
       <Hero />
-      <ApaItuOMB />=
+      <ApaItuOMB />
       <YouTube />
       <SwaraBestari />
       <SIO />

@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Loading from "../components/loading/Loading";
 import Hero from "../components/hero/Hero";
 import SmallModal from "../components/small modal/SmallModal";
 import ApaItuOMB from "../components/apa itu omb/ApaItuOMB";
 import YouTube from "../components/youtube/YouTube";
-import Divisi from "../components/divisi/Divisi";
-import Pelaksanaan from "./pelaksanaan/Pelaksanaan";
 import Ananta from "../components/ananta/Ananta";
 import SwaraBestari from "../components/swara-bestari/SwaraBestari";
 import Footer from "../components/footer/Footer";
-import PetugasUpacara from "../components/petugas-upacara/PetugasUpacara";
 import InfoPWRevisi from "../components/informasi-penting-wajib/InfoPWRevisi";
-import Bingkai from "../components/bingkai-resmi/Bingkai";
 import SIO from "../components/sio/SIO";
 
 const Home = () => {

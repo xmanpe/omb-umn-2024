@@ -1,6 +1,5 @@
 const DaftarFaq = {
   "daftar-faq-omb": [
-    // Keikutsertaan
     {
       pertanyaan: "Apakah setiap calon mahasiswa baru wajib mengikuti OMB UMN 2024?",
       jawaban: "<b>Iya</b>. Setiap calon mahasiswa baru wajib mengikuti seluruh rangkaian kegiatan OMB UMN 2024 sebagai <b>salah satu syarat kelulusan.</b>",

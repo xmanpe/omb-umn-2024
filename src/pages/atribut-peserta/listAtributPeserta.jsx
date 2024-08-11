@@ -82,7 +82,7 @@ const listAtributPeserta = {
         {
             barang:"Ikat Pinggang",
             image:IkatPinggang,
-            desc:"Peserta OMB UMN 2024 diperbolehkan menggunakan ikat pinggang berwarna bebas yang  bersifat opsional sesuai kebutuhan masing-masing.",
+            desc:"Peserta OMB UMN 2024 diperbolehkan menggunakan ikat pinggang berwarna hitam polos yang bersifat opsional sesuai kebutuhan masing-masing.",
             hari:[0,1,2,3],
         },
         {

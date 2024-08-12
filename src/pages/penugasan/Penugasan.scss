@@ -134,3 +134,239 @@
         }
     }
 }
+
+@media screen and (max-width: 1440px) {
+    .penugasan_section {    
+        .slider {    
+            .slider-button {
+                padding: 8px 16px;
+            }
+    
+            .active {
+            }
+        }
+    
+        .slider:hover {
+        }
+    
+        .list-wrapper {
+            padding: 0px 100px 40px 100px;
+    
+            .list {    
+                .each-list {
+                    gap: 12px;
+                    padding: 16px;
+                }
+    
+                .number {
+                }
+    
+                .text {
+                    b {
+                    }
+                }
+            }
+        }
+    
+        .bottom-list-wrapper {
+            padding: 0px 100px;
+    
+            .each-list {
+                gap: 12px;
+                padding: 16px;
+    
+                .number {
+                }
+        
+                .text {    
+                    b {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .penugasan_section {    
+        .slider {    
+            .slider-button {
+            }
+    
+            .active {
+            }
+        }
+    
+        .slider:hover {
+        }
+    
+        .list-wrapper {
+            padding: 0px 80px 40px 80px;
+    
+            .list {    
+                .each-list {
+                }
+    
+                .number {
+                }
+    
+                .text {
+                    b {
+                    }
+                }
+            }
+        }
+    
+        .bottom-list-wrapper {
+            padding: 0px 80px;
+    
+            .each-list {
+                .number {
+                }
+        
+                .text {    
+                    b {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .penugasan_section {    
+        .slider {    
+            .slider-button {
+            }
+    
+            .active {
+            }
+
+            .pelaksanaan-text {
+                display: none;
+            }
+        }
+    
+        .slider:hover {
+            box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+        }
+    
+        .list-wrapper {
+            padding: 0px 40px 40px 40px;
+    
+            .list {    
+                .each-list {
+                }
+    
+                .number {
+                }
+    
+                .text {
+                    b {
+                    }
+                }
+
+                .each-list:hover{
+                    border: initial;
+                }
+            }
+        }
+    
+        .bottom-list-wrapper {
+            padding: 0px 40px;
+    
+            .each-list {
+                .number {
+                }
+        
+                .text {    
+                    b {
+                    }
+                }
+            }
+
+            .each-list:hover{
+                border: initial;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .penugasan_section {    
+        .slider {    
+            margin: 0px 16px;
+            top: 8px;
+            gap: 8px;
+            width: -webkit-fill-available;
+
+            .slider-button {
+                padding: 8px 8px;
+                width: 100%;
+            }
+    
+            .active {
+            }
+
+            .pelaksanaan-text {
+                display: none;
+            }
+        }
+    
+        .slider:hover {
+            box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+        }
+    
+        .list-wrapper {
+            padding: 0px 16px 40px 16px;
+    
+            .list {    
+                gap: 8px;
+
+                .each-list {
+                }
+    
+                .number {
+                    font-size: 14px;
+                    width: 24px;
+                    height: 24px;
+                }
+    
+                .text {
+                    font-size: 16px;
+
+                    b {
+                    }
+                }
+
+                .each-list:hover{
+                    border: initial;
+                }
+            }
+        }
+    
+        .bottom-list-wrapper {
+            padding: 0px 16px;
+            gap: 8px;
+    
+            .each-list {
+                .number {
+                    font-size: 14px;
+                    width: 24px;
+                    height: 24px;
+                }
+        
+                .text { 
+                    font-size: 16px;
+
+                    b {
+                    }
+                }
+            }
+
+            .each-list:hover{
+                border: initial;
+            }
+        }
+    }
+}

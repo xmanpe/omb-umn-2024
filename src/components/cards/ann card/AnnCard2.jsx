@@ -77,7 +77,7 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Swara Bestari: Epilog</h3>
+                        <h3>Swara Bestari: EPILOG</h3>
                         <p>Yuk, pelajari cara untuk mendapatkan inspirasi dalam mengembangkan potensi diri!</p>
                     </div>
                     {/* <div className='schedule'>

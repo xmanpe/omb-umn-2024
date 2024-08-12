@@ -68,7 +68,7 @@ const Hero = () => {
                     }}
                     className="mySwiper"
                 >
-                    <SwiperSlide><AnnCard6 /></SwiperSlide>
+                    {/* <SwiperSlide><AnnCard6 /></SwiperSlide> */}
                     <SwiperSlide><AnnCard /></SwiperSlide>
                     <SwiperSlide><AnnCard5 /></SwiperSlide>
                     <SwiperSlide><AnnCard3 /></SwiperSlide>

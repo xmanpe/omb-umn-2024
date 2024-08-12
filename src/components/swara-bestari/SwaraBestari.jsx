@@ -38,7 +38,7 @@ const SwaraBestari = () => {
                         <div className='the_title'>
                             {/* <h1>PROLOG : Bangun Support System dalam Diri melalui Lingkungan Positif</h1> */}
                             <iframe className='mini-player' src="https://open.spotify.com/embed/episode/3pQnXj47iCFRUhCMv0bvFP?utm_source=generator" width="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                            <p>Dalam PENA 04, Swara Bestari ingin mengajak Sobat PENA untuk menentukan target atau tujuan dari awal hingga akhir perkuliahan. Yuk, dengarkan sekarang!</p>
+                            <p>Dalam Epilog, Sobat PENA diajak untuk mengeksplorasi berbagai kegiatan yang sesuai dengan minat, sehingga bakat dapat diasah dan dikembangkan. Jangan lewatkan kesempatan untuk mendapatkan inspirasi dalam mengembangkan potensi diri!</p>
                         </div>
                         <div className='cta_button'>
                         <button onClick={toggleModal}>Tentang Swara Bestari

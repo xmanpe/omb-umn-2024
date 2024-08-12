@@ -43,7 +43,7 @@ const Home = () => {
       <ApaItuOMB />
       <YouTube />
       <SwaraBestari />
-      <SIO />
+      {/* <SIO /> */}
       <InfoPWRevisi />
       <Footer />
     </>

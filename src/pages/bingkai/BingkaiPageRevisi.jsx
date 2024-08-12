@@ -46,6 +46,7 @@ function BingkaiPage() {
     const pinchData = useRef({ dist: 0, scale: 1 });
     const [copied, setCopied] = useState(false);
     const [selectedFile, setSelectedFile] = useState(null);
+    const [zoom, setZoom] = useState(1);
 
     const majors = [
         { value: "informatika", label: "Informatika", border: BorderInformatika, faculty: "Fakultas Teknik & Informatika" },
@@ -212,6 +213,12 @@ function BingkaiPage() {
         return tmp.textContent || tmp.innerText || "";
     }
 
+    const handleZoomChange = (e) => {
+        const newZoom = parseFloat(e.target.value);
+        setZoom(newZoom);
+        setTransform(prev => ({ ...prev, scale: newZoom }));
+      };
+
     const textToCopy = `🪷<br>
 Lotus Biru merajut kisah indah,<br>
 Saya siap untuk awali langkah!<br><br>
@@ -278,54 +285,64 @@ Saya siap untuk tangguhkan ambisi dan menumbuhkan potensi bagi almamater, persad
             )}
 
             {step === 2 && (
-                <div className="step-2">
-                    <h1>Atur Bingkai</h1>
-                    <Stage
+            <div className="step-2">
+                <h1>Atur Bingkai</h1>
+                <Stage
+                width={500}
+                height={500}
+                onWheel={handleWheel}
+                // onTouchMove={handleTouchMove}
+                // onTouchStart={handleTouchStart}
+                >
+                <Layer>
+                    {foto && (
+                    <KonvaImage
+                        image={foto}
+                        x={transform.x}
+                        y={transform.y}
+                        scaleX={zoom}
+                        scaleY={zoom}
+                        draggable={isEditing}
+                        onDragEnd={handleDragEnd}
+                    />
+                    )}
+                    {borderImage && (
+                    <KonvaImage
+                        image={borderImage}
                         width={500}
                         height={500}
-                        onWheel={handleWheel}
-                        onTouchMove={handleTouchMove}
-                        onTouchStart={handleTouchStart}
-                    >
-                        <Layer>
-                        {foto && (
-                            <KonvaImage
-                            image={foto}
-                            x={transform.x}
-                            y={transform.y}
-                            scaleX={transform.scale}
-                            scaleY={transform.scale}
-                            draggable={isEditing}
-                            onDragEnd={handleDragEnd}
-                            />
-                        )}
-                        {borderImage && (
-                            <KonvaImage
-                            image={borderImage}
-                            width={500}
-                            height={500}
-                            listening={false}
-                            />
-                        )}
-                        </Layer>
-                    </Stage>
-                    <div className='cta_button'>
-                        <button onClick={toggleEditMode}>{isEditing ? "Selesai edit" : "Edit foto"}
-                        </button>
-                    </div>
-                    {isEditing && <span className="note-kecil"><p>Pastikan posisi foto sejajar dengan bingkai!</p></span>}
-                    <hr />
-                    <div className="button-wrapper">
-                        <div className='cta_button'>
-                            <button className="dinamika-button" onClick={handlePreviousStep}>Kembali
-                            </button>
-                        </div>
-                        <div className='cta_button'>
-                            <button onClick={handleNextStep}>Tahap selanjutnya
-                            </button>
-                        </div>
-                    </div>
+                        listening={false}
+                    />
+                    )}
+                </Layer>
+                </Stage>
+                {isEditing && (
+                <div className="zoom-slider">
+                    <input
+                    type="range"
+                    min="0.1"
+                    max="1"
+                    step="0.01"
+                    value={zoom}
+                    onChange={handleZoomChange}
+                    />
+                    <span>Atur jarak: {zoom.toFixed(1)}x</span>
                 </div>
+                )}
+                <div className='cta_button'>
+                <button onClick={toggleEditMode}>{isEditing ? "Selesai edit" : "Edit foto"}</button>
+                </div>
+                {isEditing && <span className="note-kecil"><p>Pastikan posisi foto sejajar dengan bingkai!</p></span>}
+                <hr />
+                <div className="button-wrapper">
+                <div className='cta_button'>
+                    <button className="dinamika-button" onClick={handlePreviousStep}>Kembali</button>
+                </div>
+                <div className='cta_button'>
+                    <button onClick={handleNextStep}>Tahap selanjutnya</button>
+                </div>
+                </div>
+            </div>
             )}
 
             {step === 3 && (

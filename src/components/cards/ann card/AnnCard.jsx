@@ -74,7 +74,7 @@ const AnnCard = () => {
     return (
         <>
         {showModal && <InformationModal onClose={toggleModal} />}
-            <div className="ann_card hightlight">
+            <div className="ann_card highlight">
                 <div className='text_section'>
                     <div className='title_and_desc'>
                         <h3>Informasi Penting & Wajib!</h3>

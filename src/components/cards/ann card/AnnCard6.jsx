@@ -7,16 +7,16 @@ import Calendar from '../../../images/Calendar/Calendar.svg';
 
 const AnnCard = () => {
     const openPage = () => {
-        document.getElementById('sio_section').scrollIntoView({ behavior: 'smooth' });
+        window.location.href = '/aksi-sosial';
     };
 
     return (
         <>
-            <div className="ann_card hightlight">
+            <div className="ann_card highlight">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Formulir Sesi Informasi OMB UMN 2024</h3>
-                        <p>Untuk mendapatkan tautan Zoom pada hari Sesi Informasi OMB UMN, peserta WAJIB untuk mengisi formulir sebagai salah satu syarat mengikuti rangkaian OMB UMN 2024!</p>
+                        <h3>Penugasan Aksi Sosial OMB UMN 2024</h3>
+                        <p>Peserta <b>wajib</b> menyelesaikan Penugasan Aksi Sosial untuk mengikuti rangkaian OMB UMN 2024!</p>
                     </div>
                 </div>
                 <div className='cta_button'>

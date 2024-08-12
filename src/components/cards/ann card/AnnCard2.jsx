@@ -77,8 +77,8 @@ const AnnCard = () => {
             <div className="ann_card">
                 <div className='text_section'>
                     <div className='title_and_desc'>
-                        <h3>Swara Bestari: PENA 04</h3>
-                        <p>Yuk, pelajari cara menentukan target atau tujuan dari awal hingga akhir perkuliahan dengan mendengarkan episode ini di Spotify!</p>
+                        <h3>Swara Bestari: Epilog</h3>
+                        <p>Yuk, pelajari cara untuk mendapatkan inspirasi dalam mengembangkan potensi diri!</p>
                     </div>
                     {/* <div className='schedule'>
                         <div className='date'>

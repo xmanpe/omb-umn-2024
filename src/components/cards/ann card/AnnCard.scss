@@ -65,6 +65,11 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: normal;
+
+                b {
+                    color: #FFF;
+                    font-weight: 600;
+                }
             }
         }
 
@@ -173,7 +178,25 @@
 }
 
 .highlight {
-    
+    background-color: rgba(255, 255, 255, 0.85) !important;
+
+    .text_section{
+        .title_and_desc {
+            h3 {
+                color: #4504AA;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+
+            p {
+                color: rgba(0, 0, 0, 0.6);
+
+                b {
+                    color: black;
+                }
+                
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1440px){

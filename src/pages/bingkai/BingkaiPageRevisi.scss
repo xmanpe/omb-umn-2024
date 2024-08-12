@@ -351,6 +351,40 @@
             }
         }
 
+        .zoom-slider {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            
+            input {
+              width: 200px;
+              margin-right: 10px;
+            }
+
+            input[type=range] {
+              -webkit-appearance: none;
+              background-color: rgba(0, 0, 0, 0.1);
+              height: 6px;
+              border-radius: 100px;
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 24px;
+                height: 24px;
+                background: #4504AA;
+                border: 2px solid white;
+                cursor: pointer;
+                border-radius: 50%;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              }
+            
+            span {
+              font-size: 14px;
+            }
+        }
+
         .button-wrapper {
             border-top: 2px solid rgba(0, 0, 0, 0.05);
             padding-top: 20px;

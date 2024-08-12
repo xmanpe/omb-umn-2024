@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import './InformationModal.scss';
 
 // import icons
@@ -6,6 +6,7 @@ import X from '../../../../images/Menu/Close_MD.svg'
 import ArrowRight from '../../../../images/Arrow/Arrow_Right_MD.svg';
 
 const InformationModal = ({ onClose }) => {
+    const [isClosing, setIsClosing] = useState(false);
 
     const openFormLink= useCallback(() => {
         window.open("https://forms.gle/BZcqVsdynirwQFva6", "_blank");

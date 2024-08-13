@@ -1,0 +1,356 @@
+.infopw_section {
+    background: url('../../images/waves/Blurry.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    z-index: 1;
+
+    .wave_two {
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .wave_three {
+        z-index: 99;
+        margin-bottom: -2px;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .infopw_content {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 100px 160px 0px 160px;
+        box-sizing: border-box;
+        gap: 60px;
+
+        .kiri {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .kanan {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: left;
+            align-items: flex-start;
+
+            .the_title {
+                display: flex;
+                gap: 8px;
+                flex-direction: column;
+    
+                .the_label {
+                    width: fit-content;
+                    display: flex;
+                    gap: 4px;
+                    align-items: center;
+                    padding: 6px 16px;
+                    border-radius: 100px;
+                    border: 2px solid #4504AA;
+    
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+    
+                    h3 {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #4504AA;
+                    }
+                }
+    
+                h1 {
+                    text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+    
+            p {
+                color: rgba(0, 0, 0, 0.80);
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            .cta_button {
+                margin-top: 40px;
+
+                button {
+                    display: flex;
+                    padding: 12px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    border-radius: 100px;
+                    border: none;
+                    background: linear-gradient(169deg, #9879D4 8.3%, #4504AA 91.79%);
+                    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2), 0px -4px 8px 0px rgba(0, 0, 0, 0.2) inset, 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset;
+                    transition: box-shadow 0.1s ease-in-out;
+        
+                    color: #FFF;
+                    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
+                    font-size: 18px;
+                    font-family: 'GSN';
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                        
+                    cursor: pointer;
+        
+                    overflow: hidden;
+        
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+        
+                button:active {
+                    padding: 12px 24px 10px 24px;
+                    background: linear-gradient(169deg, #7753BE 8.25%, #3D0595 91.75%);
+                    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 4px 8px 0px rgba(0, 0, 0, 0.1) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.2) inset;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .infopw_section {
+        .wave_two {
+        }
+    
+        .wave_three {
+        }
+    
+        .infopw_content {
+            padding: 100px 100px 0px 100px;
+            gap: 30px;
+    
+            .kiri {
+                img {
+                }
+            }
+    
+            .kanan {
+                .the_title {
+                    .the_label {        
+                        img {
+                        }
+        
+                        h3 {
+                        }
+                    }
+        
+                    h1 {
+                    }
+                }
+        
+                p {
+                }
+    
+                .cta_button {
+                    button {
+                        img {
+                        }
+                    }
+            
+                    button:active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .infopw_section {
+        gap: 80px;
+
+        .wave_two {
+        }
+    
+        .wave_three {
+        }
+    
+        .infopw_content {
+            padding: 80px 80px 0px 80px;
+            flex-direction: column;
+
+            .kiri {
+                img {
+                    width: 600px;
+                }
+            }
+    
+            .kanan {
+                .the_title {
+                    width: 100%;
+                    align-items: center;
+
+                    .the_label {        
+                        img {
+                        }
+        
+                        h3 {
+                        }
+                    }
+        
+                    h1 {
+                    }
+                }
+        
+                p {
+                    text-align: center;
+                }
+    
+                .cta_button {
+                    width: 100%;
+
+                    button {
+                        margin: auto;
+
+                        img {
+                        }
+                    }
+            
+                    button:active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .infopw_section {
+        gap: 40px;
+
+        .wave_two {
+        }
+    
+        .wave_three {
+        }
+    
+        .infopw_content {
+            padding: 40px 40px 0px 40px;
+
+            .kiri {
+                img {
+                    width: 420px;
+                }
+            }
+    
+            .kanan {
+                .the_title {
+                    .the_label {        
+                        img {
+                        }
+        
+                        h3 {
+                        }
+                    }
+        
+                    h1 {
+                        text-align: center;
+                    }
+                }
+        
+                p {
+                }
+    
+                .cta_button {
+                    button {
+                        font-size: 18px;
+
+                        img {
+                            height: 20px;
+                            width: 20px;
+                        }
+                    }
+            
+                    button:active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .infopw_section {
+        gap: 60px;
+
+        .wave_two {
+        }
+    
+        .wave_three {
+        }
+    
+        .infopw_content {
+            padding: 60px 16px 0px 16px;
+
+            .kiri {
+                img {
+                    width: 320px;
+                }
+            }
+    
+            .kanan {
+                .the_title {
+                    .the_label {        
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
+        
+                        h3 {
+                            font-size: 14px;
+                        }
+                    }
+        
+                    h1 {
+                        font-size: 28px;
+                    }
+                }
+        
+                p {
+                    font-size: 16px;
+                }
+    
+                .cta_button {
+                    button {
+                        font-size: 16px;
+                        width: 100%;
+
+                        img {
+                        }
+                    }
+            
+                    button:active {
+                    }
+                }
+            }
+        }
+    }
+}

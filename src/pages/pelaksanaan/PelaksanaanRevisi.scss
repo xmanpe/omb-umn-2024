@@ -1,0 +1,239 @@
+.pelaksanaan_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 160px;
+    overflow: visible;
+
+    .slider {
+        position: sticky;
+        top: 12px;
+        display: flex;
+        gap: 0px;
+        border: 1.5px solid rgba(0, 0, 0, 0.056);
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        margin: auto;
+        padding: 2px;
+        border-radius: 100px;
+        background: white;
+        box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+
+        .slider-button {
+            border: none;
+            border-radius: 100px;
+            padding: 12px 16px;
+            font-size: 16px;
+            font-family: 'GSN';
+            background: none;
+            color: rgba(0, 0, 0, 0.365);
+            cursor: pointer;
+        }
+
+        .active {
+            border: 2px solid #4504AA;
+            border-radius: 100px;
+            font-size: 16px;
+            font-family: 'GSN';
+            background-color: #4404aa21;
+            color: #4504AA;
+        }
+    }
+
+    .slider:hover {
+        box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .list-wrapper {
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            .each-list {
+                display: flex;
+                gap: 16px;
+                background-color: #4404aa0a;
+                padding: 20px 16px;
+                border-radius: 16px;
+
+                .number {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: white;
+                    background: var(--ANGKA, linear-gradient(135deg, #4504AA 32%, #FFD0E4 100%));
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 100px;
+                }
+
+                .text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #000000;
+                    width: 100%;
+                }
+
+                hr {
+                    border: 0.2px solid #00000017;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .pelaksanaan_content {
+        padding: 40px 100px;
+    
+        .slider {    
+            .slider-button {
+                padding: 8px 16px;
+            }
+    
+            .active {
+            }
+        }
+    
+        .list-wrapper { 
+            .list {
+                .each-list {
+                    gap: 12px;
+                    padding: 16px;
+    
+                    .number {
+                    }
+    
+                    .text {
+                    }
+    
+                    hr {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pelaksanaan_content {
+        padding: 40px 80px;
+    
+        .slider {    
+            .slider-button {
+            }
+    
+            .active {
+            }
+        }
+    
+        .list-wrapper { 
+            .list {
+                .each-list {
+    
+                    .number {
+                    }
+    
+                    .text {
+                    }
+    
+                    hr {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .pelaksanaan_content {
+        padding: 40px;
+    
+        .slider {    
+            .slider-button {
+            }
+    
+            .active {
+            }
+
+            .pelaksanaan-text {
+                display: none;
+            }
+        }
+
+        .slider:hover {
+            box-shadow: 0px 7px 17.7px 0px rgba(0, 0, 0, 0.1);
+        }
+    
+        .list-wrapper { 
+            .list {
+                .each-list {
+    
+                    .number {
+                    }
+    
+                    .text {
+                    }
+    
+                    hr {
+                    }
+                }
+
+                .each-list:hover{
+                    border: initial;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .pelaksanaan_content {
+        padding: 40px 16px;
+    
+        .slider {
+            top: 8px;
+            gap: 8px;
+            width: -webkit-fill-available;
+
+            .slider-button {
+                padding: 8px 20px;
+                width: 100%;
+            }
+    
+            .active {
+            }
+        }
+    
+        .list-wrapper { 
+            .list {
+                gap: 8px;
+
+                .each-list {
+    
+                    .number {
+                        font-size: 14px;
+                        width: 24px;
+                        height: 24px;
+                    }
+    
+                    .text {
+                        font-size: 16px;
+                    }
+    
+                    hr {
+                    }
+                }
+            }
+        }
+    }
+}

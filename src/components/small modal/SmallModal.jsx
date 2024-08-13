@@ -7,8 +7,12 @@ import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg';
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/SUPERGRAFIS METALLIC VIOLET/Fill - Firefly 2.svg'
 
+// import components
+import InformationModal from '../cards/ann card/information modal/InformationModal';
+
 const SmallModal = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,18 +43,29 @@ const SmallModal = () => {
         }
     };
 
+    const toggleModal = () => {
+        setShowModal(!showModal);
+    };
+
+    const openPage = () => {
+        document.getElementById('divisi_section').scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
-        <div className={`small_modal ${isVisible ? 'visible' : ''}`}>
-            <div className='left_side_modal'>
-                <img className='supergrafis' src={Supergrafis} alt="Supergrafis" />
-                <p className='left_side'>Klik divisi untuk melihat jadwal wawancaranya!</p>
+        <>
+        {showModal && <InformationModal onClose={toggleModal} />}
+            <div className={`small_modal ${isVisible ? 'visible' : ''}`}>
+                <div className='left_side_modal'>
+                    <img className='supergrafis' src={Supergrafis} alt="Supergrafis" />
+                    <p className='left_side'>Yuk, isi Formulir Keikutsertaan OMB UMN 2024!</p>
+                </div>
+                <div className='cta_button'>
+                    <button onClick={toggleModal}>Yuk
+                        <img src={ArrowRight} alt="Arrow Icon" />
+                    </button>
+                </div>
             </div>
-            <div className='cta_button'>
-                <button onClick={handleScrollToDivisi}>Cek Jadwal
-                    <img src={ArrowRight} alt="Arrow Icon" />
-                </button>
-            </div>
-        </div>
+        </>
     );
 };
 

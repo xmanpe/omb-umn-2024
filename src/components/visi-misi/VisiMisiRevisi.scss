@@ -1,0 +1,250 @@
+.separator-wave {
+    width: 100%;
+    pointer-events: none;
+    height: 320px;
+}
+
+.visimisi_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 160px;
+
+    .visimisi_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        border: 1.5px solid #F0F0F0;
+        border-radius: 20px;
+        box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+        box-sizing: border-box;
+
+        .visimisi {
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 320px;
+                height: auto;
+            }
+
+            img:hover {
+                transform: translateY(-5px);
+            }
+
+            .visimisi-desc {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                h1 {
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: normal;
+                    font-style: normal;
+                    background: linear-gradient(180deg, #CABBF9 0%, #4504AA 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.60);
+                }
+
+                p:hover {
+                    color: rgba(0, 0, 0, 0.80);
+                }
+            }
+        }
+
+        .visimisi-kiri {
+            border-bottom: 1.5px solid #F0F0F0;
+        }
+
+        .visimisi-kanan {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .separator-wave {
+        height: 200px;
+    }
+
+    .visimisi_section {
+        gap: 40px;
+        padding: 40px 100px;
+    
+        .visimisi_content {
+            .visimisi {
+                padding: 32px;
+
+                img {
+                    width: 280px;
+                }
+    
+                img:hover {
+                }
+    
+                .visimisi-desc {
+    
+                    h1 {
+                        font-size: 32px;
+                    }
+    
+                    p {
+                    }
+    
+                    p:hover {
+                    }
+                }
+            }
+    
+            .visimisi-kiri {
+            }
+    
+            .visimisi-kanan {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .separator-wave {
+    }
+
+    .visimisi_section {
+        padding: 40px 80px;
+    
+        .visimisi_content {
+            .visimisi {
+                flex-direction: column;
+                padding: 28px;
+                
+                img {
+                    width: 280px;
+                }
+    
+                img:hover {
+                }
+    
+                .visimisi-desc {
+    
+                    h1 {
+                        text-align: center;
+                        font-size: 32px;
+                    }
+    
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+    
+                    p:hover {
+                    }
+                }
+            }
+    
+            .visimisi-kiri {
+            }
+    
+            .visimisi-kanan {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .separator-wave {
+    }
+
+    .visimisi_section {
+        padding: 40px;
+    
+        .visimisi_content {
+            .visimisi {
+                padding: 20px;
+                
+                img {
+                    width: 240px;
+                }
+    
+                img:hover {
+                }
+    
+                .visimisi-desc {
+    
+                    h1 {
+                        font-size: 32px;
+                    }
+    
+                    p {
+                    }
+    
+                    p:hover {
+                    }
+                }
+            }
+    
+            .visimisi-kiri {
+            }
+    
+            .visimisi-kanan {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .separator-wave {
+        height: 100px;
+    }
+
+    .visimisi_section {
+        padding: 40px 16px;
+    
+        .visimisi_content {
+            .visimisi {
+                padding: 20px;
+                
+                img {
+                    width: 240px;
+                }
+    
+                img:hover {
+                }
+    
+                .visimisi-desc {
+    
+                    h1 {
+                        font-size: 28px;
+                    }
+    
+                    p {
+                    }
+    
+                    p:hover {
+                    }
+                }
+            }
+    
+            .visimisi-kiri {
+            }
+    
+            .visimisi-kanan {
+            }
+        }
+    }
+}

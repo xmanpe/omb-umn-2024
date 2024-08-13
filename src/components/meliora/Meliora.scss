@@ -1,0 +1,324 @@
+@keyframes vibrate-infinite {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+  }
+  50% {
+    transform: translate(2px, -2px);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+  }
+}
+
+.vibrate-effect-infinite {
+  animation: vibrate-infinite 2s ease-in-out infinite;
+}
+
+.meliora_section {
+  // background: linear-gradient(103deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/background/meliora.jpeg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(
+      283deg,
+      rgba(255, 208, 228, 0.9) 0%,
+      rgba(112, 71, 191, 0.9) 99.99%
+    ),
+    url("../../images/background/Ananta.jpeg"), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+  border-top: 4px solid white;
+
+  .wave_meliora_top {
+    margin-top: -4px;
+    width: 100%;
+    pointer-events: none;
+    transform: scaleY(-1) scaleX(-1);
+  }
+
+  .wave_meliora_bottom {
+    width: 100%;
+    pointer-events: none;
+    transform: scaleX(-1);
+    margin-bottom: -3px;
+  }
+
+  .meliora_content {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 0px 160px 100px 160px;
+
+    .kupu_top {
+      z-index: 0;
+      position: absolute;
+      width: 40%;
+      height: auto;
+      left: -80px;
+      top: 100px;
+      transform: rotate(40deg);
+      opacity: 0.15;
+    }
+
+    .the_content {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 100px;
+      z-index: 96;
+
+      .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+
+        img {
+          /* Set the width to 100% of its container */ /* Maintain aspect ratio */
+          max-width: 120%; /* Ensure the image does not exceed its container's width */
+          max-height: 120%; /* Ensure the image does not exceed its container's height */
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        width: 50%;
+
+        .the_title {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+
+          h1 {
+            text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24),
+              0px 4px 12px rgba(255, 255, 255, 0.25),
+              0px 2px 4px rgba(0, 0, 0, 0.12);
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            background: linear-gradient(92deg, #fff5c1 -0.06%, #fff 101.3%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: justify;
+          }
+          .schedule {
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+            align-items: flex-start; /* Align items to the start (left) */
+        
+            .date, .location, .time {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              margin-bottom: 10px; /* Add space between items */
+        
+              img {
+                width: 24px;
+                height: 24px;
+              }
+        
+              p {
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .meliora_section {
+    .wave_meliora_top {
+    }
+
+    .wave_meliora_bottom {
+    }
+
+    .meliora_content {
+      gap: 0;
+      padding: 0px 100px 100px 100px;
+
+      .kupu_top {
+      }
+
+      .the_content {
+        gap: 20px;
+
+        .left {
+          img {
+            max-width: 80%;
+            max-height: 80%;
+          }
+        }
+
+        .right {
+          gap: 48px;
+          width: 56%;
+
+          .the_title {
+            gap: 8px;
+
+            h1 {
+            }
+
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .meliora_section {
+    .wave_meliora_top {
+    }
+
+    .wave_meliora_bottom {
+    }
+
+    .meliora_content {
+      padding: 0px 80px 100px 80px;
+
+      .kupu_top {
+      }
+
+      .the_content {
+        flex-direction: column;
+        gap: 20px;
+
+        .left {
+          img {
+          }
+        }
+
+        .right {
+          align-items: center;
+          gap: 40px;
+          width: 100%;
+
+          .the_title {
+            align-items: center;
+
+            h1 {
+              font-size: 40px;
+              text-align: center;
+            }
+
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .meliora_section {
+    .wave_meliora_top {
+    }
+
+    .wave_meliora_bottom {
+    }
+
+    .meliora_content {
+      padding: 0px 40px 100px 40px;
+
+      .kupu_top {
+        width: 80%;
+      }
+
+      .the_content {
+        .left {
+          img {
+            max-width: 72%;
+            max-height: 72%;
+          }
+        }
+
+        .right {
+          .the_title {
+            h1 {
+              font-size: 40px;
+            }
+
+            p {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .meliora_section {
+    .wave_meliora_top {
+    }
+
+    .wave_meliora_bottom {
+    }
+
+    .meliora_content {
+      padding: 0px 16px 100px 16px;
+
+      .kupu_top {
+      }
+
+      .the_content {
+        .left {
+          img {
+            max-width: 64%;
+            max-height: 64%;
+          }
+        }
+
+        .right {
+          .the_title {
+            h1 {
+              font-size: 32px;
+            }
+
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

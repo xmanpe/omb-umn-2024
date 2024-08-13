@@ -1,0 +1,209 @@
+.tikum_section {
+  display: flex;
+  padding: 40px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  overflow: hidden;
+  position: relative;
+
+  .tikum_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24),
+        0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      background: linear-gradient(180deg, #cabbf9 0%, #4504aa 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      b {
+        font-weight: 600;
+        color: black;
+      }
+    }
+
+    p:hover {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .tikum_content {
+    display: flex;
+    gap: 20px;
+    height: 500px;
+    width: 100%;
+
+    .map-tikum {
+      overflow: hidden;
+      border: 2px solid #4504aa;
+      border-radius: 20px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+      width: 40%;
+    }
+
+    .image-tikum {
+      width: 60%;
+      overflow: hidden;
+      border: 1.5px solid #F0F0F0;
+      border-radius: 20px;
+      box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .tikum_section {
+    padding: 40px 0px;
+    gap: 40px;
+  
+    .tikum_title {
+      h1 {
+      }
+  
+      p {
+        b {
+        }
+      }
+  
+      p:hover {
+      }
+    }
+  
+    .tikum_content {
+      gap: 16px;
+      height: 360px;
+  
+      .map-tikum {
+      }
+  
+      .image-tikum {
+        img {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tikum_section {
+    padding: 40px 80px;
+
+    .tikum_title {
+      h1 {
+      }
+  
+      p {
+        b {
+        }
+      }
+  
+      p:hover {
+      }
+    }
+  
+    .tikum_content {
+      .map-tikum {
+      }
+  
+      .image-tikum {
+        img {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .tikum_section {
+    padding: 40px 0px;
+
+    .tikum_title {
+      h1 {
+        font-size: 40px;
+      }
+  
+      p {
+        b {
+        }
+      }
+  
+      p:hover {
+      }
+    }
+  
+    .tikum_content {
+      display: grid;
+      grid-template-columns: auto;
+      height: initial;
+
+      .map-tikum {
+        width: initial;
+        height: 400px;
+      }
+  
+      .image-tikum {
+        width: initial;
+        height: 400px;
+
+        img {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tikum_section {
+    padding: 40px 0px;
+
+    .tikum_title {
+      h1 {
+        font-size: 32px;
+      }
+  
+      p {
+        font-size: 18px;
+
+        b {
+        }
+      }
+  
+      p:hover {
+      }
+    }
+  
+    .tikum_content {
+      .map-tikum {
+      }
+  
+      .image-tikum {
+        img {
+        }
+      }
+    }
+  }
+}

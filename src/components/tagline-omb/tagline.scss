@@ -1,0 +1,277 @@
+@keyframes circling {
+  0% {
+      transform: translate(0, -50%) rotate(0deg);
+  }
+  25% {
+      transform: translate(-10px, -40%) rotate(90deg);
+  }
+  50% {
+      transform: translate(-20px, -50%) rotate(180deg);
+  }
+  75% {
+      transform: translate(-10px, -60%) rotate(270deg);
+  }
+  100% {
+      transform: translate(0, -50%) rotate(360deg);
+  }
+}
+
+.tagline-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  background: linear-gradient(144deg,
+      rgba(255, 208, 228, 0.7) -14.93%,
+      rgba(202, 191, 249, 0.7) 2.56%,
+      rgba(69, 4, 170, 0.7) 25.07%),
+    linear-gradient(248deg,
+      rgba(255, 208, 228, 0.8) 11.97%,
+      rgba(202, 191, 249, 0.8) 47.21%,
+      rgba(69, 4, 170, 0.8) 92.55%), url('../../images//Day\ 2.jpeg')
+    #7047bf;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .wave-atas {
+    width: 100%;
+    position: relative;
+    top: -2px;
+    pointer-events: none;
+    transform: scaleX(-1);
+    height: 120px;
+  }
+
+  .wave-bawah {
+    width: 100%;
+    position: relative;
+    bottom: -2px;
+    pointer-events: none;
+    height: 120px;
+  }
+
+  .supergrafis-kembang-banyak {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .main-tagline {
+    width: 600px;
+    height: auto;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0px 160px 0px 160px;
+
+    .tagline-content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 12px;
+
+      h2 {
+        color: white;
+        text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2),
+          0px 4px 12px rgba(0, 0, 0, 0.25);
+        font-weight: 600;
+        font-size: 28px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.7);
+        text-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2),
+          0px 4px 12px rgba(0, 0, 0, 0.25);
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      p:hover {
+        color: white;
+      }
+    }
+
+    .tangguh-berambisi {
+      border-right: 4px solid rgba(255, 255, 255, 0.2);
+      padding-right: 40px;
+    }
+
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .tagline-container {
+    gap: 80px;
+
+    .wave-atas {
+    }
+  
+    .wave-bawah {
+    }
+  
+    .supergrafis-kembang-banyak {
+    }
+  
+    .main-tagline {
+    }
+  
+    .content-container {
+      padding: 0px 100px 0px 100px;
+  
+      .tagline-content {
+  
+        h2 {
+        }
+  
+        p {
+        }
+  
+        p:hover {
+        }
+      }
+  
+      .tangguh-berambisi {
+      }
+  
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tagline-container {
+    gap: 60px;
+
+    .wave-atas {
+    }
+  
+    .wave-bawah {
+    }
+  
+    .supergrafis-kembang-banyak {
+      opacity: 0.4;
+      width: 20%;
+    }
+  
+    .main-tagline {
+      width: 480px;
+    }
+  
+    .content-container {
+      padding: 0px 80px 0px 80px;
+  
+      .tagline-content {
+  
+        h2 {
+          font-size: 24px;
+        }
+  
+        p {
+          font-size: 18px;
+        }
+  
+        p:hover {
+        }
+      }
+  
+      .tangguh-berambisi {
+      }
+  
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .tagline-container {
+  
+    .wave-atas {
+    }
+  
+    .wave-bawah {
+    }
+  
+    .supergrafis-kembang-banyak {
+      opacity: 0.4;
+      width: 20%;
+    }
+  
+    .main-tagline {
+      width: 480px;
+    }
+  
+    .content-container {
+      padding: 0px 40px 0px 40px;
+      flex-direction: column;
+  
+      .tagline-content {
+  
+        h2 {
+          font-size: 24px;
+        }
+  
+        p {
+          font-size: 18px;
+        }
+  
+        p:hover {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+  
+      .tangguh-berambisi {
+        border-right: none;
+        padding-right: 0;
+      }
+  
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .tagline-container {
+    gap: 40px;
+  
+    .wave-atas {
+    }
+  
+    .wave-bawah {
+    }
+  
+    .supergrafis-kembang-banyak {
+      width: 30%;
+    }
+  
+    .main-tagline {
+      width: 360px;
+    }
+  
+    .content-container {
+      padding: 0px 16px 0px 16px;
+  
+      .tagline-content {
+  
+        h2 {
+          font-size: 20px;
+        }
+  
+        p {
+          font-size: 16px;
+        }
+  
+        p:hover {
+        }
+      }
+  
+      .tangguh-berambisi {
+      }
+  
+    }
+  }
+}

@@ -198,10 +198,6 @@
   font-display: swap;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
 ::-webkit-scrollbar-track {
   background: rgb(243, 243, 243);
 }
@@ -235,11 +231,25 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
 
+  img, div {
+    -webkit-user-drag: none;  /* For Safari and Chrome */
+    -khtml-user-drag: none;   /* For Konqueror */
+    -moz-user-drag: none;     /* For Firefox */
+    -o-user-drag: none;       /* For Opera */
+    user-drag: none;          /* Standard */
+    
+    -webkit-user-select: none;  /* For Safari and Chrome */
+    -moz-user-select: none;     /* For Firefox */
+    -ms-user-select: none;      /* For IE10+ */
+    user-select: none;          /* Standard */
+  }
+
   h1, h2, h3, h4, h5, h6, p, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
 
   .omb {
     .error_section {
@@ -254,9 +264,10 @@ body {
       align-items: center;
       gap: 40px;
       flex-shrink: 0;
-      height: 100vh; /* Set the height to 100% of viewport height */
+      height: 100vh;
 
       img {
+        display: none;
         width: clamp(80px, 10vw, 120px);
         height: auto;
       }
@@ -269,6 +280,8 @@ body {
         align-items: center;
 
         h1 {
+          margin-top: -100px;
+          margin-bottom: -40px;
           color: #FFF;
           text-shadow: 0px 4px 24.9px #FFF;
           font-family: "GSN";
@@ -311,5 +324,31 @@ body {
         }
       }
     }
+  }
+}
+
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes fadeOutFromTop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(10px);
   }
 }

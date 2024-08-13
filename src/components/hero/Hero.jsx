@@ -1,7 +1,14 @@
+import React from 'react';
 import './Hero.scss';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
 
 // import components
 import AnnCard from '../cards/ann card/AnnCard';
+import AnnCard2 from '../cards/ann card/AnnCard2';
+import AnnCard3 from '../cards/ann card/AnnCard3';
+import AnnCard4 from '../cards/ann card/AnnCard4';
+import AnnCard5 from '../cards/ann card/AnnCard5';
+import AnnCard6 from '../cards/ann card/AnnCard6';
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
@@ -10,6 +17,11 @@ import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
 import LogoOMB2024 from '../../images/Logo OMB 2024.png'
 import TaglineOMB2024 from '../../images/Tagline OMB 2024.png'
 import Wave from '../../images/waves/Wave One.png'
+import NewWave from '../../images/waves/Wave Baru.png'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Hero = () => {
     return (
@@ -20,13 +32,59 @@ const Hero = () => {
                     <img className='logo_omb' src={LogoOMB2024} alt="Logo OMB 2024" />
                     <img className='tagline_omb' src={TaglineOMB2024} alt="Tagline OMB 2023" />
                 </div>
-                <div className='announcement_section'>
-                    <AnnCard />
-                </div> 
             </div>
+
+            <div className='announcement_swiper'>
+                <Swiper
+                    spaceBetween={16}
+                    modules={[Navigation, Pagination, Autoplay, A11y, Mousewheel]}
+                    breakpoints={{
+                        432: {
+                            slidesPerView: 1,
+                        },
+                        560: {
+                            slidesPerView: 1,
+                        },
+                        810: {
+                            slidesPerView: 1,
+                        },
+                        1200: {
+                            slidesPerView: 2,
+                        },
+                        1440: {
+                            slidesPerView: 3,
+                        },
+                        1920: {
+                            slidesPerView: 3,
+                        },
+                    }}
+                    pagination={{ clickable: true }}
+                    scrollbar={{ draggable: true }}
+                    mousewheel={true}
+                    autoplay={{
+                        delay: 6000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }}
+                    className="mySwiper"
+                >
+                    <SwiperSlide><AnnCard6 /></SwiperSlide>
+                    <SwiperSlide><AnnCard /></SwiperSlide>
+                    <SwiperSlide><AnnCard5 /></SwiperSlide>
+                    <SwiperSlide><AnnCard3 /></SwiperSlide>
+                    <SwiperSlide><AnnCard2 /></SwiperSlide>
+                    <SwiperSlide><AnnCard4 /></SwiperSlide>
+                </Swiper>
+            </div>
+
+            <div className='bem_section'>
+                <p>BAGIAN DARI BEM UMN</p>
+            </div>
+
             <img className='wave' src={Wave} alt="Wave" />
+            <img className='new-wave' src={NewWave} alt="wave baru" />
         </section>
     );
 }
- 
+
 export default Hero;

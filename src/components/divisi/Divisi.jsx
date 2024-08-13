@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Divisi.scss';
 
@@ -244,6 +244,7 @@ const divisiInfo = [
 
 const Divisi = () => {
     const [selectedDivisi, setSelectedDivisi] = useState(null);
+    const [isClosing, setIsClosing] = useState(false);
 
     const handleDivisiClick = (index) => {
         const selectedData = divisiInfo[index];
@@ -273,14 +274,28 @@ const Divisi = () => {
 
     };
 
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            setSelectedDivisi(null);
+            setIsClosing(false);
+        }, 500);
+    };
+
+    useEffect(() => {
+        return () => {
+            setIsClosing(false);
+        };
+    }, []);
+
     return (
         <>
             {/* Modal */}
             {selectedDivisi && (
-                <div className="overlay">
-                    <div className="modal">
+                <div className={`overlay ${isClosing ? 'fadeOut' : ''}`}>
+                    <div className={`modal ${isClosing ? 'fadeOutFromTop' : ''}`}>
                         <div className='close_button'>
-                            <img src={X} alt="Close button" onClick={handleCloseModal} />
+                            <img src={X} alt="Close button" onClick={handleClose} />
                         </div>
                         <div className='content_section'>
                             <div className='logo_and_text'>

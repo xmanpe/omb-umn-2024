@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import './InformationModal.scss';
 
 // import icons
@@ -8,15 +8,28 @@ import ArrowRight from '../../../../images/Arrow/Arrow_Right_MD.svg';
 const InformationModal = ({ onClose }) => {
     const [isClosing, setIsClosing] = useState(false);
 
-    const openFormLink= useCallback(() => {
+    const openFormLink = useCallback(() => {
         window.open("https://forms.gle/BZcqVsdynirwQFva6", "_blank");
     }, []);
 
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 500);
+    };
+
+    useEffect(() => {
+        return () => {
+            setIsClosing(false);
+        };
+    }, []);
+
     return (
-        <div className="information-modal-overlay">
-            <div className="information-modal">
+        <div className={`information-modal-overlay ${isClosing ? 'fadeOut' : ''}`}>
+            <div className={`information-modal ${isClosing ? 'fadeOutFromTop' : ''}`}>
                 <div className='close_button'>
-                    <img src={X} alt="Close button"onClick={onClose} />
+                    <img src={X} alt="Close button" onClick={handleClose} />
                 </div>
                 <div className='information-content_section'>
                     <h1>Formulir Keikutsertaan OMB UMN 2024</h1>
@@ -37,5 +50,5 @@ const InformationModal = ({ onClose }) => {
         </div>
     );
 }
- 
+
 export default InformationModal;

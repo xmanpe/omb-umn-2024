@@ -41,7 +41,7 @@ const tabsConfig = [
         activeIcon: MenuActive, 
         text: 'Informasi OMB UMN 2024',
         subMenu: [
-            // { path: '/aksi-sosial', text: 'Aksi Sosial', icon: PenugasanNotActive },
+            { path: '/aksi-sosial', text: 'Aksi Sosial', icon: PenugasanNotActive },
             { path: '/atribut-peserta', text: 'Atribut Peserta', icon: AtributNotActive },
             { path: '/bingkai-resmi', text: 'Bingkai Resmi', icon: BingkaiNotActive },
             { path: '/divisi', text: 'Divisi', icon: DivisiNotActive },

@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useState, useEffect } from 'react';
 import './InformationModal.scss';
 
 // import icons
@@ -6,16 +6,30 @@ import X from '../../../../images/Menu/Close_MD.svg'
 import ArrowRight from '../../../../images/Arrow/Arrow_Right_MD.svg';
 
 const InformationModalSB = ({ onClose }) => {
+    const [isClosing, setIsClosing] = useState(false);
 
     const openFormLink= useCallback(() => {
         window.open("https://forms.gle/BZcqVsdynirwQFva6", "_blank");
     }, []);
 
+    const handleClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 500); // Adjust this timing to match your CSS animation duration
+    };
+
+    useEffect(() => {
+        return () => {
+            setIsClosing(false);
+        };
+    }, []);
+
     return (
-        <div className="information-modal-overlay">
-            <div className="information-modal">
+        <div className={`information-modal-overlay ${isClosing ? 'fadeOut' : ''}`}>
+            <div className={`information-modal ${isClosing ? 'fadeOutFromTop' : ''}`}>
                 <div className='close_button'>
-                    <img src={X} alt="Close button"onClick={onClose} />
+                    <img src={X} alt="Close button"onClick={handleClose} />
                 </div>
                 <div className='information-content_section'>
                     <h1>Tentang Swara Bestari</h1>

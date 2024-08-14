@@ -8,7 +8,7 @@ const busSchedules = {
   "Perkembangan Hari 1": {
     bigBus: {
       departure: [
-        { time: "05.10", route: "Pasar Modern BSD", image: PasarModernBSD },
+        { time: "05.10", route: "Pasar Modern BSD (Halte Pasar Modern BSD)", image: PasarModernBSD },
         { time: "05.45", route: "<i>Dormitory</i> UMN", image: Dormitory },
         {
           time: "06.15",
@@ -41,7 +41,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall (depan lobby Sudirman)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 14.45 WIB." },
       ],
@@ -50,7 +50,7 @@ const busSchedules = {
   "Perkembangan Hari 2": {
     bigBus: {
       departure: [
-        { time: "05.20", route: "Pasar Modern BSD", image: PasarModernBSD },
+        { time: "05.20", route: "Pasar Modern BSD (Halte Pasar Modern BSD)", image: PasarModernBSD },
         { time: "05.55", route: "<i>Dormitory</i> UMN", image: Dormitory },
         {
           time: "06.25",
@@ -83,7 +83,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 15.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall (depan lobby Sudirman)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 14.45 WIB." },
       ],
@@ -125,7 +125,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall (depan lobby Sudirman)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 11.45 WIB." },
       ],
@@ -134,7 +134,7 @@ const busSchedules = {
   "Perkenalan Prodi": {
     bigBus: {
       departure: [
-        { time: "06.15", route: "Pasar Modern BSD  (Halte Pasar Modern BSD)  ", image: PasarModernBSD },
+        { time: "06.15", route: "Pasar Modern BSD (Halte Pasar Modern BSD)", image: PasarModernBSD },
         { time: "06.50", route: "<i>Dormitory</i> UMN", image: Dormitory },
         {
           time: "07.20",
@@ -167,7 +167,7 @@ const busSchedules = {
       return: [
         {
           description:
-            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall",
+            "<b>Kepulangan:</b> Pukul 12.30 – Gerbang Utama UMN &gt; <i>Dormitory</i> UMN &gt; Halte Tangerang City Mall (depan lobby Sudirman)",
         },
         { note: "Keterangan: Untuk kepulangan, bus besar dan kecil siap sejak pukul 11.45 WIB." },
       ],

@@ -70,7 +70,7 @@ const busSchedules = {
       departure: [
         {
           time: "05.20",
-          route: "Halte Tangerang City Mall",
+          route: "Halte Tangerang City Mall (depan lobby Sudirman)",
           image: TangCityMall,
         },
         { time: "05.55", route: "<i>Dormitory</i> UMN", image: Dormitory },
@@ -89,7 +89,7 @@ const busSchedules = {
       ],
     },
   },
-  "Sidang Senat Terbuka": {
+  "Sidang Terbuka Senat": {
     bigBus: {
       departure: [
         { time: "06.00", route: "Pasar Modern BSD (Halte Pasar Modern BSD) ", image: PasarModernBSD },
@@ -112,7 +112,7 @@ const busSchedules = {
       departure: [
         {
           time: "06.00",
-          route: "Halte Tangerang City Mall ",
+          route: "Halte Tangerang City Mall (depan lobby Sudirman)",
           image: TangCityMall,
         },
         { time: "06.35", route: "<i>Dormitory</i> UMN", image: Dormitory },
@@ -154,7 +154,7 @@ const busSchedules = {
       departure: [
         {
           time: "06.15",
-          route: "Halte Tangerang City Mall",
+          route: "Halte Tangerang City Mall (depan lobby Sudirman)",
           image: TangCityMall,
         },
         { time: "06.50", route: "<i>Dormitory</i> UMN", image: Dormitory },

@@ -21,7 +21,7 @@ const ShuttleBus = () => {
   const slides = [
     "Perkembangan Hari 1",
     "Perkembangan Hari 2",
-    "Sidang Senat Terbuka",
+    "Sidang Terbuka Senat",
     "Perkenalan Prodi",
   ];
 

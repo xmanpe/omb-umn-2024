@@ -815,6 +815,10 @@
                     // border-color: #4504AA;
                 }
             }
+
+            .each-list:hover {
+                transform: initial; 
+            }
         }
     }
 }

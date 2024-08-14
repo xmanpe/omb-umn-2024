@@ -16,7 +16,7 @@
     flex-direction: column;
     z-index: 999;
     position: fixed;
-    bottom: 12px;
+    bottom: 16px;
     left: 0;
     right: 0;
     width: fit-content;
@@ -188,24 +188,24 @@
     .the-whole-navbar {
         opacity: 1;
         width: 100%;
-        bottom: 12px;
+        bottom: 16px;
     
         .extended-navbar {   
             width: 90%;
             margin: auto;
     
             .title-nav {
-                font-size: 14px;
+                font-size: 16px;
             }
     
             .each-extended {
                 img {
-                    width: 20px;
-                    height: 20px;
+                    width: 24px;
+                    height: 24px;
                 }
     
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
     
             }
@@ -248,7 +248,7 @@
                     p {
                         color: #FFF;
                         font-family: "GSN", sans-serif;
-                        font-size: 14px;
+                        font-size: 16px;
                         line-height: normal;
                     }
                 }

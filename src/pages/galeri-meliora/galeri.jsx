@@ -41,6 +41,7 @@ function galeri() {
         </div>
         <Galeri />
       </div>
+      <div className="white-space"></div>
     </div>
   );
 }

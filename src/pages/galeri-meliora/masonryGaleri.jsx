@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import Masonry from "react-masonry-css";
+import React from "react";
 import "./masonrygaleri.scss";
 
 import foto1 from "../../images/meliora/foto/images-2.jpeg";
@@ -13,52 +12,88 @@ import foto8 from "../../images/meliora/foto/pexels-pixabay-15239.jpg";
 import foto9 from "../../images/meliora/foto/fixed-ratio.png.webp";
 import foto10 from "../../images/meliora/foto/premium_photo-1701693533734-bc279bdd0c80.webp";
 
-const photos = [
-  foto1,
-  foto4,
-  foto2,
-  foto3,
-  foto4,
-  foto6,
-  foto4,
-  foto8,
-  foto9,
-  foto5,
-  foto2,
-  foto3,
-  foto4,
-  foto4,
-  foto2,
-  foto3,
-  foto4,
-  foto6,
-  foto4,
-  foto8,
-  foto9,
-  foto5,
-  foto2,
-  foto10,
-];
-
 function masonryGaleri() {
-  const breakpointColObj = {
-    default: 5,
-    1200: 4,
-    810: 3,
-    560: 2,
-  };
   return (
-    <Masonry
-      breakpointCols={breakpointColObj}
-      className="masonry-galeri"
-      columnClassName="masonry-galeri-coloumn"
-    >
-      {photos.map((foto, index) => (
-        <div className="masonry-galeri-item" key={index}>
-          <img src={foto} alt="galeri" />
-        </div>
-      ))}
-    </Masonry>
+    <div className="galeri-main">
+      <div className="wide">
+        <img src={foto1}></img>
+      </div>
+      <div className="big">
+        <img src={foto2}></img>
+      </div>
+      <div>
+        <img src={foto3}></img>
+      </div>
+      <div>
+        <img src={foto4}></img>
+      </div>
+      <div>
+        <img src={foto5}></img>
+      </div>
+      <div className="wide">
+        <img src={foto6}></img>
+      </div>
+      <div>
+        <img src={foto7}></img>
+      </div>
+      <div className="tall">
+        <img src={foto8}></img>
+      </div>
+      <div className="tall">
+        <img src={foto9}></img>
+      </div>
+      <div>
+        <img src={foto10}></img>
+      </div>
+      <div>
+        <img src={foto1}></img>
+      </div>
+      <div>
+        <img src={foto2}></img>
+      </div>
+      <div>
+        <img src={foto3}></img>
+      </div>
+      <div className="big">
+        <img src={foto4}></img>
+      </div>
+      <div className="wide">
+        <img src={foto5}></img>
+      </div>
+      <div>
+        <img src={foto6}></img>
+      </div>
+      <div>
+        <img src={foto7}></img>
+      </div>
+      <div>
+        <img src={foto8}></img>
+      </div>
+      <div className="wide">
+        <img src={foto9}></img>
+      </div>
+      <div>
+        <img src={foto10}></img>
+      </div>
+      <div>
+        <img src={foto1}></img>
+      </div>
+      <div>
+        <img src={foto2}></img>
+      </div>
+      <div className="tall">
+        <img src={foto5}></img>
+      </div>
+      <div className="tall">
+        <img src={foto6}></img>
+      </div>
+      <div>
+        <img src={foto3}></img>
+      </div>
+      <div>
+        <img src={foto4}></img>
+      </div>
+    </div>
   );
 }
 

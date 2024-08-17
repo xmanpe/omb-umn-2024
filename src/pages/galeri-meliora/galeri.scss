@@ -1,0 +1,438 @@
+.main-container {
+  background-image: url("../../images/meliora/background-galeri.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.galeri {
+  padding: 0 160px 0 160px;
+}
+
+.container-utama-header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .container-judul {
+    position: absolute;
+    .judul h1 {
+      font-size: 48px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: normal;
+
+      background: linear-gradient(180deg, #696969 0%, #000 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      margin-bottom: 10px;
+    }
+
+    .deskripsi-judul p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: #545454;
+    }
+
+    .deskripsi-drive p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px;
+      color: #919191;
+      margin: 15px 0 15px 0;
+    }
+
+    .button-drive {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button-drive .button-drive-1 {
+      height: 35.969px;
+      padding: 5px 27px;
+      border-radius: 35.969px;
+      border: 2.158px solid black;
+      background-color: #fff;
+
+      gap: 10px;
+      display: flex;
+      cursor: pointer;
+    }
+    .button-drive-1 p {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      color: #000;
+    }
+
+    .custom-line {
+      text-decoration: underline;
+      text-decoration-color: black;
+    }
+
+    .button-drive-1 img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main-container {
+    background-image: url("../../images/meliora/background-galeri.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .galeri {
+    padding: 40px 100px;
+  }
+
+  .container-utama-header {
+    // position: relative;
+    // width: 100%;
+    // height: 50vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+
+    .container-judul {
+      //   position: absolute;
+      .judul h1 {
+        // font-size: 48px;
+        // font-weight: 600;
+        // font-style: normal;
+        // line-height: normal;
+
+        // background: linear-gradient(180deg, #696969 0%, #000 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+
+        // margin-bottom: 10px;
+      }
+
+      .deskripsi-judul p {
+        // font-size: 20px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+        // color: #545454;
+      }
+
+      .deskripsi-drive p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 32px;
+        // color: #919191;
+        // margin: 15px 0 15px 0;
+      }
+
+      .button-drive {
+        // position: relative;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+      }
+
+      .button-drive .button-drive-1 {
+        // height: 35.969px;
+        // padding: 5px 27px;
+        // border-radius: 35.969px;
+        // border: 2.158px solid;
+        // background-color: #fff;
+        // gap: 10px;
+        // display: flex;
+        // cursor: pointer;
+      }
+      .button-drive-1 p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 24px;
+      }
+
+      .button-drive-1 img {
+        // width: 20px;
+        // height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    background-image: url("../../images/meliora/background-galeri.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .galeri {
+    padding: 40px 80px;
+  }
+  .container-utama-header {
+    // position: relative;
+    // width: 100%;
+    // height: 50vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+
+    .container-judul {
+      //   position: absolute;
+      .judul h1 {
+        // font-size: 48px;
+        // font-weight: 600;
+        // font-style: normal;
+        // line-height: normal;
+
+        // background: linear-gradient(180deg, #696969 0%, #000 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+
+        // margin-bottom: 10px;
+      }
+
+      .deskripsi-judul p {
+        // font-size: 20px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+        // color: #545454;
+      }
+
+      .deskripsi-drive p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 32px;
+        // color: #919191;
+        // margin: 15px 0 15px 0;
+      }
+
+      .button-drive {
+        // position: relative;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+      }
+
+      .button-drive .button-drive-1 {
+        // height: 35.969px;
+        // padding: 5px 27px;
+        // border-radius: 35.969px;
+        // border: 2.158px solid;
+        // background-color: #fff;
+        // gap: 10px;
+        // display: flex;
+        // cursor: pointer;
+      }
+      .button-drive-1 p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 24px;
+      }
+
+      .button-drive-1 img {
+        // width: 20px;
+        // height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .main-container {
+    background-image: url("../../images/meliora/background-galeri.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .galeri {
+    padding: 40px;
+  }
+
+  .container-utama-header {
+    // position: relative;
+    // width: 100%;
+    // height: 50vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+
+    .container-judul {
+      //   position: absolute;
+      .judul h1 {
+        font-size: 44px;
+        // font-weight: 600;
+        // font-style: normal;
+        // line-height: normal;
+
+        // background: linear-gradient(180deg, #696969 0%, #000 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+
+        // margin-bottom: 10px;
+      }
+
+      .deskripsi-judul p {
+        // font-size: 20px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+        // color: #545454;
+      }
+
+      .deskripsi-drive p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 32px;
+        // color: #919191;
+        // margin: 15px 0 15px 0;
+      }
+
+      .button-drive {
+        // position: relative;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+      }
+
+      .button-drive .button-drive-1 {
+        // height: 35.969px;
+        // padding: 5px 27px;
+        // border-radius: 35.969px;
+        // border: 2.158px solid;
+        // background-color: #fff;
+        // gap: 10px;
+        // display: flex;
+        // cursor: pointer;
+      }
+      .button-drive-1 p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 24px;
+      }
+
+      .button-drive-1 img {
+        // width: 20px;
+        // height: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .main-container {
+    background-image: url("../../images/meliora/background-galeri.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .galeri {
+    padding: 40px 16px;
+  }
+
+  .container-utama-header {
+    // position: relative;
+    // width: 100%;
+    // height: 50vh;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+
+    .container-judul {
+      //   position: absolute;
+      .judul h1 {
+        font-size: 34px;
+        // font-weight: 600;
+        // font-style: normal;
+        // line-height: normal;
+
+        // background: linear-gradient(180deg, #696969 0%, #000 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+
+        // margin-bottom: 10px;
+      }
+
+      .deskripsi-judul p {
+        font-size: 18px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: normal;
+        // color: #545454;
+      }
+
+      .deskripsi-drive p {
+        // font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 32px;
+        // color: #919191;
+        // margin: 15px 0 15px 0;
+      }
+
+      .button-drive {
+        // position: relative;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+      }
+
+      .button-drive .button-drive-1 {
+        // height: 35.969px;
+        // padding: 5px 27px;
+        // border-radius: 35.969px;
+        // border: 2.158px solid;
+        // background-color: #fff;
+        // gap: 10px;
+        // display: flex;
+        // cursor: pointer;
+      }
+      .button-drive-1 p {
+        font-size: 16px;
+        // font-style: normal;
+        // font-weight: 500;
+        // line-height: 24px;
+      }
+
+      .button-drive-1 img {
+        // width: 20px;
+        // height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.masonry-galeri {
+  display: flex;
+  margin-left: -10px;
+  width: auto;
+}
+
+.masonry-galeri-coloumn {
+  padding-left: 10px;
+  background-clip: padding-box;
+}
+
+.masonry-galeri-item {
+  margin-bottom: 10px;
+}
+
+.masonry-galeri-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}

@@ -37,14 +37,14 @@ const Home = () => {
 
   return (
     <>
-      {showExperience && <SmallModal />}
+      {/* {showExperience && <SmallModal />} */}
       {/* {showExperience && <Experience />} */}
       <Hero />
       <ApaItuOMB />
       <YouTube />
       <SwaraBestari />
       {/* <SIO /> */}
-      <InfoPWRevisi />
+      {/* <InfoPWRevisi /> */}
       <Footer />
     </>
   );

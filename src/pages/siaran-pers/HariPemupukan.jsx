@@ -21,10 +21,11 @@ import Image6 from '../../images/pers/pemupukan/Pemupukan-6.jpeg'
 const HariPemupukan = () => {
     const top = 'Rilis Pers';
     const bottom = 'Hari Pemupukan OMB UMN 2024';
+    const veryBottom = 'Dibuat oleh Divisi Caksana'
 
     return (
         <>
-            <Header top={top} bottom={bottom} />
+            <Header top={top} bottom={bottom}/>
             <section className="pers_section">
                 <div className="left-pers">
                     <div className="pers-title">

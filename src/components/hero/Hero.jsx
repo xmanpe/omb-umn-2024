@@ -81,7 +81,7 @@ const Hero = () => {
             </div>
 
             <img className='wave' src={Wave} alt="Wave" />
-            <img className='new-wave' src={NewWave} alt="wave baru" />
+            {/* <img className='new-wave' src={NewWave} alt="wave baru" /> */}
         </section>
     );
 }

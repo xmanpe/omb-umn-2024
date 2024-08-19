@@ -17,6 +17,7 @@ import MarsOMB from "./pages/MarsOMB";
 import Faq from "./pages/Faq";
 import BingkaiPageRevisi from "./pages/bingkai/BingkaiPageRevisi";
 import Penugasan from "./pages/penugasan/Penugasan";
+import HariPemupukan from "./pages/siaran-pers/HariPemupukan";
 import Galeri from "./pages/galeri-meliora/galeri";
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/bingkai-resmi" element={<BingkaiPageRevisi />} />
           <Route path="/aksi-sosial" element={<Penugasan />} />
-          <Route path="/galeri-meliora" element={<Galeri />} />
+          <Route path="/hari-pemupukan" element={<HariPemupukan />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <BottomNav />

@@ -1,0 +1,114 @@
+.pers_section {
+    display: flex;
+    gap: 32px;
+    padding: 40px 160px;
+    overflow: visible;
+
+    .left-pers {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+
+        .pers-title {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 0px;
+
+            .day-and-date {
+                display: flex;
+                gap: 12px;
+                align-items: center;
+
+                .hari-name {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+        
+                .hari-date {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.60);
+                }
+            }
+
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                color: #4504AA;
+            }
+        }
+
+        .paragraph-pers {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .image-text {
+                font-size: 14px;
+                margin-top: -16px;
+                color: rgba(0, 0, 0, 0.40);
+                
+            }
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.60);
+
+                a {
+                    color: #4504AA;
+                    text-decoration: underline;
+                }
+
+                b {
+                    font-weight: 600;
+                    color: black;
+                }
+            }
+
+            p:hover {
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            .image-pers {
+                overflow: hidden;
+                border: 4px solid #ffffff;
+                border-radius: 20px;
+                box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.05);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            
+        }
+    }
+
+    .right-pers {
+        margin-top: 100px;
+        position: sticky;
+        top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 50%;
+        height: 100vh;
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.60);
+        }
+
+        .info-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+        }
+    }
+}

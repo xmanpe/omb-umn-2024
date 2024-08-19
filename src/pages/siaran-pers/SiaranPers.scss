@@ -15,6 +15,8 @@
             flex-direction: column;
             width: 100%;
             gap: 0px;
+            padding-bottom: 20px;
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.1);
 
             .day-and-date {
                 display: flex;
@@ -89,7 +91,6 @@
     }
 
     .right-pers {
-        margin-top: 100px;
         position: sticky;
         top: 16px;
         display: flex;
@@ -109,6 +110,254 @@
             flex-direction: column;
             gap: 12px;
 
+        }
+    }
+}
+
+@media screen and (max-width: 1440px){
+    .pers_section {
+        gap: 28px;
+        padding: 40px 100px;
+    
+        .left-pers {
+            .pers-title {    
+                .day-and-date {
+                    .hari-name {
+                        font-size: 18px;
+                    }
+            
+                    .hari-date {
+                        font-size: 16px;
+                    }
+                }
+    
+                h1 {
+                    font-size: 32px;
+                }
+            }
+    
+            .paragraph-pers {
+                gap: 16px;
+    
+                .image-text {
+                    font-size: 14px;
+                    
+                }
+    
+                p {
+                    a {
+                    }
+    
+                    b {
+                    }
+                }
+    
+                p:hover {
+                }
+    
+                .image-pers {    
+                    img {
+                    }
+                }
+                
+            }
+        }
+    
+        .right-pers {
+            width: 60%;
+    
+            p {
+                font-size: 20px;
+            }
+    
+            .info-stack {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .pers_section {
+        gap: 24px;
+        padding: 40px 80px;
+    
+        .left-pers {
+            .pers-title {    
+                .day-and-date {
+                    .hari-name {
+                    }
+            
+                    .hari-date {
+                    }
+                }
+    
+                h1 {
+                }
+            }
+    
+            .paragraph-pers {
+                .image-text {
+                }
+    
+                p {
+                    a {
+                    }
+    
+                    b {
+                    }
+                }
+    
+                p:hover {
+                }
+    
+                .image-pers {    
+                    img {
+                    }
+                }
+                
+            }
+        }
+    
+        .right-pers {
+            width: 70%;
+    
+            p {
+            }
+    
+            .info-stack {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px){
+    .pers_section {
+        flex-direction: column;
+        gap: 24px;
+        padding: 40px 40px;
+    
+        .left-pers {
+            width: 100%;
+
+            .pers-title {    
+                .day-and-date {
+                    .hari-name {
+                    }
+            
+                    .hari-date {
+                    }
+                }
+    
+                h1 {
+                }
+            }
+    
+            .paragraph-pers {
+                .image-text {
+                    margin-top: -8px;
+                }
+    
+                p {
+                    text-align: justify;
+
+                    a {
+                    }
+    
+                    b {
+                    }
+                }
+    
+                p:hover {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+    
+                .image-pers {    
+                    img {
+                    }
+                }
+                
+            }
+        }
+    
+        .right-pers {
+            border-top: 1.5px solid rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+            margin-top: 0;
+            width: 100%;
+            height: fit-content;
+    
+            p {
+            }
+    
+            .info-stack {
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 560px){
+    .pers_section {
+        gap: 20px;
+        padding: 40px 16px;
+    
+        .left-pers {
+            .pers-title {    
+                .day-and-date {
+                    flex-direction: column;
+                    justify-content: left;
+                    align-items: start;
+
+                    .hari-name {
+                        display: none;
+                    }
+
+                    .dot {
+                        display: none;
+                    }
+            
+                    .hari-date {
+                    }
+                }
+    
+                h1 {
+                    font-size: 28px;
+                }
+            }
+    
+            .paragraph-pers {
+                gap: 20px;
+
+                .image-text {
+                }
+    
+                p {
+                    font-size: 18px;
+
+                    a {
+                    }
+    
+                    b {
+                    }
+                }
+    
+                p:hover {
+                    color: rgba(0, 0, 0, 0.6);
+                }
+    
+                .image-pers {    
+                    img {
+                    }
+                }
+                
+            }
+        }
+    
+        .right-pers {    
+            p {
+            }
+    
+            .info-stack {
+            }
         }
     }
 }

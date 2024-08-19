@@ -32,7 +32,6 @@
     box-shadow: 0px 6px 34.1px 0px rgba(0, 0, 0, 0.19);
     backdrop-filter: blur(7.099999904632568px);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
-    overflow: hidden;
 
     .text_section {
         width: 100%;
@@ -155,21 +154,13 @@
 
     .label {
         position: absolute;
-        top: -20px;
+        top: -28px;
         left: -20px;
         display: flex;
-        background-color: white;
-        padding: 8px 32px;
+        background-color: #F77B55;
+        padding: 8px 20px;
         border-radius: 100px;
-        transform: rotate(-10deg);
-        box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.1);
-
-        p {
-            color: #4504AA;
-            font-size: 18px;
-            font-weight: 500;
-            font-family: 'GSN';
-        }
+        box-shadow: 0px 12px 40px 0px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -196,6 +187,21 @@
                 }
                 
             }
+        }
+    }
+}
+
+.pers {
+    background-color: #f77b55a1;
+    border: 2px solid var(--Koromiko, #F77B55);
+
+    .cta_button {
+        button {
+            background: linear-gradient(169deg, #f69f84 8.3%, #F77B55 91.79%);
+        }
+
+        button:active {
+            background: linear-gradient(169deg, #f59173 8.25%, rgb(249, 124, 86) 91.75%);
         }
     }
 }

@@ -31,11 +31,19 @@ import BingkaiNotActive from '../../images/icons/Bingkai.svg';
 import BingkaiActive from '../../images/icons/Bingkai_Active.svg';
 import PenugasanNotActive from '../../images/icons/Penugasan.svg';
 import PenugasanActive from '../../images/icons/Penugasan_Active.svg';
+import PersNotActive from '../../images/icons/Pers.svg';
+import PersActive from '../../images/icons/Pers_Active.svg';
 
 const tabsConfig = [
     { path: '/', icon: HomeNotActive, activeIcon: HomeActive, text: 'Beranda' },
-    { path: '/tentang-omb', icon: TentangNotActive, activeIcon: TentangActive, text: 'Tentang OMB UMN 2024', },
-    { path: '/faq', icon: FaqNotActive, activeIcon: FaqActive, text: 'FAQ' },
+    {
+        icon: PersNotActive,
+        activeIcon: PersActive,
+        text: 'Rilis Pers',
+        subMenu: [
+            { path: '/hari-pemupukan', text: 'Hari Pemupukan', icon: PersNotActive },
+        ]
+    },
     { 
         icon: MenuNotActive, 
         activeIcon: MenuActive, 
@@ -45,11 +53,13 @@ const tabsConfig = [
             { path: '/atribut-peserta', text: 'Atribut Peserta', icon: AtributNotActive },
             { path: '/bingkai-resmi', text: 'Bingkai Resmi', icon: BingkaiNotActive },
             { path: '/divisi', text: 'Divisi', icon: DivisiNotActive },
+            { path: '/faq', text: 'FAQ', icon: FaqNotActive },
             { path: '/linimasa', text: 'Linimasa', icon: TimelineNotActive },
             { path: '/mars', text: 'Mars', icon: MarsNotActive },
             { path: '/mobilitas-peserta', text: 'Mobilitas Peserta', icon: MobilitasNotActive },
             { path: '/pelaksanaan', text: 'Pelaksanaan', icon: PelaksanaanNotActive },
             { path: '/rembaka-anindita', text: 'Rembaka Anindita', icon: DinamikaNotActive },
+            { path: '/tentang-omb', text: 'Tentang OMB UMN 2024', icon: TentangNotActive },
         ]
     },
 ];

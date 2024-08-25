@@ -192,8 +192,8 @@
 }
 
 .pers {
-    background-color: #f77b55a1;
-    border: 2px solid var(--Koromiko, #F77B55);
+    background-color: #fddc4865;
+    border: 1.5px solid var(--Koromiko, #FDDD48);
 
     .cta_button {
         button {
@@ -202,6 +202,33 @@
 
         button:active {
             background: linear-gradient(169deg, #f59173 8.25%, rgb(249, 124, 86) 91.75%);
+        }
+    }
+}
+
+.pers-white {
+    border: 1.5px solid var(--Koromiko, #FDDD48);
+    background-color: #fd904827;
+
+    .cta_button {
+        button {
+            background: linear-gradient(169deg, #f69f84 8.3%, #F77B55 91.79%);
+        }
+
+        button:active {
+            background: linear-gradient(169deg, #f59173 8.25%, rgb(249, 124, 86) 91.75%);
+        }
+    }
+
+    .text_section {
+        .title_and_desc {
+            h3 {
+                color: #F77B55;
+            }
+
+            p {
+                color: #F77B55;
+            }
         }
     }
 }

@@ -42,6 +42,8 @@ const tabsConfig = [
         text: 'Rilis Pers',
         subMenu: [
             { path: '/hari-pemupukan', text: 'Hari Pemupukan', icon: PersNotActive },
+            { path: '/perkembangan-hari-satu', text: 'Perkembangan Hari 1', icon: PersNotActive },
+            { path: '/perkembangan-hari-dua', text: 'Perkembangan Hari 2', icon: PersNotActive }
         ]
     },
     { 

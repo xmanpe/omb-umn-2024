@@ -5,8 +5,9 @@ import './SiaranPers.scss';
 
 //import components
 import AnnCard2White from "../../components/cards/ann card/AnnCard2White";
-import AnnCard2 from "../../components/cards/ann card/AnnCard6";
 import AnnCard3White from "../../components/cards/ann card/AnnCard3White";
+import AnnCardPers2 from "../../components/cards/ann card/AnnCardPers2White";
+import AnnCardPers3 from "../../components/cards/ann card/AnnCardPers3White";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 
@@ -83,9 +84,9 @@ const HariPemupukan = () => {
                 <div className="right-pers">
                     <p>Informasi Penting!</p>
                     <div className="info-stack">
-                        <AnnCard2 />
+                        <AnnCardPers3 />
+                        <AnnCardPers2 />
                         <AnnCard2White />
-                        <AnnCard3White />
                     </div>
                 </div>
             </section>

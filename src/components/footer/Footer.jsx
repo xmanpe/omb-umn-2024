@@ -35,10 +35,12 @@ const Footer = () => {
     const isBingkaiPage = location.pathname === '/bingkai-resmi';
     const isPenugasanPage = location.pathname === '/aksi-sosial';
     const isPemupukanPage = location.pathname === '/hari-pemupukan';
+    const isPerkembanganHariSatuPage = location.pathname === '/perkembangan-hari-satu';
+    const isPerkembanganHariDuaPage = location.pathname === '/perkembangan-hari-dua';
 
     return (
         <footer className='footer_section'>
-            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage || isFaqPage || isMobilitasPage || isLinimasaPage || isDivisiPage || isMarsPage || isDinamikaPage || isBingkaiPage || isPenugasanPage || isPemupukanPage ) && <img className='wave' src={Wave} alt="Wave" />}
+            {(isHomePage || isPelaksanaanPage || isAtributPesertaPage || isTentangOMBPage || isFaqPage || isMobilitasPage || isLinimasaPage || isDivisiPage || isMarsPage || isDinamikaPage || isBingkaiPage || isPenugasanPage || isPemupukanPage || isPerkembanganHariSatuPage || isPerkembanganHariDuaPage ) && <img className='wave' src={Wave} alt="Wave" />}
             <div className='footer_content'>
                 <div className='footer_top'>
                     <div className='left_content'>
@@ -106,7 +108,7 @@ const Footer = () => {
                         <p className='copyright'>© OMB UMN 2024</p>
                         <p className='slebew'>Dikelola oleh <span className="nayanika">Divisi Nayanika<span className="popover">Cie nyariin Nayanika... koornya, ya? 🤭</span></span></p>
                         <br />
-                        <p className='update'>Konten diperbarui per tanggal 19 Agustus 2024</p>
+                        <p className='update'>Konten diperbarui per tanggal 23 Agustus 2024</p>
                     </div>
                 </div>
             </div>

@@ -192,7 +192,7 @@ const BottomNav = () => {
                 ))}
                 <div className='the-border'>
                     <div className='ananta-button' onClick={anantaButton}>
-                        <p>Ananta</p>
+                        <p>Meliora</p>
                     </div>
                 </div>
             </nav>

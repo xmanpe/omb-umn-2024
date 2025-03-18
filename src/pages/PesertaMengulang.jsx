@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import mengulangData from './daftar-peserta-mengulang/mengulangData';
-import './temporary-styles/PesertaMengulangHero.scss';
 import './temporary-styles/PesertaMengulangContent.scss';
 
 // import components

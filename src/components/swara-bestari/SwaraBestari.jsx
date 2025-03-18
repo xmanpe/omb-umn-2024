@@ -51,7 +51,7 @@ const SwaraBestari = () => {
                     <p>Tentunya OMB UMN 2024 akan membawakan konsep baru untuk pameran <i>online</i> dan <i>offline</i> nya. Ditunggu, ya!</p>
                 </div> */}
             </div>
-            {/* <img className='wave_swara-bestari_bottom' src={SecondWave} alt="Wave" /> */}
+            <img className='wave_swara-bestari_bottom' src={SecondWave} alt="Wave" />
         </section>
         </>
     );

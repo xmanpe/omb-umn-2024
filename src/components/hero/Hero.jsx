@@ -9,6 +9,9 @@ import AnnCard3 from '../cards/ann card/AnnCard3';
 import AnnCard4 from '../cards/ann card/AnnCard4';
 import AnnCard5 from '../cards/ann card/AnnCard5';
 import AnnCard6 from '../cards/ann card/AnnCard6';
+import AnnCardPers from '../cards/ann card/AnnCardPers1';
+import AnnCardPers2 from '../cards/ann card/AnnCardPers2';
+import AnnCardPers3 from '../cards/ann card/AnnCardPers3';
 
 // import supergraphics
 import Supergrafis from '../../images/supergrafis/Hero Supergrafis.png'
@@ -68,11 +71,10 @@ const Hero = () => {
                     }}
                     className="mySwiper"
                 >
-                    <SwiperSlide><AnnCard6 /></SwiperSlide>
-                    <SwiperSlide><AnnCard /></SwiperSlide>
+                    <SwiperSlide><AnnCardPers3 /></SwiperSlide>
+                    <SwiperSlide><AnnCardPers2 /></SwiperSlide>
+                    <SwiperSlide><AnnCardPers /></SwiperSlide>
                     <SwiperSlide><AnnCard5 /></SwiperSlide>
-                    <SwiperSlide><AnnCard3 /></SwiperSlide>
-                    <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard4 /></SwiperSlide>
                 </Swiper>
             </div>
@@ -82,7 +84,7 @@ const Hero = () => {
             </div>
 
             <img className='wave' src={Wave} alt="Wave" />
-            <img className='new-wave' src={NewWave} alt="wave baru" />
+            {/* <img className='new-wave' src={NewWave} alt="wave baru" /> */}
         </section>
     );
 }

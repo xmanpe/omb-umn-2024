@@ -89,8 +89,8 @@ const PerkembanganHariDua = () => {
                 <div className="right-pers">
                     <p>Informasi Penting!</p>
                     <div className="info-stack">
-                        {/* <AnnCardPers2 />
-                        <AnnCardPers1 /> */}
+                        <AnnCardPers2 />
+                        <AnnCardPers1 />
                         <AnnCard2White />
                     </div>
                 </div>

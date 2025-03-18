@@ -16,7 +16,7 @@
     flex-direction: column;
     z-index: 999;
     position: fixed;
-    bottom: 12px;
+    bottom: 16px;
     left: 0;
     right: 0;
     width: fit-content;
@@ -111,7 +111,9 @@
                 height: auto;
                 border-radius: 100px;
                 padding: 8px 20px;
-                background: linear-gradient(283deg, rgba(233, 222, 165, 0.90) 0%, rgba(202, 107, 41, 0.90) 99.99%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
+                background: linear-gradient(283deg, rgba(244, 172, 86, 0.9) 0%, rgba(242, 227, 214, 0.9) 99.99%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
+                // background: linear-gradient(283deg, #d7c8f5 0%, #3D0595 99.99%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
+                // background: linear-gradient(169deg, #7753BE 0%, #3D0595 99.99%), url('../../images/gif.gif'), lightgray 50% / cover no-repeat;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -188,24 +190,24 @@
     .the-whole-navbar {
         opacity: 1;
         width: 100%;
-        bottom: 12px;
+        bottom: 16px;
     
         .extended-navbar {   
             width: 90%;
             margin: auto;
     
             .title-nav {
-                font-size: 14px;
+                font-size: 16px;
             }
     
             .each-extended {
                 img {
-                    width: 20px;
-                    height: 20px;
+                    width: 24px;
+                    height: 24px;
                 }
     
                 p {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
     
             }
@@ -248,7 +250,7 @@
                     p {
                         color: #FFF;
                         font-family: "GSN", sans-serif;
-                        font-size: 14px;
+                        font-size: 16px;
                         line-height: normal;
                     }
                 }

@@ -68,12 +68,19 @@ const Hero = () => {
                     }}
                     className="mySwiper"
                 >
+<<<<<<< Updated upstream
                     <SwiperSlide><AnnCard6 /></SwiperSlide>
                     <SwiperSlide><AnnCard /></SwiperSlide>
+=======
+                    {/* <SwiperSlide><AnnCardPers3 /></SwiperSlide>
+                    <SwiperSlide><AnnCardPers2 /></SwiperSlide>
+                    <SwiperSlide><AnnCardPers /></SwiperSlide> */}
+>>>>>>> Stashed changes
                     <SwiperSlide><AnnCard5 /></SwiperSlide>
                     <SwiperSlide><AnnCard3 /></SwiperSlide>
                     <SwiperSlide><AnnCard2 /></SwiperSlide>
                     <SwiperSlide><AnnCard4 /></SwiperSlide>
+                    <SwiperSlide><AnnCard3 /></SwiperSlide>
                 </Swiper>
             </div>
 
